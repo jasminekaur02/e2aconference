@@ -7,6 +7,9 @@ import Navbar from '../../components/navbar';
 import { FaChevronLeft, FaChevronRight, FaTwitter, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const EventsPage = () => {
+    <div>
+        <Navbar />
+    </div>
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
