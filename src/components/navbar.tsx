@@ -8,7 +8,7 @@ import { Disclosure } from "@headlessui/react";
 const NAVLINKS = [
     { href: "/#about", text: "About" },
     { href: "/program", text: "Call for Papers" },
-    { href: "/announcements", text: "Events" },
+    { href: "/Events", text: "Events" },
     { href: "/committee", text: "New Release" },
     { href: "/contact", text: "Hotels & Travels" },
 ];
