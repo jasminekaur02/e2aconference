@@ -5,10 +5,11 @@ const Hero = () => {
     <section className="relative bg-indigo-50 py-12 rounded-bl-[200px]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
                 <div className="md:w-1/2 text-center md:text-left">
-                    <h1 className="text-4xl font-bold text-gray-900">E2A</h1>
+                    <h1 className="text-4xl font-bold text-gray-900">E2A Conference, 2025</h1>
                     <p className="mt-4 text-xl text-gray-700">
                         International Conference on <br />
-                        <span className="text-blue-600">Electrical, Electronics</span> & <span className="text-blue-600">Automation</span>
+                        <span className="text-blue-600">Electrical, Electronics</span> & <span className="text-blue-600">Automation</span> {" "}
+                        (E2A)
                     </p>
                     <div className="mt-6 flex justify-center md:justify-start space-x-4">
                         <a href="/register" className="bg-blue-600 text-white px-4 py-2 rounded-md shadow hover:bg-blue-700">Register</a>
