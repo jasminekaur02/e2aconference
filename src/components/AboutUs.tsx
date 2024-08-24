@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutUs() {
     return (
-        <section className="relative py-16 overflow-hidden">
+        <section className="relative py-16 overflow-hidden" id="AboutUs"> 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-5xl font-bold text-gray-900 mb-12">
                     About <span className="text-blue-600">us</span>
