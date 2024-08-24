@@ -23,7 +23,7 @@ const HeaderTop = () => {
     <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         
           {announcement?.link ? (
-            <h1 className="text-center text-lg font-semibold py-2 underline underline-offset-4">
+            <h1 className="text-center text-base font-semibold py-2 underline underline-offset-4">
               <Link href={announcement.link}>
                 {announcement.text}
               </Link>
