@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import Navbar from '@/components/navbar';
+import Footer from '@/components/Footer'; // Import your Footer component
 
 const MergedComponent = () => {
   const scheduleRef = useRef<HTMLDivElement | null>(null);
@@ -161,39 +162,41 @@ const MergedComponent = () => {
                 12:00-01:30 <span className="ml-4">Lunch Break</span>
               </h3>
               <p className="mt-1 text-sm text-gray-300">
-                Enjoy a lunch break and network with other attendees.
+                Enjoy a lunch break with an opportunity to network with other attendees.
               </p>
             </div>
 
             <div className="bg-gray-800 text-left text-white p-4 rounded-lg shadow-md hover:transform hover:scale-105 hover:shadow-xl transition-all duration-300">
               <h3 className="text-lg font-semibold">
-                01:30-02:30 <span className="ml-4">Panel Discussion</span>
+                01:30-03:00 <span className="ml-4">Afternoon Workshops</span>
               </h3>
               <p className="mt-1 text-sm text-gray-300">
-                A panel discussion with industry leaders on the future of web development.
+                Participate in hands-on workshops focusing on practical skills and advanced topics.
               </p>
             </div>
 
             <div className="bg-gray-800 text-left text-white p-4 rounded-lg shadow-md hover:transform hover:scale-105 hover:shadow-xl transition-all duration-300">
               <h3 className="text-lg font-semibold">
-                02:30-04:00 <span className="ml-4">Workshops</span>
+                03:00-04:30 <span className="ml-4">Panel Discussion</span>
               </h3>
               <p className="mt-1 text-sm text-gray-300">
-                Participate in hands-on workshops on various JavaScript libraries and frameworks.
+                Engage in a panel discussion with industry leaders on current trends and future directions.
               </p>
             </div>
 
             <div className="bg-gray-800 text-left text-white p-4 rounded-lg shadow-md hover:transform hover:scale-105 hover:shadow-xl transition-all duration-300">
               <h3 className="text-lg font-semibold">
-                04:00-05:00 <span className="ml-4">Closing Remarks</span>
+                04:30-06:00 <span className="ml-4">Networking Reception</span>
               </h3>
               <p className="mt-1 text-sm text-gray-300">
-                Summary of the day's events and a look forward to day two.
+                Wrap up the day with a reception to connect with fellow attendees and speakers.
               </p>
             </div>
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };
