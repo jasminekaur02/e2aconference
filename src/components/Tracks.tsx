@@ -43,10 +43,12 @@ const TrackCard: React.FC<Track> = ({ name, description }) => (
 
 const CallForPapers: React.FC = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white" id="CallForPapers">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-5xl font-bold mb-2">Call For</h2>
-        <h2 className="text-5xl font-bold text-blue-600 mb-12">Papers</h2>
+        <h2 className="text-4xl font-bold mb-10">
+          Call For {" "}
+          <span className="text-blue-600">Papers</span>
+        </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {tracks.map(track => (
