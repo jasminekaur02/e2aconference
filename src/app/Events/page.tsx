@@ -122,10 +122,10 @@ const MergedComponent = () => {
       >
         <div className="max-w-4xl px-4 py-8 mx-auto text-center">
           {/* Header Section */}
-          <h2 className="text-3xl font-bold text-gray-800">
+          <h2 className="text-5xl font-bold text-gray-800">
             Conference <span className="text-blue-600">Schedule</span>
           </h2>
-          <p className="mt-2 text-lg text-gray-600">March 8-9, 2025</p>
+          <p className="mt-2 text-2xl text-gray-600">March 8-9, 2025</p>
 
           {/* Schedule Section */}
           <div className="mt-8 space-y-6">
