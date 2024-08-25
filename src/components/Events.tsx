@@ -1,13 +1,10 @@
-"use client"; // Add this line at the top
+"use client";
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import Navbar from './navbar'; // Ensure the import path is correct
+import Navbar from './navbar';// Adjust this path if necessary
 
 const EventsPage = () => {
-    <div>
-        <Navbar />
-     </div>
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -58,9 +55,8 @@ const EventsPage = () => {
           </button>
         </div>
         <div className="flex-1 flex items-center justify-center">
-          {/* Replace with Next.js Image component */}
           <Image
-            src="/profile-image-placeholder.png" // Replace this with your actual image path
+            src="/profile-image-placeholder.png"
             alt="Conference Attendee"
             width={300}
             height={300}
@@ -69,7 +65,6 @@ const EventsPage = () => {
         </div>
       </div>
     </div>
-    
   );
 };
 
