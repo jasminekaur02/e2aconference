@@ -9,18 +9,22 @@ import NewsTipsGuides from './components/NewsTipsGuides';
 
 export default function HotelsPage() {
   return (
-    <div>
+    <div className="w-full">
       <Navbar />
+      {/* <div className="absolute top-0 w-1/2 h-1/2 bg-indigo-50 rounded-tb-[100px] -z-10 transform -translate-y-10 -left-48">
+      </div> */}
+      
       <div className="my-10 text-center mb-8">
         <h2 className="text-3xl font-bold">Hotels & <span className="text-blue-500">Travels</span></h2>
-        
+        <p className="text-gray-600">Explore the <span className="text-blue-500"> Northern</span> wonders and make some timeless memories</p>
       </div>
-      {/* <h1>Hotels and Travels</h1> */}
-      <main className="container mx-auto px-4">
-      <TopRatedHotels />
-      <TouristAttractions />
-      <NewsTipsGuides />
+      
+      <main className="w-full">
+        <TouristAttractions />
+        <TopRatedHotels />
+        <NewsTipsGuides />
       </main>
+      
       <Footer />
     </div>
   );

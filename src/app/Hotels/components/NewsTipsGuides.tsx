@@ -2,7 +2,8 @@ import React from 'react';
 
 const NewsTipsGuides = () => {
   return (
-    <section className="py-8">
+    <section className="py-8 w-full">
+      <div className="container mx-auto px-4">
       <h2 className="text-2xl font-bold mb-4">
         News, Tips & <span className="text-blue-500">Guides</span>
       </h2>
@@ -21,6 +22,7 @@ const NewsTipsGuides = () => {
             </div>
           </div>
         ))}
+      </div>
       </div>
     </section>
   );
