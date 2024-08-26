@@ -111,7 +111,7 @@ const Team = () => {
     <section className="py-12">
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold">Meet our <span className="text-blue-500">team</span></h2>
-        <p className="text-gray-600">Just like a book – each member of the team is waiting for your every glance, so choose them as your whisper.</p>
+        {/* <p className="text-gray-600">Just like a book – each member of the team is waiting for your every glance, so choose them as your whisper.</p> */}
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {teamMembers.map((member, index) => (

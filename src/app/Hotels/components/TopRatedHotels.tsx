@@ -82,7 +82,7 @@ const TopRatedHotels = () => {
       <h2 className="text-2xl font-bold mb-4">
         Top Rated <span className="text-blue-500">Hotels</span>
       </h2>
-      <div className="relative">
+      <div className="relative py-8">
         {/* Scrollable content */}
         <div
           ref={scrollContainerRef}
