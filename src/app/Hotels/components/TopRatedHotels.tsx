@@ -121,7 +121,7 @@ const TopRatedHotels = () => {
                   {/* Using button for navigation to avoid nested links */}
                   <button
                     onClick={() => handleNavigate(hotel.link)}
-                    className="mt-2 bg-blue-500 text-white px-4 py-2 rounded cursor-pointer"
+                    className="mt-2 bg-blue-500 text-white px-4 py-2 rounded cursor-pointer hover:bg-blue-600"
                   >
                     Book Now
                   </button>
