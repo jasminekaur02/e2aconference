@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from 'react';
+import Image from 'next/image';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/Footer'; // Import your Footer component
 
@@ -195,6 +196,66 @@ const MergedComponent = () => {
           </div>
         </div>
       </section>
+      <main className="container mx-auto px-4 py-8">
+        {/* Topical Highlights Section */}
+        <section className="mb-12">
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            <span className="text-black">Past </span>
+            <span className="text-blue-600">Editions</span>
+          </h2>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            {/* Main Highlight */}
+            <div className="col-span-2 relative rounded-lg overflow-hidden shadow-lg">
+              <Image
+                src="/path-to-main-image.jpg" // Replace with the actual path to your image
+                alt="Main Highlight"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-lg"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-6">
+                <h3 className="text-3xl text-white font-bold">
+                  xyz
+                </h3>
+                <p className="mt-2 text-sm text-gray-300">Electronics | Papers</p>
+              </div>
+            </div>
+
+            {/* Side Content */}
+            <div className="flex flex-col justify-center">
+              <p className="text-lg font-medium text-gray-700">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos maxime laboriosam dolorem voluptatibus ipsam quasi fugiat impedit. Hic beatae, mollitia temporibus maxime quod perferendis sunt, possimus labore a quisquam voluptates!
+                
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Current Trends Section */}
+        <section>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Current Reads</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Single Trend Item */}
+            {Array(5).fill(0).map((_, index) => (
+              <div key={index} className="relative rounded-lg overflow-hidden shadow-lg h-52">
+                <Image
+                  src={`/path-to-image-${index}.jpg`} // Replace with the actual path to your images
+                  alt={`Paper ${index + 1}`}
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-lg"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4">
+                  <h3 className="text-lg font-semibold text-white">
+                    Lorem ipsum 
+                  </h3>
+                  <p className="mt-1 text-sm text-gray-300">AI/ML | Papers</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      </main>
 
       <Footer />
     </div>
