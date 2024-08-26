@@ -73,12 +73,34 @@ const TopRatedHotels = () => {
     }
   };
 
+  // Handle button click to navigate to the hotel booking page
+  const handleNavigate = (url) => {
+    window.open(url, "_blank");
+  };
+
   return (
     <section className="py-8 bg-indigo-50 w-full">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl font-bold mb-4">
-          Top Rated <span className="text-blue-500">Hotels</span>
-        </h2>
+        {/* Flex container for heading and icons */}
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-2xl font-bold">
+            Top Rated <span className="text-blue-500">Hotels</span>
+          </h2>
+          <div className="flex space-x-2">
+            <button
+              onClick={() => handleScroll('left')}
+              className="p-2 bg-gray-300 rounded-full"
+            >
+              <FaArrowLeft />
+            </button>
+            <button
+              onClick={() => handleScroll('right')}
+              className="p-2 bg-gray-300 rounded-full"
+            >
+              <FaArrowRight />
+            </button>
+          </div>
+        </div>
         <div className="relative py-8">
           {/* Scrollable content */}
           <div
@@ -96,32 +118,16 @@ const TopRatedHotels = () => {
                   <h3 className="font-bold text-lg">{hotel.name}</h3>
                   <p className="text-gray-600">{hotel.description}</p>
                   <p className="text-blue-500 font-bold mt-1">{hotel.price}</p>
-                  <a
-                    href={hotel.link}
-                    className="mt-2 bg-blue-500 text-white px-4 py-2 rounded inline-block cursor-pointer"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  {/* Using button for navigation to avoid nested links */}
+                  <button
+                    onClick={() => handleNavigate(hotel.link)}
+                    className="mt-2 bg-blue-500 text-white px-4 py-2 rounded cursor-pointer"
                   >
                     Book Now
-                  </a>
+                  </button>
                 </div>
               </div>
             ))}
-          </div>
-          {/* Navigation buttons */}
-          <div className="absolute inset-y-0 flex items-center justify-between w-full px-4">
-            <button
-              onClick={() => handleScroll('left')}
-              className="p-2 bg-gray-300 rounded-full"
-            >
-              <FaArrowLeft />
-            </button>
-            <button
-              onClick={() => handleScroll('right')}
-              className="p-2 bg-gray-300 rounded-full"
-            >
-              <FaArrowRight />
-            </button>
           </div>
         </div>
       </div>
