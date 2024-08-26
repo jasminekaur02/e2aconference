@@ -10,7 +10,7 @@ const NAVLINKS = [
     { href: "/#CallForPapers", text: "Call for Papers" },
     { href: "/Events", text: "Events" },
     { href: "/committee", text: "New Release" },
-    { href: "/ToursTravels", text: "Hotels & Travels" },
+    { href: "/Hotels", text: "Hotels & Travels" },
 ];
 
 export default function Navbar() {

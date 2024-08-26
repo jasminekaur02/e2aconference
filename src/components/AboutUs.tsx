@@ -1,10 +1,32 @@
 import React from "react";
 
+const timelineEvents = [
+    {
+        date: "MARCH\n8-9, 2025",
+        title: "Conference BEGINS - Conference ENDS"
+    },
+    {
+        date: "FEBRUARY\n25, 2025",
+        title: "Camera Ready Exam"
+    },
+    {
+        date: "FEBRUARY\n10, 2025",
+        title: "Review Process Ends"
+    },
+    {
+        date: "SEPTEMBER\n15, 2024",
+        title: "Paper Submission Begins"
+    },
+    {
+        date: "DECEMBER\n16, 2024",
+        title: "Paper Submission Ends"
+    }
+];
+
 export default function AboutUs() {
     return (
         <section className="relative py-16 overflow-hidden" id="AboutUs"> 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<<<<<<< HEAD
                 {/* About Us Header */}
                 <h2 className="text-5xl font-bold text-gray-900 mb-12 text-center">
                     About <span className="text-blue-600">Us</span>
@@ -13,19 +35,8 @@ export default function AboutUs() {
                 {/* White Content Box with Blue Background Shape */}
                 <div className="relative mb-24">
                     <div className="relative bg-white p-8 rounded-lg shadow-lg z-10">
-                        <p className="text-lg text-center text-gray-700">
-                            International Conference on Electrical, Electronics, and Automation (E2A) serves as a global hub where the brightest minds converge to explore, collaborate, and share their ground-breaking research and innovations. In today's rapidly evolving technological landscape, the domains of electrical engineering, electronics, and automation are integral to shaping our future. E2A provides a vital platform for researchers, scientists, engineers, educators, and industry experts from diverse backgrounds and cultures to come together, fostering a rich exchange of ideas and knowledge.
-=======
-                <h2 className="text-5xl font-bold text-gray-900 mb-12">
-                    About <span className="text-blue-600">us</span>
-                </h2>
-                
-                <div className="relative">
-                    {/* White Content Box */}
-                    <div className="relative bg-white p-8 rounded-lg shadow-lg z-10 mb-24">
                         <p className="text-lg text-justify text-gray-700">
-                            International Conference on Electrical, Electronics, and Automation (E2A) serves as a global hub where the brightest minds converge to explore, collaborate, and share their ground-breaking research and innovations. In today&apos;s rapidly evolving technological landscape, the domains of electrical engineering, electronics, and automation are integral to shaping our future. E2A provides a vital platform for researchers, scientists, engineers, educators, and industry experts from diverse backgrounds and cultures to come together, fostering a rich exchange of ideas and knowledge.
->>>>>>> 308ecd2c42309daf273324164b7c03a6d50e2590
+                            International Conference on Electrical, Electronics, and Automation (E2A) serves as a global hub where the brightest minds converge to explore, collaborate, and share their ground-breaking research and innovations. In today's rapidly evolving technological landscape, the domains of electrical engineering, electronics, and automation are integral to shaping our future. E2A provides a vital platform for researchers, scientists, engineers, educators, and industry experts from diverse backgrounds and cultures to come together, fostering a rich exchange of ideas and knowledge.
                             As we navigate an era of unprecedented technological advancement, E2A strives to accelerate progress by facilitating meaningful conversations, driving innovation, and charting the course for a future powered by cutting-edge electrical, electronics, and automation technologies. Join us at E2A to be a part of this transformative journey, where together, we illuminate the path toward a smarter, more connected, and automated world. Your contributions and insights are integral to shaping the future at E2A.
                         </p>
                     </div>
@@ -85,26 +96,3 @@ export default function AboutUs() {
         </section>
     );
 }
-
-const timelineEvents = [
-    {
-        date: "MARCH\n8-9, 2025",
-        title: "Conference BEGINS - Conference ENDS"
-    },
-    {
-        date: "FEBRUARY\n25, 2025",
-        title: "Camera Ready Exam"
-    },
-    {
-        date: "FEBRUARY\n10, 2025",
-        title: "Review Process Ends"
-    },
-    {
-        date: "SEPTEMBER\n15, 2024",
-        title: "Paper Submission Begins"
-    },
-    {
-        date: "DECEMBER\n16, 2024",
-        title: "Paper Submission Ends"
-    }
-];
