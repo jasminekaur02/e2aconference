@@ -1,7 +1,7 @@
 import React from 'react'
-import Navbar from './navbar'
-import Team from './Team'
-import Footer from './Footer'
+import Navbar from '@/components/navbar'
+import Team from './components/Team'
+import Footer from '@/components/Footer'
 
 const MeetOurTeam = () => {
   return (

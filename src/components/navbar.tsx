@@ -10,6 +10,7 @@ const NAVLINKS = [
     { href: "/#CallForPapers", text: "Call for Papers" },
     { href: "/Events", text: "Events" },
     { href: "/committee", text: "New Release" },
+    { href: "/Team", text: "Committee" },
     { href: "/Hotels", text: "Hotels & Travels" },
 ];
 
