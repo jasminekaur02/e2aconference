@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 
 const Hero = () => {
   const calculateTimeLeft = () => {
-    const eventDate = new Date('2024-01-01T00:00:00'); // Set your event date here
+    const eventDate = new Date('2025-03-08T00:00:00'); // Set your event date here
     const now = new Date();
     const difference = eventDate.getTime() - now.getTime();
 
@@ -40,7 +40,7 @@ const Hero = () => {
       {/* Black blur effect */}
       <div className="absolute inset-0 bg-black opacity-70 backdrop-blur-lg"></div>
 
-      <div className="relative flex flex-col justify-center items-center text-center text-white h-full px-4">
+      <div className="relative flex flex-col justify-center items-center text-center text-white h-full px-4 pt-32"> {/* Added pt-32 to shift down */}
         {/* Conference Title */}
         <h1 className="text-5xl font-bold">E2A 2025</h1>
         <p className="mt-4 text-xl max-w-2xl">
