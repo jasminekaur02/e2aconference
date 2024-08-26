@@ -7,6 +7,9 @@ import Footer from '@/components/Footer';
 import Sponsors from '@/components/Sponsors';
 import CallForPapers from '@/components/Tracks';
 import ExpertSpeakers from '@/components/Speakers';
+
+
+
 const Home = () => {
   return (
     <>
@@ -18,7 +21,6 @@ const Home = () => {
       <CallForPapers/>
       <ExpertSpeakers/>
       <Footer/>
-      
       
     </>
   );
