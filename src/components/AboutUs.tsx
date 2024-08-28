@@ -58,23 +58,16 @@ export default function AboutUs() {
                                 <div
                                     key={index}
                                     className={`flex flex-col items-center w-[20%]`}
-                                    style={{
-                                        transform: `translateY(${index % 2 === 0 ? '-60px' : '60px'})`,
-                                    }}
                                 >
                                     {/* Timeline Dot */}
                                     <div className="relative mb-2">
                                         <div className="w-4 h-4 bg-blue-600 rounded-full"></div>
                                         {/* Vertical Dotted Line */}
                                         <div
-                                            className="absolute w-0.5 h-8 border-dotted border-blue-600 top-6 left-1/2 transform -translate-x-1/2"
-                                            style={{
-                                                top: index % 2 === 0 ? '-20px' : 'unset',
-                                                bottom: index % 2 !== 0 ? '-20px' : 'unset'
-                                            }}
+                                            className="absolute w-0.5 h-8 border-dotted border-blue-600 left-1/2 transform -translate-x-1/2"
                                         ></div>
                                     </div>
-                                    <p className="text-sm text-gray-500 text-center whitespace-pre-line">
+                                    <p className={`text-sm text-gray-500 text-center whitespace-pre-line ${index % 2 === 0 ? 'mb-2' : 'mt-2'}`}>
                                         {event.date}
                                     </p>
                                     <h3 className="text-lg font-semibold text-center mt-2 text-gray-800">

@@ -43,9 +43,9 @@ const Hero = () => {
       <div className="relative flex flex-col justify-center items-center text-center text-white h-full px-4 pt-32"> {/* Added pt-32 to shift down */}
         {/* Conference Title */}
         <h1 className="text-5xl font-bold">E2A 2025</h1>
-        <p className="mt-4 text-xl max-w-2xl">
+        <p className="mt-4 text-3xl max-w-2xl font-bold">
           International Conference on <br />
-          <span className="text-blue-400">Electrical, Electronics</span> & <span className="text-blue-400">Automation</span> {" "}
+          <span className="text-blue-400 font-bold">Electrical, Electronics</span> & <span className="text-blue-400">Automation</span> {" "}
           (E2A)
         </p>
 
