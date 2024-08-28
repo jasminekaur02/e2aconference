@@ -85,6 +85,17 @@ export default function Navbar() {
       description:
         "Stay updated with the latest announcements, updates, and publications in the field.",
     },
+    5: {
+      title: "Meet Our Committee!",
+      description:
+        "Our committee members are dedicated to making this conference a success.",
+    },
+    6: {
+      title: "Plan Your Stay!",
+      description:
+        "Discover the best hotels and travel options for a comfortable and convenient experience.",
+    },
+    
   };
 
   useEffect(() => {
