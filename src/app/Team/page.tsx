@@ -1,4 +1,5 @@
 import React from 'react'
+import HeaderTop from '@/components/HeaderTop'
 import Navbar from '@/components/navbar'
 import Team from './components/Team'
 import Footer from '@/components/Footer'
@@ -6,6 +7,7 @@ import Footer from '@/components/Footer'
 const MeetOurTeam = () => {
   return (
     <div>
+      <HeaderTop/>
       <Navbar />
       <main className="container mx-auto px-4">
         <Team />
