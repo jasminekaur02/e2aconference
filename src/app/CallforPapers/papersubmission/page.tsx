@@ -2,9 +2,8 @@
 import HeaderTop from '@/components/HeaderTop'; // Import HeaderTop
 import React, { useState } from 'react';
 import Link from 'next/link';
-import HeaderTop from '@/components/HeaderTop';
 import Footer from '@/components/Footer';
-import Navbar from '@/components/navbar';
+import Navbar from '@/components/Navbar'; // Ensure correct casing for Navbar
 
 interface SubTrack {
   name: string;
@@ -120,26 +119,14 @@ const CallForPapers: React.FC = () => {
 
   return (
     <>
-<<<<<<< HEAD
-      <HeaderTop /> {/* Include HeaderTop here */}
-      <section className="py-16 bg-white" id="CallForPapers">
+      <HeaderTop isHomePage={false} />
+      <Navbar />
+      
+      <section className="py-28 bg-white" id="CallForPapers">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold mb-10">
-            Call For {" "}
-            <span className="text-blue-600">Papers</span>
+          <h2 className="text-4xl font-bold mb-16">
+            Call For <span className="text-blue-600">Papers</span>
           </h2>
-=======
-    <HeaderTop isHomePage={false} />
-    <Navbar/>
-    
-    <section className="py-16 bg-white" id="CallForPapers">
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-bold mb-10">
-          Call For {" "}
-          <span className="text-blue-600">Papers</span>
-        </h2>
->>>>>>> 1810909e68dc3cf470d36e116a97f2c3e9fdd56c
 
           {/* Filter Section */}
           <div className="mb-8">
@@ -169,27 +156,9 @@ const CallForPapers: React.FC = () => {
             ))}
           </div>
         </div>
-<<<<<<< HEAD
       </section>
-=======
-
-        {/* Display Tracks and Sub-Tracks */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredTracks.map(track => (
-            <div key={track.id} className="bg-gray-100 rounded-lg p-6 shadow-sm">
-              <h3 className="text-blue-600 font-semibold mb-2">{track.name}</h3>
-              <ul className="list-disc pl-5">
-                {track.subTracks.map((subTrack, index) => (
-                  <li key={index} className="text-gray-700">{subTrack.name}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-    <Footer/>
->>>>>>> 1810909e68dc3cf470d36e116a97f2c3e9fdd56c
+      
+      <Footer />
     </>
   );
 };
