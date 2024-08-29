@@ -1,4 +1,5 @@
 "use client";
+import HeaderTop from '@/components/HeaderTop'; // Import HeaderTop
 import React, { useState } from 'react';
 import Link from 'next/link';
 
@@ -115,42 +116,45 @@ const CallForPapers: React.FC = () => {
   const filteredTracks = selectedTrack === 'All' ? tracks : tracks.filter(track => track.name === selectedTrack);
 
   return (
-    <section className="py-16 bg-white" id="CallForPapers">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-bold mb-10">
-          Call For {" "}
-          <span className="text-blue-600">Papers</span>
-        </h2>
+    <>
+      <HeaderTop /> {/* Include HeaderTop here */}
+      <section className="py-16 bg-white" id="CallForPapers">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-bold mb-10">
+            Call For {" "}
+            <span className="text-blue-600">Papers</span>
+          </h2>
 
-        {/* Filter Section */}
-        <div className="mb-8">
-          <label className="mr-4">Track:</label>
-          <select 
-            value={selectedTrack} 
-            onChange={(e) => setSelectedTrack(e.target.value)} 
-            className="border rounded p-2"
-          >
-            {uniqueTracks.map((track, index) => (
-              <option key={index} value={track}>{track}</option>
+          {/* Filter Section */}
+          <div className="mb-8">
+            <label className="mr-4">Track:</label>
+            <select 
+              value={selectedTrack} 
+              onChange={(e) => setSelectedTrack(e.target.value)} 
+              className="border rounded p-2"
+            >
+              {uniqueTracks.map((track, index) => (
+                <option key={index} value={track}>{track}</option>
+              ))}
+            </select>
+          </div>
+
+          {/* Display Tracks and Sub-Tracks */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {filteredTracks.map(track => (
+              <div key={track.id} className="bg-gray-100 rounded-lg p-6 shadow-sm">
+                <h3 className="text-blue-600 font-semibold mb-2">{track.name}</h3>
+                <ul className="list-disc pl-5">
+                  {track.subTracks.map((subTrack, index) => (
+                    <li key={index} className="text-gray-700">{subTrack.name}</li>
+                  ))}
+                </ul>
+              </div>
             ))}
-          </select>
+          </div>
         </div>
-
-        {/* Display Tracks and Sub-Tracks */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredTracks.map(track => (
-            <div key={track.id} className="bg-gray-100 rounded-lg p-6 shadow-sm">
-              <h3 className="text-blue-600 font-semibold mb-2">{track.name}</h3>
-              <ul className="list-disc pl-5">
-                {track.subTracks.map((subTrack, index) => (
-                  <li key={index} className="text-gray-700">{subTrack.name}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

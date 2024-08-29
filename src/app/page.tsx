@@ -7,7 +7,6 @@ import Footer from '@/components/Footer';
 import Sponsors from '@/components/Sponsors';
 import CallForPapers from '@/components/Tracks';
 import ExpertSpeakers from '@/components/Speakers';
-import Preloader from '@/components/Preloader';
 
 
 
