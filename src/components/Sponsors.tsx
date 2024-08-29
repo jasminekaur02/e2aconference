@@ -38,9 +38,9 @@ const Sponsors = () => {
               ))}
             </div>
           </div>
-          <p className="text-gray-500 text-center italic mt-4">
+          {/* <p className="text-gray-500 text-center italic mt-4">
             Sponsor logos and information will be displayed here.
-          </p>
+          </p> */}
         </div>
       </div>
 
