@@ -14,6 +14,15 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    screens: {
+      // Default Tailwind breakpoints
+      sm: '640px',
+      md: '768px',
+      lg: '1280px',  // Set lg to xl value
+      xl: '1280px',  // Default xl value
+      
+  },
+
   },
   plugins: [],
 };
