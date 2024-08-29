@@ -87,7 +87,7 @@ const TouristAttractions = () => {
   return (
     <section className="py-6 w-full">
       <div className="container mx-auto px-4">
-        <h2 className="text-xl md:text-2xl font-bold mb-4 text-center">
+        <h2 className="text-xl md:text-2xl font-bold mb-4 ">
           Tourist <span className="text-blue-500">Attractions</span>
         </h2>
         <div className="relative">
