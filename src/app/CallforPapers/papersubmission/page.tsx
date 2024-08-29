@@ -3,7 +3,7 @@ import HeaderTop from '@/components/HeaderTop'; // Import HeaderTop
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Footer from '@/components/Footer';
-import Navbar from '@/components/Navbar'; // Ensure correct casing for Navbar
+import Navbar from '@/components/navbar'; // Ensure correct casing for Navbar
 
 interface SubTrack {
   name: string;
