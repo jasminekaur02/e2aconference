@@ -7,12 +7,6 @@ import Footer from '@/components/Footer';
 import Sponsors from '@/components/Sponsors';
 import CallForPapers from '@/components/Tracks';
 import ExpertSpeakers from '@/components/Speakers';
-<<<<<<< HEAD
-=======
-
->>>>>>> 1810909e68dc3cf470d36e116a97f2c3e9fdd56c
-
-
 
 const Home = () => {
   return (
