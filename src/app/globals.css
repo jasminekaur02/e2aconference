@@ -21,3 +21,16 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #2563eb;
 }
+/* Hide scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Show scrollbar on hover */
+.hover\:scroll-auto:hover {
+  overflow-x: auto;
+}

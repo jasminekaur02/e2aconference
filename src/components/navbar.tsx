@@ -27,7 +27,7 @@ const NAVLINKS = [
             { href: "/panels", text: "PANELS" },
 =======
             { href: "/Events/Pages/schedule", text: "Schedule" },
-            { href: "/keynotes", text: "Keynotes" },
+            { href: "/Events/Pages/Keynotes", text: "Keynotes" },
             { href: "/panels", text: "Panels" },
 >>>>>>> 0a6406d (Conf schedule)
         ],
