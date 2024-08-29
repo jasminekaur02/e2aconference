@@ -1,6 +1,9 @@
 "use client";
 import React, { useState } from 'react';
 import Link from 'next/link';
+import HeaderTop from '@/components/HeaderTop';
+import Footer from '@/components/Footer';
+import Navbar from '@/components/navbar';
 
 interface SubTrack {
   name: string;
@@ -115,7 +118,12 @@ const CallForPapers: React.FC = () => {
   const filteredTracks = selectedTrack === 'All' ? tracks : tracks.filter(track => track.name === selectedTrack);
 
   return (
+    <>
+    <HeaderTop isHomePage={false} />
+    <Navbar/>
+    
     <section className="py-16 bg-white" id="CallForPapers">
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold mb-10">
           Call For {" "}
@@ -151,6 +159,8 @@ const CallForPapers: React.FC = () => {
         </div>
       </div>
     </section>
+    <Footer/>
+    </>
   );
 };
 
