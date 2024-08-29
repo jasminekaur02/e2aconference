@@ -12,27 +12,27 @@ const NAVLINKS = [
         href: "",
         text: "CALL FOR PAPERS",
         subMenu: [
-            { href: "/paper-submission", text: "Paper Submission" },
-            { href: "/important-dates", text: "Important Dates" },
-            { href: "/guidelines", text: "Guidelines" },
+            { href: "/paper-submission", text: "PAPER SUBMISSION" },
+            { href: "/important-dates", text: "IMPORTANT DATES" },
+            { href: "/guidelines", text: "GUIDELINES" },
         ],
     },
     {
         href: "",
         text: "EVENTS",
         subMenu: [
-            { href: "/workshops", text: "Workshops" },
-            { href: "/keynotes", text: "Keynotes" },
-            { href: "/panels", text: "Panels" },
+            { href: "/workshops", text: "WORKSHOPS" },
+            { href: "/keynotes", text: "KEYNOTES" },
+            { href: "/panels", text: "PANELS" },
         ],
     },
     {
         href: "",
         text: "NEW RELEASE",
         subMenu: [
-            { href: "/announcements", text: "Announcements" },
-            { href: "/updates", text: "Updates" },
-            { href: "/publications", text: "Publications" },
+            { href: "/announcements", text: "ANNOUNCEMENTS" },
+            { href: "/updates", text: "UPDATES" },
+            { href: "/publications", text: "PUBLICATIONS" },
         ],
     },
     { href: "/Team", text: "COMMITTEE" },
@@ -189,7 +189,9 @@ export default function Navbar() {
                                 {/* Three-column layout for larger screens */}
                                 <div className="hidden md:flex h-full">
                                     {/* First Column - Main Menu */}
-                                    <div className="w-1/4 p-8 overflow-y-auto mt-16">
+                                    <div className={`w-1/4 p-8 overflow-y-auto mt-16 ${
+                      openSubMenu !== null ? 'border-r-2 border-white' : ''
+                    }`}>
                                         {NAVLINKS.map(({ href, text, subMenu }, index) => (
                                             <div key={href} className="mb-6">
                                                 <Link
