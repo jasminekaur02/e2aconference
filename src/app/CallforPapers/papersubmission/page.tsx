@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from 'react';
 import Link from 'next/link';
 
@@ -145,9 +146,6 @@ const CallForPapers: React.FC = () => {
                   <li key={index} className="text-gray-700">{subTrack.name}</li>
                 ))}
               </ul>
-              <Link href={`/papers/${track.id}`} className="text-blue-800 mt-4 inline-block">
-                Learn More
-              </Link>
             </div>
           ))}
         </div>
