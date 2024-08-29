@@ -13,7 +13,7 @@ import ExpertSpeakers from '@/components/Speakers';
 const Home = () => {
   return (
     <>
-      <HeaderTop/>
+      <HeaderTop isHomePage={true} />
       <Navbar />
       <Hero/>
       <AboutUs/>

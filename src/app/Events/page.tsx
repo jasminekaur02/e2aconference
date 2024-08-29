@@ -36,6 +36,7 @@ const MergedComponent = () => {
   }, [isScheduleVisible]);
 
   return (
+    
     <div className="bg-gradient-to-b from-indigo-50 to-indigo-100 rounded-bl-[200px]">
       <Navbar />
 
