@@ -21,15 +21,10 @@ const NAVLINKS = [
         href: "",
         text: "EVENTS",
         subMenu: [
-<<<<<<< HEAD
-            { href: "/workshops", text: "WORKSHOPS" },
-            { href: "/keynotes", text: "KEYNOTES" },
-            { href: "/panels", text: "PANELS" },
-=======
             { href: "/Events/Pages/schedule", text: "Schedule" },
             { href: "/Events/Pages/Keynotes", text: "Keynotes" },
             { href: "/panels", text: "Panels" },
->>>>>>> 0a6406d (Conf schedule)
+
         ],
     },
     {
@@ -43,6 +38,9 @@ const NAVLINKS = [
     },
     { href: "/Team", text: "COMMITTEE" },
     { href: "/Hotels", text: "HOTELS AND TRAVELS" },
+    { href: "/Guidelines", text: "GUIDELINES" },
+    
+   
 ];
 
 export default function Navbar() {
