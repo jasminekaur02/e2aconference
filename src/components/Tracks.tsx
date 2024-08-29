@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link'; // Import Link from Next.js
 
 interface Track {
   id: number;
@@ -9,8 +10,8 @@ interface Track {
 const tracks: Track[] = [
   {
     id: 1,
-    name: "Track 2",
-    description: "Smart Electronics and Communications"
+    name: "Track 1",
+    description: "Advances in Electrical Systems"
   },
   {
     id: 2,
@@ -19,18 +20,18 @@ const tracks: Track[] = [
   },
   {
     id: 3,
-    name: "Track 2",
-    description: "Smart Electronics and Communications"
+    name: "Track 3",
+    description: "Instrumentation and Automation"
   },
   {
     id: 4,
-    name: "Track 2",
-    description: "Smart Electronics and Communications"
+    name: "Track 4",
+    description: "Emerging Technologies"
   },
   {
     id: 5,
-    name: "Track 2",
-    description: "Smart Electronics and Communications"
+    name: "Track 5",
+    description: "Special Tracks on Renewable Energy"
   },
 ];
 
@@ -38,6 +39,10 @@ const TrackCard: React.FC<Track> = ({ name, description }) => (
   <div className="bg-gray-100 rounded-lg p-6 shadow-sm">
     <h3 className="text-blue-600 font-semibold mb-2">{name}</h3>
     <p className="text-gray-700">{description}</p>
+    {/* Learn More Link */}
+    <Link href="/call-for-papers" className="text-blue-800 mt-4 inline-block">
+      Learn More
+    </Link>
   </div>
 );
 

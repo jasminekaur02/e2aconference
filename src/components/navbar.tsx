@@ -12,7 +12,7 @@ const NAVLINKS = [
         href: "",
         text: "CALL FOR PAPERS",
         subMenu: [
-            { href: "/paper-submission", text: "PAPER SUBMISSION" },
+            { href: "/CallforPapers/papersubmission", text: "PAPER SUBMISSION" },
             { href: "/important-dates", text: "IMPORTANT DATES" },
             { href: "/guidelines", text: "GUIDELINES" },
         ],
@@ -21,11 +21,15 @@ const NAVLINKS = [
         href: "",
         text: "EVENTS",
         subMenu: [
-
+<<<<<<< HEAD
+            { href: "/workshops", text: "WORKSHOPS" },
+            { href: "/keynotes", text: "KEYNOTES" },
+            { href: "/panels", text: "PANELS" },
+=======
             { href: "/Events/Pages/schedule", text: "Schedule" },
             { href: "/Events/Pages/Keynotes", text: "Keynotes" },
             { href: "/panels", text: "Panels" },
-
+>>>>>>> 0a6406d (Conf schedule)
         ],
     },
     {
