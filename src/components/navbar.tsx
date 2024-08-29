@@ -21,7 +21,7 @@ const NAVLINKS = [
         href: "",
         text: "EVENTS",
         subMenu: [
-            { href: "/workshops", text: "Workshops" },
+            { href: "/Events/Pages/schedule", text: "Schedule" },
             { href: "/keynotes", text: "Keynotes" },
             { href: "/panels", text: "Panels" },
         ],
