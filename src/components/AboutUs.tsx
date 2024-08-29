@@ -52,69 +52,61 @@ export default function AboutUs() {
             <div className="w-full border-dotted border-t-2 border-blue-600"></div>
         </div>
 
-    
-        <div className="relative flex justify-between w-full">
-            {timelineEvents.map((event, index) => (
-                <div
-                    key={index}
-                    className={`relative flex flex-col items-center w-[20%]`} 
-                >
-            
-                    {index % 2 === 0 ? (
-                        <>
-                        
-                            <div className="mb-4">
-                                <p className="text-sm text-gray-500 text-center whitespace-pre-line mb-1">
-                                    {event.date}
-                                </p>
-                                <h3 className="text-lg font-semibold text-center text-gray-800">
-                                    {event.title.split(' ').map((word, i) => (
-                                        <span
-                                            key={i}
-                                            className={word === 'BEGINS' || word === 'ENDS' ? 'text-blue-600' : ''}
-                                        >
-                                            {word}{' '}
-                                        </span>
-                                    ))}
-                                </h3>
-                            </div>
-                        </>
-                    ) : (
-                        <>
-                           
-                            <div className="mt-4">
-                                <h3 className="text-lg font-semibold text-center text-gray-800">
-                                    {event.title.split(' ').map((word, i) => (
-                                        <span
-                                            key={i}
-                                            className={word === 'BEGINS' || word === 'ENDS' ? 'text-blue-600' : ''}
-                                        >
-                                            {word}{' '}
-                                        </span>
-                                    ))}
-                                </h3>
-                                <p className="text-sm text-gray-500 text-center whitespace-pre-line mt-1">
-                                    {event.date}
-                                </p>
-                            </div>
-                        </>
-                    )}
-
-              
-                    <div className="relative">
-                        <div className="w-4 h-4 bg-blue-600 rounded-full"></div>
-                       
-                        <div
-                            className="absolute w-0.5 h-8 border-dotted border-blue-600 left-1/2 transform -translate-x-1/2"
-                        ></div>
+                        {/* Timeline Points */}
+                        <div className="relative flex justify-between w-full">
+                            {timelineEvents.map((event, index) => (
+                                <div
+                                    key={index}
+                                    className={`flex flex-col items-center w-[20%]`}
+                                >
+                                    {/* Timeline Dot */}
+                                    <div className="relative mb-2">
+                                        <div className="w-4 h-4 bg-blue-600 rounded-full absolute top-0 transform -translate-y-1/2"></div>
+                                        {/* Vertical Dotted Line */}
+                                        <div
+                                            className="absolute w-0.5 h-8 border-dotted border-blue-600 left-1/2 transform -translate-x-1/2"
+                                        ></div>
+                                    </div>
+                                    {/* Zigzag Effect: Alternate Positioning */}
+                                    {index % 2 === 0 ? (
+                                        <>
+                                            <p className="text-sm text-gray-500 text-center whitespace-pre-line mb-1">
+                                                {event.date}
+                                            </p>
+                                            <h3 className="text-lg font-semibold text-center mt-1 text-gray-800">
+                                                {event.title.split(' ').map((word, i) => (
+                                                    <span
+                                                        key={i}
+                                                        className={word === 'BEGINS' || word === 'ENDS' ? 'text-blue-600' : ''}
+                                                    >
+                                                        {word}{' '}
+                                                    </span>
+                                                ))}
+                                            </h3>
+                                        </>
+                                    ) : (
+                                        <>
+                                            <h3 className="text-lg font-semibold text-center mt-1 text-gray-800">
+                                                {event.title.split(' ').map((word, i) => (
+                                                    <span
+                                                        key={i}
+                                                        className={word === 'BEGINS' || word === 'ENDS' ? 'text-blue-600' : ''}
+                                                    >
+                                                        {word}{' '}
+                                                    </span>
+                                                ))}
+                                            </h3>
+                                            <p className="text-sm text-gray-500 text-center whitespace-pre-line mb-1">
+                                                {event.date}
+                                            </p>
+                                        </>
+                                    )}
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
-            ))}
-        </div>
-    </div>
-</div> */}
-    <Timeline />
-                 </div>
+            </div>
         </section>
     );
 }
