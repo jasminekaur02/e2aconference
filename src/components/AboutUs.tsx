@@ -60,8 +60,12 @@ export default function AboutUs() {
                                     className={`flex flex-col items-center w-[20%]`}
                                 >
                                     {/* Timeline Dot */}
-                                    <div className="relative mb-2 flex items-center justify-center">
-                                        <div className="w-4 h-4 bg-blue-600 rounded-full transform translate-y-[20%]"></div>
+                                    <div className="relative mb-2">
+                                        <div className="w-4 h-4 bg-blue-600 rounded-full absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
+                                        {/* Vertical Dotted Line */}
+                                        <div
+                                            className="absolute w-0.5 h-8 border-dotted border-blue-600 left-1/2 transform -translate-x-1/2"
+                                        ></div>
                                     </div>
                                     {/* Zigzag Effect: Alternate Positioning */}
                                     {index % 2 === 0 ? (
