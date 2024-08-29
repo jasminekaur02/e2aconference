@@ -7,7 +7,7 @@ import Footer from '@/components/Footer'
 const MeetOurTeam = () => {
   return (
     <div>
-      <HeaderTop/>
+      <HeaderTop isHomePage={false} />
       <Navbar />
       <main className="container mx-auto px-4">
         <Team />

@@ -11,7 +11,7 @@ import NewsTipsGuides from './components/NewsTipsGuides';
 export default function HotelsPage() {
   return (
     <div className="w-full">
-      <HeaderTop/>
+      <HeaderTop isHomePage={false} />
       <Navbar />
       {/* <div className="absolute top-0 w-1/2 h-1/2 bg-indigo-50 rounded-tb-[100px] -z-10 transform -translate-y-10 -left-48">
       </div> */}
