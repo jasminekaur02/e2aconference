@@ -4,83 +4,74 @@ import { motion } from 'framer-motion';
 
 const TouristAttractions = () => {
   const attractions = [
-    // ... your attractions data with updated image links
-    
-      {
-        id: 1,
-        name: "Golden Temple, Amritsar",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCcGVa6TsNMD5IeaXNkn98iv1u2yqX65coLg&s",
-        description: "The holiest shrine for Sikhs, known for its gold-plated dome.",
-        capacity: "Large crowds accommodated",
-        timings: "Open 24 hours",
-        destination: "Amritsar, Punjab",
-        link: "https://en.wikipedia.org/wiki/Golden_Temple",
-      },
-      {
-        id: 2,
-        name: "Wagah Border Ceremony, Amritsar",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPL4UMAxl_6KJAqxPz8ydxakl5W6ldIwtKGQ&s",
-        description:
-          "A vibrant patriotic ceremony held daily at the India-Pakistan border.",
-        capacity: "Large crowds accommodated",
-        timings: "Ceremony starts at sunset",
-        destination: "Amritsar, Punjab",
-        link: "https://en.wikipedia.org/wiki/Wagah_Border_Ceremony",
-      },
-      {
-        id: 3,
-        name: "Shalimar Bagh, Amritsar",
-        image: "https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2024/01/08/c38fa44e93e014e8cf83128ceb1927a0_1000x1000.jpg", // Replace with a better image link
-        description:
-          "A Mughal-era garden known for its water channels, fountains, and terraces.",
-        capacity: "Moderate crowds",
-        timings: "Open from sunrise to sunset",
-        destination: "Amritsar, Punjab",
-        link: "https://en.wikipedia.org/wiki/Shalimar_Bagh,_Amritsar",
-      },
-      {
-        id: 4,
-        name: "Gobindgarh Fort, Amritsar",
-        image: "https://amritsartourism.org.in/images/places-to-visit/headers/gobindgarh-fort-amritsar-tourism-entry-fee-timings-holidays-reviews-header.jpg",
-        description:
-          "A 18th-century fort showcasing Sikh military history with a museum and war demonstrations.",
-        capacity: "Moderate crowds",
-        timings: "Open 10:00 AM to 5:00 PM",
-        destination: "Amritsar, Punjab",
-        link: "https://en.wikipedia.org/wiki/Gobindgarh_Fort",
-      },
-      // Nearby Northern Hill Stations
-      {
-        id: 5,
-        name: "Dharamsala, Himachal Pradesh",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3qbMXgrzPE_XB1qABjRePT8fU3b226fbD2w&s",
-        description:
-          "The seat of the Tibetan government in exile, known for its scenic beauty and Buddhist monasteries.",
-        capacity: "Moderate crowds",
-        timings: "Accessible year-round",
-        destination: "Dharamsala, Himachal Pradesh",
-        link: "https://en.wikipedia.org/wiki/Dharamsala",
-      },
-      {
-        id: 6,
-        name: "Dalhousie, Himachal Pradesh",
-        image: "https://holidayshunt.com/wp-content/uploads/2023/01/dalhousie.jpg",
-        description:
-          "A hill station offering breathtaking views, colonial architecture, and trekking opportunities.",
-        capacity: "Moderate crowds",
-        timings: "Accessible year-round",
-        destination: "Dalhousie, Himachal Pradesh",
-        link: "https://en.wikipedia.org/wiki/Dalhousie",
-      },
-    ];
-  
+    {
+      id: 1,
+      name: "Golden Temple, Amritsar",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCcGVa6TsNMD5IeaXNkn98iv1u2yqX65coLg&s",
+      description: "The holiest shrine for Sikhs, known for its gold-plated dome.",
+      capacity: "Large crowds accommodated",
+      timings: "Open 24 hours",
+      destination: "Amritsar, Punjab",
+      link: "https://en.wikipedia.org/wiki/Golden_Temple",
+    },
+    {
+      id: 2,
+      name: "Wagah Border Ceremony, Amritsar",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPL4UMAxl_6KJAqxPz8ydxakl5W6ldIwtKGQ&s",
+      description: "A vibrant patriotic ceremony held daily at the India-Pakistan border.",
+      capacity: "Large crowds accommodated",
+      timings: "Ceremony starts at sunset",
+      destination: "Amritsar, Punjab",
+      link: "https://en.wikipedia.org/wiki/Wagah_Border_Ceremony",
+    },
+    {
+      id: 3,
+      name: "Shalimar Bagh, Amritsar",
+      image: "https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2024/01/08/c38fa44e93e014e8cf83128ceb1927a0_1000x1000.jpg",
+      description: "A Mughal-era garden known for its water channels, fountains, and terraces.",
+      capacity: "Moderate crowds",
+      timings: "Open from sunrise to sunset",
+      destination: "Amritsar, Punjab",
+      link: "https://en.wikipedia.org/wiki/Shalimar_Bagh,_Amritsar",
+    },
+    {
+      id: 4,
+      name: "Gobindgarh Fort, Amritsar",
+      image: "https://amritsartourism.org.in/images/places-to-visit/headers/gobindgarh-fort-amritsar-tourism-entry-fee-timings-holidays-reviews-header.jpg",
+      description: "An 18th-century fort showcasing Sikh military history with a museum and war demonstrations.",
+      capacity: "Moderate crowds",
+      timings: "Open 10:00 AM to 5:00 PM",
+      destination: "Amritsar, Punjab",
+      link: "https://en.wikipedia.org/wiki/Gobindgarh_Fort",
+    },
+    {
+      id: 5,
+      name: "Dharamsala, Himachal Pradesh",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3qbMXgrzPE_XB1qABjRePT8fU3b226fbD2w&s",
+      description: "The seat of the Tibetan government in exile, known for its scenic beauty and Buddhist monasteries.",
+      capacity: "Moderate crowds",
+      timings: "Accessible year-round",
+      destination: "Dharamsala, Himachal Pradesh",
+      link: "https://en.wikipedia.org/wiki/Dharamsala",
+    },
+    {
+      id: 6,
+      name: "Dalhousie, Himachal Pradesh",
+      image: "https://holidayshunt.com/wp-content/uploads/2023/01/dalhousie.jpg",
+      description: "A hill station offering breathtaking views, colonial architecture, and trekking opportunities.",
+      capacity: "Moderate crowds",
+      timings: "Accessible year-round",
+      destination: "Dalhousie, Himachal Pradesh",
+      link: "https://en.wikipedia.org/wiki/Dalhousie",
+    },
+  ];
 
   const scrollContainerRef = useRef(null);
 
   const handleScroll = (direction) => {
     const { current } = scrollContainerRef;
     if (current) {
-      const scrollAmount = 300;
+      const scrollAmount = 400;
       const newPosition =
         direction === 'left'
           ? current.scrollLeft - scrollAmount
@@ -94,20 +85,20 @@ const TouristAttractions = () => {
   };
 
   return (
-    <section className="py-8 w-full">
+    <section className="py-6 w-full">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl font-bold mb-4">
+        <h2 className="text-xl md:text-2xl font-bold mb-4 text-center">
           Tourist <span className="text-blue-500">Attractions</span>
         </h2>
         <div className="relative">
           <div
             ref={scrollContainerRef}
-            className="flex overflow-x-hidden space-x-4 scrollbar-hide"
+            className="flex overflow-x-hidden space-x-4 scrollbar-hide py-2"
           >
             {attractions.map((attraction) => (
               <motion.div
                 key={attraction.id}
-                className="bg-white rounded-lg shadow-lg p-4 w-[25vw] flex-shrink-0"
+                className="bg-white rounded-lg shadow-lg p-4 lg:w-[25vw] w-[90vw] md:w-[40vw] flex-shrink-0"
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
@@ -115,19 +106,19 @@ const TouristAttractions = () => {
                 <img
                   src={attraction.image}
                   alt={attraction.name}
-                  className="w-full h-40 object-cover rounded-md"
+                  className="w-full h-32 sm:h-40 md:h-48 object-cover rounded-md"
                 />
                 <div className="mt-2">
                   <h3 className="font-bold text-lg">{attraction.name}</h3>
-                  <p className="text-gray-600">{attraction.description}</p>
-                  <ul className="space-y-1 mt-2 text-gray-600">
+                  <p className="text-gray-600 text-sm md:text-base">{attraction.description}</p>
+                  <ul className="space-y-1 mt-2 text-gray-600 text-sm">
                     <li><b>Capacity:</b> {attraction.capacity}</li>
                     <li><b>Timings:</b> {attraction.timings}</li>
                     <li><b>Destination:</b> {attraction.destination}</li>
                   </ul>
                   <a
                     href={attraction.link}
-                    className="mt-2 bg-blue-500 text-white px-4 py-2 rounded inline-block cursor-pointer hover:bg-blue-600"
+                    className="mt-2 bg-blue-500 text-white px-3 py-1 text-sm rounded inline-block cursor-pointer hover:bg-blue-600"
                   >
                     Learn More
                   </a>

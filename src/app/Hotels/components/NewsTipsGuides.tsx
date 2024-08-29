@@ -66,7 +66,7 @@ const NewsTipsGuides = () => {
   const handleScroll = (direction) => {
     const { current } = scrollContainerRef;
     if (current) {
-      const scrollAmount = 300;
+      const scrollAmount = 400;
       const newPosition =
         direction === 'left'
           ? current.scrollLeft - scrollAmount
@@ -124,7 +124,7 @@ export const NewsTipGuide = ({ item }) => {
   return (
     <motion.div
       key={item.id}
-      className="bg-white rounded-lg shadow-lg p-4 w-[25vw] flex-shrink-0"
+      className="bg-white rounded-lg shadow-lg p-4 lg:w-[25vw] w-[90vw] md:w-[40vw] flex-shrink-0"
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
