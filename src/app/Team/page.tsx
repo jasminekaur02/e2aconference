@@ -9,7 +9,7 @@ const MeetOurTeam = () => {
     <div>
       <HeaderTop/>
       <Navbar />
-      <main className="container mx-auto px-4">
+      <main className="container mt-12 mx-auto px-4">
         <Team />
         </main>
         <Footer />
