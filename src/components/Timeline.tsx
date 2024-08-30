@@ -45,7 +45,7 @@ const ZigzagTimeline = () => {
                             {/* Text and Date */}
                             {index % 2 === 0 ? (
                                 // Even index: Text above the line
-                                <div className="absolute bottom-full mb-4 text-center transform translate-y-[-20%]">
+                                <div className="absolute bottom-full mb-4 text-center transform translate-y-[-20%] ">
                                     <p className="text-sm text-gray-500">{event.date}</p>
                                     <h3 className="text-lg font-semibold text-gray-800">
                                         {event.title}
@@ -53,7 +53,7 @@ const ZigzagTimeline = () => {
                                 </div>
                             ) : (
                                 // Odd index: Text below the line
-                                <div className="absolute top-full mt-4 text-center ">
+                                <div className="absolute top-full mt-4 text-center  ">
                                     <h3 className="text-lg font-semibold text-gray-800">
                                         {event.title}
                                     </h3>

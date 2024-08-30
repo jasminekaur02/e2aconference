@@ -4,6 +4,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/Footer'; // Import your Footer component
+import { Head } from 'next/document';
+
 
 const MergedComponent = () => {
   const scheduleRef = useRef<HTMLDivElement | null>(null);
@@ -38,6 +40,7 @@ const MergedComponent = () => {
   return (
     
     <div className="bg-gradient-to-b from-indigo-50 to-indigo-100 rounded-bl-[200px]">
+      
       <Navbar />
 
       <header className="">

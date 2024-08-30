@@ -38,3 +38,25 @@
 
 
 
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-in {
+  animation: slideIn 0.5s ease-out forwards;
+}
+
+.animate-slide-in-bottom {
+  opacity: 0; /* Initially hidden */
+  transform: translateY(100px); /* Start off-screen below */
+  animation: slide-in-bottom 0.5s ease-in-out forwards;
+}
+
+
