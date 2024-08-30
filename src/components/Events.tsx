@@ -1,18 +1,5 @@
 "use client";
 
-<<<<<<< HEAD
-import { useState, useEffect } from 'react';
-import Image from 'next/image';
-import Navbar from './navbar';// Adjust this path if necessary
-
-const EventsPage = () => {
-  const [timeLeft, setTimeLeft] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
-  });
-=======
 import React, { useState, useEffect, useRef } from 'react';
 import Navbar from '@/components/navbar';
 
@@ -22,7 +9,6 @@ const ComponentName = () => {
   const handleScrollToSchedule = () => {
     scheduleRef.current.scrollIntoView({ behavior: 'smooth' });
   };
->>>>>>> 308ecd2c42309daf273324164b7c03a6d50e2590
 
   useEffect(() => {
     const scheduleSection = scheduleRef.current;
