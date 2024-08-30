@@ -36,6 +36,15 @@ const NAVLINKS = [
             { href: "/publications", text: "PUBLICATIONS" },
         ],
     },
+    {
+        href: "",
+        text: "SPONSORSHIP PACKAGES",
+        subMenu: [
+            { href: "/platinum", text: "PLATINUM" },
+            { href: "/gold", text: "GOLD" },
+            { href: "/diamond", text: "DIAMOND" },
+        ],
+    },
     { href: "/Team", text: "COMMITTEE" },
     { href: "/Hotels", text: "HOTELS AND TRAVELS" },
 ];
@@ -87,11 +96,17 @@ export default function Navbar() {
                 "Stay updated with the latest announcements, updates, and publications in the field.",
         },
         5: {
+            title: "Explore Sponsorship Packages!",
+            description:
+                "Discover opportunities to partner with us and promote your brand at the E2A Conference.",
+        },
+
+        6: {
             title: "Meet Our Committee!",
             description:
                 "Our committee members are dedicated to making this conference a success.",
         },
-        6: {
+        7: {
             title: "Plan Your Stay!",
             description:
                 "Discover the best hotels and travel options for a comfortable and convenient experience.",
