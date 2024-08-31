@@ -207,7 +207,7 @@ export default function Navbar() {
                                             <div key={href} className="mb-6">
                                                 <Link
                                                     href={href}
-                                                    className="block text-white lg:text-2xl md:text-[1rem] font-bold hover:text-blue-400 p-1 w-full text-left"
+                                                    className="block text-white lg:text-[1.25rem] md:text-[1rem] font-bold hover:text-blue-400 p-1 w-full text-left"
                                                     onMouseEnter={() => setHoveredMenu(index)}
                                                     onMouseLeave={() => setHoveredMenu(null)}
                                                     onClick={() => handleMenuClick(index)}
@@ -217,7 +217,7 @@ export default function Navbar() {
                                                         <ChevronRight
                                                             className={`inline-block h-6 w-6 transition-transform duration-200 ${
                                                                 // No rotation on large and medium screens
-                                                                "md:hidden lg:hidden xl:hidden" ? "" : "rotate-90"
+                                                                "md:hidden lg:hidden" ? "" : "rotate-90"
                                                                 }`}
                                                         />
                                                     )}

@@ -2,24 +2,24 @@ import React from 'react';
 
 const timelineEvents = [
     {
-        date: "MARCH 8-9, 2025",
-        title: "Conference BEGINS - Conference ENDS"
-    },
-    {
-        date: "FEBRUARY 25, 2025",
-        title: "Camera Ready Exam"
-    },
-    {
-        date: "FEBRUARY 10, 2025",
-        title: "Review Process Ends"
-    },
-    {
         date: "SEPTEMBER 15, 2024",
         title: "Paper Submission Begins"
     },
     {
         date: "DECEMBER 16, 2024",
         title: "Paper Submission Ends"
+    },
+    {
+        date: "FEBRUARY 10, 2025",
+        title: "Review Process Ends"
+    },
+    {
+        date: "MARCH 8-9, 2025",
+        title: "Conference BEGINS - Conference ENDS"
+    },
+    {
+        date: "FEBRUARY 25, 2025",
+        title:"Camera Ready Exam" 
     }
 ];
 
