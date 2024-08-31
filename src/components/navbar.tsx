@@ -37,13 +37,8 @@ const NAVLINKS = [
         ],
     },
     {
-        href: "",
+        href: "/Sponsorship",
         text: "SPONSORSHIP PACKAGES",
-        subMenu: [
-            { href: "/platinum", text: "PLATINUM" },
-            { href: "/gold", text: "GOLD" },
-            { href: "/diamond", text: "DIAMOND" },
-        ],
     },
     { href: "/Team", text: "COMMITTEE" },
     { href: "/Hotels", text: "HOTELS AND TRAVELS" },
