@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 
 import { FaStar, FaGem, FaCrown } from 'react-icons/fa'; 
+import Footer from '@/components/Footer';
 
 export const sponsorshipPackages = [
     {
@@ -138,6 +139,7 @@ export const sponsorshipPackages = [
           </div>
           </div>
         </section>
+        <Footer />
       </>
     );
   };
