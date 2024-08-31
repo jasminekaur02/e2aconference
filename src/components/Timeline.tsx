@@ -53,7 +53,7 @@ const ZigzagTimeline = () => {
                                 </div>
                             ) : (
                                 // Odd index: Text below the line
-                                <div className="absolute top-full mt-4 text-center  ">
+                                <div className="absolute top-full mt-4 mb-16 text-center  ">
                                     <h3 className="text-lg font-semibold text-gray-800">
                                         {event.title}
                                     </h3>
