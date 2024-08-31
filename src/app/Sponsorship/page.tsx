@@ -81,7 +81,7 @@ export const sponsorshipPackages = [
                    ? 'shadow-gold'
                    : 'shadow-cyan'
                    
-               } ${hovered ? 'shadow-2xl' : ''}`}
+               } ${hovered ? 'shadow-6xl' : ''}`}
                onMouseEnter={() => setHovered(true)}
                onMouseLeave={() => setHovered(false)}
              >
@@ -109,8 +109,8 @@ export const sponsorshipPackages = [
                     >
                       {packageItem.title} Category
                     </h3>
-                    <p className="text-xl text-center text-gray-200 font-bold mb-4">
-                      {packageItem.price}
+                    <p className={`text-xl text-center text-gray-200 font-bold mb-4 ${packageItem.title==='Diamond'? 'text-blue-300': ''}`} >
+                    {packageItem.price}
                     </p>
                     <ul className={`list-disc list-inside ${packageItem.title==='Gold'? 'text-white':'text-gray-400'}`} >
                       {packageItem.benefits.map((benefit, idx) => (
@@ -129,7 +129,7 @@ export const sponsorshipPackages = [
             </div>
             {/* Contact Us section */}
           <div className="text-center mt-10">
-            <p className="text-lg">To Avail Package <span className='font-bold text-gray-800'>Contact Us</span>.</p>
+            <p className="text-lg">To Avail Package <span className='font-bold text-blue-600'>Contact Us</span>.</p>
             <Link href="/contact" legacyBehavior>
               <a className="mt-4 inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition-colors duration-300">
                 Contact Us
