@@ -23,6 +23,13 @@ const KeynoteCarousel: React.FC = () => {
       title: 'Insert your title here',
       description: 'There are many variations of passages of Lorem Ipsum available.',
     },
+    {
+      image: 'https://via.placeholder.com/150',
+      name: 'Pevinna Summer',
+      title: 'Insert your title here',
+      description: 'There are many variations of passages of Lorem Ipsum available.',
+    },
+    
     // Add more cards as needed
   ];
 

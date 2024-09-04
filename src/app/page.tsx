@@ -7,6 +7,7 @@ import Footer from '@/components/Footer';
 import Sponsors from '@/components/Sponsors';
 import CallForPapers from '@/components/Tracks';
 import ExpertSpeakers from '@/components/Speakers';
+import ConferenceFeesPage from '@/components/ConferenceFeesPage';
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <Sponsors/>
       <CallForPapers/>
       <ExpertSpeakers/>
+      <ConferenceFeesPage />
       <Footer/>
       
       
