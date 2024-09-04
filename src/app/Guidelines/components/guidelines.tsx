@@ -1,15 +1,14 @@
-'use client';
 import React from 'react';
 import { Book, FileText, Copy, ExternalLink } from 'lucide-react';
 
 const GuidelinesPage = () => {
   return (
-    <div className="bg-gray-100 min-h-screen p-8">
-      <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
-        <header className="bg-blue-600 text-white p-6">
-          <h1 className="text-3xl font-bold">Guidelines</h1>
+    <div className="bg-gray-100 min-h-screen flex flex-col  justify-center items-center">
+      <div className="bg-white shadow-lg rounded-lg max-w-4xl overflow-hidden">
+        <header className="bg-blue-600 text-white p-8">
+          <h1 className="text-3xl font-bold">Guidelines Page</h1>
         </header>
-        <main className="p-6 space-y-8">
+        <main className="p-8 space-y-8">
           <section>
             <h2 className="text-2xl font-semibold text-blue-800 mb-4 flex items-center">
               <FileText className="mr-2" />
