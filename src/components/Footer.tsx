@@ -36,7 +36,7 @@ const Footer = () => {
               <p className="text-sm mt-1">
                 Dr B R Ambedkar National Institute of Technology, G.T. Road, Amritsar Bypass, Jalandhar, Punjab, India
                 <br />
-                PIN : 144027
+                PIN : 144008
               </p>
             </div>
           </div>
@@ -77,32 +77,32 @@ const Footer = () => {
           <nav className="mb-4 md:mb-0">
             <ul className="flex flex-wrap justify-center md:justify-start">
               <li className="mr-6">
-                <Link href="/about" className="hover:text-blue-400">
+                <Link href="/#about" className="hover:text-blue-400">
                   About
                 </Link>
               </li>
               <li className="mr-6">
-                <Link href="/call-for-papers" className="hover:text-blue-400">
+                <Link href="/CallforPapers/papersubmission" className="hover:text-blue-400">
                   Call for Papers
                 </Link>
               </li>
               <li className="mr-6">
-                <Link href="/events" className="hover:text-blue-400">
+                <Link href="/Events/Pages/schedule" className="hover:text-blue-400">
                   Events
                 </Link>
               </li>
               <li className="mr-6">
-                <Link href="/new-release" className="hover:text-blue-400">
+                <Link href="/NewsRelease" className="hover:text-blue-400">
                   New Release
                 </Link>
               </li>
               <li className="mr-6">
-                <Link href="/committee" className="hover:text-blue-400">
+                <Link href="/Team" className="hover:text-blue-400">
                   Committee
                 </Link>
               </li>
               <li>
-                <Link href="/hotels-travels" className="hover:text-blue-400">
+                <Link href="/Hotels" className="hover:text-blue-400">
                   Hotels & Travels
                 </Link>
               </li>

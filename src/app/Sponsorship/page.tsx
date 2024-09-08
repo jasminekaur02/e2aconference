@@ -130,7 +130,7 @@ export const sponsorshipPackages = [
             </div>
             {/* Contact Us section */}
           <div className="text-center mt-10">
-            <p className="text-lg">To Avail Package <span className='font-bold text-blue-600'>Contact Us</span>.</p>
+            <p className="text-2xl">To Avail Package <span className='font-bold text-blue-600'></span></p>
             <Link href="/contact" legacyBehavior>
               <a className="mt-4 inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition-colors duration-300">
                 Contact Us
