@@ -14,17 +14,16 @@ const NAVLINKS = [
         subMenu: [
             { href: "/CallforPapers/papersubmission", text: "PAPER SUBMISSION" },
             { href: "/important-dates", text: "IMPORTANT DATES" },
-            { href: "/guidelines", text: "GUIDELINES" },
+            { href: "/Guidelines", text: "GUIDELINES" },
         ],
     },
     {
         href: "",
         text: "EVENTS",
         subMenu: [
-
-            { href: "/Events/Pages/schedule", text: "Schedule" },
-            { href: "/Events/Pages/Keynotes", text: "Keynotes" },
-            { href: "/panels", text: "Panels" },
+            { href: "/Events/Pages/schedule", text: "SCHEDULE" },
+            { href: "/Events/Pages/Keynotes", text: "KEYNOTES" },
+            { href: "/panels", text: "PANELS" },
 
         ],
     },
@@ -41,9 +40,19 @@ const NAVLINKS = [
         href: "/Sponsorship",
         text: "SPONSORSHIP PACKAGES",
     },
-    { href: "/Team", text: "COMMITTEE" },
+   
+    {
+        href: "",
+        text: "COMMITTEE",
+        subMenu: [
+            { href: "/Team", text: "ORGANIZING COMMITTEE" },
+            { href: "/Committee2", text: "PROGRAM COMMITTEE" },
+            { href: "/student", text: "STUDENT COMMITTEE" },
+        ],
+    },
+
     { href: "/Hotels", text: "HOTELS AND TRAVELS" },
-    { href: "/Guidelines", text: "GUIDELINES" },
+    
     
    
 ];
