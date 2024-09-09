@@ -92,9 +92,9 @@ const Schedule: React.FC = () => {
   return (
     <div className="relative bg-gray-50 min-h-screen flex flex-col items-center py-12">
       <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{ backgroundImage: `url('/path-to-your-bg-image.png')` }}></div>
-      <h2 className="text-4xl font-bold mb-4 relative z-10">
+      {/* <h2 className="text-4xl font-bold mb-4 relative z-10">
         Conference <span className="text-blue-600">Schedule</span>
-      </h2>
+      </h2> */}
 
       {/* Day Toggle */}
       <div className="flex mb-10 relative z-10">
