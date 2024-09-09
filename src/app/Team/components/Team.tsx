@@ -1,6 +1,5 @@
 import React from 'react';
 
-// Updated teamData based on the image
 const teamData = {
   "Chief Patron": [
     {
@@ -102,50 +101,6 @@ const teamData = {
 };
 
 const Team = () => {
-<<<<<<< HEAD
-    return (
-        <section className="py-12">
-            <div className="text-center mb-8">
-                <h2 className="text-3xl font-bold">Organizing <span className='text-blue-600'>Committee</span></h2>
-            </div>
-
-            {/* Render teamData with images */}
-            {Object.keys(teamData).map((section, idx) => (
-                <div key={idx} className="mb-12">
-                    <h3 className="text-2xl font-semibold mb-4 text-center">{section}</h3>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
-                        {teamData[section].map((member, index) => (
-                            <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
-                                {member.image && (
-                                    <a
-                                        href={member.profileLink || "#"}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <img
-                                            src={member.image}
-                                            alt={member.name}
-                                            className="w-24 h-24 mx-auto mb-4 rounded-full object-cover"
-                                        />
-                                    </a>
-                                )}
-                                <h4 className="text-xl font-bold">{member.name}</h4>
-                                <p className="text-blue-500">{member.affiliation}</p>
-                                {/* {member.email && (
-                                    <p className="mt-2 text-gray-600">
-                                        <a
-                                            href={`mailto:${member.email}`}
-                                            className="flex items-center justify-center space-x-2"
-                                        >
-                                            <FaEnvelope className="text-gray-500" />
-                                            <span>{member.email}</span>
-                                        </a>
-                                    </p>
-                                )} */}
-                            </div>
-                        ))}
-                    </div>
-=======
   return (
     <section className="py-8 sm:py-10 md:py-12 lg:py-16">
       <div className="text-center mb-8">
@@ -197,7 +152,6 @@ const Team = () => {
                   <p className="text-xs sm:text-sm text-black">
                     {member.affiliation}
                   </p>
->>>>>>> 86a5d35043ad1e113b04859bbed3b3532dc9ba97
                 </div>
               ))}
             </div>
