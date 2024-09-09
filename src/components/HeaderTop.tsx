@@ -46,14 +46,18 @@ const HeaderTop = ({ isHomePage }) => {
           : 'bg-gray-800'
       } text-white h-16 fixed top-0 left-0 w-full z-50 transition-colors duration-300`}
     >
-      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 h-full flex items-center justify-center">
-        {announcement?.link ? (
-          <h1 className="text-center text-base font-semibold py-2 underline underline-offset-4">
+      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 h-full flex flex-col items-center justify-center">
+        {/* Show announcement only on larger screens */}
+        {announcement?.link && (
+          <h1 className="hidden md:text-center md:text-base md:font-semibold md:py-2 md:underline md:underline-offset-4 md:block">
             <Link href={announcement.link}>
               {announcement.text}
             </Link>
           </h1>
-        ) : null}
+        )}
+        {/* Live link below the menu, visible only on medium screens and larger */}
+        <div className="hidden md:flex flex-col items-center">
+        </div>
       </div>
     </header>
   );
