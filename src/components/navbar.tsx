@@ -7,7 +7,7 @@ import { Disclosure, Transition } from "@headlessui/react";
 
 const NAVLINKS = [
     { href: "/", text: "HOME" },
-    { href: "/#about", text: "ABOUT" },
+    { href: "/About", text: "ABOUT" },
     {
         href: "",
         text: "CALL FOR PAPERS",
