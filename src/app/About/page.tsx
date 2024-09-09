@@ -1,3 +1,4 @@
+import AboutOrg from '@/components/AboutOrg';
 import Footer from '@/components/Footer';
 import HeaderTop from '@/components/HeaderTop';
 import Navbar from '@/components/navbar';
@@ -25,7 +26,7 @@ const AboutUsPage = () => {
             </p>
           </div>
         </section>
-
+      <AboutOrg/>
         {/* Additional Sections - Vision & Mission */}
         <section className="py-16 px-6 md:px-12 bg-white">
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
