@@ -56,7 +56,7 @@ const NAVLINKS = [
     },
 
     { href: "/Hotels", text: "HOTELS AND TRAVELS" },
-     { href: "/ContactUs", text: "Contact Us" },
+     { href: "/ContactUs", text: "CONTACT US" },
     
     
    
