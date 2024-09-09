@@ -67,3 +67,48 @@
   box-shadow: 0 4px 20px rgba(0, 255, 255, 0.5); /* Cyan shadow for Diamond */
 }
 
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+/* Slide left and right for large screens */
+.slide-out-left {
+  animation: slideLeft 0.8s forwards ease-in-out;
+}
+
+.slide-out-right {
+  animation: slideRight 0.8s forwards ease-in-out;
+}
+
+/* Slide up for small screens */
+@media (max-width: 1024px) {
+  .slide-out-left,
+  .slide-out-right {
+    animation: slideUp 0.8s forwards ease-in-out;
+  }
+}
+
+

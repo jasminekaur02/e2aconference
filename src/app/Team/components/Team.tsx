@@ -1,3 +1,4 @@
+import PageHero from '@/components/PageHero';
 import React from 'react';
 
 const teamData = {
@@ -102,12 +103,10 @@ const teamData = {
 
 const Team = () => {
   return (
+    <>
+    <PageHero title="Organizing Committee" image="https://v1.nitj.ac.in/ITEP/img/01.jpg" />
     <section className="py-8 sm:py-10 md:py-12 lg:py-16">
-      <div className="text-center mb-8">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">
-          Organizing<span className="text-blue-600"> Committee</span>
-        </h2>
-      </div>
+      
 
       {/* Render teamData with images */}
       {Object.keys(teamData).map((section, idx) => {
@@ -159,6 +158,7 @@ const Team = () => {
         );
       })}
     </section>
+    </>
   );
 };
 

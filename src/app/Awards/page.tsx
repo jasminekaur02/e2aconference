@@ -15,13 +15,13 @@ const AwardsPage = () => {
       />
       <section className=" py-16 px-6 md:px-12">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-blue-600 mb-12">Conference Awards</h2>
+          <h2 className="text-4xl font-bold mb-12">Conference <span className='text-blue-600'>Awards</span></h2>
 
           {/* Award Categories */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             {/* Best Paper Award */}
             <div className="bg-white shadow-lg rounded-lg p-8">
-              <h3 className="text-2xl font-semibold text-red-600 mb-4">Best Paper Award</h3>
+              <h3 className="text-2xl font-semibold text-blue-600 mb-4">Best Paper Award</h3>
               <p className="text-gray-700 leading-relaxed mb-4">
                 All nominations will be selected during the review process and grouped into a few key areas. Nominated papers in the same key area will be presented in the same session.
               </p>
@@ -32,7 +32,7 @@ const AwardsPage = () => {
 
             {/* Best Student Paper Award */}
             <div className="bg-white shadow-lg rounded-lg p-8">
-              <h3 className="text-2xl font-semibold text-red-600 mb-4">Best Student Paper Award</h3>
+              <h3 className="text-2xl font-semibold text-blue-600 mb-4">Best Student Paper Award</h3>
               <p className="text-gray-700 leading-relaxed mb-4">
                 The first author of the paper should be a registered university student.
               </p>
@@ -43,7 +43,7 @@ const AwardsPage = () => {
 
             {/* Best Oral Presentation Award */}
             <div className="bg-white shadow-lg rounded-lg p-8">
-              <h3 className="text-2xl font-semibold text-red-600 mb-4">Best Oral Presentation Award</h3>
+              <h3 className="text-2xl font-semibold text-blue-600 mb-4">Best Oral Presentation Award</h3>
               <p className="text-gray-700 leading-relaxed mb-4">
                 For every session, one best oral presentation will be selected by session chairs based on originality, applicability, technical merit, PPT quality, and more.
               </p>

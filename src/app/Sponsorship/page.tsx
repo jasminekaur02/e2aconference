@@ -132,9 +132,9 @@ export const sponsorshipPackages = [
           <div className="text-center mt-10">
             <p className="text-2xl">To Avail Package <span className='font-bold text-blue-600'></span></p>
             <Link href="/ContactUs" legacyBehavior>
-              <a className="mt-4 inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition-colors duration-300">
-                Contact Us
-              </a>
+            <a href="/Contact Us" className="inline-block bg-white text-blue-600 px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-blue-50 transition duration-300">
+            Contact Us
+          </a>
             </Link>
           </div>
           </div>

@@ -1,3 +1,4 @@
+import React from 'react';
 import dynamic from 'next/dynamic';
 import HeaderTop from '@/components/HeaderTop';
 import Navbar from '@/components/navbar';
@@ -14,15 +15,13 @@ const Home = () => {
     <>
       <HeaderTop isHomePage={true} />
       <Navbar />
-      <Hero/>
-      <AboutUs/>
-      <AboutOrg/>
-      <Sponsors/>
-      <CallForPapers/>
-      <ExpertSpeakers/>
-      <Footer/>
-      
-      
+      <Hero />
+      <AboutUs />
+      <AboutOrg />
+      <Sponsors />
+      <CallForPapers />
+      <ExpertSpeakers />
+      <Footer />
     </>
   );
 };
