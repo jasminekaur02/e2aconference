@@ -207,7 +207,7 @@ const CallForPapers: React.FC = () => {
       <HeaderTop isHomePage={false} />
       <Navbar />
       <PageHero 
-  title="Call for Papers" 
+  title="Track Details" 
   image="https://v1.nitj.ac.in/ITEP/img/01.jpg" 
 />
       <section className="py-28 bg-white" id="CallForPapers">

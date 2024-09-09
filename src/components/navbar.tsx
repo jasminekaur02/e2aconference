@@ -12,9 +12,9 @@ const NAVLINKS = [
         href: "",
         text: "CALL FOR PAPERS",
         subMenu: [
-            { href: "/CallforPapers/papersubmission", text: "PAPER SUBMISSION" },
+            { href: "/CallforPapers/papersubmission", text: "TRACK DETAILS" },
             { href: "/important-dates", text: "IMPORTANT DATES" },
-            { href: "/Guidelines", text: "GUIDELINES" },
+            { href: "/Guidelines", text: "GUIDELINES & PAPER SUBMISSION" },
         ],
     },
     {
@@ -58,7 +58,8 @@ const NAVLINKS = [
     },
 
     { href: "/Hotels", text: "HOTELS AND TRAVELS" },
-     { href: "/ContactUs", text: "CONTACT US" },
+    { href: "/ContactUs", text: "CONTACT US" },
+
     
     
    

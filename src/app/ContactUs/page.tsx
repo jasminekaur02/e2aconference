@@ -51,10 +51,11 @@ const ContactUsPage = () => {
       <Navbar />
       {/* Hero section with background image */}
       <PageHero title="Contact Us" image="/path/to/your/hero-image.jpg" />
-      <div className="py-12 px-4 sm:px-6 lg:px-8 bg-gray-100">
+      <div className="py-12 px-4 sm:px-6 lg:px-8 ">
         <div className="max-w-7xl mx-auto">
 
           {/* Faculty Contact Cards */}
+          <h2 className="text-2xl font-semibold mb-4">Faculty <span className='text-blue-600'> Coordinators</span></h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {facultyContacts.map((contact, index) => (
               <div
@@ -94,33 +95,45 @@ const ContactUsPage = () => {
           </div>
 
           {/* "Reach Us" Section */}
-          <div className="bg-white p-6 rounded-lg shadow-lg mb-12">
-            <h2 className="text-2xl font-semibold text-blue-600 mb-4">Reach Us</h2>
-            <p className="text-gray-700 mb-4">
-              The city of Jalandhar is situated between the rivers Sutlej and Beas on National Highway 1. It is one of the important towns of Punjab and is known for rich educational, cultural and literary activities. It is an internationally renowned industrial centre for sports goods, leather goods, and hand-tools.
-            </p>
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">Modes of Travel</h3>
-            <p className="text-gray-700">
-              <strong>Distance from Delhi by Road:</strong> 370 kms <br />
-              <strong>Train from Delhi:</strong> The Shatabdi Express (07:20 AM & 16:30 PM) <br />
-              <strong>Nearest Airport:</strong> Sri Guru Ram Dass Jee International Airport, Amritsar <br />
-              <strong>Location:</strong> The institute is located on the GT Road bypass, 15 km from Jalandhar bus-stand, 12 km from Jalandhar city railway station (JUC), and 18 km from Jalandhar Cantt railway station (JRC).
-            </p>
-            <p className="text-gray-700 mt-4">
-              It is at a walking distance of half a kilometer from Bidhipur railway crossing. Auto rickshaw and taxi services are available regularly from railway stations and bus-stand.
-            </p>
-            <img
-              src="/path/to/jalandhar-image.jpg" // Replace with an actual image of Jalandhar
-              alt="Jalandhar"
-              className="mt-4 rounded-lg shadow-lg w-full"
-            />
-          </div>
+<div className="bg-white p-6 rounded-lg shadow-lg mb-12">
+  <h2 className="text-2xl font-semibold mb-4">Reach <span className='text-blue-600'>Us</span></h2>
+  
+  {/* Responsive Flex Layout */}
+  <div className="flex flex-col lg:flex-row lg:items-center gap-6">
+    {/* Text Section */}
+    <div className="lg:flex-1">
+      <p className="text-gray-700 mb-4">
+        The city of Jalandhar is situated between the rivers Sutlej and Beas on National Highway 1. It is one of the important towns of Punjab and is known for rich educational, cultural and literary activities. It is an internationally renowned industrial centre for sports goods, leather goods, and hand-tools.
+      </p>
+      <h3 className="text-xl font-semibold text-gray-800 mb-2">Modes of Travel</h3>
+      <p className="text-gray-700">
+        <strong>Distance from Delhi by Road:</strong> 370 kms <br />
+        <strong>Train from Delhi:</strong> The Shatabdi Express (07:20 AM & 16:30 PM) <br />
+        <strong>Nearest Airport:</strong> Sri Guru Ram Dass Jee International Airport, Amritsar <br />
+        <strong>Location:</strong> The institute is located on the GT Road bypass, 15 km from Jalandhar bus-stand, 12 km from Jalandhar city railway station (JUC), and 18 km from Jalandhar Cantt railway station (JRC).
+      </p>
+      <p className="text-gray-700 mt-4">
+        It is at a walking distance of half a kilometer from Bidhipur railway crossing. Auto rickshaw and taxi services are available regularly from railway stations and bus-stand.
+      </p>
+    </div>
+    
+    {/* Image Section */}
+    <div className="lg:flex-1 lg:flex lg:justify-end">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Devi_Talab_Mandir.jpg/800px-Devi_Talab_Mandir.jpg" // Replace with an actual image of Jalandhar
+        alt="Jalandhar"
+        className="mt-4 lg:mt-0 rounded-lg shadow-lg w-full h-full lg:w-auto lg:max-w-md"
+      />
+    </div>
+  </div>
+</div>
+
 
           {/* Additional Contact Details */}
           <div className="flex flex-col lg:flex-row lg:justify-between lg:space-x-8">
             {/* Map Section */}
             <div className="flex-1 bg-white p-6 rounded-lg shadow-lg mb-12 lg:mb-0">
-              <h2 className="text-2xl font-semibold text-blue-600 mb-4">Our Location</h2>
+              <h2 className="text-2xl font-semibold mb-4">Our <span className='text-blue-600'>Location</span></h2>
               <div className="overflow-hidden rounded-lg shadow-md aspect-w-16 aspect-h-9">
                 <iframe
                   className="w-full h-full"
@@ -135,7 +148,7 @@ const ContactUsPage = () => {
 
             {/* Additional Contact Information */}
             <div className="flex-1 bg-white p-6 rounded-lg shadow-lg">
-              <h2 className="text-2xl font-semibold text-blue-600 mb-4">Additional Contact Information</h2>
+              <h2 className="text-2xl font-semibold mb-4">Contact <span className='text-blue-600'> Information</span></h2>
               <p className="text-gray-700 mb-2">
                 <strong>Address:</strong> Dr. B.R. Ambedkar National Institute of Technology, Jalandhar - 144008, Punjab, India
               </p>
