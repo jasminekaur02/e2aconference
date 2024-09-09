@@ -57,9 +57,6 @@ const HeaderTop = ({ isHomePage }) => {
         )}
         {/* Live link below the menu, visible only on medium screens and larger */}
         <div className="hidden md:flex flex-col items-center">
-          <Link href="/live" className="text-center text-base font-semibold py-2 underline underline-offset-4">
-            Live Link
-          </Link>
         </div>
       </div>
     </header>
