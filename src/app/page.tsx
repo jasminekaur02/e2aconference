@@ -7,7 +7,7 @@ import Footer from '@/components/Footer';
 import Sponsors from '@/components/Sponsors';
 import CallForPapers from '@/components/Tracks';
 import ExpertSpeakers from '@/components/Speakers';
-import ConferenceFeesPage from '@/app/Registration/ConferenceFeesPage';
+import AboutOrg from '@/components/AboutOrg';
 
 const Home = () => {
   return (
@@ -16,6 +16,7 @@ const Home = () => {
       <Navbar />
       <Hero/>
       <AboutUs/>
+      <AboutOrg/>
       <Sponsors/>
       <CallForPapers/>
       <ExpertSpeakers/>

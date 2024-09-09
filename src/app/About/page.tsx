@@ -45,17 +45,7 @@ const AboutUsPage = () => {
         </section>
 
         {/* Additional Section - Why Choose Us */}
-        <section className="bg-gray-100 py-16 px-6 md:px-12">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-8 text-blue-600">Why Choose E2ACon?</h2>
-            <ul className="list-disc list-inside text-lg leading-relaxed">
-              <li>Global networking opportunities with industry experts and researchers.</li>
-              <li>Access to cutting-edge research and presentations.</li>
-              <li>A platform for collaboration and innovation in the fields of electrical, electronics, and automation.</li>
-              <li>Opportunity to showcase your research and innovations to a global audience.</li>
-            </ul>
-          </div>
-        </section>
+        
       </div>
       <Footer/>
     </>
