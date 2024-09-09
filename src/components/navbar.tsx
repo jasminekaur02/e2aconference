@@ -51,7 +51,9 @@ const NAVLINKS = [
         subMenu: [
             { href: "/Team", text: "ORGANIZING COMMITTEE" },
             { href: "/Committee2", text: "PROGRAM COMMITTEE" },
-            { href: "/student", text: "STUDENT COMMITTEE" },
+            { href: "/AdvCommittee", text: "ADVISORY COMMITTEE" },
+
+            { href: "/student", text: "STUDENT MEMBERS" },
         ],
     },
 
