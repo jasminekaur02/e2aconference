@@ -101,10 +101,6 @@ const teamData = {
 };
 
 const Team = () => {
-<<<<<<< HEAD
-
-=======
->>>>>>> timeline
   return (
     <section className="py-8 sm:py-10 md:py-12 lg:py-16">
       <div className="text-center mb-8">
@@ -156,10 +152,6 @@ const Team = () => {
                   <p className="text-xs sm:text-sm text-black">
                     {member.affiliation}
                   </p>
-<<<<<<< HEAD
-
-=======
->>>>>>> timeline
                 </div>
               ))}
             </div>
