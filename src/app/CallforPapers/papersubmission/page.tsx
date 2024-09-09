@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/navbar'; // Ensure correct casing for Navbar
+import PageHero from '@/components/PageHero';
 
 interface SubTrack {
   name: string;
@@ -121,12 +122,15 @@ const CallForPapers: React.FC = () => {
     <>
       <HeaderTop isHomePage={false} />
       <Navbar />
-      
+      <PageHero 
+  title="Call for Papers" 
+  image="https://v1.nitj.ac.in/ITEP/img/01.jpg" 
+/>
       <section className="py-28 bg-white" id="CallForPapers">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold mb-16">
+          {/* <h2 className="text-4xl font-bold mb-16">
             Call For <span className="text-blue-600">Papers</span>
-          </h2>
+          </h2> */}
 
           {/* Filter Section */}
           <div className="mb-8">

@@ -143,14 +143,14 @@ const Team = () => {
     return (
         <section className="py-12">
             <div className="text-center mb-8">
-                <h2 className="text-3xl font-bold">Organizing<span className='text-blue-600'> Committee</span></h2>
+                <h2 className="text-3xl font-bold">Organizing <span className='text-blue-600'>Committee</span></h2>
             </div>
 
             {/* Render teamData with images */}
             {Object.keys(teamData).map((section, idx) => (
-                <div key={idx} className="mb-12 text-center">
-                    <h3 className="text-2xl font-semibold mb-4">{section}</h3>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div key={idx} className="mb-12">
+                    <h3 className="text-2xl font-semibold mb-4 text-center">{section}</h3>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
                         {teamData[section].map((member, index) => (
                             <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
                                 {member.image && (
@@ -168,7 +168,7 @@ const Team = () => {
                                 )}
                                 <h4 className="text-xl font-bold">{member.name}</h4>
                                 <p className="text-blue-500">{member.affiliation}</p>
-                                {member.email && (
+                                {/* {member.email && (
                                     <p className="mt-2 text-gray-600">
                                         <a
                                             href={`mailto:${member.email}`}
@@ -178,7 +178,7 @@ const Team = () => {
                                             <span>{member.email}</span>
                                         </a>
                                     </p>
-                                )}
+                                )} */}
                             </div>
                         ))}
                     </div>

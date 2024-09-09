@@ -31,12 +31,7 @@ const Announcements = () => {
   return (
     <div className="font-sans antialiased bg-gray-100">
       {/* Hero Section */}
-      <div className="relative">
-        <img src="https://v1.nitj.ac.in/ITEP/img/01.jpg" alt="Hero" className="w-full h-96 object-cover" />
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <h2 className="text-white text-7xl font-extrabold">ANNOUNCEMENTS</h2>
-        </div>
-      </div>
+      
 
       {/* Main Content */}
       <div className="container mx-auto py-8 flex space-x-6">
