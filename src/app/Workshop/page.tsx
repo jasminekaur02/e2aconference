@@ -9,7 +9,7 @@ const WorkshopPage = () => {
     <>
       <HeaderTop isHomePage={false} />
       <Navbar />
-      <PageHero title="Workshops" image="#" />
+      <PageHero title="Workshops" image="https://v1.nitj.ac.in/ITEP/img/01.jpg" />
 
       <div className="max-w-6xl mx-auto px-4 py-8">
 

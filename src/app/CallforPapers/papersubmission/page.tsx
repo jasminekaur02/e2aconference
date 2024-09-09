@@ -208,7 +208,7 @@ const CallForPapers: React.FC = () => {
       <Navbar />
       <PageHero 
   title="Track Details" 
-  image="https://v1.nitj.ac.in/ITEP/img/01.jpg" 
+ image="https://v1.nitj.ac.in/ITEP/img/01.jpg"
 />
       <section className="py-28 bg-white" id="CallForPapers">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

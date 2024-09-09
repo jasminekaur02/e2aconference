@@ -6,6 +6,7 @@ import Link from 'next/link';
 
 import { FaStar, FaGem, FaCrown } from 'react-icons/fa'; 
 import Footer from '@/components/Footer';
+import PageHero from '@/components/PageHero';
 
 export const sponsorshipPackages = [
     {
@@ -69,11 +70,10 @@ export const sponsorshipPackages = [
       <>
         <HeaderTop isHomePage={false} />
         <Navbar />
-        <section className="bg-gray-100 py-10 mt-16">
+        <PageHero title="Sponsorship Packages" image="https://v1.nitj.ac.in/ITEP/img/01.jpg" />
+        <section className=" py-10 mt-16">
           <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center text-gray-800 mb-10">
-              Sponsorship<span className='text-blue-600'> Packages</span>
-            </h2>
+            
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {sponsorshipPackages.map((packageItem, index) => (
                <div
@@ -131,7 +131,7 @@ export const sponsorshipPackages = [
             {/* Contact Us section */}
           <div className="text-center mt-10">
             <p className="text-2xl">To Avail Package <span className='font-bold text-blue-600'></span></p>
-            <Link href="/contact" legacyBehavior>
+            <Link href="/ContactUs" legacyBehavior>
               <a className="mt-4 inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition-colors duration-300">
                 Contact Us
               </a>

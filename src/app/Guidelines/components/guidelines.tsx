@@ -9,7 +9,7 @@ const GuidelinesPage = () => {
      
       <div className="min-h-screen flex flex-col">
         {/* Hero Section */}
-        <PageHero title="Submission Guidelines" image="/path/to/your/hero-image.jpg" /> {/* Add proper hero image path */}
+        <PageHero title="Submission Guidelines" image="https://v1.nitj.ac.in/ITEP/img/01.jpg" /> {/* Add proper hero image path */}
 
         {/* Main Content */}
         <section className=" py-16 px-6 md:px-12">

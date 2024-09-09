@@ -24,6 +24,7 @@ const NAVLINKS = [
             { href: "/Events/Pages/schedule", text: "SCHEDULE" },
             { href: "/Events/Pages/Keynotes", text: "KEYNOTES" },
             { href: "/Workshop", text: "WORKSHOPS" },
+            { href: "/Awards", text: "AWARDS" },
 
         ],
     },

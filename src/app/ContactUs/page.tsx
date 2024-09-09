@@ -50,7 +50,7 @@ const ContactUsPage = () => {
       <HeaderTop isHomePage={false} />
       <Navbar />
       {/* Hero section with background image */}
-      <PageHero title="Contact Us" image="/path/to/your/hero-image.jpg" />
+      <PageHero title="Contact Us" image="https://v1.nitj.ac.in/ITEP/img/01.jpg" />
       <div className="py-12 px-4 sm:px-6 lg:px-8 ">
         <div className="max-w-7xl mx-auto">
 
@@ -120,7 +120,7 @@ const ContactUsPage = () => {
     {/* Image Section */}
     <div className="lg:flex-1 lg:flex lg:justify-end">
       <img
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Devi_Talab_Mandir.jpg/800px-Devi_Talab_Mandir.jpg" // Replace with an actual image of Jalandhar
+        src="https://v1.nitj.ac.in/ITEP/img/01.jpg" // Replace with an actual image of Jalandhar
         alt="Jalandhar"
         className="mt-4 lg:mt-0 rounded-lg shadow-lg w-full h-full lg:w-auto lg:max-w-md"
       />
@@ -159,13 +159,13 @@ const ContactUsPage = () => {
                 <strong>Office Hours:</strong> Monday to Friday, 9:00 AM - 5:00 PM
               </p>
               <p className="text-gray-700 mb-4">
-                <strong>Email:</strong> <a href="mailto:info@nitj.ac.in" className="text-blue-600 hover:underline">info@nitj.ac.in</a>
+                <strong>Email:</strong> <a href="mailto:da@nitj.ac.in " className="text-blue-600 hover:underline">da@nitj.ac.in </a>
               </p>
 
               {/* Social Media Links */}
               <div className="flex space-x-4">
                 <a
-                  href="https://www.facebook.com/NITJalandhar"
+                  href="https://www.facebook.com/NITJofficial/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 hover:text-[#1877F2] transition-colors duration-300"
@@ -173,7 +173,7 @@ const ContactUsPage = () => {
                   <FaFacebookF className="text-xl" />
                 </a>
                 <a
-                  href="https://www.instagram.com/nitjalandhar"
+                  href="https://www.instagram.com/nitjofficial/?hl=en"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 hover:text-[#E1306C] transition-colors duration-300"
@@ -181,7 +181,7 @@ const ContactUsPage = () => {
                   <FaInstagram className="text-xl" />
                 </a>
                 <a
-                  href="https://www.linkedin.com/school/nit-jalandhar/"
+                  href="https://in.linkedin.com/school/dr-b-r-ambedkar-national-institute-of-technology-jalandhar-official/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 hover:text-[#0A66C2] transition-colors duration-300"
@@ -189,7 +189,7 @@ const ContactUsPage = () => {
                   <FaLinkedinIn className="text-xl" />
                 </a>
                 <a
-                  href="https://www.youtube.com/channel/UCEe-fZ1W-c5f6G1lcX62q5A"
+                  href="https://www.youtube.com/c/NITJOfficial"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 hover:text-[#FF0000] transition-colors duration-300"
@@ -197,7 +197,7 @@ const ContactUsPage = () => {
                   <FaYoutube className="text-xl" />
                 </a>
                 <a
-                  href="https://twitter.com/NITJalandhar"
+                  href="https://twitter.com/NITJofficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 transition-colors duration-300 hover:text-black"

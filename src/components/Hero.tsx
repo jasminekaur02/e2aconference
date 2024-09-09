@@ -143,7 +143,7 @@ const Hero = () => {
       Register
     </button>
   </a>
-  <a href="/CallforPapers/papersubmission" target="_blank" rel="noopener noreferrer">
+  <a href="/Guidelines"  rel="noopener noreferrer">
     <button className="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">
       Submit Paper
     </button>

@@ -11,7 +11,7 @@ const AboutUsPage = () => {
       <Navbar/>
       <div className="min-h-screen flex flex-col">
         {/* Hero Section */}
-        <PageHero title="About Us" image="/path/to/your/hero-image.jpg" /> {/* Add proper hero image path */}
+        <PageHero title="About Us" image="https://v1.nitj.ac.in/ITEP/img/01.jpg" /> {/* Add proper hero image path */}
         
         {/* About Section */}
         <section className="bg-gray-100 py-16 px-6 md:px-12">
