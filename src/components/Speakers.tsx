@@ -34,18 +34,16 @@ const speakers: Speaker[] = [
 ];
 
 const SpeakerCard: React.FC<Speaker> = ({ name, title, organization, imageUrl }) => (
-  <div className="relative group w-full h-80 bg-white rounded-lg shadow-lg overflow-hidden"> {/* Increased height */}
+  <div className="relative group w-full h-72 sm:h-80 bg-white rounded-lg shadow-lg overflow-hidden"> {/* Adjust height */}
     <div className="relative w-full h-full">
-      <Image
+      <img
         src={imageUrl}
         alt={name}
-        layout="fill"
-        objectFit="cover"
-        className="transition duration-300 ease-in-out transform group-hover:scale-110"
+        className="w-full h-full object-cover transition duration-300 ease-in-out transform group-hover:scale-110"
       />
       <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition duration-300"></div>
     </div>
-    <div className="absolute bottom-0 left-0 right-0 p-4 text-center text-white">
+    <div className="absolute bottom-0 left-0 right-0 p-4 text-center text-white bg-gradient-to-t from-black via-transparent">
       <h3 className="text-lg font-semibold">{name}</h3>
       <div className="mt-2">
         <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -74,21 +72,25 @@ const SpeakerCard: React.FC<Speaker> = ({ name, title, organization, imageUrl })
 
 const ExpertSpeakers: React.FC = () => {
   return (
-    <section className="py-16 bg-gray-100">
+    <section className="py-12 sm:py-16 bg-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <p className="text-gray-600 mb-2">KEYNOTES FROM THE INDUSTRY EXPERTS</p>
-        <h2 className="text-4xl font-bold mb-12">
+        <p className="text-gray-600 mb-2 text-center sm:text-left">
+          KEYNOTES FROM THE INDUSTRY EXPERTS
+        </p>
+        <h2 className="text-3xl sm:text-4xl font-bold mb-8 sm:mb-12 text-center sm:text-left">
           Expert <span className="text-blue-600">Speakers</span>
         </h2>
         
-        <div className="flex overflow-x-auto gap-12 mb-12"> {/* Horizontal scrolling */}
-          {speakers.map(speaker => (
+        {/* Speaker cards */}
+        <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 overflow-x-auto sm:overflow-hidden sm:gap-8 mb-12">
+          {speakers.map((speaker) => (
             <SpeakerCard key={speaker.id} {...speaker} />
           ))}
         </div>
         
+        {/* CTA Button */}
         <div className="text-center">
-          <button className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold border border-blue-600 hover:bg-blue-600 hover:text-white transition duration-300">
+          <button className="bg-white text-blue-600 px-6 sm:px-8 py-2 sm:py-3 rounded-full font-semibold border border-blue-600 hover:bg-blue-600 hover:text-white transition duration-300">
             Get Your Tickets Now!
           </button>
         </div>
