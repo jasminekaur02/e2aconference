@@ -1,9 +1,14 @@
 'use client';
 import React from 'react';
+import HeaderTop from '@/components/HeaderTop';
+import Navbar from '@/components/navbar';
+import Footer from '@/components/Footer';
 
 const ConferenceFeesPage = () => {
-  return (
-    <div className="bg-gray-100 min-h-screen p-8">
+  return (<>
+    <HeaderTop/>
+    <Navbar/>
+    <div className="bg-gray-100 min-h-screen p-36">
       <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
         <header className="bg-blue-600 text-white p-6 text-center">
           <h1 className="text-3xl font-bold">Conference Fee Details</h1>
@@ -48,7 +53,8 @@ const ConferenceFeesPage = () => {
         </main>
       </div>
     </div>
-  );
+    <Footer/>
+    </> );
 };
 
 export default ConferenceFeesPage;

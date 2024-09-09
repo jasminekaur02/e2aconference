@@ -40,6 +40,10 @@ const NAVLINKS = [
         href: "/Sponsorship",
         text: "SPONSORSHIP PACKAGES",
     },
+    {
+        href: "/Registration",
+        text: "REGISTRATION",
+    },
    
     {
         href: "",
