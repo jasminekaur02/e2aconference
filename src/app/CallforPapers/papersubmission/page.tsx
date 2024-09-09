@@ -16,10 +16,10 @@ interface Track {
   subTracks: SubTrack[];
 }
 
-const tracks: Track[] = [
+const tracks = [
   {
     id: 1,
-    name: "Advances in Electrical Systems",
+    name: "Advances in Electrical Engineering",
     subTracks: [
       { name: "Electrical Materials and Process" },
       { name: "Power Generation, Transmission & Distribution Systems" },
@@ -32,7 +32,8 @@ const tracks: Track[] = [
       { name: "Electrical Vehicles" },
       { name: "Automotive power systems" },
       { name: "Power Quality and Cyber Physical Security" },
-      { name: "Power Electronics" },
+      { name: "Reduced Order Modelling and Controller Design" },
+      { name: "Power Electronics and Other Related Topics" },
     ],
   },
   {
@@ -54,7 +55,7 @@ const tracks: Track[] = [
       { name: "Optical Network and Systems" },
       { name: "Mobile Computing and Communication" },
       { name: "Cryptography, Security and Privacy of Mobile & Wireless Networks" },
-      { name: "Mechatronics" },
+      { name: "Mechatronics and Other Related Topics" },
     ],
   },
   {
@@ -63,7 +64,7 @@ const tracks: Track[] = [
     subTracks: [
       { name: "Advanced and Intelligent Control Algorithms" },
       { name: "System Dynamics and Control applications" },
-      { name: "Modeling and Identification of Linear and Non Linear Systems" },
+      { name: "Modelling and Identification of Linear and Non Linear Systems" },
       { name: "Fault Detection and Diagnosis" },
       { name: "Robotics and Computer Vision" },
       { name: "Unmanned Air Vehicles" },
@@ -72,11 +73,107 @@ const tracks: Track[] = [
       { name: "Sensors and Sensor Technologies" },
       { name: "Safety Instrumented Systems" },
       { name: "Intelligent Measurement and Instrumentation Systems" },
-      { name: "Biomedical Instrumentation and Control" },
+      { name: "Biomedical Instrumentation and Control and Other Related Topics" },
     ],
   },
   {
     id: 4,
+    name: "Medical and Digital Healthcare",
+    subTracks: [
+      { name: "Wearable Medical Devices & IoT Gadgets" },
+      { name: "Sensors and Sensing Systems for Diagnosis" },
+      { name: "AR/VR-Based Systems in Healthcare" },
+      { name: "Development of Robotic Surgery" },
+      { name: "Sensor-Based Support Systems for Rehabilitation & Trauma Care" },
+      { name: "Remote Healthcare and Health Monitoring" },
+      { name: "AI in Predictive Healthcare Systems" },
+      { name: "Role of Sensors in Critical Healthcare Systems" },
+    ],
+  },
+  {
+    id: 5,
+    name: "Industry 5.0, Manufacturing and Automation",
+    subTracks: [
+      { name: "Cognitive Systems in Manufacturing" },
+      { name: "IoT in Managing Robots for Efficient Task Execution" },
+      { name: "Deep Learning Models and Big Data for Decision-Making" },
+      { name: "Sensors and Systems for Monitoring Industrial Processes" },
+      { name: "Data Collection, Analytics, and Remote Operations" },
+      { name: "Smart Manufacturing for Carbon Neutrality" },
+      { name: "Integration of Heterogeneous Sensing and Communication" },
+      { name: "Convergence of Communication, Sensing, and Localization" },
+    ],
+  },
+  {
+    id: 6,
+    name: "Environment and Infrastructure Monitoring",
+    subTracks: [
+      { name: "Environmental Monitoring: Air, Water, Soil, and Biodiversity" },
+      { name: "Sensors and Systems for Climate Change Mitigation" },
+      { name: "Structural Health Monitoring (SHM)" },
+      { name: "Security and Access Control Systems" },
+      { name: "Anomaly Detection in Electrical Equipment" },
+      { name: "Disaster Response Systems" },
+      { name: "Non-Intrusive and Networked Monitoring of Critical Installations" },
+      { name: "Homeland and Defense Security" },
+      { name: "Sensors and Systems for Carbon-Neutral Industry Practices" },
+      { name: "Real-time Data Analytics" },
+    ],
+  },
+  {
+    id: 7,
+    name: "Smart Cities and Villages",
+    subTracks: [
+      { name: "Optimum Utilisation of Natural Resources and Energy" },
+      { name: "Transport Planning and Mobility" },
+      { name: "Environmental Pollution Monitoring" },
+      { name: "Security and Safety Control Systems" },
+      { name: "Water Distribution and Harvesting" },
+      { name: "Logistics and Supply Chain Optimization" },
+      { name: "Improving Quality of Life and Happiness Index" },
+      { name: "Sensing Systems for Energy Production, Distribution, Storage, and Consumption" },
+      { name: "Green Energy and Renewable Energy Monitoring" },
+      { name: "Sensors for Generating, Consuming, and Storing Renewable Energy" },
+    ],
+  },
+  {
+    id: 8,
+    name: "Sensors Interfaces and Sensors Analytics",
+    subTracks: [
+      { name: "MEMS and NEMS Sensors & Actuators" },
+      { name: "Micro- and Nanosystems Integration" },
+      { name: "Fabrication and Manufacturing Techniques" },
+      { name: "Micromechanical and Nanomechanical Systems" },
+      { name: "Sensor Interfaces (Wired and Wireless)" },
+      { name: "Hardware Interface Elements" },
+      { name: "Crowdsensing and Participatory Sensing Systems" },
+      { name: "Data Processing and Analytics" },
+      { name: "Data Fusion Techniques" },
+      { name: "Cloud, Fog, and Edge Computing in Sensor Networks" },
+      { name: "Emerging Technologies and Applications" },
+    ],
+  },
+  {
+    id: 9,
+    name: "Energy Managements, Electricity Market and Policy/ Regulatory Aspects",
+    subTracks: [
+      { name: "Electricity Market and Power System Economics" },
+      { name: "Regulatory frameworks and policies" },
+      { name: "New business models and transactive platforms" },
+      { name: "Demand response flexibility and demand side management" },
+      { name: "Local energy communities, prosumers, aggregators, and microgrids" },
+      { name: "Energy Policy, Governance and Regulations" },
+      { name: "Electricity Trading and Risk Management" },
+      { name: "Decentralised Energy Systems and Virtual Power Plants (VPPs)" },
+      { name: "Cybersecurity in Energy Systems" },
+      { name: "Carbon Pricing and Cap-and-Trade Systems" },
+      { name: "Electrification of Transportation" },
+      { name: "Global Energy Market Trends and Geopolitical Considerations" },
+      { name: "Green Hydrogen and Power-to-X Technologies" },
+    ],
+  },
+  {
+    id: 10,
     name: "Emerging Technologies",
     subTracks: [
       { name: "Internet of Things (IoT)" },
@@ -94,19 +191,6 @@ const tracks: Track[] = [
       { name: "3D Printing and Applications" },
       { name: "Augmented Reality/ Virtual Reality" },
       { name: "Cognitive Radio and Spectrum Management" },
-    ],
-  },
-  {
-    id: 5,
-    name: "Special Tracks on Renewable Energy",
-    subTracks: [
-      { name: "Solar Cell Technology" },
-      { name: "Energy Generation" },
-      { name: "Transmission and Distribution Infrastructures" },
-      { name: "Environmental Impacts and Sustainability" },
-      { name: "Wind Energy Applications" },
-      { name: "Electric Vehicle" },
-      { name: "Control Applications" },
     ],
   },
 ];
@@ -131,9 +215,14 @@ const CallForPapers: React.FC = () => {
           {/* <h2 className="text-4xl font-bold mb-16">
             Call For <span className="text-blue-600">Papers</span>
           </h2> */}
+          <p className='text-blue-600 font-semibold mb-6 text-center text-4xl'>Sustainable Development-The Foundation of a Viksit Bharat</p>
+          <p className='text-left'>  Selected themes for the E2ACon2025 proceedings are mainly comprising of the topics focusing on the new trends in the field of Electronics , Electrical , Automation and Emerging Technologies. 
 
+          In addition to below , the organising committee of the conference also welcomes the proposals for special sessions on topics related to the field of interest of the conference.
+
+Following are the topics to be included in call for paper:</p>
           {/* Filter Section */}
-          <div className="mb-8">
+          <div className="mb-8 mt-6">
             <label className="mr-4">Track:</label>
             <select 
               value={selectedTrack} 
