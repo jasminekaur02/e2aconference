@@ -90,7 +90,7 @@ const ExpertSpeakers: React.FC = () => {
         
         {/* CTA Button */}
         <div className="text-center">
-          <button className="bg-white text-blue-600 px-6 sm:px-8 py-2 sm:py-3 rounded-full font-semibold border border-blue-600 hover:bg-blue-600 hover:text-white transition duration-300">
+          <button className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold border border-blue-600 hover:bg-blue-600 hover:text-white transition duration-300">
             Get Your Tickets Now!
           </button>
         </div>

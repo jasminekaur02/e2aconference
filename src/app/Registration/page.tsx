@@ -2,13 +2,24 @@
 import React from 'react';
 import HeaderTop from '@/components/HeaderTop';
 import Navbar from '@/components/navbar';
+import PageHero from '@/components/PageHero';
 import Footer from '@/components/Footer';
 
 const ConferenceFeesPage = () => {
   return (<>
     <HeaderTop/>
     <Navbar/>
-    <div className="bg-gray-100 min-h-screen p-36">
+    <PageHero 
+  title="Registration" 
+  image="https://v1.nitj.ac.in/ITEP/img/01.jpg" 
+/>
+    <div className="bg-gray-100 min-h-screen p-20">
+      <p className='text-left text-xl mb-8'>NOTE: In order to participate in the conference of E2ACon2025 at least one author must register and pay as per the fee mentioned below.
+The registration fee includes Conference Kit, attendance to all technical sessions, workshops, plenary talks and special session, Tea and Snacks on both days.
+Only accepted and presented papers will be published in the conference proceedings/Journals.
+The page limits for each paper is 10, Up to two additional pages will be permitted for an additional charge of ₹1000/$15 per page for Indians and foreigners, respectively.
+Students/Research Scholars have to submit their scanned copy of the Institute ID card along with the Registration form. However, they have to produce the original copy of Institute ID card at the time of presentation.
+</p>
       <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
         <header className="bg-blue-600 text-white p-6 text-center">
           <h1 className="text-3xl font-bold">Conference Fee Details</h1>
@@ -25,22 +36,22 @@ const ConferenceFeesPage = () => {
             <tbody>
               <tr>
                 <td className="border p-2">Students/Research Scholars</td>
-                <td className="border p-2 text-center">6000 + 18% GST</td>
+                <td className="border p-2 text-center">4000 + 18% GST</td>
                 <td className="border p-2 text-center">150 + 18% GST</td>
               </tr>
               <tr className="bg-gray-50">
                 <td className="border p-2">Faculty from Academics</td>
-                <td className="border p-2 text-center">8000 + 18% GST</td>
+                <td className="border p-2 text-center">5000 + 18% GST</td>
                 <td className="border p-2 text-center">200 + 18% GST</td>
               </tr>
               <tr>
                 <td className="border p-2">Delegates from Industry</td>
-                <td className="border p-2 text-center">10000 + 18% GST</td>
-                <td className="border p-2 text-center">300 + 18% GST</td>
+                <td className="border p-2 text-center">6000 + 18% GST</td>
+                <td className="border p-2 text-center">250 + 18% GST</td>
               </tr>
               <tr className="bg-gray-50">
                 <td className="border p-2">Attendee</td>
-                <td className="border p-2 text-center">3000 + 18% GST</td>
+                <td className="border p-2 text-center">2000 + 18% GST</td>
                 <td className="border p-2 text-center">50 + 18% GST</td>
               </tr>
             </tbody>
