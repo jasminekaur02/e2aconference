@@ -13,7 +13,7 @@ const Sponsors = () => {
   ];
 
   return (
-    <section className="bg-white py-10 animate-slide-in">
+    <section className="bg-white pb-10 animate-slide-in">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">Sponsors</h2>
         <div className="bg-gray-100 rounded-3xl p-8 shadow-lg">
