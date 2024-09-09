@@ -28,52 +28,10 @@ const timelineData = [
   }
 ];
 
-<<<<<<< HEAD
-const ZigzagTimeline = () => {
-    return (
-        <div className="relative flex justify-center pt-6 pb-12">
-            <div className="relative z-10 w-full max-w-6xl">
-                {/* Central Dotted Line */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-full border-t-2 border-dotted border-blue-600"></div>
-                </div>
-
-                {/* Timeline Events */}
-                <div className="relative flex justify-between w-full">
-                    {timelineEvents.map((event, index) => (
-                        <div
-                            key={index}
-                            className={`relative flex flex-col items-center w-[20%]`}
-                        >
-                            {/* Timeline Dot */}
-                            <div className="absolute w-4 h-4 bg-blue-600 rounded-full top-1/2 transform -translate-y-1/2"></div>
-
-                            {/* Text and Date */}
-                            {index % 2 === 0 ? (
-                                // Even index: Text above the line
-                                <div className="absolute bottom-full mb-2 text-center transform translate-y-[-10%]">
-                                    <p className="text-sm text-gray-500">{event.date}</p>
-                                    <h3 className="text-lg font-semibold text-gray-800">
-                                        {event.title}
-                                    </h3>
-                                </div>
-                            ) : (
-                                // Odd index: Text below the line
-                                <div className="absolute top-full mt-2 text-center">
-                                    <h3 className="text-lg font-semibold text-gray-800">
-                                        {event.title}
-                                    </h3>
-                                    <p className="text-sm text-gray-500">{event.date}</p>
-                                </div>
-                            )}
-                        </div>
-                    ))}
-                </div>
-=======
 const TimelineComponent = () => {
   return (
     <div className="container mx-auto p-4">
-      <h2 className="text-2xl font-bold mb-6 text-center">Conference Timeline</h2>
+      <h2 className="text-3xl font-bold mb-6 text-center">Important Dates</h2>
       <div className="relative">
         {/* Timeline line */}
         <div className="absolute top-8 left-4 h-full w-0.5 bg-gray-300 md:hidden"></div>
@@ -91,7 +49,6 @@ const TimelineComponent = () => {
                 <h3 className="text-sm font-semibold mb-2">{item.title}</h3>
                 <p className="text-xs text-gray-600">{item.description}</p>
               </div>
->>>>>>> timeline
             </div>
           ))}
         </div>
@@ -100,8 +57,4 @@ const TimelineComponent = () => {
   );
 };
 
-<<<<<<< HEAD
-export default ZigzagTimeline;
-=======
 export default TimelineComponent;
->>>>>>> timeline
