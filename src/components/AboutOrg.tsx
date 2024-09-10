@@ -48,20 +48,7 @@ const AboutOrg = () => {
           </div>
 
           {/* Our Mission & Vision Section */}
-          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
-            <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-3xl font-bold text-blue-600 mb-4">Our Vision</h3>
-              <p className="text-lg leading-relaxed text-justify">
-                Our vision is to create a transformative platform where cutting-edge research in electrical, electronics, and automation technologies inspires innovation and drives the future of global industries.
-              </p>
-            </div>
-            <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-3xl font-bold text-blue-600 mb-4">Our Mission</h3>
-              <p className="text-lg leading-relaxed text-justify">
-                Our mission is to bring together a global community of experts, researchers, and engineers to share knowledge, collaborate on groundbreaking innovations, and collectively shape the future of automation and technology.
-              </p>
-            </div>
-          </div>
+         
 
           <div className='pt-24'>
             <ZigzagTimeline/>

@@ -9,49 +9,61 @@ const WelcomePage = () => {
   const router = useRouter();
 
   const handleProceed = () => {
-    // Start slide out animation
     setSlideOut(true);
 
-    // Navigate to home after the animation ends
     setTimeout(() => {
-      router.push('/Home'); // Ensure your main page is accessible via /home
-    }, 800); // Duration matches the CSS animation duration
+      router.push('/Home');
+    }, 800); 
   };
 
   return (
-    <div className="min-h-screen bg-white flex items-center justify-center overflow-hidden">
-      {/* Left Section - Logo */}
+    <div className="min-h-screen bg-white flex flex-col lg:flex-row items-center justify-center overflow-hidden">
+      {/* Left Section - Logo (Hidden on Small and Medium Devices) */}
       <div
         className={`flex-1 flex items-center justify-center p-8 transition-transform duration-[800ms] ${
-          slideOut ? 'slide-out-left' : ''
-        }`}
+          slideOut ? 'lg:animate-slideOutLeft' : ''
+        } hidden lg:flex`}
       >
-        <Image
-          src="/path/to/logo.png" // Replace with your actual logo path
-          alt="E2ACon 2025 Logo"
-          width={200}
-          height={200}
-        />
+        <div className="relative" style={{ width: '45vw', height: '100vh' }}>
+          <Image
+            src="/e2alogo.jpg"
+            alt="E2ACon 2025 Logo"
+            layout="fill"
+            objectFit="contain"
+            priority
+          />
+        </div>
       </div>
 
       {/* Right Section - Info */}
       <div
         className={`flex-1 flex flex-col items-center justify-center p-8 text-center transition-transform duration-[800ms] ${
-          slideOut ? 'slide-out-right' : ''
+          slideOut ? 'md:animate-slideOutRight' : ''
         }`}
       >
+        <div className="w-24 h-24 mb-4">
+          <Image
+            src="/logo.png"
+            alt="NIT Jalandhar Logo"
+            width={96}
+            height={96}
+            priority
+          />
+        </div>
+
+        <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+          Dr. B. R. Ambedkar National Institute of Technology
+        </h2>
         <h1 className="text-4xl font-bold text-blue-600 mb-4">
-          Welcome to E2ACon 2025
+          Welcomes you to E2ACon 2025
         </h1>
         <p className="text-lg text-gray-700 mb-6">
-          Organized by Dr. B.R. Ambedkar National Institute of Technology
-          Jalandhar
-          <br />
-          Department of Instrumentation and Control Engineering (ICE)
+          Organized by the Department of Instrumentation and Control Engineering (ICE)
         </p>
+
         <button
           onClick={handleProceed}
-          className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300"
+          className= "bg-white text-blue-600 px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-blue-50 transition duration-300"
         >
           Get Started
         </button>

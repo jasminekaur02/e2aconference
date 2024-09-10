@@ -6,14 +6,14 @@ import Link from "next/link";
 import { Disclosure, Transition } from "@headlessui/react";
 
 const NAVLINKS = [
-    { href: "/", text: "HOME" },
+    { href: "/Home", text: "HOME" },
     { href: "/About", text: "ABOUT" },
     {
         href: "",
         text: "CALL FOR PAPERS",
         subMenu: [
             { href: "/CallforPapers/papersubmission", text: "TRACK DETAILS" },
-            { href: "/Welcome", text: "IMPORTANT DATES" },
+            { href: "/welcome", text: "IMPORTANT DATES" },
             { href: "/Guidelines", text: "GUIDELINES & PAPER SUBMISSION" },
         ],
     },
@@ -335,7 +335,7 @@ export default function Navbar() {
 export function Logo() {
     return (
         <Link href="/" className="flex items-center text-white">
-            <img src="/logo.png" alt="Logo" className="w-9 h-9" />
+            <img src="/e2alogo.jpg" alt="Logo" className="w-9 h-9" />
             <h2 className="ml-2 text-lg font-bold">E2ACon2025</h2>
         </Link>
     );
