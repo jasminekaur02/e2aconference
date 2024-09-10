@@ -159,7 +159,7 @@ const ContactUsPage = () => {
                 <strong>Office Hours:</strong> Monday to Friday, 9:00 AM - 5:00 PM
               </p>
               <p className="text-gray-700 mb-4">
-                <strong>Email:</strong> <a href="mailto:da@nitj.ac.in " className="text-blue-600 hover:underline">da@nitj.ac.in </a>
+                <strong>Email:</strong> <a href="mailto: info.e2a@nitj.ac.in " className="text-blue-600 hover:underline">da@nitj.ac.in </a>
               </p>
 
               {/* Social Media Links */}
