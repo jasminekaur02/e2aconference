@@ -57,10 +57,10 @@ const WelcomePage = () => {
           Dr. B. R. Ambedkar National Institute of Technology
         </h2>
         <h1 className="text-4xl font-bold text-blue-600 mb-4">
-          Welcomes you to E2ACon 2025
+          E2ACon 2025
         </h1>
         <p className="text-lg text-gray-700 mb-6">
-          Organized by the Department of Instrumentation and Control Engineering (ICE)
+          Organized by the <br/> Department of Instrumentation and Control Engineering (ICE)
         </p>
 
         <button
