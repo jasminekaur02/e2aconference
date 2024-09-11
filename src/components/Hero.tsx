@@ -73,7 +73,6 @@ const Hero = () => {
         style={{
           backgroundImage: `url(${images[currentImageIndex]})`,
           transition: "background-image 1s ease-in-out",
-
         }}
         className="absolute inset-0 w-full h-full bg-cover bg-center"
       />
@@ -81,97 +80,79 @@ const Hero = () => {
       {/* Black blur effect */}
       <div className="absolute inset-0 bg-black opacity-70 backdrop-blur-lg"></div>
 
-
       {/* Live link button */}
-
       <a
         href={liveLink}
-
         target="_blank"
         rel="noopener noreferrer"
-        className="absolute top-2 right-4 flex items-center border border-white text-white px-5 py-2 rounded-md hover:bg-white hover:text-black transition"
+        className="absolute top-[25vh] right-4 flex items-center border border-white text-white px-5 py-2 rounded-md hover:bg-white hover:text-black transition"
       >
-        {isLive && <span className="bg-green-500 rounded-full w-2 h-2 mr-2"></span>}
+        {isLive && (
+          <span className="bg-green-500 rounded-full w-2 h-2 mr-2"></span>
+        )}
         Live
-
       </a>
 
       {/* Content over the background image */}
       <div className="relative flex flex-col justify-center items-center text-center text-white h-full px-4 pt-32">
-        <h1 className="text-4xl md:text-5xl font-bold">E2ACon2025</h1>
-
-        <p className="mt-4 text-2xl md:text-3xl max-w-2xl font-bold">
-
+        <h1 className="text-4xl md:text-6xl font-bold">E2ACon<span className='text-blue-400'>2025</span></h1>
+        <p className="mt-4 text-2xl md:text-3xl font-bold">
           International Conference on <br />
-          <span className="text-blue-400 font-bold">Electrical, Electronics</span> &{" "}
+          <span className="text-blue-400">Electrical, Electronics</span> &{" "}
           <span className="text-blue-400">Automation</span> (E2A)
         </p>
 
-        {/* Countdown Timer */}
-        <div className="mt-8 flex space-x-2 justify-center"> {/* Reduced space between boxes */}
-          <div className="bg-blue-600 p-2 rounded-md shadow-lg"> {/* Reduced padding */}
-
-            <span className="text-sm md:text-2xl font-bold">{timeLeft.days}</span> {/* Smaller font for mobile */}
-
-            <div className="text-xs">Days</div> {/* Smaller text for mobile */}
-          </div>
-
-          <div className="bg-blue-600 p-2 rounded-md shadow-lg"> {/* Reduced padding */}
-            <span className="text-sm md:text-2xl font-bold">{timeLeft.hours}</span> {/* Smaller font for mobile */}
-
-            <div className="text-xs">Hours</div> {/* Smaller text for mobile */}
-          </div>
-          <div className="bg-blue-600 p-2 rounded-md shadow-lg"> {/* Reduced padding */}
-
-            <span className="text-sm md:text-2xl font-bold">{timeLeft.minutes}</span> {/* Smaller font for mobile */}
-
-            <div className="text-xs">Minutes</div> {/* Smaller text for mobile */}
-
-          </div>
-          <div className="bg-blue-600 p-2 rounded-md shadow-lg"> {/* Reduced padding */}
-            <span className="text-sm md:text-2xl font-bold">{timeLeft.seconds}</span> {/* Smaller font for mobile */}
-            <div className="text-xs">Seconds</div> {/* Smaller text for mobile */}
-
-          </div>
-        </div>
-
-        {/* Action Buttons */}
-
-        <div className="mt-8 space-x-4">
-  <a href="/Registration" target="_blank" rel="noopener noreferrer">
-    <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">
-      Register
-    </button>
-  </a>
-  <a href="/Guidelines"  rel="noopener noreferrer">
-    <button className="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">
-      Submit Paper
-    </button>
-  </a>
-</div>
-
+        {/* Conference proceedings info */}
+        <p className="mt-6 hidden md:visible text-[1rem] md:text-[1rem] font-bold text-gray-300">
+    Conference proceedings will be published with{" "}
+    <span className="text-white">Springer SCOPUS Indexed</span><br/> “Lecture
+    Notes in Electrical Engineering” (Approval in process)
+</p>
         {/* Hybrid Mode and Date in a single line */}
         <div className="mt-4 flex items-center justify-center space-x-10">
           <div className="flex items-center">
-
-            <FaLaptop className="text-white mr-2" /> {/* Computer icon */}
-
+            <FaLaptop className="text-white mr-2" />
             <p className="text-lg md:text-xl">Hybrid Mode</p>
           </div>
-
           <div className="flex items-center">
             <FaCalendarAlt className="text-white mr-2" />
-
             <span className="text-lg md:text-xl">8-9 March, 2025</span>
-
           </div>
-
         </div>
 
+        {/* Countdown Timer */}
+        <div className="mt-8 flex space-x-2 justify-center">
+          {["Days", "Hours", "Minutes", "Seconds"].map((label, i) => (
+            <div
+              key={label}
+              className="bg-blue-600 p-2 md:p-4 rounded-md shadow-lg"
+            >
+              <span className="text-2xl md:text-4xl font-bold">
+                {Object.values(timeLeft)[i]}
+              </span>
+              <div className="text-sm md:text-lg">{label}</div>
+            </div>
+          ))}
+        </div>
+
+        
+
+        {/* Action Buttons */}
+        <div className="mt-8 space-x-4">
+          <a href="/Registration" target="_blank" rel="noopener noreferrer">
+            <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">
+              Register
+            </button>
+          </a>
+          <a href="/Guidelines" rel="noopener noreferrer">
+            <button className="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">
+              Submit Paper
+            </button>
+          </a>
+        </div>
       </div>
     </section>
   );
-
 };
 
 export default Hero;
