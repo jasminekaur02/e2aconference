@@ -1,6 +1,29 @@
 import React from 'react';
 
 const committee = {
+    "Technical Programme Committee": [
+        { name: "Prof. Mohamed Dahidah", designation: "", affiliation: "NUS, UK" },
+        { name: "Dr. Piyush Verma", designation: "Senior Governance Expert-Energy", affiliation: "NIT Jalandhar" },
+        { name: "Dr. Marta Zurek-Mortka", designation: "Lukasiewicz Research Network - Institute for Sustainable Technologies", affiliation: " Radom, Poland" },
+        { name: "Prof. Barjeev Tyagi", designation: "", affiliation: " IIT Roorkee" },
+        { name: "Prof. Manoj Tripathy", designation: "", affiliation: "IIT Roorkee" },
+        { name: "Prof. Arun Khosla", designation: "Professor and Head (AI)", affiliation: "NIT Jalandhar" },
+        { name: "Prof. B S Saini", designation: "Professor", affiliation: "NIT Jalandhar" },
+        { name: "Dr. Neetu Sood", designation: "Associate Professor", affiliation: "NIT Jalandhar" },
+        { name: "Dr Nitin Gupta", designation: "", affiliation: "MNIT Jaipur" },
+        { name: "Prof. Harsh Verma", designation: "", affiliation: "NIT Jalandhar" },
+        { name: "Dr. Rajneesh Rani", designation: "", affiliation: "NIT Jalandhar" },
+        { name: "Dr. K. P. Sharma", designation: "", affiliation: "NIT Jalandhar" },
+        { name: "Dr. Amritpal Singh", designation: "", affiliation: "NIT Jalandhar" },
+        { name: "Dr. Prashant Kumar", designation: "", affiliation: "NIT Jalandhar" },
+        { name: "Prof. Vinod Kumar Yadav", designation: "Professor", affiliation: "DTU, Delhi, India" },
+        { name: "Prof. Vinod Kumar Yadav", designation: "", affiliation: "NIT Jalandhar" },
+        { name: "Prof. Vinod Kumar Yadav", designation: "", affiliation: "NIT Jalandhar" },
+        { name: "Prof. Vinod Kumar Yadav", designation: "", affiliation: "NIT Jalandhar" },
+        { name: "Prof. Vinod Kumar Yadav", designation: "", affiliation: "NIT Jalandhar" },
+        { name: "Prof. Vinod Kumar Yadav", designation: "", affiliation: "NIT Jalandhar" },
+        { name: "Prof. Vinod Kumar Yadav", designation: "", affiliation: "NIT Jalandhar" },
+    ],
     "Programme Committee": [
         { name: "Er Narinder Singh Bhangal", designation: "Associate Professor", affiliation: "NIT Jalandhar" },
         { name: "Dr Rajesh Singla", designation: "Associate Professor", affiliation: "NIT Jalandhar" },

@@ -49,6 +49,16 @@ const teamData = {
       name: "Prof. Jerzy R. Szymański",
       affiliation: "Kazimierz Pulaski University, Poland",
       image: "https://i1.rgstatic.net/ii/profile.image/856674961199104-1581258635324_Q128/Jerzy-Szymanski.jpg" // Replace with actual image path
+    },
+    {
+      name: "Prof. Mamta Khosla",
+      affiliation: "Professor and Dean (International Affairs), NIT Jalandhar",
+      image: "https://www.nitj.ac.in/images/faculty/1801185993.jpg" // Replace with actual image path
+    },
+    {
+      name: "Dr. Indu Saini",
+      affiliation: "Associate Professor NIT Jalandhar",
+      image: "https://www.nitj.ac.in/images/faculty/18011954316.png" // Replace with actual image path
     }
   ],
   "Convener and Organising Chair(s)": [
