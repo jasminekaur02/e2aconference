@@ -37,42 +37,12 @@
 
 
 
-
-@keyframes slideIn {
+@keyframes slideUp {
   0% {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-  100% {
-    opacity: 1;
     transform: translateY(0);
   }
-}
-
-.animate-slide-in {
-  animation: slideIn 0.5s ease-out forwards;
-}
-
-.animate-slide-in-bottom {
-  opacity: 0; /* Initially hidden */
-  transform: translateY(100px); /* Start off-screen below */
-  animation: slide-in-bottom 0.5s ease-in-out forwards;
-}
-
-.shadow-gold:hover {
-  box-shadow: 0 4px 20px rgba(255, 223, 0, 0.7); /* Yellow shadow for Gold */
-}
-
-.shadow-cyan:hover {
-  box-shadow: 0 4px 20px rgba(0, 255, 255, 0.5); /* Cyan shadow for Diamond */
-}
-/* Animations for the left and right sections */
-@keyframes slideOutRight {
-  0% {
-    transform: translateX(0);
-  }
   100% {
-    transform: translateX(100vw); /* Slide completely off the screen */
+    transform: translateY(-100%);
   }
 }
 
@@ -81,14 +51,28 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100vw); /* Slide completely off the screen */
+    transform: translateX(-100%);
   }
 }
 
-.md\\:slide-out-right {
-  animation: slideOutRight 0.8s forwards;
+@keyframes slideOutRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 
-.lg\\:slide-out-left {
+/* Animation utility classes */
+.animate-slideUp {
+  animation: slideUp 0.8s forwards;
+}
+
+.animate-slideOutLeft {
   animation: slideOutLeft 0.8s forwards;
+}
+
+.animate-slideOutRight {
+  animation: slideOutRight 0.8s forwards;
 }

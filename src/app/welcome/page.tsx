@@ -13,7 +13,7 @@ const WelcomePage = () => {
 
     setTimeout(() => {
       router.push('/Home');
-    }, 800); 
+    }, 800);
   };
 
   return (
@@ -26,7 +26,7 @@ const WelcomePage = () => {
       >
         <div className="relative" style={{ width: '45vw', height: '100vh' }}>
           <Image
-            src="/e2alogo.jpg"
+            src="/logoe2a.gif"
             alt="E2ACon 2025 Logo"
             layout="fill"
             objectFit="contain"
@@ -38,7 +38,9 @@ const WelcomePage = () => {
       {/* Right Section - Info */}
       <div
         className={`flex-1 flex flex-col items-center justify-center p-8 text-center transition-transform duration-[800ms] ${
-          slideOut ? 'md:animate-slideOutRight' : ''
+          slideOut
+            ? 'animate-slideUp lg:animate-slideOutRight' // slideUp for small screens, slideRight for lg and up
+            : ''
         }`}
       >
         <div className="w-24 h-24 mb-4">
@@ -63,7 +65,7 @@ const WelcomePage = () => {
 
         <button
           onClick={handleProceed}
-          className= "bg-white text-blue-600 px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-blue-50 transition duration-300"
+          className="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-blue-50 transition duration-300"
         >
           Get Started
         </button>
