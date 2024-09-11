@@ -70,12 +70,13 @@ const CallForPapers: React.FC = () => {
             <TrackCard key={track.id} {...track} />
           ))}
         </div>
-        
+        <a href="/CallforPapers/papersubmission" target="_blank" rel="noopener noreferrer">
         <div className="text-center">
           <button className="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition duration-300">
             Register Now
           </button>
         </div>
+        </a>
       </div>
     </section>
   );

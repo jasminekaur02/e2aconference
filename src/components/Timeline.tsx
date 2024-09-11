@@ -4,27 +4,27 @@ const timelineData = [
   {
     date: '15 September 2024',
     title: 'Submission Start',
-    description: 'The conference submission period begins.'
+    // description: 'The conference submission period begins.'
   },
   {
     date: '16 December 2024',
     title: 'Last date of Paper submission',
-    description: 'Deadline for submitting papers for the conference.'
+    // description: 'Deadline for submitting papers for the conference.'
   },
   {
     date: '10 February 2025',
     title: 'Review Process End/Acceptance',
-    description: 'Review process concludes and acceptances are announced.'
+    // description: 'Review process concludes and acceptances are announced.'
   },
   {
     date: '25 February 2025',
     title: 'Camera Ready paper/Registration',
-    description: 'Deadline for camera-ready papers and registration.'
+    // description: 'Deadline for camera-ready papers and registration.'
   },
   {
     date: '8-9 March 2025',
     title: 'Conference Date',
-    description: 'The main conference dates.'
+    // description: 'The main conference dates.'
   }
 ];
 
@@ -47,7 +47,7 @@ const TimelineComponent = () => {
               <div className="w-4 h-4 bg-blue-600 rounded-full absolute left-2 top-3 md:relative md:left-auto md:top-auto md:mb-4 z-20"></div>
               <div className="bg-gray-100 rounded p-3 md:p-4 text-left md:text-center ml-8 md:ml-0 flex-grow md:h-40 flex flex-col justify-between shadow-md">
                 <h3 className="text-sm font-semibold mb-2">{item.title}</h3>
-                <p className="text-xs text-gray-600">{item.description}</p>
+                {/* <p className="text-xs text-gray-600">{item.description}</p> */}
               </div>
             </div>
           ))}

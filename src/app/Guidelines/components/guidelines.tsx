@@ -56,7 +56,7 @@ The purpose of a conference template is to provide a consistent format for paper
               </p>
             </section>
 
-            {/* Publication Section */}
+            {/* Publication Section
             <section className="mb-12">
               <h3 className="text-2xl font-bold text-blue-600 mb-4 flex items-center">
                 <Copy className="mr-2" />
@@ -79,7 +79,7 @@ The purpose of a conference template is to provide a consistent format for paper
                 <li>WTI Frankfurt eG</li>
                 <li>zbMATH</li>
               </ul>
-            </section>
+            </section> */}
 
             {/* Submission Section */}
             <section className="bg-white p-8 rounded-lg shadow-md">

@@ -56,7 +56,7 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-            <div className="flex items-center">
+            {/* <div className="flex items-center">
               <FontAwesomeIcon icon={faEnvelope} className="w-6 h-6 text-blue-400 mr-3" />
               <div>
                 <p className="text-sm">Dr Mamta Khosla</p>
@@ -68,7 +68,7 @@ const Footer = () => {
                   +91 98886 04833
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -109,7 +109,7 @@ const Footer = () => {
             </ul>
           </nav>
           <p className="text-sm text-gray-400">
-            Copyright © 2024 • E2A NITJ Inc.
+            Copyright © 2024 • E2ACon2025 NITJ Inc.
           </p>
         </div>
       </div>
