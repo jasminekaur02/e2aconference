@@ -89,7 +89,7 @@ const ExpertSpeakers: React.FC = () => {
         </div>
         
         {/* CTA Button */}
-        <a href="/Registration" target="_blank" rel="noopener noreferrer">
+        <a href="/Registration" rel="noopener noreferrer">
         <div className="text-center">
           <button className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold border border-blue-600 hover:bg-blue-600 hover:text-white transition duration-300">
             Get Your Tickets Now!
