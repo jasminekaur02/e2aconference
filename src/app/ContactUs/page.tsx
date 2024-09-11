@@ -153,13 +153,13 @@ const ContactUsPage = () => {
                 <strong>Address:</strong> Dr. B.R. Ambedkar National Institute of Technology, Jalandhar - 144008, Punjab, India
               </p>
               <p className="text-gray-700 mb-2">
-                <strong>Phone:</strong> +91-0181-5037855, 2690301, 2690453, 3082000
+                <strong>Phone:</strong> +91-7078438786
               </p>
               <p className="text-gray-700 mb-2">
                 <strong>Office Hours:</strong> Monday to Friday, 9:00 AM - 5:00 PM
               </p>
               <p className="text-gray-700 mb-4">
-                <strong>Email:</strong> <a href="mailto:da@nitj.ac.in " className="text-blue-600 hover:underline">da@nitj.ac.in </a>
+                <strong>Email:</strong> <a href="mailto: info.e2a@nitj.ac.in " className="text-blue-600 hover:underline"> info.e2a@nitj.ac.in </a>
               </p>
 
               {/* Social Media Links */}
