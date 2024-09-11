@@ -337,7 +337,7 @@ export function Logo() {
     return (
         <Link href="/" className="flex items-center text-white">
             <img src="/e2alogo.jpg" alt="Logo" className="w-9 h-9" />
-            <h2 className="ml-2 text-lg font-bold">E2ACon2025</h2>
+            {/* <h2 className="ml-2 text-lg font-bold">E2ACon2025</h2> */}
         </Link>
     );
 }
