@@ -26,7 +26,7 @@ const WelcomePage = () => {
       >
         <div className="relative" style={{ width: '45vw', height: '100vh' }}>
           <Image
-            src="/e2alogo.jpg"
+            src="/logoe2a.gif"
             alt="E2ACon 2025 Logo"
             layout="fill"
             objectFit="contain"
