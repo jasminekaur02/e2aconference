@@ -39,12 +39,12 @@ const teamData = {
       affiliation: "NIT Jalandhar",
       image: "https://www.nitj.ac.in/images/faculty/18022167136.png" // Replace with actual image path
     },
-    {
-      name: "Prof. Prerna Gaur",
-      designation: "Professor",
-      affiliation: "NSUT Delhi, India",
-      image: "http://nsut.ac.in/sites/default/files/styles/node_image_/public/2021-10/Prerna%20Gaur%202021.jpeg?itok=Hk7sWUq3" // Replace with actual image path
-    },
+    // {
+    //   name: "Prof. Prerna Gaur",
+    //   designation: "Professor",
+    //   affiliation: "NSUT Delhi, India",
+    //   image: "http://nsut.ac.in/sites/default/files/styles/node_image_/public/2021-10/Prerna%20Gaur%202021.jpeg?itok=Hk7sWUq3" // Replace with actual image path
+    // },
     {
       name: "Prof. Jerzy R. Szymański",
       affiliation: "Kazimierz Pulaski University, Poland",
@@ -76,12 +76,7 @@ const teamData = {
     }
   ],
   "Co-Convener(s)": [
-    {
-      name: "Dr. Ravi Verma",
-      designation: "Assistant Professor",
-      affiliation: "NIT Jalandhar",
-      image: "https://v1.nitj.ac.in/images/faculty/20010827402.jpg" // Replace with actual image path
-    },
+    
     {
       name: "Dr. Khalid Abidi",
       designation: "Degree Program Director",
@@ -90,11 +85,18 @@ const teamData = {
     }
   ],
   "Organising Secretary": [
+    
     {
       name: "Dr. Karan Jain",
       designation: "Assistant Professor",
       affiliation: "NIT Jalandhar",
       image: "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=BKdNBdcAAAAJ&citpid=1" // Replace with actual image path
+    },
+    {
+      name: "Dr. Ravi Verma",
+      designation: "Assistant Professor",
+      affiliation: "NIT Jalandhar",
+      image: "https://v1.nitj.ac.in/images/faculty/20010827402.jpg" // Replace with actual image path
     },
     {
       name: "Dr. Richa Sharma",

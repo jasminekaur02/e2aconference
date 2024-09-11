@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PageHero from '@/components/PageHero';
 const Announcements = () => {
   const announcements = [
     {
@@ -28,7 +28,8 @@ const Announcements = () => {
     },
   ];
 
-  return (
+  return (<>
+  <PageHero title="Announcements" image="https://v1.nitj.ac.in/ITEP/img/01.jpg" />
     <div className="font-sans antialiased bg-gray-100">
       {/* Hero Section */}
       
@@ -73,7 +74,7 @@ const Announcements = () => {
         </aside>
       </div>
     </div>
-  );
+    </> );
 };
 
 export default Announcements;

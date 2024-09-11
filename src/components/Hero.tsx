@@ -95,11 +95,11 @@ const Hero = () => {
 
       {/* Content over the background image */}
       <div className="relative flex flex-col justify-center items-center text-center text-white h-full px-4 pt-32">
-        <h1 className="text-4xl md:text-6xl font-bold">E2ACon<span className='text-blue-400'>2025</span></h1>
+        <h1 className="text-4xl md:text-6xl font-bold">E2ACON <span className='text-blue-400'>2025</span></h1>
         <p className="mt-4 text-2xl md:text-3xl font-bold">
           International Conference on <br />
           <span className="text-blue-400">Electrical, Electronics</span> &{" "}
-          <span className="text-blue-400">Automation</span> (E2A)
+          <span className="text-blue-400">Automation</span> 
         </p>
 
         {/* Conference proceedings info */}
@@ -139,7 +139,7 @@ const Hero = () => {
 
         {/* Action Buttons */}
         <div className="mt-8 space-x-4">
-          <a href="/Registration" target="_blank" rel="noopener noreferrer">
+          <a href="/Registration"  rel="noopener noreferrer">
             <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">
               Register
             </button>

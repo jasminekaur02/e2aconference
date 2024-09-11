@@ -34,7 +34,7 @@ const NAVLINKS = [
         text: "NEW RELEASE",
         subMenu: [
             { href: "/NewsRelease", text: "ANNOUNCEMENTS" },
-            { href: "/updates", text: "UPDATES" },
+            // { href: "/updates", text: "UPDATES" },
           
         ],
     },
