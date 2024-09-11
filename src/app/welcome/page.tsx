@@ -1,27 +1,37 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Preloader from '@/components/Preloader'; // Import the Preloader component
 
 const WelcomePage = () => {
   const [slideOut, setSlideOut] = useState(false);
-  const [loading, setLoading] = useState(false); // State for the preloader
+  const [loading, setLoading] = useState(true); // Initially, the page will be in a loading state
+  const [transitioning, setTransitioning] = useState(false); // For transitioning to the Home page
   const router = useRouter();
+
+  // This useEffect is used to simulate the WelcomePage load (replace with actual loading logic if needed)
+  useEffect(() => {
+    // Simulate a loading delay (like fetching data, etc.)
+    setTimeout(() => {
+      setLoading(false); // Stop the loading state once the page is ready
+    }, 1000); // Simulate 1 second load time
+  }, []);
 
   const handleProceed = () => {
     setSlideOut(true);
+    setTransitioning(true); // Start transitioning state
 
-    // Show the preloader
+    // Show the preloader while transitioning to Home page
     setTimeout(() => {
-      setLoading(true); // Start the loading state
-      router.push('/Home'); // Navigate to the Home page after showing preloader
+      router.push('/Home'); // Navigate to the Home page
     }, 800); // Delay before showing the preloader
   };
 
-  if (loading) {
-    return <Preloader />; // Show the preloader if loading state is true
+  // If the page is loading initially, show the preloader
+  if (loading || transitioning) {
+    return <Preloader />;
   }
 
   return (
