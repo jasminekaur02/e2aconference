@@ -70,13 +70,13 @@ const WelcomePage = () => {
         </div>
 
         <h2 className="text-2xl font-semibold text-gray-800 mb-2">
-          Dr. B. R. Ambedkar National Institute of Technology
+          Dr. B. R. Ambedkar National Institute of Technology Jalandhar
         </h2>
         <h1 className="text-4xl font-bold text-blue-600 mb-4">
-          E2ACon 2025
+          E2ACON 2025
         </h1>
         <p className="text-lg text-gray-700 mb-6">
-          Organized by the <br /> Department of Instrumentation and Control Engineering (ICE)
+          Organized by  <br /> Department of Instrumentation and Control Engineering (ICE)
         </p>
 
         <button
