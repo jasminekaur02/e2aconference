@@ -46,8 +46,7 @@ const teamData = {
       profileLink: "https://departments.nitj.ac.in/dept/ee/Faculty/6430445938bff038a7806513"
     },
 
-      image: "https://www.nitj.ac.in/images/faculty/18022167136.png" // Replace with actual image path
-    },
+    //   x
     // {
     //   name: "Prof. Prerna Gaur",
     //   designation: "Professor",
