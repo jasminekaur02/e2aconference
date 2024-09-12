@@ -76,7 +76,7 @@ const WelcomePage = () => {
           E2ACON 2025
         </h1>
         <p className="text-lg text-gray-700 mb-6">
-          Organized by the <br /> Department of Instrumentation and Control Engineering (ICE)
+          Organized by  <br /> Department of Instrumentation and Control Engineering (ICE)
         </p>
 
         <button
