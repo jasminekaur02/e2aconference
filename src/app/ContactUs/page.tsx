@@ -15,26 +15,26 @@ import PageHero from '@/components/PageHero';
 // Faculty contact information array
 const facultyContacts = [
   {
-    name: 'Dr. Richa Sharma',
+    name: 'Dr. Afzal Sikander',
     affiliation: 'Assistant Professor, NIT Jalandhar',
-    email: 'richas@nitj.ac.in',
+    email: 'afzals@nitj.ac.in',
     website: 'https://www.nitj.ac.in/faculty/richa_sharma',
     photo: '/path/to/real-photo1.jpg',
   },
-  {
-    name: 'Dr. Anil Kumar Yadav',
-    affiliation: 'Assistant Professor, NIT Jalandhar',
-    email: 'yadavak@nitj.ac.in',
-    website: 'https://www.nitj.ac.in/faculty/anil_kumar_yadav',
-    photo: '/path/to/real-photo2.jpg',
-  },
-  {
-    name: 'Dr. Another Faculty',
-    affiliation: 'Professor, NIT Jalandhar',
-    email: 'anotherfaculty@nitj.ac.in',
-    website: 'https://www.nitj.ac.in/faculty/another_faculty',
-    photo: '/path/to/real-photo3.jpg',
-  },
+  // {
+  //   name: 'Dr. Anil Kumar Yadav',
+  //   affiliation: 'Assistant Professor, NIT Jalandhar',
+  //   email: 'yadavak@nitj.ac.in',
+  //   website: 'https://www.nitj.ac.in/faculty/anil_kumar_yadav',
+  //   photo: '/path/to/real-photo2.jpg',
+  // },
+  // {
+  //   name: 'Dr. Another Faculty',
+  //   affiliation: 'Professor, NIT Jalandhar',
+  //   email: 'anotherfaculty@nitj.ac.in',
+  //   website: 'https://www.nitj.ac.in/faculty/another_faculty',
+  //   photo: '/path/to/real-photo3.jpg',
+  // },
 ];
 
 // Custom SVG for the new "X" logo (Twitter replacement)

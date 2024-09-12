@@ -41,9 +41,20 @@ const teamData = {
       name: "Prof. S. K. Pahuja",
       designation: "Professor & Head (EE)",
       affiliation: "NIT Jalandhar",
+
       image: "https://www.nitj.ac.in/images/faculty/18022167136.png",
       profileLink: "https://departments.nitj.ac.in/dept/ee/Faculty/6430445938bff038a7806513"
     },
+
+      image: "https://www.nitj.ac.in/images/faculty/18022167136.png" // Replace with actual image path
+    },
+    // {
+    //   name: "Prof. Prerna Gaur",
+    //   designation: "Professor",
+    //   affiliation: "NSUT Delhi, India",
+    //   image: "http://nsut.ac.in/sites/default/files/styles/node_image_/public/2021-10/Prerna%20Gaur%202021.jpeg?itok=Hk7sWUq3" // Replace with actual image path
+    // },
+
     {
       name: "Prof. Jerzy R. Szymański",
       affiliation: "Kazimierz Pulaski University, Poland",
@@ -82,6 +93,7 @@ const teamData = {
     }
   ],
   "Co-Convener(s)": [
+
     {
       name: "Dr. Marta Zurek-Mortka",
       designation: "Lukasiewicz Research Network",
@@ -89,6 +101,9 @@ const teamData = {
       image: "https://media.licdn.com/dms/image/v2/C4E03AQHb20zb-eoPYg/profile-displayphoto-shrink_400_400/0/1646823222749",
       profileLink: "https://www.researchgate.net/profile/Marta-Zurek-Mortka"
     },
+
+    
+
     {
       name: "Dr. Khalid Abidi",
       designation: "Degree Program Director",
@@ -98,6 +113,7 @@ const teamData = {
     }
   ],
   "Organising Secretary": [
+    
     {
       name: "Dr. Karan Jain",
       designation: "Assistant Professor",
@@ -111,6 +127,12 @@ const teamData = {
       affiliation: "NIT Jalandhar",
       image: "https://v1.nitj.ac.in/images/faculty/20010827402.jpg",
       profileLink: "https://departments.nitj.ac.in/dept/ice/Faculty/6430446e38bff038a7808a47"
+    },
+    {
+      name: "Dr. Ravi Verma",
+      designation: "Assistant Professor",
+      affiliation: "NIT Jalandhar",
+      image: "https://v1.nitj.ac.in/images/faculty/20010827402.jpg" // Replace with actual image path
     },
     {
       name: "Dr. Richa Sharma",

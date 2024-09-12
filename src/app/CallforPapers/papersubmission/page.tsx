@@ -216,11 +216,14 @@ const CallForPapers: React.FC = () => {
             Call For <span className="text-blue-600">Papers</span>
           </h2> */}
           <p className='text-blue-600 font-semibold mb-6 text-center text-4xl'>Sustainable Development-The Foundation of a Viksit Bharat</p>
-          <p className='text-left'>  Selected themes for the E2ACon2025 proceedings are mainly comprising of the topics focusing on the new trends in the field of Electronics , Electrical , Automation and Emerging Technologies. 
+          <p className="bg-yellow-200 text-red-600 p-4 rounded-lg">
+  Selected themes for the E2ACON 2025 proceedings are mainly comprising of the topics focusing on the new trends in the field of Electronics, Electrical, Automation, and Emerging Technologies.
 
-          In addition to below , the organising committee of the conference also welcomes the proposals for special sessions on topics related to the field of interest of the conference.
+  In addition to below, the organising committee of the conference also welcomes the proposals for special sessions on topics related to the field of interest of the conference.
 
-Following are the topics to be included in call for paper:</p>
+  Following are the topics to be included in the call for paper:
+</p>
+
           {/* Filter Section */}
           <div className="mb-8 mt-6">
             <label className="mr-4">Track:</label>

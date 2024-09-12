@@ -50,7 +50,7 @@ const SpeakerCard: React.FC<Speaker> = ({ name, title, organization, imageUrl })
           <p className="text-sm">{title}</p>
           <p className="text-sm">{organization}</p>
           <div className="flex justify-center items-center mt-2 text-blue-400">
-            <span className="mr-1">Learn More</span>
+            <span className="mr-1"></span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-4 w-4"
@@ -92,7 +92,7 @@ const ExpertSpeakers: React.FC = () => {
         <a href="/Registration" rel="noopener noreferrer">
         <div className="text-center">
           <button className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold border border-blue-600 hover:bg-blue-600 hover:text-white transition duration-300">
-            Get Your Tickets Now!
+            Register Now!
           </button>
         </div>
         </a>

@@ -20,7 +20,7 @@ const Page = () => {
             Publication
           </h3>
           <p className="text-md leading-relaxed text-justify mb-4">
-            All peer-reviewed papers of the conference will be published as proceedings in the prestigious SCOPUS-indexed "Lecture Notes in Electrical Engineering" by Springer series 
+            All peer-reviewed papers of the conference will be published as proceedings in the prestigious SCOPUS-indexed &quot;Lecture Notes in Electrical Engineering&quot; by Springer series 
             (<a href="https://www.springer.com/series/7818" className="text-blue-600 hover:underline">https://www.springer.com/series/7818</a>).
           </p>
           <p className="text-md leading-relaxed text-justify mb-4">
