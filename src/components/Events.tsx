@@ -4,10 +4,10 @@ import React, { useState, useEffect, useRef } from 'react';
 import Navbar from '@/components/navbar';
 
 const ComponentName = () => {
-  const scheduleRef = useRef(null);
+  const scheduleRef = useRef<HTMLDivElement>(null);
 
   const handleScrollToSchedule = () => {
-    scheduleRef.current.scrollIntoView({ behavior: 'smooth' });
+    scheduleRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
   useEffect(() => {
@@ -32,7 +32,7 @@ const ComponentName = () => {
     <div className="bg-gradient-to-b from-indigo-50 to-indigo-100 rounded-bl-[200px]">
       <Navbar />
 
-      <header className="">
+      <header>
         <div className="px-2 mx-auto sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
             <button
@@ -97,7 +97,7 @@ const ComponentName = () => {
                   <blockquote>
                     <p className="text-base font-normal leading-6 text-white">
                       You made it so simple. Our new site is so much faster and easier to work with than my old site.
-                      I just choose the page, make the change and it's done.
+                      I just choose the page, make the change, and it's done.
                     </p>
                   </blockquote>
                   <p className="mt-4 text-base font-semibold text-white">Ralph Edwards</p>
@@ -165,13 +165,13 @@ const ComponentName = () => {
                 01:30-03:00 <span className="ml-4">Workshop: Building Modern Apps</span>
               </h3>
               <p className="mt-1 text-sm text-gray-300">
-                Hands-on workshop focusing on modern app development techniques.
+                Hands-on workshop on building modern web applications.
               </p>
             </div>
 
             <div className="bg-gray-800 text-left text-white p-4 rounded-lg shadow-md hover:transform hover:scale-105 hover:shadow-xl transition-all duration-300">
               <h3 className="text-lg font-semibold">
-                03:00-04:30 <span className="ml-4">Panel Discussion</span>
+                03:00-04:00 <span className="ml-4">Panel Discussion</span>
               </h3>
               <p className="mt-1 text-sm text-gray-300">
                 Panel discussion with industry leaders on future trends.
