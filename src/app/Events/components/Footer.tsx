@@ -60,7 +60,7 @@ const Footer = () => {
               <li><Link href="/hotels-travels" className="hover:text-blue-400">Hotels & Travels</Link></li>
             </ul>
           </nav>
-          <p className="text-sm text-gray-400">Copyright © 2024 • E2A NITJ Inc.</p>
+          <p className="text-sm text-gray-400">Copyright © 2024 • E2ACON 2025 NITJ Inc.</p>
         </div>
       </div>
     </footer>
