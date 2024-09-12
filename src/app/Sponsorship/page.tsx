@@ -8,7 +8,7 @@ import Footer from '@/components/Footer';
 import PageHero from '@/components/PageHero';
 
 // Sponsorship packages data should be outside of the component
-export const sponsorshipPackages = [
+const sponsorshipPackages = [
   {
     title: "Platinum",
     price: "2.50 Lakhs",
