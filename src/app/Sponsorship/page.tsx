@@ -3,11 +3,11 @@ import HeaderTop from '@/components/HeaderTop';
 import Navbar from '@/components/navbar';
 import React, { useState } from 'react';
 import Link from 'next/link';
-
 import { FaStar, FaGem, FaCrown } from 'react-icons/fa'; 
 import Footer from '@/components/Footer';
 import PageHero from '@/components/PageHero';
 
+// Sponsorship packages data should be outside of the component
 export const sponsorshipPackages = [
   {
     title: "Platinum",
@@ -73,7 +73,7 @@ const SponsorshipPage = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {sponsorshipPackages.map((packageItem, index) => (
               <div
-                key={index} // Add key here
+                key={index}
                 className={`bg-gray-800 text-white shadow-lg rounded-lg overflow-hidden transition transform hover:-translate-y-1 relative cursor-pointer ${
                   packageItem.title === 'Gold'
                     ? 'shadow-gold'
@@ -83,7 +83,6 @@ const SponsorshipPage = () => {
                 onMouseLeave={() => setHovered(false)}
               >
                 <div className="p-6">
-                  {/* Adding a respective icon for each package */}
                   <div className="flex justify-center mb-4">
                     {packageItem.title === 'Platinum' && (
                       <FaGem className="text-4xl text-gray-300" />
@@ -111,20 +110,18 @@ const SponsorshipPage = () => {
                   </p>
                   <ul className={`list-disc list-inside ${packageItem.title==='Gold'? 'text-white':'text-gray-400'}`}>
                     {packageItem.benefits.map((benefit, idx) => (
-                      <li key={idx} className="mb-2">  {/* Add key here */}
+                      <li key={idx} className="mb-2">
                         {benefit}
                       </li>
                     ))}
                   </ul>
                 </div>
-                {/* Adding a special visual highlight for the Gold category */}
                 {packageItem.title === 'Gold' && (
                   <div className="absolute inset-0 bg-gradient-to-r from-yellow-600 to-yellow-400 opacity-50 pointer-events-none"></div>
                 )}
               </div>
             ))}
           </div>
-          {/* Contact Us section */}
           <div className="text-center mt-10">
             <p className="text-2xl">To Avail Package <span className='font-bold text-blue-600'></span></p>
             <Link href="/ContactUs" legacyBehavior>
