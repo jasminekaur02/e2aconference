@@ -10,13 +10,13 @@ export default function AboutUs() {
   const aboutTextShort = aboutText.slice(0, 200); // Shortened version of the text
 
   // Refs for animations
-  const headingRef = useRef(null);
-  const aboutTextRef = useRef(null);
+  const headingRef = useRef<HTMLHeadingElement | null>(null);
+  const aboutTextRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const headingObserver = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting && headingRef.current) {
           headingRef.current.classList.add("animate-slide-in");
         }
       },

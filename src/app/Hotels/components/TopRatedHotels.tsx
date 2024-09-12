@@ -2,9 +2,17 @@ import React, { useRef } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
-const TopRatedHotels = () => {
-  const hotels = [
-    // ... your hotel data with updated information
+interface Hotel {
+  id: number;
+  name: string;
+  description: string;
+  price: string;
+  image: string;
+  link: string;
+}
+
+const TopRatedHotels: React.FC = () => {
+  const hotels: Hotel[] = [
     {
       id: 1,
       name: "Taj Swarna, Amritsar",
@@ -70,9 +78,9 @@ const TopRatedHotels = () => {
     },
   ];
 
-  const scrollContainerRef = useRef(null);
+  const scrollContainerRef = useRef<HTMLDivElement | null>(null);
 
-  const handleScroll = (direction) => {
+  const handleScroll = (direction: 'left' | 'right') => {
     const { current } = scrollContainerRef;
     if (current) {
       const scrollAmount = 300;
@@ -89,7 +97,7 @@ const TopRatedHotels = () => {
   };
 
   // Handle button click to navigate to the hotel booking page
-  const handleNavigate = (url) => {
+  const handleNavigate = (url: string) => {
     window.open(url, "_blank");
   };
 

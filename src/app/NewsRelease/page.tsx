@@ -7,7 +7,8 @@ import Footer from '@/components/Footer'; // Adjust the path as necessary
 const AnnouncementsPage = () => {
   return (
     <div>
-      <HeaderTop/>
+      {/* Pass the isHomePage prop to HeaderTop */}
+      <HeaderTop isHomePage={false} />
       <Navbar />
       <main className="min-h-screen mt-12">
         <Announcements />

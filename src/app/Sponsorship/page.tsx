@@ -7,7 +7,11 @@ import { FaStar, FaGem, FaCrown } from 'react-icons/fa';
 import Footer from '@/components/Footer';
 import PageHero from '@/components/PageHero';
 
+<<<<<<< HEAD
 // Sponsorship packages data should be outside of the component
+=======
+// Moved sponsorshipPackages array inside the component or import it from a separate file
+>>>>>>> fork/main
 const sponsorshipPackages = [
   {
     title: "Platinum",
@@ -61,7 +65,7 @@ const sponsorshipPackages = [
 ];
 
 const SponsorshipPage = () => {
-  const [hovered, setHovered] = useState(false);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null); // Manage hover state for individual items
 
   return (
     <>
@@ -74,6 +78,7 @@ const SponsorshipPage = () => {
             {sponsorshipPackages.map((packageItem, index) => (
               <div
                 key={index}
+<<<<<<< HEAD
                 className={`bg-gray-800 text-white shadow-lg rounded-lg overflow-hidden transition transform hover:-translate-y-1 relative cursor-pointer ${
                   packageItem.title === 'Gold'
                     ? 'shadow-gold'
@@ -81,6 +86,15 @@ const SponsorshipPage = () => {
                 } ${hovered ? 'shadow-6xl' : ''}`}
                 onMouseEnter={() => setHovered(true)}
                 onMouseLeave={() => setHovered(false)}
+=======
+                className={`bg-gray-800 text-white shadow-lg rounded-lg overflow-hidden transition transform ${
+                  hoveredIndex === index ? 'hover:-translate-y-1 shadow-2xl' : ''
+                } relative cursor-pointer ${
+                  packageItem.title === 'Gold' ? 'shadow-gold' : 'shadow-cyan'
+                }`}
+                onMouseEnter={() => setHoveredIndex(index)}
+                onMouseLeave={() => setHoveredIndex(null)}
+>>>>>>> fork/main
               >
                 <div className="p-6">
                   <div className="flex justify-center mb-4">
@@ -105,10 +119,14 @@ const SponsorshipPage = () => {
                   >
                     {packageItem.title} Category
                   </h3>
-                  <p className={`text-xl text-center text-gray-200 font-bold mb-4 ${packageItem.title==='Diamond'? 'text-blue-300': ''}`} >
+                  <p className="text-xl text-center text-gray-200 font-bold mb-4">
                     {packageItem.price}
                   </p>
-                  <ul className={`list-disc list-inside ${packageItem.title==='Gold'? 'text-white':'text-gray-400'}`}>
+                  <ul
+                    className={`list-disc list-inside ${
+                      packageItem.title === 'Gold' ? 'text-white' : 'text-gray-400'
+                    }`}
+                  >
                     {packageItem.benefits.map((benefit, idx) => (
                       <li key={idx} className="mb-2">
                         {benefit}
@@ -123,7 +141,10 @@ const SponsorshipPage = () => {
             ))}
           </div>
           <div className="text-center mt-10">
-            <p className="text-2xl">To Avail Package <span className='font-bold text-blue-600'></span></p>
+            <p className="text-2xl">
+              To Avail Package{' '}
+              <span className="font-bold text-blue-600">Contact Us</span>
+            </p>
             <Link href="/ContactUs" legacyBehavior>
               <a className="inline-block bg-white text-blue-600 px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-blue-50 transition duration-300">
                 Contact Us

@@ -1,48 +1,37 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from 'react';
-import Image from 'next/image';
 import Navbar from '@/components/navbar';
-import Footer from '@/components/Footer'; // Import your Footer component
-import Head from 'next/head'; // Corrected Head import
 
-const MergedComponent = () => {
+const ComponentName = () => {
   const scheduleRef = useRef<HTMLDivElement | null>(null);
-  const [isScheduleVisible, setIsScheduleVisible] = useState(false);
 
   const handleScrollToSchedule = () => {
-    scheduleRef.current?.scrollIntoView({ behavior: 'smooth' });
+    if (scheduleRef.current) {
+      scheduleRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   useEffect(() => {
+    const scheduleSection = scheduleRef.current;
     const handleScroll = () => {
-      if (scheduleRef.current) {
-        const rect = scheduleRef.current.getBoundingClientRect();
+      if (scheduleSection) {
+        const rect = scheduleSection.getBoundingClientRect();
         if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-          setIsScheduleVisible(true);
+          scheduleSection.classList.add('animate-fadeIn');
         }
       }
     };
 
     window.addEventListener('scroll', handleScroll);
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
-  useEffect(() => {
-    if (isScheduleVisible && scheduleRef.current) {
-      scheduleRef.current.classList.add('animate-fadeIn');
-    }
-  }, [isScheduleVisible]);
-
   return (
     <div className="bg-gradient-to-b from-indigo-50 to-indigo-100 rounded-bl-[200px]">
-      <Head>
-        <title>E2A 2025 Conference</title>
-        <meta name="description" content="Join us at the E2A 2025 Conference." />
-      </Head>
-
       <Navbar />
 
       <header className="">
@@ -110,7 +99,7 @@ const MergedComponent = () => {
                   <blockquote>
                     <p className="text-base font-normal leading-6 text-white">
                       You made it so simple. Our new site is so much faster and easier to work with than my old site.
-                      I just choose the page, make the change and it&#39;s done.
+                      I just choose the page, make the change and it&apos;s done.
                     </p>
                   </blockquote>
                   <p className="mt-4 text-base font-semibold text-white">Ralph Edwards</p>
@@ -125,14 +114,14 @@ const MergedComponent = () => {
       {/* Conference Schedule Section */}
       <section
         ref={scheduleRef}
-        className={`py-8 bg-gray-50 transition-opacity duration-700 ease-in-out ${isScheduleVisible ? 'opacity-100' : 'opacity-0'}`}
+        className="py-8 bg-gray-50 opacity-0 transition-opacity duration-700 ease-in-out"
       >
         <div className="max-w-4xl px-4 py-8 mx-auto text-center">
           {/* Header Section */}
-          <h2 className="text-5xl font-bold text-gray-800">
+          <h2 className="text-3xl font-bold text-gray-800">
             Conference <span className="text-blue-600">Schedule</span>
           </h2>
-          <p className="mt-2 text-2xl text-gray-600">March 8-9, 2025</p>
+          <p className="mt-2 text-lg text-gray-600">March 8-9, 2025</p>
 
           {/* Schedule Section */}
           <div className="mt-8 space-y-6">
@@ -148,10 +137,10 @@ const MergedComponent = () => {
 
             <div className="bg-gray-800 text-left text-white p-4 rounded-lg shadow-md hover:transform hover:scale-105 hover:shadow-xl transition-all duration-300">
               <h3 className="text-lg font-semibold">
-                10:00-11:00 <span className="ml-4">Keynote: TO BE ANNOUNCED</span>
+                10:00-11:00 <span className="ml-4">Keynote: The Future of JS</span>
               </h3>
               <p className="mt-1 text-sm text-gray-300">
-                TO BE ANNOUNCED
+                Keynote address by a leading expert in JavaScript.
               </p>
             </div>
 
@@ -160,18 +149,41 @@ const MergedComponent = () => {
                 11:00-12:00 <span className="ml-4">Breakout Sessions</span>
               </h3>
               <p className="mt-1 text-sm text-gray-300">
-                TO BE ANNOUNCED
+                Choose from various breakout sessions on topics like React, Node.js, and more.
               </p>
             </div>
 
-            {/* Add more events as needed */}
+            <div className="bg-gray-800 text-left text-white p-4 rounded-lg shadow-md hover:transform hover:scale-105 hover:shadow-xl transition-all duration-300">
+              <h3 className="text-lg font-semibold">
+                12:00-01:30 <span className="ml-4">Lunch Break</span>
+              </h3>
+              <p className="mt-1 text-sm text-gray-300">
+                Enjoy a lunch break and network with other attendees.
+              </p>
+            </div>
+
+            <div className="bg-gray-800 text-left text-white p-4 rounded-lg shadow-md hover:transform hover:scale-105 hover:shadow-xl transition-all duration-300">
+              <h3 className="text-lg font-semibold">
+                01:30-03:00 <span className="ml-4">Workshop: Building Modern Apps</span>
+              </h3>
+              <p className="mt-1 text-sm text-gray-300">
+                Hands-on workshop focusing on modern app development techniques.
+              </p>
+            </div>
+
+            <div className="bg-gray-800 text-left text-white p-4 rounded-lg shadow-md hover:transform hover:scale-105 hover:shadow-xl transition-all duration-300">
+              <h3 className="text-lg font-semibold">
+                03:00-04:30 <span className="ml-4">Panel Discussion</span>
+              </h3>
+              <p className="mt-1 text-sm text-gray-300">
+                Panel discussion with industry leaders on future trends.
+              </p>
+            </div>
           </div>
         </div>
       </section>
-
-      <Footer /> {/* Added Footer */}
     </div>
   );
 };
 
-export default MergedComponent;
+export default ComponentName;

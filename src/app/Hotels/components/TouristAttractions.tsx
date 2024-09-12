@@ -2,8 +2,19 @@ import React, { useRef } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
-const TouristAttractions = () => {
-  const attractions = [
+interface Attraction {
+  id: number;
+  name: string;
+  image: string;
+  description: string;
+  capacity: string;
+  timings: string;
+  destination: string;
+  link: string;
+}
+
+const TouristAttractions: React.FC = () => {
+  const attractions: Attraction[] = [
     {
       id: 1,
       name: "Golden Temple, Amritsar",
@@ -66,9 +77,9 @@ const TouristAttractions = () => {
     },
   ];
 
-  const scrollContainerRef = useRef(null);
+  const scrollContainerRef = useRef<HTMLDivElement | null>(null);
 
-  const handleScroll = (direction) => {
+  const handleScroll = (direction: 'left' | 'right') => {
     const { current } = scrollContainerRef;
     if (current) {
       const scrollAmount = 400;
@@ -87,7 +98,7 @@ const TouristAttractions = () => {
   return (
     <section className="py-6 w-full">
       <div className="container mx-auto px-4">
-        <h2 className="text-xl md:text-2xl font-bold mb-4 ">
+        <h2 className="text-xl md:text-2xl font-bold mb-4">
           Tourist <span className="text-blue-500">Attractions</span>
         </h2>
         <div className="relative">
