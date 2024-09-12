@@ -97,7 +97,7 @@ const ComponentName = () => {
                   <blockquote>
                     <p className="text-base font-normal leading-6 text-white">
                       You made it so simple. Our new site is so much faster and easier to work with than my old site.
-                      I just choose the page, make the change, and it's done.
+                      I just choose the page, make the change, and it&apos;s done.
                     </p>
                   </blockquote>
                   <p className="mt-4 text-base font-semibold text-white">Ralph Edwards</p>
@@ -156,25 +156,25 @@ const ComponentName = () => {
                 12:00-01:30 <span className="ml-4">Lunch Break</span>
               </h3>
               <p className="mt-1 text-sm text-gray-300">
-                Enjoy a lunch break and network with other attendees.
+                Enjoy a catered lunch and networking opportunities.
               </p>
             </div>
 
             <div className="bg-gray-800 text-left text-white p-4 rounded-lg shadow-md hover:transform hover:scale-105 hover:shadow-xl transition-all duration-300">
               <h3 className="text-lg font-semibold">
-                01:30-03:00 <span className="ml-4">Workshop: Building Modern Apps</span>
+                01:30-03:00 <span className="ml-4">Panel Discussion</span>
               </h3>
               <p className="mt-1 text-sm text-gray-300">
-                Hands-on workshop on building modern web applications.
+                Join a panel of experts discussing the latest trends in technology.
               </p>
             </div>
 
             <div className="bg-gray-800 text-left text-white p-4 rounded-lg shadow-md hover:transform hover:scale-105 hover:shadow-xl transition-all duration-300">
               <h3 className="text-lg font-semibold">
-                03:00-04:00 <span className="ml-4">Panel Discussion</span>
+                03:00-04:00 <span className="ml-4">Networking and Closing</span>
               </h3>
               <p className="mt-1 text-sm text-gray-300">
-                Panel discussion with industry leaders on future trends.
+                Wrap up the day with networking and closing remarks.
               </p>
             </div>
           </div>
