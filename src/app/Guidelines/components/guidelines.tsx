@@ -44,7 +44,7 @@ const GuidelinesPage = () => {
               <ul className="list-disc list-inside text-md text-gray-700 space-y-2">
                 <li>MS Word template: <a href="#" className="text-blue-600 hover:underline">Word Template</a></li>
                 <li>LaTex Formatting Macros: <a href="#" className="text-blue-600 hover:underline">LaTex Template</a></li>
-                <li>Copyright/Author's Agreement/Consent Form: <a href="#" className="text-blue-600 hover:underline">Copyright Form</a></li>
+                <li>Copyright/Author&#39;s Agreement/Consent Form: <a href="#" className="text-blue-600 hover:underline">Copyright Form</a></li>
               </ul>
               <p className="text-md leading-relaxed text-justify mt-4">
                 For detailed guidelines, authors can refer to the link:
