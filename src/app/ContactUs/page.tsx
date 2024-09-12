@@ -11,6 +11,7 @@ import Footer from '@/components/Footer';
 import HeaderTop from '@/components/HeaderTop';
 import Navbar from '@/components/navbar';
 import PageHero from '@/components/PageHero';
+import Image from 'next/image';
 
 // Faculty contact information array
 const facultyContacts = [
@@ -21,20 +22,6 @@ const facultyContacts = [
     website: 'https://www.nitj.ac.in/faculty/richa_sharma',
     photo: '/path/to/real-photo1.jpg',
   },
-  // {
-  //   name: 'Dr. Anil Kumar Yadav',
-  //   affiliation: 'Assistant Professor, NIT Jalandhar',
-  //   email: 'yadavak@nitj.ac.in',
-  //   website: 'https://www.nitj.ac.in/faculty/anil_kumar_yadav',
-  //   photo: '/path/to/real-photo2.jpg',
-  // },
-  // {
-  //   name: 'Dr. Another Faculty',
-  //   affiliation: 'Professor, NIT Jalandhar',
-  //   email: 'anotherfaculty@nitj.ac.in',
-  //   website: 'https://www.nitj.ac.in/faculty/another_faculty',
-  //   photo: '/path/to/real-photo3.jpg',
-  // },
 ];
 
 // Custom SVG for the new "X" logo (Twitter replacement)
@@ -55,16 +42,18 @@ const ContactUsPage = () => {
         <div className="max-w-7xl mx-auto">
 
           {/* Faculty Contact Cards */}
-          <h2 className="text-2xl font-semibold mb-4">Faculty <span className='text-blue-600'> Coordinators</span></h2>
+          <h2 className="text-2xl font-semibold mb-4">Faculty <span className='text-blue-600'>Coordinators</span></h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {facultyContacts.map((contact, index) => (
               <div
                 key={index}
                 className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center"
               >
-                <img
+                <Image
                   src={contact.photo}
                   alt={contact.name}
+                  width={96}
+                  height={96}
                   className="w-24 h-24 rounded-full mb-4 object-cover"
                 />
                 <h2 className="text-xl font-semibold text-gray-800 mb-2">
@@ -95,39 +84,38 @@ const ContactUsPage = () => {
           </div>
 
           {/* "Reach Us" Section */}
-<div className="bg-white p-6 rounded-lg shadow-lg mb-12">
-  <h2 className="text-2xl font-semibold mb-4">Reach <span className='text-blue-600'>Us</span></h2>
-  
-  {/* Responsive Flex Layout */}
-  <div className="flex flex-col lg:flex-row lg:items-center gap-6">
-    {/* Text Section */}
-    <div className="lg:flex-1">
-      <p className="text-gray-700 mb-4">
-        The city of Jalandhar is situated between the rivers Sutlej and Beas on National Highway 1. It is one of the important towns of Punjab and is known for rich educational, cultural and literary activities. It is an internationally renowned industrial centre for sports goods, leather goods, and hand-tools.
-      </p>
-      <h3 className="text-xl font-semibold text-gray-800 mb-2">Modes of Travel</h3>
-      <p className="text-gray-700">
-        <strong>Distance from Delhi by Road:</strong> 370 kms <br />
-        <strong>Train from Delhi:</strong> The Shatabdi Express (07:20 AM & 16:30 PM) <br />
-        <strong>Nearest Airport:</strong> Sri Guru Ram Dass Jee International Airport, Amritsar <br />
-        <strong>Location:</strong> The institute is located on the GT Road bypass, 15 km from Jalandhar bus-stand, 12 km from Jalandhar city railway station (JUC), and 18 km from Jalandhar Cantt railway station (JRC).
-      </p>
-      <p className="text-gray-700 mt-4">
-        It is at a walking distance of half a kilometer from Bidhipur railway crossing. Auto rickshaw and taxi services are available regularly from railway stations and bus-stand.
-      </p>
-    </div>
-    
-    {/* Image Section */}
-    <div className="lg:flex-1 lg:flex lg:justify-end">
-      <img
-        src="https://v1.nitj.ac.in/ITEP/img/01.jpg" // Replace with an actual image of Jalandhar
-        alt="Jalandhar"
-        className="mt-4 lg:mt-0 rounded-lg shadow-lg w-full h-full lg:w-auto lg:max-w-md"
-      />
-    </div>
-  </div>
-</div>
-
+          <div className="bg-white p-6 rounded-lg shadow-lg mb-12">
+            <h2 className="text-2xl font-semibold mb-4">Reach <span className='text-blue-600'>Us</span></h2>
+            <div className="flex flex-col lg:flex-row lg:items-center gap-6">
+              {/* Text Section */}
+              <div className="lg:flex-1">
+                <p className="text-gray-700 mb-4">
+                  The city of Jalandhar is situated between the rivers Sutlej and Beas on National Highway 1. It is one of the important towns of Punjab and is known for rich educational, cultural, and literary activities. It is an internationally renowned industrial center for sports goods, leather goods, and hand-tools.
+                </p>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">Modes of Travel</h3>
+                <p className="text-gray-700">
+                  <strong>Distance from Delhi by Road:</strong> 370 kms <br />
+                  <strong>Train from Delhi:</strong> The Shatabdi Express (07:20 AM & 16:30 PM) <br />
+                  <strong>Nearest Airport:</strong> Sri Guru Ram Dass Jee International Airport, Amritsar <br />
+                  <strong>Location:</strong> The institute is located on the GT Road bypass, 15 km from Jalandhar bus-stand, 12 km from Jalandhar city railway station (JUC), and 18 km from Jalandhar Cantt railway station (JRC).
+                </p>
+                <p className="text-gray-700 mt-4">
+                  It is at a walking distance of half a kilometer from Bidhipur railway crossing. Auto rickshaw and taxi services are available regularly from railway stations and bus-stand.
+                </p>
+              </div>
+              
+              {/* Image Section */}
+              <div className="lg:flex-1 lg:flex lg:justify-end">
+                <Image
+                  src="https://v1.nitj.ac.in/ITEP/img/01.jpg"
+                  alt="Jalandhar"
+                  width={400}
+                  height={300}
+                  className="mt-4 lg:mt-0 rounded-lg shadow-lg w-full lg:w-auto lg:max-w-md"
+                />
+              </div>
+            </div>
+          </div>
 
           {/* Additional Contact Details */}
           <div className="flex flex-col lg:flex-row lg:justify-between lg:space-x-8">
@@ -148,7 +136,7 @@ const ContactUsPage = () => {
 
             {/* Additional Contact Information */}
             <div className="flex-1 bg-white p-6 rounded-lg shadow-lg">
-              <h2 className="text-2xl font-semibold mb-4">Contact <span className='text-blue-600'> Information</span></h2>
+              <h2 className="text-2xl font-semibold mb-4">Contact <span className='text-blue-600'>Information</span></h2>
               <p className="text-gray-700 mb-2">
                 <strong>Address:</strong> Dr. B.R. Ambedkar National Institute of Technology, Jalandhar - 144008, Punjab, India
               </p>
@@ -159,7 +147,7 @@ const ContactUsPage = () => {
                 <strong>Office Hours:</strong> Monday to Friday, 9:00 AM - 5:00 PM
               </p>
               <p className="text-gray-700 mb-4">
-                <strong>Email:</strong> <a href="mailto: info.e2a@nitj.ac.in " className="text-blue-600 hover:underline"> info.e2a@nitj.ac.in </a>
+                <strong>Email:</strong> <a href="mailto:info.e2a@nitj.ac.in" className="text-blue-600 hover:underline">info.e2a@nitj.ac.in</a>
               </p>
 
               {/* Social Media Links */}
@@ -176,31 +164,31 @@ const ContactUsPage = () => {
                   href="https://www.instagram.com/nitjofficial/?hl=en"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-[#E1306C] transition-colors duration-300"
+                  className="text-pink-600 hover:text-[#E1306C] transition-colors duration-300"
                 >
                   <FaInstagram className="text-xl" />
                 </a>
                 <a
-                  href="https://in.linkedin.com/school/dr-b-r-ambedkar-national-institute-of-technology-jalandhar-official/"
+                  href="https://www.linkedin.com/company/nitjofficial/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-[#0A66C2] transition-colors duration-300"
+                  className="text-blue-600 hover:text-[#0077B5] transition-colors duration-300"
                 >
                   <FaLinkedinIn className="text-xl" />
                 </a>
                 <a
-                  href="https://www.youtube.com/c/NITJOfficial"
+                  href="https://www.youtube.com/channel/UClD5ZSKAIUIOFeEWZrXRq7A"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-[#FF0000] transition-colors duration-300"
+                  className="text-red-600 hover:text-[#FF0000] transition-colors duration-300"
                 >
                   <FaYoutube className="text-xl" />
                 </a>
                 <a
-                  href="https://twitter.com/NITJofficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                  href="https://twitter.com/nitjofficial?lang=en"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 transition-colors duration-300 hover:text-black"
+                  className="text-blue-600 hover:text-[#1DA1F2] transition-colors duration-300"
                 >
                   <XLogo />
                 </a>
@@ -209,6 +197,8 @@ const ContactUsPage = () => {
           </div>
         </div>
       </div>
+
+      {/* Footer */}
       <Footer />
     </>
   );

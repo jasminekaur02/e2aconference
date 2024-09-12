@@ -1,6 +1,12 @@
 import React from 'react';
 
-const PageHero = ({ title, image }) => {
+// Define the interface for the component props
+interface PageHeroProps {
+  title: string;
+  image: string;
+}
+
+const PageHero: React.FC<PageHeroProps> = ({ title, image }) => {
   return (
     <div className="relative">
       <img src={image} alt={title} className="w-full h-96 object-cover" />

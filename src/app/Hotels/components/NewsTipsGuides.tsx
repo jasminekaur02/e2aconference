@@ -2,8 +2,17 @@ import React, { useRef, useState } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
+interface NewsItem {
+  id: number;
+  title: string;
+  image: string;
+  description: string;
+  date: string;
+  link: string;
+}
+
 const NewsTipsGuides = () => {
-  const newsItems = [
+  const newsItems: NewsItem[] = [
     {
       id: 1,
       title: "Experience Amritsar's Spiritual Heart: The Golden Temple",
@@ -60,10 +69,10 @@ const NewsTipsGuides = () => {
     },
   ];
 
-  const scrollContainerRef = useRef(null);
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const scrollContainerRef = useRef<HTMLDivElement | null>(null);
+  const [currentSlide, setCurrentSlide] = useState<number>(0);
 
-  const handleScroll = (direction) => {
+  const handleScroll = (direction: 'left' | 'right') => {
     const { current } = scrollContainerRef;
     if (current) {
       const scrollAmount = 400;
@@ -120,7 +129,7 @@ const NewsTipsGuides = () => {
 export default NewsTipsGuides;
 
 // Export the NewsTipGuide component
-export const NewsTipGuide = ({ item }) => {
+export const NewsTipGuide = ({ item }: { item: NewsItem }) => {
   return (
     <motion.div
       key={item.id}

@@ -1,4 +1,5 @@
 "use client";
+
 import Footer from '@/components/Footer';
 import HeaderTop from '@/components/HeaderTop';
 import Navbar from '@/components/navbar';
@@ -24,7 +25,7 @@ const AboutUsPage = () => {
           <div className="bg-white p-4 rounded-lg shadow-lg max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold text-center mb-8 ">Who We <span className='text-blue-600'>Are</span></h2>
             <p className="text-lg leading-relaxed text-justify">
-              The International Conference on Electrical, Electronics, and Automation (E2ACON) serves as a global hub where the brightest minds converge to explore, collaborate, and share their ground-breaking research and innovations. In today's rapidly evolving technological landscape, the domains of electrical engineering, electronics, and automation are integral to shaping our future. E2A provides a vital platform for researchers, scientists, engineers, educators, and industry experts from diverse backgrounds and cultures to come together, fostering a rich exchange of ideas and knowledge.
+              The International Conference on Electrical, Electronics, and Automation (E2ACON) serves as a global hub where the brightest minds converge to explore, collaborate, and share their ground-breaking research and innovations. In today&apos;s rapidly evolving technological landscape, the domains of electrical engineering, electronics, and automation are integral to shaping our future. E2A provides a vital platform for researchers, scientists, engineers, educators, and industry experts from diverse backgrounds and cultures to come together, fostering a rich exchange of ideas and knowledge.
             </p>
             <p className="mt-6 text-lg leading-relaxed text-justify">
               As we navigate an era of unprecedented technological advancement, E2ACON strives to accelerate progress by facilitating meaningful conversations, driving innovation, and charting the course for a future powered by cutting-edge electrical, electronics, and automation technologies. Join us at E2ACON to be a part of this transformative journey, where together, we illuminate the path toward a smarter, more connected, and automated world. Your contributions and insights are integral to shaping the future at E2A.

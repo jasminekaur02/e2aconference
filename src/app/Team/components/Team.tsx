@@ -1,7 +1,22 @@
 import PageHero from '@/components/PageHero';
 import React from 'react';
 
-const teamData = {
+// Define a type for individual team members
+interface TeamMember {
+  name: string;
+  designation?: string;
+  affiliation: string;
+  image: string;
+  profileLink?: string;
+}
+
+// Define a type for team data sections
+interface TeamData {
+  [key: string]: TeamMember[];
+}
+
+// Define the team data
+const teamData: TeamData = {
   "Chief Patron": [
     {
       name: "Prof. Binod Kumar Kanaujia",
@@ -41,25 +56,14 @@ const teamData = {
       name: "Prof. S. K. Pahuja",
       designation: "Professor & Head (EE)",
       affiliation: "NIT Jalandhar",
-
       image: "https://www.nitj.ac.in/images/faculty/18022167136.png",
       profileLink: "https://departments.nitj.ac.in/dept/ee/Faculty/6430445938bff038a7806513"
     },
-
-      image: "https://www.nitj.ac.in/images/faculty/18022167136.png" // Replace with actual image path
-    },
-    // {
-    //   name: "Prof. Prerna Gaur",
-    //   designation: "Professor",
-    //   affiliation: "NSUT Delhi, India",
-    //   image: "http://nsut.ac.in/sites/default/files/styles/node_image_/public/2021-10/Prerna%20Gaur%202021.jpeg?itok=Hk7sWUq3" // Replace with actual image path
-    // },
-
     {
       name: "Prof. Jerzy R. Szymański",
       affiliation: "Kazimierz Pulaski University, Poland",
       image: "https://i1.rgstatic.net/ii/profile.image/856674961199104-1581258635324_Q128/Jerzy-Szymanski.jpg",
-      profileLink: "hhttps://www.researchgate.net/profile/Jerzy-Szymanski"
+      profileLink: "https://www.researchgate.net/profile/Jerzy-Szymanski"
     },
     {
       name: "Prof. Mamta Khosla",
@@ -93,7 +97,6 @@ const teamData = {
     }
   ],
   "Co-Convener(s)": [
-
     {
       name: "Dr. Marta Zurek-Mortka",
       designation: "Lukasiewicz Research Network",
@@ -101,9 +104,6 @@ const teamData = {
       image: "https://media.licdn.com/dms/image/v2/C4E03AQHb20zb-eoPYg/profile-displayphoto-shrink_400_400/0/1646823222749",
       profileLink: "https://www.researchgate.net/profile/Marta-Zurek-Mortka"
     },
-
-    
-
     {
       name: "Dr. Khalid Abidi",
       designation: "Degree Program Director",
@@ -113,7 +113,6 @@ const teamData = {
     }
   ],
   "Organising Secretary": [
-    
     {
       name: "Dr. Karan Jain",
       designation: "Assistant Professor",
@@ -157,14 +156,15 @@ const Team = () => {
       <PageHero title="Organizing Committee" image="https://v1.nitj.ac.in/ITEP/img/01.jpg" />
       <section className="py-8 sm:py-10 md:py-12 lg:py-16">
         {Object.keys(teamData).map((section, idx) => {
-          const numItems = teamData[section].length;
+          const members = teamData[section];
+          const numItems = members.length;
           const gridCols = numItems === 1 ? "grid-cols-1" : numItems === 2 ? "grid-cols-2" : "grid-cols-3";
 
           return (
             <div key={idx} className="mb-8 md:mb-12 text-center">
               <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">{section}</h3>
               <div className={`grid gap-6 justify-center ${gridCols} sm:grid-cols-${Math.min(2, numItems)} md:grid-cols-${Math.min(3, numItems)} lg:grid-cols-${Math.min(4, numItems)} xl:grid-cols-${Math.min(5, numItems)}`}>
-                {teamData[section].map((member, index) => (
+                {members.map((member: TeamMember, index) => (
                   <div key={index} className="bg-white p-4 sm:p-6 rounded-lg shadow-lg text-center">
                     {member.image && (
                       <a href={member.profileLink || "#"} target="_blank" rel="noopener noreferrer">

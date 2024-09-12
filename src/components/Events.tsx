@@ -4,10 +4,12 @@ import React, { useState, useEffect, useRef } from 'react';
 import Navbar from '@/components/navbar';
 
 const ComponentName = () => {
-  const scheduleRef = useRef(null);
+  const scheduleRef = useRef<HTMLDivElement | null>(null);
 
   const handleScrollToSchedule = () => {
-    scheduleRef.current.scrollIntoView({ behavior: 'smooth' });
+    if (scheduleRef.current) {
+      scheduleRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   useEffect(() => {
@@ -97,7 +99,7 @@ const ComponentName = () => {
                   <blockquote>
                     <p className="text-base font-normal leading-6 text-white">
                       You made it so simple. Our new site is so much faster and easier to work with than my old site.
-                      I just choose the page, make the change and it's done.
+                      I just choose the page, make the change and it&apos;s done.
                     </p>
                   </blockquote>
                   <p className="mt-4 text-base font-semibold text-white">Ralph Edwards</p>

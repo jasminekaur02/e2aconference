@@ -4,8 +4,13 @@ import DynamicFetch from '@/functions/DynamicFetch';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
-const HeaderTop = ({ isHomePage }) => {
-  const [announcement, setAnnouncement] = useState(null);
+// Define the type for the props
+interface HeaderTopProps {
+  isHomePage: boolean;
+}
+
+const HeaderTop: React.FC<HeaderTopProps> = ({ isHomePage }) => {
+  const [announcement, setAnnouncement] = useState<{ link: string; text: string } | null>(null);
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
