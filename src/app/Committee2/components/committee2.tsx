@@ -1,6 +1,15 @@
 import React from 'react';
 
-const committee = {
+interface CommitteeMember {
+  name: string;
+  designation: string;
+  affiliation: string;
+}
+
+interface Committee {
+  [key: string]: CommitteeMember[];
+}
+const committee: Committee = {
     "Technical Programme Chair(s)": [
         
             {
@@ -328,37 +337,37 @@ const committee = {
     ],
     "Scientific Committee": [
         { name: "Prof. Yogesh Vijay Hote", designation: "Professor", affiliation: "IIT Roorkee" },
-        { name: "Prof. Celia Shahnaz", affiliation: "BUET, Bangladesh" },
-        { name: "Prof. Moinuddin", affiliation: "Apeejay Stya University, Gurugram" },
-        { name: "Prof. Akhtar Kalam", affiliation: "Australia" },
-        {name:"Prof Shahida Khatoon, JMI, New Delhi"},
-        { name: "Prof. Janusz Kacprzyk", affiliation: "Poland" },
-        { name: "Prof. M.N.S. Swamy", affiliation: "Canada" },
-        { name: "Prof. Mukesh Kr. Pathak", affiliation: "IIT Roorkee" },
-        { name: "Prof. R.S. Anand", affiliation: "IIT Roorkee" },
-        { name: "Prof. Premalata Jena", affiliation: "IIT Roorkee" },
-        { name: "Dr. Pawan Sharma", affiliation: "UiT The Arctic University of Norway" },
-        { name: "Prof. Sukumar Ray Chaudhuri", affiliation: "MSIT, India" },
-        { name: "Prof. C. K. Chanda", affiliation: "Indian Institute of Engineering Science and Technology, Shibpur, Howrah" },
-        { name: "Prof. Vishal Kumar", affiliation: "IIT Roorkee" },
-        { name: "Dr. Abhisek Kumar Behera", affiliation: "IIT Roorkee" },
-        { name: "Dr. Abdul Saleem Mir", affiliation: "IIT Roorkee" },
-        { name: "Dr. Subashish Datta", affiliation: "IIT Delhi" },
-        { name: "Dr. Deepak U. Patil", affiliation: "IIT Delhi" },
-        { name: "Dr. Ankit Singhal", affiliation: "IIT Delhi" },
-        { name: "Dr. Akhilesh Mathur", affiliation: "Malaviya National Institute of Technology Jaipur" },
-        { name: "Md Nishat Anwar", affiliation: "NIT Patna" },
+        { name: "Prof. Celia Shahnaz", designation: "",affiliation: "BUET, Bangladesh" },
+        { name: "Prof. Moinuddin", designation: "",affiliation: "Apeejay Stya University, Gurugram" },
+        { name: "Prof. Akhtar Kalam", designation: "",affiliation: "Australia" },
+        {name:"Prof Shahida Khatoon, JMI, New Delhi",designation: "",affiliation: ""},
+        { name: "Prof. Janusz Kacprzyk",designation: "", affiliation: "Poland" },
+        { name: "Prof. M.N.S. Swamy", designation: "",affiliation: "Canada" },
+        { name: "Prof. Mukesh Kr. Pathak",designation: "", affiliation: "IIT Roorkee" },
+        { name: "Prof. R.S. Anand",designation: "", affiliation: "IIT Roorkee" },
+        { name: "Prof. Premalata Jena", designation: "",affiliation: "IIT Roorkee" },
+        { name: "Dr. Pawan Sharma",designation: "", affiliation: "UiT The Arctic University of Norway" },
+        { name: "Prof. Sukumar Ray Chaudhuri", designation: "",affiliation: "MSIT, India" },
+        { name: "Prof. C. K. Chanda",designation: "", affiliation: "Indian Institute of Engineering Science and Technology, Shibpur, Howrah" },
+        { name: "Prof. Vishal Kumar",designation: "", affiliation: "IIT Roorkee" },
+        { name: "Dr. Abhisek Kumar Behera",designation: "", affiliation: "IIT Roorkee" },
+        { name: "Dr. Abdul Saleem Mir",designation: "", affiliation: "IIT Roorkee" },
+        { name: "Dr. Subashish Datta",designation: "", affiliation: "IIT Delhi" },
+        { name: "Dr. Deepak U. Patil", designation: "",affiliation: "IIT Delhi" },
+        { name: "Dr. Ankit Singhal", designation: "",affiliation: "IIT Delhi" },
+        { name: "Dr. Akhilesh Mathur",designation: "", affiliation: "Malaviya National Institute of Technology Jaipur" },
+        { name: "Md Nishat Anwar", designation: "",affiliation: "NIT Patna" },
         { name: "Mr. Yousuf Haider", designation: "Assistant Professor", affiliation: "IMS Engineering College, Ghaziabad" },
         { name: "Mr. Dipu Kumar", designation: "Assistant Professor", affiliation: "RKGIT, Ghaziabad" },
-        { name: "Mr. Sadat Ali Khan", affiliation: "The Maldives National University" },
+        { name: "Mr. Sadat Ali Khan", designation: "",affiliation: "The Maldives National University" },
         { name: "Mr. Neeraj Kumar", designation: "Assistant Professor", affiliation: "RKGIT, Ghaziabad" },
-        { name: "Mr. Vivek Ahlawat", affiliation: "NITTTR, Chandigarh" },
+        { name: "Mr. Vivek Ahlawat",designation: "", affiliation: "NITTTR, Chandigarh" },
     ],
     "Industrial and Entrepreneur Chair(s)": [
         { name: "Sh. Subrahmanyam Pulipaka", designation: "Chief Executive Officer", affiliation: "National Solar Energy Federation of India" },
         { name: "Sh. Surinder Ahuja", designation: "Director", affiliation: "Sunmaster Pvt. Ltd., New Delhi" },
-        { name: "Mr. Vipin Gupta", affiliation: "Robert Bosch GmbH, Germany" },
-        { name: "Sh. Sachin Attry", affiliation: "Swastik Associates, Dehradun" },
+        { name: "Mr. Vipin Gupta",designation: "", affiliation: "Robert Bosch GmbH, Germany" },
+        { name: "Sh. Sachin Attry", designation: "",affiliation: "Swastik Associates, Dehradun" },
         {name: "Mr Gagan Veramani", designation:"Founder and CEO, Mysun Solar", affiliation:"New Delhi"}
     ],
     "Conference Proceedings, Printing & Publication Committee": [
@@ -377,7 +386,7 @@ const committee = {
     ],
     "Steering Committee" : [],
     "Accommodation and Transportation Committee Chair(s)": [
-        { name: "Dr. Rakesh Kumar (CY)", affiliation: "NIT Jalandhar" },
+        { name: "Dr. Rakesh Kumar (CY)", designation: "", affiliation: "NIT Jalandhar" },
         { name: "Dr. Narendra Kumar", designation: "Assistant Professor", affiliation: "NIT Jalandhar" },
         { name: "Dr Deepika Rani", designation: "Assistant Professor", affiliation: "NIT Jalandhar" },
         {name:"Dr Neelam", designation:"Assistant Professor", affiliation:"NIT Jalandhar"}
@@ -387,12 +396,12 @@ const committee = {
         { name: "Ms. Karchana Kumari ", designation: "", affiliation: "NIT Jalandhar" },
     ],
     "Track Chair(s)": [
-        { name: "Prof. Jerzy R. Szymański", affiliation: "Poland" },
-        { name: "Dr Khalid Abidi", affiliation: "Singapore" },
+        { name: "Prof. Jerzy R. Szymański", designation: "", affiliation: "Poland" },
+        { name: "Dr Khalid Abidi", designation: "", affiliation: "Singapore" },
         { name: "Prof. Yogesh Vijay Hote", designation: "Professor", affiliation: "IIT Roorkee" },
-        { name: "Dr. Akhilesh Mathur", affiliation: "MNIT, Jaipur" },
-        { name: "Md Nishat Anwar", affiliation: "NIT Patna" },
-        {name: "Mr Davendra Kumar", affiliation:"RKGIT, Ghaziabad"}
+        { name: "Dr. Akhilesh Mathur", designation: "", affiliation: "MNIT, Jaipur" },
+        { name: "Md Nishat Anwar", designation: "", affiliation: "NIT Patna" },
+        {name: "Mr Davendra Kumar", designation: "", affiliation:"RKGIT, Ghaziabad"}
     ],
     "Track Co-Chair(s)": [
         { name: "Prof. Mamta Khosla", designation: "Professor and Dean (International Affairs)", affiliation: "NIT Jalandhar" },
@@ -423,31 +432,31 @@ const committee = {
 };
 
 const Committee2 = () => {
-    return (
-        <section className="py-12">
-            <div className="text-center mb-8">
-                {/* <h2 className="text-3xl font-bold">
-                    Program <span className="text-blue-600">Committee</span>
-                </h2> */}
-            </div>
+  return (
+      <section className="py-12">
+          <div className="text-center mb-8">
+              {/* <h2 className="text-3xl font-bold">
+                  Program <span className="text-blue-600">Committee</span>
+              </h2> */}
+          </div>
 
-            {/* Render committee without images */}
-            {Object.keys(committee).map((section, idx) => (
-                <div key={idx} className="mb-12">
-                    <h3 className="text-2xl font-semibold mb-4">{section}</h3>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                        {committee[section].map((member, index) => (
-                            <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
-                                <h4 className="text-xl font-bold">{member.name}</h4>
-                                <p className="text-blue-500">{member.designation}</p>
-                                <p className="text-black">{member.affiliation}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            ))}
-        </section>
-    );
+          {/* Render committee without images */}
+          {Object.keys(committee).map((section, idx) => (
+              <div key={idx} className="mb-12">
+                  <h3 className="text-2xl font-semibold mb-4">{section}</h3>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                      {committee[section].map((member, index) => (
+                          <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
+                              <h4 className="text-xl font-bold">{member.name}</h4>
+                              <p className="text-blue-500">{member.designation}</p>
+                              <p className="text-black">{member.affiliation}</p>
+                          </div>
+                      ))}
+                  </div>
+              </div>
+          ))}
+      </section>
+  );
 };
 
 export default Committee2;
