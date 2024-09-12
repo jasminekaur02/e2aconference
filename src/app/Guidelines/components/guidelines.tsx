@@ -1,4 +1,3 @@
-
 import PageHero from '@/components/PageHero';
 import React from 'react';
 import { Book, FileText, Copy, ExternalLink } from 'lucide-react';
@@ -6,20 +5,19 @@ import { Book, FileText, Copy, ExternalLink } from 'lucide-react';
 const GuidelinesPage = () => {
   return (
     <>
-     
       <div className="min-h-screen flex flex-col">
         {/* Hero Section */}
         <PageHero title="Submission Guidelines" image="https://v1.nitj.ac.in/ITEP/img/01.jpg" /> {/* Add proper hero image path */}
 
         {/* Main Content */}
-        <section className=" py-16 px-6 md:px-12">
+        <section className="py-16 px-6 md:px-12">
           <div className="max-w-6xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4">Submission <span className='text-blue-600'>Guidelines</span> </h3>
+            <h3 className="text-2xl font-bold mb-4">Submission <span className="text-blue-600">Guidelines</span></h3> {/* Escaped single quote */}
             <p className="text-md leading-relaxed text-justify mb-8">
-            E2A 2024 invites researchers, practitioners, and students worldwide to submit previously unpublished original papers for consideration to be presented at the conference in English language. All submissions will be peer-reviewed. All manuscripts submitted to E2A 2024 will go through a plagiarism check. Manuscripts with a similarity score of 30% or above will not be forwarded for the reviewing process and will be rejected.
-The purpose of a conference template is to provide a consistent format for papers appearing in the conference proceedings. Authors must use the conference manuscript templates provided below. The conference templates contain guidance text for composing and formatting conference papers. Please ensure that all guidance text is removed from your conference paper prior to submission to the conference.
-
-              </p>
+              E2A 2024 invites researchers, practitioners, and students worldwide to submit previously unpublished original papers for consideration to be presented at the conference in the English language. All submissions will be peer-reviewed. All manuscripts submitted to E2A 2024 will go through a plagiarism check. Manuscripts with a similarity score of 30% or above will not be forwarded for the reviewing process and will be rejected.
+              The purpose of a conference template is to provide a consistent format for papers appearing in the conference proceedings. Authors must use the conference manuscript templates provided below. The conference templates contain guidance text for composing and formatting conference papers. Please ensure that all guidance text is removed from your conference paper prior to submission to the conference.
+            </p>
+            
             {/* Submission Declaration and Verification Section */}
             <section className="mb-12">
               <h3 className="text-2xl font-bold text-blue-600 mb-4 flex items-center">
@@ -49,37 +47,12 @@ The purpose of a conference template is to provide a consistent format for paper
                 <li>Copyright/Author's Agreement/Consent Form: <a href="#" className="text-blue-600 hover:underline">Copyright Form</a></li>
               </ul>
               <p className="text-md leading-relaxed text-justify mt-4">
-                For detailed guidelines, authors can refer to the link: 
+                For detailed guidelines, authors can refer to the link:
                 <a href="https://www.springer.com/series/7818" className="text-blue-600 hover:underline ml-1">
                   https://www.springer.com/series/7818
                 </a>
               </p>
             </section>
-
-            {/* Publication Section
-            <section className="mb-12">
-              <h3 className="text-2xl font-bold text-blue-600 mb-4 flex items-center">
-                <Copy className="mr-2" />
-                Publication
-              </h3>
-              <p className="text-md leading-relaxed text-justify mb-4">
-                All peer-reviewed papers of the conference will be published as proceedings in the prestigious SCOPUS-indexed "Lecture Notes in Electrical Engineering" by Springer series 
-                (<a href="https://www.springer.com/series/7818" className="text-blue-600 hover:underline">https://www.springer.com/series/7818</a>).
-              </p>
-              <p className="text-md leading-relaxed text-justify">
-                LNEE is also abstracted and indexed in:
-              </p>
-              <ul className="list-disc list-inside text-md text-gray-700 grid grid-cols-2 gap-4 mt-4">
-                <li>DBLP</li>
-                <li>EI Compendex</li>
-                <li>INSPEC</li>
-                <li>Japanese Science and Technology Agency (JST)</li>
-                <li>SCImago</li>
-                <li>SCOPUS</li>
-                <li>WTI Frankfurt eG</li>
-                <li>zbMATH</li>
-              </ul>
-            </section> */}
 
             {/* Submission Section */}
             <section className="bg-white p-8 rounded-lg shadow-md">

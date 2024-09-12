@@ -73,7 +73,7 @@ const CallForPapers: React.FC = () => {
         <a href="/CallforPapers/papersubmission"  rel="noopener noreferrer">
         <div className="text-center">
           <button className="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition duration-300">
-            Register Now
+            Read More
           </button>
         </div>
         </a>

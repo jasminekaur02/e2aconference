@@ -107,16 +107,6 @@ const ComponentName = () => {
             </div>
           </div>
         </div>
-<<<<<<< HEAD
-        <div className="flex-1 flex items-center justify-center">
-          <Image
-            src="/profile-image-placeholder.png"
-            alt="Conference Attendee"
-            width={300}
-            height={300}
-            className="rounded-lg"
-          />
-=======
       </section>
 
       {/* Conference Schedule Section */}
@@ -175,20 +165,19 @@ const ComponentName = () => {
                 01:30-03:00 <span className="ml-4">Workshop: Building Modern Apps</span>
               </h3>
               <p className="mt-1 text-sm text-gray-300">
-                Hands-on workshop focusing on modern application development techniques.
+                Hands-on workshop focusing on modern app development techniques.
               </p>
             </div>
 
             <div className="bg-gray-800 text-left text-white p-4 rounded-lg shadow-md hover:transform hover:scale-105 hover:shadow-xl transition-all duration-300">
               <h3 className="text-lg font-semibold">
-                03:00-04:00 <span className="ml-4">Closing Remarks</span>
+                03:00-04:30 <span className="ml-4">Panel Discussion</span>
               </h3>
               <p className="mt-1 text-sm text-gray-300">
-                Recap of the day and final thoughts from the conference organizers.
+                Panel discussion with industry leaders on future trends.
               </p>
             </div>
           </div>
->>>>>>> 308ecd2c42309daf273324164b7c03a6d50e2590
         </div>
       </section>
     </div>

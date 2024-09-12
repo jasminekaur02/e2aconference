@@ -4,8 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/Footer'; // Import your Footer component
-import { Head } from 'next/document';
-
+import Head from 'next/head'; // Corrected Head import
 
 const MergedComponent = () => {
   const scheduleRef = useRef<HTMLDivElement | null>(null);
@@ -38,9 +37,12 @@ const MergedComponent = () => {
   }, [isScheduleVisible]);
 
   return (
-    
     <div className="bg-gradient-to-b from-indigo-50 to-indigo-100 rounded-bl-[200px]">
-      
+      <Head>
+        <title>E2A 2025 Conference</title>
+        <meta name="description" content="Join us at the E2A 2025 Conference." />
+      </Head>
+
       <Navbar />
 
       <header className="">
@@ -108,7 +110,7 @@ const MergedComponent = () => {
                   <blockquote>
                     <p className="text-base font-normal leading-6 text-white">
                       You made it so simple. Our new site is so much faster and easier to work with than my old site.
-                      I just choose the page, make the change and it's done.
+                      I just choose the page, make the change and it&#39;s done.
                     </p>
                   </blockquote>
                   <p className="mt-4 text-base font-semibold text-white">Ralph Edwards</p>
@@ -146,10 +148,10 @@ const MergedComponent = () => {
 
             <div className="bg-gray-800 text-left text-white p-4 rounded-lg shadow-md hover:transform hover:scale-105 hover:shadow-xl transition-all duration-300">
               <h3 className="text-lg font-semibold">
-                10:00-11:00 <span className="ml-4">Keynote: The Future of JS</span>
+                10:00-11:00 <span className="ml-4">Keynote: TO BE ANNOUNCED</span>
               </h3>
               <p className="mt-1 text-sm text-gray-300">
-                Keynote address by a leading expert in JavaScript.
+                TO BE ANNOUNCED
               </p>
             </div>
 
@@ -158,110 +160,16 @@ const MergedComponent = () => {
                 11:00-12:00 <span className="ml-4">Breakout Sessions</span>
               </h3>
               <p className="mt-1 text-sm text-gray-300">
-                Choose from various breakout sessions on topics like React, Node.js, and more.
+                TO BE ANNOUNCED
               </p>
             </div>
 
-            <div className="bg-gray-800 text-left text-white p-4 rounded-lg shadow-md hover:transform hover:scale-105 hover:shadow-xl transition-all duration-300">
-              <h3 className="text-lg font-semibold">
-                12:00-01:30 <span className="ml-4">Lunch Break</span>
-              </h3>
-              <p className="mt-1 text-sm text-gray-300">
-                Enjoy a lunch break with an opportunity to network with other attendees.
-              </p>
-            </div>
-
-            <div className="bg-gray-800 text-left text-white p-4 rounded-lg shadow-md hover:transform hover:scale-105 hover:shadow-xl transition-all duration-300">
-              <h3 className="text-lg font-semibold">
-                01:30-03:00 <span className="ml-4">Afternoon Workshops</span>
-              </h3>
-              <p className="mt-1 text-sm text-gray-300">
-                Participate in hands-on workshops focusing on practical skills and advanced topics.
-              </p>
-            </div>
-
-            <div className="bg-gray-800 text-left text-white p-4 rounded-lg shadow-md hover:transform hover:scale-105 hover:shadow-xl transition-all duration-300">
-              <h3 className="text-lg font-semibold">
-                03:00-04:30 <span className="ml-4">Panel Discussion</span>
-              </h3>
-              <p className="mt-1 text-sm text-gray-300">
-                Engage in a panel discussion with industry leaders on current trends and future directions.
-              </p>
-            </div>
-
-            <div className="bg-gray-800 text-left text-white p-4 rounded-lg shadow-md hover:transform hover:scale-105 hover:shadow-xl transition-all duration-300">
-              <h3 className="text-lg font-semibold">
-                04:30-06:00 <span className="ml-4">Networking Reception</span>
-              </h3>
-              <p className="mt-1 text-sm text-gray-300">
-                Wrap up the day with a reception to connect with fellow attendees and speakers.
-              </p>
-            </div>
+            {/* Add more events as needed */}
           </div>
         </div>
       </section>
-      <main className="container mx-auto px-4 py-8">
-        {/* Topical Highlights Section */}
-        <section className="mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">
-            <span className="text-black">Past </span>
-            <span className="text-blue-600">Editions</span>
-          </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            {/* Main Highlight */}
-            <div className="col-span-2 relative rounded-lg overflow-hidden shadow-lg">
-              <Image
-                src="/path-to-main-image.jpg" // Replace with the actual path to your image
-                alt="Main Highlight"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-lg"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-6">
-                <h3 className="text-3xl text-white font-bold">
-                  xyz
-                </h3>
-                <p className="mt-2 text-sm text-gray-300">Electronics | Papers</p>
-              </div>
-            </div>
 
-            {/* Side Content */}
-            <div className="flex flex-col justify-center">
-              <p className="text-lg font-medium text-gray-700">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos maxime laboriosam dolorem voluptatibus ipsam quasi fugiat impedit. Hic beatae, mollitia temporibus maxime quod perferendis sunt, possimus labore a quisquam voluptates!
-                
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Current Trends Section */}
-        <section>
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Current Reads</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Single Trend Item */}
-            {Array(5).fill(0).map((_, index) => (
-              <div key={index} className="relative rounded-lg overflow-hidden shadow-lg h-52">
-                <Image
-                  src={`/path-to-image-${index}.jpg`} // Replace with the actual path to your images
-                  alt={`Paper ${index + 1}`}
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-lg"
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4">
-                  <h3 className="text-lg font-semibold text-white">
-                    Lorem ipsum 
-                  </h3>
-                  <p className="mt-1 text-sm text-gray-300">AI/ML | Papers</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-      </main>
-
-      <Footer />
+      <Footer /> {/* Added Footer */}
     </div>
   );
 };

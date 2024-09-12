@@ -50,7 +50,7 @@ const AboutUsPage = () => {
                 )}
               </p>
               <button onClick={() => setShowMoreNit(!showMoreNit)} className="text-blue-600 hover:underline mt-4 inline-block">
-                {showMoreNit ? 'Read Less' : 'Read More'}
+                {showMoreNit ? "Read Less" : "Read More"}
               </button>
             </div>
 
@@ -69,7 +69,7 @@ const AboutUsPage = () => {
                 )}
               </p>
               <button onClick={() => setShowMoreIce(!showMoreIce)} className="text-blue-600 hover:underline mt-4 inline-block">
-                {showMoreIce ? 'Read Less' : 'Read More'}
+                {showMoreIce ? "Read Less" : "Read More"}
               </button>
             </div>
           </div>
