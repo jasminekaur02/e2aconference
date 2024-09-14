@@ -95,7 +95,7 @@ const Hero = () => {
 
       {/* Content over the background image */}
       <div className="relative flex flex-col justify-center items-center text-center text-white h-full px-4 pt-32">
-        <h1 className="text-4xl md:text-6xl font-bold">E2ACON <span className='text-blue-400'>2025</span></h1>
+        <h1 className="text-4xl md:text-6xl font-bold">E2ACON <span className='text-blue-400'>2024</span></h1>
         <p className="mt-4 text-2xl md:text-3xl font-bold">
           International Conference on <br />
           <span className="text-blue-400">Electrical, Electronics</span> &{" "}
