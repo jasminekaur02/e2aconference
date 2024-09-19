@@ -61,7 +61,7 @@ const WelcomePage = () => {
       >
         <div className="w-24 h-24 mb-4">
           <Image
-            src="/logo.png"
+            src="/image.png"
             alt="NIT Jalandhar Logo"
             width={96}
             height={96}
@@ -69,15 +69,17 @@ const WelcomePage = () => {
           />
         </div>
 
-        <h2 className="text-2xl font-semibold text-gray-800 mb-2">
-          Dr. B. R. Ambedkar National Institute of Technology Jalandhar
-        </h2>
-        <h1 className="text-4xl font-bold text-blue-600 mb-4">
-          E2ACON 2025
-        </h1>
-        <p className="text-lg text-gray-700 mb-6">
-          Organized by  <br /> Department of Instrumentation and Control Engineering (ICE)
-        </p>
+        <h2 className="text-xl font-semibold text-gray-800 mb-2">
+  <span className="block">Dr. B. R. Ambedkar National Institute of Technology Jalandhar</span>
+</h2>
+<h1 className="text-3xl font-bold text-blue-600 mb-4">
+  E2ACON 2025
+</h1>
+<h2 className="text-xl font-semibold text-gray-800 mb-4 mt-0">March 8-9, 2025</h2>
+<p className="text-lg text-gray-700 mb-6">
+  Organized by <br /> Department of Instrumentation and Control Engineering (ICE)
+</p>
+
 
         <button
           onClick={handleProceed}

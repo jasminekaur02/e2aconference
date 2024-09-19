@@ -127,12 +127,7 @@ const teamData: TeamData = {
       image: "https://v1.nitj.ac.in/images/faculty/20010827402.jpg",
       profileLink: "https://departments.nitj.ac.in/dept/ice/Faculty/6430446e38bff038a7808a47"
     },
-    {
-      name: "Dr. Ravi Verma",
-      designation: "Assistant Professor",
-      affiliation: "NIT Jalandhar",
-      image: "https://v1.nitj.ac.in/images/faculty/20010827402.jpg" // Replace with actual image path
-    },
+   
     {
       name: "Dr. Richa Sharma",
       designation: "Assistant Professor",
