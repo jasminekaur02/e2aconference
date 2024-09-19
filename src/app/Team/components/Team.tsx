@@ -59,18 +59,6 @@ const teamData: TeamData = {
       image: "https://www.nitj.ac.in/images/faculty/18022167136.png",
       profileLink: "https://departments.nitj.ac.in/dept/ee/Faculty/6430445938bff038a7806513"
     },
-<<<<<<< HEAD
-
-    //   x
-    // {
-    //   name: "Prof. Prerna Gaur",
-    //   designation: "Professor",
-    //   affiliation: "NSUT Delhi, India",
-    //   image: "http://nsut.ac.in/sites/default/files/styles/node_image_/public/2021-10/Prerna%20Gaur%202021.jpeg?itok=Hk7sWUq3" // Replace with actual image path
-    // },
-
-=======
->>>>>>> fork/main
     {
       name: "Prof. Jerzy R. Szymański",
       affiliation: "Kazimierz Pulaski University, Poland",

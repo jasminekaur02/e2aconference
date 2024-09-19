@@ -78,15 +78,6 @@ const SponsorshipPage = () => {
             {sponsorshipPackages.map((packageItem, index) => (
               <div
                 key={index}
-<<<<<<< HEAD
-                className={`bg-gray-800 text-white shadow-lg rounded-lg overflow-hidden transition transform hover:-translate-y-1 relative cursor-pointer ${
-                  packageItem.title === 'Gold'
-                    ? 'shadow-gold'
-                    : 'shadow-cyan'
-                } ${hovered ? 'shadow-6xl' : ''}`}
-                onMouseEnter={() => setHovered(true)}
-                onMouseLeave={() => setHovered(false)}
-=======
                 className={`bg-gray-800 text-white shadow-lg rounded-lg overflow-hidden transition transform ${
                   hoveredIndex === index ? 'hover:-translate-y-1 shadow-2xl' : ''
                 } relative cursor-pointer ${
@@ -94,7 +85,6 @@ const SponsorshipPage = () => {
                 }`}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
->>>>>>> fork/main
               >
                 <div className="p-6">
                   <div className="flex justify-center mb-4">
