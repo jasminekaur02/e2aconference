@@ -1,17 +1,15 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 
 export default function AboutUs() {
-  const [isExpanded, setIsExpanded] = useState(false); // State to track the expansion of the text
+  const aboutText = `
+    <p>The <strong>International Conference on Electrical, Electronics, and Automation (E2ACON)</strong> is a global platform that brings together leading researchers, engineers, educators, and industry professionals to exchange ideas and share innovations in these critical fields. With the theme <em>“Sustainable Development: The Foundation of a Viksit Bharat”</em>, E2ACON 2025 emphasises the role of advanced technologies in achieving sustainable growth and supporting India's vision of becoming a developed nation. The conference will focus on a wide range of topics, including renewable energy systems, smart grids, IoT, automation, and advanced control systems, all aimed at creating energy-efficient, resource-conscious solutions for the future.</p>
 
-  const aboutText =
-    "International Conference on Electrical, Electronics, and Automation (E2A) serves as a global hub where the brightest minds converge to explore, collaborate, and share their ground-breaking research and innovations. In today's rapidly evolving technological landscape, the domains of electrical engineering, electronics, and automation are integral to shaping our future. E2A provides a vital platform for researchers, scientists, engineers, educators, and industry experts from diverse backgrounds and cultures to come together, fostering a rich exchange of ideas and knowledge.As we navigate an era of unprecedented technological advancement, E2A strives to accelerate progress by facilitating meaningful conversations, driving innovation, and charting the course for a future powered by cutting-edge electrical, electronics, and automation technologies. Join us at E2A to be a part of this transformative journey, where together, we illuminate the path toward a smarter, more connected, and automated world. Your contributions and insights are integral to shaping the future at E2A.";
-
-  const aboutTextShort = aboutText.slice(0, 200); // Shortened version of the text
+    <p>E2ACON is a hub for global innovation, where participants can present their latest research, collaborate with peers, and explore cutting-edge developments. This event is an opportunity to contribute to the ongoing transformation of the world through technology and help shape a sustainable, connected, and automated future. Join E2ACON 2025 and be a part of the journey toward a smarter, more sustainable world.</p>
+  `;
 
   // Refs for animations
   const headingRef = useRef<HTMLHeadingElement | null>(null);
-  const aboutTextRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const headingObserver = new IntersectionObserver(
@@ -48,27 +46,13 @@ export default function AboutUs() {
         {/* White Content Box with Blue Background Shape */}
         <div className="relative">
           <div
-            ref={aboutTextRef}
             className="relative bg-white p-6 sm:p-8 md:p-10 rounded-lg shadow-lg z-10 opacity-100 transform translate-y-0"
           >
-            {/* Conditionally show full or shortened text */}
-            <p className="text-base sm:text-lg text-justify text-gray-700">
-              {/* On large screens (lg: class), always show full text; on smaller, toggle with "Read More" */}
-              <span className="lg:hidden">
-                {isExpanded ? aboutText : `${aboutTextShort}...`}
-              </span>
-              <span className="hidden lg:block">{aboutText}</span>
-            </p>
-
-            {/* Show Read More/Read Less only on sm and md screens */}
-            <div className="mt-4 text-center lg:hidden">
-              <button
-                className="text-blue-600 hover:underline focus:outline-none"
-                onClick={() => setIsExpanded(!isExpanded)}
-              >
-                {isExpanded ? "Read Less" : "Read More"}
-              </button>
-            </div>
+            {/* Display full text with separate paragraphs */}
+            <div
+              className="text-base sm:text-lg text-justify text-gray-700"
+              dangerouslySetInnerHTML={{ __html: aboutText }}
+            ></div>
           </div>
 
           {/* Blue Background Shape */}

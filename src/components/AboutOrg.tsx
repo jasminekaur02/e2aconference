@@ -17,6 +17,14 @@ const AboutOrg = () => {
             {/* About NIT Jalandhar */}
             <div className="bg-white p-8 rounded-lg shadow-lg">
               <h3 className="text-3xl font-bold mb-4">About <span className='text-blue-600'>NIT Jalandhar</span></h3>
+              
+              {/* "More Info" Button for NIT Jalandhar */}
+              <div className="mb-4">
+                <Link href="https://www.nitj.ac.in/" className="px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
+                  More Info
+                </Link>
+              </div>
+              
               <p className="text-lg leading-relaxed text-justify">
                 Established in 1987, NIT Jalandhar offers UG, PG, and research programs. It holds 46th NIRF ranking and ranks among the top 700 universities in Asia.
                 {showMoreNit && (
@@ -32,7 +40,15 @@ const AboutOrg = () => {
 
             {/* Department of ICE */}
             <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-3xl font-bold mb-4">Department of <span className='text-blue-600'>ICE</span></h3>
+              <h3 className="text-3xl font-bold mb-4">About Department of <span className='text-blue-600'>ICE</span></h3>
+              
+              {/* "More Info" Button for Department of ICE */}
+              <div className="mb-4">
+                <Link href="https://departments.nitj.ac.in/dept/ice/home" className="px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
+                  More Info
+                </Link>
+              </div>
+              
               <p className="text-lg leading-relaxed text-justify">
                 The Department of Instrumentation and Control Engineering (ICE) commenced its B.Tech program in 1990. Specializations include Process Instrumentation, Control Systems, Biomedical Engineering, and Robotics.
                 {showMoreIce && (
@@ -48,10 +64,8 @@ const AboutOrg = () => {
           </div>
 
           {/* Our Mission & Vision Section */}
-         
-
           <div className='pt-24'>
-            <ZigzagTimeline/>
+            <ZigzagTimeline />
           </div>
         </section>
       </div>
