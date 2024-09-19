@@ -10,32 +10,32 @@ interface Track {
 const tracks: Track[] = [
   {
     id: 1,
-    name: "Track 1",
+    name: "Advances in Electrical Engineering",
     description: "Advances in Electrical Systems including Power Generation, Smart Grids, and Renewable Energy Solutions."
   },
   {
     id: 2,
-    name: "Track 2",
+    name: "Smart Electronics and Communications",
     description: "Smart Electronics and Communications focusing on VLSI Design, Embedded Systems, and 5G/6G Technologies."
   },
   {
     id: 3,
-    name: "Track 3",
+    name: "Instrumentation and Automation",
     description: "Instrumentation and Automation with emphasis on Robotics, Control Systems, and Sensor Technologies."
   },
   {
     id: 4,
-    name: "Track 4",
+    name: "Medical and Digital Healthcare",
     description: "Medical and Digital Healthcare covering Wearable Devices, AI in Healthcare, and Remote Monitoring."
   },
   {
     id: 5,
-    name: "Track 5",
+    name: "Industry 5.0, Manufacturing and Automation",
     description: "Industry 5.0, Manufacturing and Automation focusing on IoT, Big Data, and Smart Manufacturing Practices."
   },
   {
     id: 6,
-    name: "Track 6",
+    name: "Environment and Infrastructure Monitoring",
     description: "Environment and Infrastructure Monitoring , Sensors and Systems for Climate Change Mitigation"
   },
 ];

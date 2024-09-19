@@ -190,10 +190,9 @@ const tracks = [
       { name: "Blockchain Technology and Applications" },
       { name: "3D Printing and Applications" },
       { name: "Augmented Reality/ Virtual Reality" },
-      { name: "Cognitive Radio and Spectrum Management" },
+      { name: "Cognitive Radio and Spectrum Management and Other Related Topics" },
     ],
   },
-  // other tracks
 ];
 
 const CallForPapers: React.FC = () => {
@@ -208,30 +207,30 @@ const CallForPapers: React.FC = () => {
       <HeaderTop isHomePage={false} />
       <Navbar />
       <PageHero 
-        title="Track Details" 
-        image="https://v1.nitj.ac.in/ITEP/img/01.jpg"
-      />
-      
-      {/* Main Section */}
-      <section className="py-12 sm:py-16 bg-white" id="CallForPapers">
+  title="Track Details" 
+ image="https://v1.nitj.ac.in/ITEP/img/01.jpg"
+/>
+      <section className="py-28 bg-white" id="CallForPapers">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
-          {/* Title and Intro */}
-          <p className='text-blue-600 font-semibold text-3xl sm:text-4xl mb-4 text-center'>
-            Sustainable Development - The Foundation of a Viksit Bharat
-          </p>
-          <p className="bg-yellow-200 text-red-600 p-4 rounded-lg text-sm sm:text-base">
-            Selected themes for the E2ACON 2025 proceedings are mainly comprising of the topics focusing on the new trends in the field of Electronics, Electrical, Automation, and Emerging Technologies. 
-            The organizing committee also welcomes the proposals for special sessions. Following are the topics included in the call for paper:
-          </p>
+          {/* <h2 className="text-4xl font-bold mb-16">
+            Call For <span className="text-blue-600">Papers</span>
+          </h2> */}
+          <p className='text-blue-600 font-semibold mb-6 text-center text-4xl'>Sustainable Development-The Foundation of a Viksit Bharat</p>
+          <p className="bg-indigo-50 text-black p-4 rounded-lg">
+  Selected themes for the E2ACON 2025 proceedings are mainly comprising of the topics focusing on the new trends in the field of Electronics, Electrical, Automation, and Emerging Technologies.
+
+  In addition to below, the organising committee of the conference also welcomes the proposals for special sessions on topics related to the field of interest of the conference.
+
+  Following are the topics to be included in the call for paper:
+</p>
 
           {/* Filter Section */}
-          <div className="mb-6 mt-6 flex flex-col sm:flex-row items-center">
-            <label className="mr-4 text-sm sm:text-base">Track:</label>
+          <div className="mb-8 mt-6">
+            <label className="mr-4">Track:</label>
             <select 
               value={selectedTrack} 
               onChange={(e) => setSelectedTrack(e.target.value)} 
-              className="border rounded p-2 w-full sm:w-auto"
+              className="border rounded p-2"
             >
               {uniqueTracks.map((track, index) => (
                 <option key={index} value={track}>{track}</option>
@@ -240,13 +239,13 @@ const CallForPapers: React.FC = () => {
           </div>
 
           {/* Display Tracks and Sub-Tracks */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredTracks.map(track => (
-              <div key={track.id} className="bg-gray-100 rounded-lg p-4 sm:p-6 shadow-sm">
-                <h3 className="text-blue-600 font-semibold mb-2 text-lg sm:text-xl">{track.name}</h3>
-                <ul className="list-disc pl-4 text-gray-700 text-sm sm:text-base">
+              <div key={track.id} className="bg-gray-100 rounded-lg p-6 shadow-sm">
+                <h3 className="text-blue-600 font-semibold mb-2">{track.name}</h3>
+                <ul className="list-disc pl-5">
                   {track.subTracks.map((subTrack, index) => (
-                    <li key={index}>{subTrack.name}</li>
+                    <li key={index} className="text-gray-700">{subTrack.name}</li>
                   ))}
                 </ul>
               </div>
@@ -254,7 +253,7 @@ const CallForPapers: React.FC = () => {
           </div>
         </div>
       </section>
-
+      
       <Footer />
     </>
   );
