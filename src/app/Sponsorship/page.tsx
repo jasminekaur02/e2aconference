@@ -7,11 +7,7 @@ import { FaStar, FaGem, FaCrown } from 'react-icons/fa';
 import Footer from '@/components/Footer';
 import PageHero from '@/components/PageHero';
 
-<<<<<<< HEAD
-// Sponsorship packages data should be outside of the component
-=======
 // Moved sponsorshipPackages array inside the component or import it from a separate file
->>>>>>> fork/main
 const sponsorshipPackages = [
   {
     title: "Platinum",
