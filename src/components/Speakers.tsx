@@ -75,7 +75,7 @@ const ExpertSpeakers: React.FC = () => {
     <section className="py-12 sm:py-16 bg-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <p className="text-gray-600 mb-2 text-center sm:text-left">
-          KEYNOTES FROM THE INDUSTRY EXPERTS
+          SPEAKERS FROM ACADEMIA/INDUSTRY
         </p>
         <h2 className="text-3xl sm:text-4xl font-bold mb-8 sm:mb-12 text-center sm:text-left">
           Expert <span className="text-blue-600">Speakers</span>
