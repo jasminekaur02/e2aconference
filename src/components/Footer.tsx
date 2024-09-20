@@ -29,12 +29,12 @@ const Footer = () => {
                 <FontAwesomeIcon icon={faEnvelope} className="w-5 h-5 md:w-6 md:h-6 text-blue-400 mr-3" />
                 <div>
                   <p className="text-sm md:text-base">Dr Afzal Sikander</p>
-                  <a href="mailto:afzal@nitj.ac.in" className="text-sm md:text-base text-blue-400">
-                    afzal@nitj.ac.in
+                  <a href="mailto:info.e2a@nitj.ac.in" className="text-sm md:text-base text-blue-400">
+                    info.e2a@nitj.ac.in
                   </a>
                   <span className="text-sm md:text-base mx-2">|</span>
                   <a href="tel:+917078438756" className="text-sm md:text-base text-blue-400">
-                    +91 70784 38756
+                    +91 70784 38786
                   </a>
                 </div>
               </div>
