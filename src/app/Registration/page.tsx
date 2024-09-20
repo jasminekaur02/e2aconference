@@ -22,24 +22,36 @@ const ConferenceFeesPage = () => {
             NOTE: In order to participate in the conference of E2ACON 2025, at least one author must register and pay as per the fee mentioned below. The registration fee includes Conference Kit, attendance to all technical sessions, workshops, plenary talks, and special sessions, Tea and Snacks on both days.
           </p>
 
-          {showMoreNote ? (
-            <>
-              <p className="text-gray-700 mb-4">
-                Only accepted and presented papers will be published in the conference proceedings/Journals. The page limit for each paper is 10, and up to two additional pages will be permitted for an additional charge of ₹1000/$15 per page for Indians and foreigners, respectively.
-              </p>
-              <p className="text-gray-700">
-                Students/Research Scholars have to submit a scanned copy of their Institute ID card along with the Registration form. However, they must produce the original copy of the Institute ID card at the time of presentation.
-              </p>
-            </>
-          ) : null}
+          {/* Full text visible on lg screens */}
+          <div className="hidden lg:block">
+            <p className="text-gray-700 mb-4">
+              Only accepted and presented papers will be published in the conference proceedings/Journals. The page limit for each paper is 10, and up to two additional pages will be permitted for an additional charge of ₹1000/$15 per page for Indians and foreigners, respectively.
+            </p>
+            <p className="text-gray-700">
+              Students/Research Scholars have to submit a scanned copy of their Institute ID card along with the Registration form. However, they must produce the original copy of the Institute ID card at the time of presentation.
+            </p>
+          </div>
 
-          {/* Show the Read More button on small and medium screens */}
-          <div className="sm:block md:block lg:hidden">
-            {!showMoreNote && (
-              <button onClick={() => setShowMoreNote(true)} className="text-blue-600 hover:underline mt-4 inline-block">
-                Read More
-              </button>
-            )}
+          {/* Show expandable text on small and medium screens */}
+          <div className="lg:hidden">
+            {showMoreNote ? (
+              <>
+                <p className="text-gray-700 mb-4">
+                  Only accepted and presented papers will be published in the conference proceedings/Journals. The page limit for each paper is 10, and up to two additional pages will be permitted for an additional charge of ₹1000/$15 per page for Indians and foreigners, respectively.
+                </p>
+                <p className="text-gray-700">
+                  Students/Research Scholars have to submit a scanned copy of their Institute ID card along with the Registration form. However, they must produce the original copy of the Institute ID card at the time of presentation.
+                </p>
+              </>
+            ) : null}
+
+            {/* Read More / Read Less button for small and medium screens */}
+            <button 
+              onClick={() => setShowMoreNote(!showMoreNote)} 
+              className="text-blue-600 hover:underline mt-4 inline-block"
+            >
+              {showMoreNote ? 'Read Less' : 'Read More'}
+            </button>
           </div>
         </section>
 
@@ -83,7 +95,7 @@ const ConferenceFeesPage = () => {
               </tbody>
             </table>
           </div>
-          
+
           <div className="mt-6 p-4 bg-yellow-100 rounded-lg">
             <p className="text-sm text-gray-700">
               For transferring registration fee through NEFT/RTGS/IMPS/Bank transfer, bank account details will be shared after acceptance.
