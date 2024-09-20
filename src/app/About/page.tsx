@@ -16,12 +16,12 @@ const AboutUsPage = () => {
     <>
       <HeaderTop isHomePage={false}/>
       <Navbar/>
-      <div className="min-h-screen flex flex-col">
+      <div className="min-h-screen flex flex-col overflow-x-hidden">
         {/* Hero Section */}
         <PageHero title="About Us" image="https://v1.nitj.ac.in/ITEP/img/01.jpg" /> {/* Add proper hero image path */}
         
         {/* About Section */}
-        <section className="py-16 px-6 md:px-12">
+        <section className="py-16 px-4 sm:px-6 md:px-12">
           <div className="bg-white p-4 rounded-lg shadow-lg max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold text-center mb-8 ">Who We <span className='text-blue-600'>Are</span></h2>
             <p className="text-lg leading-relaxed text-justify">
@@ -34,7 +34,7 @@ const AboutUsPage = () => {
         </section>
       
         {/* Additional Sections - About NIT Jalandhar and Department of ICE */}
-        <section className="px-6 md:px-12 py-16 bg-white">
+        <section className="px-4 sm:px-6 md:px-12 py-16 bg-white">
           <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* About NIT Jalandhar */}
             <div className="bg-white p-8 rounded-lg shadow-lg">
@@ -81,7 +81,7 @@ const AboutUsPage = () => {
         </section>
 
         {/* Vision and Mission Section */}
-        <section className="py-16 px-6 md:px-12 bg-white">
+        <section className="py-16 px-4 sm:px-6 md:px-12 bg-white">
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="bg-white p-8 rounded-lg shadow-lg">
               <h3 className="text-3xl font-bold text-blue-600 mb-4">Our Vision</h3>

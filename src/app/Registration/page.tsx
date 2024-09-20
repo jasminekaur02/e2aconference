@@ -1,39 +1,56 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import HeaderTop from '@/components/HeaderTop';
 import Navbar from '@/components/navbar';
 import PageHero from '@/components/PageHero';
 import Footer from '@/components/Footer';
 
 const ConferenceFeesPage = () => {
+  const [showMoreNote, setShowMoreNote] = useState(false);
+
   return (
     <>
       <HeaderTop isHomePage={false} />
       <Navbar />
       <PageHero title="Registration" image="https://v1.nitj.ac.in/ITEP/img/01.jpg" />
-      <div className=" min-h-screen p-10">
+      <div className="min-h-screen p-10">
         
         {/* Important Note Section */}
         <section className="bg-yellow-100 p-6 my-6 mx-auto max-w-7xl rounded-lg shadow-md">
-  <h2 className="text-2xl font-semibold text-red-600 mb-4">Important Note: Registration</h2>
-  <p className="text-gray-700 mb-4">
-    NOTE: In order to participate in the conference of E2ACON 2025 at least one author must register and pay as per the fee mentioned below. The registration fee includes Conference Kit, attendance to all technical sessions, workshops, plenary talks, and special sessions, Tea and Snacks on both days.
-  </p>
-  <p className="text-gray-700 mb-4">
-    Only accepted and presented papers will be published in the conference proceedings/Journals. The page limit for each paper is 10, and up to two additional pages will be permitted for an additional charge of ₹1000/$15 per page for Indians and foreigners, respectively.
-  </p>
-  <p className="text-gray-700">
-    Students/Research Scholars have to submit a scanned copy of their Institute ID card along with the Registration form. However, they must produce the original copy of the Institute ID card at the time of presentation.
-  </p>
-</section>
+          <h2 className="text-2xl font-semibold text-red-600 mb-4">Important Note: Registration</h2>
+          <p className="text-gray-700 mb-4">
+            NOTE: In order to participate in the conference of E2ACON 2025, at least one author must register and pay as per the fee mentioned below. The registration fee includes Conference Kit, attendance to all technical sessions, workshops, plenary talks, and special sessions, Tea and Snacks on both days.
+          </p>
 
+          {showMoreNote ? (
+            <>
+              <p className="text-gray-700 mb-4">
+                Only accepted and presented papers will be published in the conference proceedings/Journals. The page limit for each paper is 10, and up to two additional pages will be permitted for an additional charge of ₹1000/$15 per page for Indians and foreigners, respectively.
+              </p>
+              <p className="text-gray-700">
+                Students/Research Scholars have to submit a scanned copy of their Institute ID card along with the Registration form. However, they must produce the original copy of the Institute ID card at the time of presentation.
+              </p>
+            </>
+          ) : null}
+
+          {/* Show the Read More button on small and medium screens */}
+          <div className="sm:block md:block lg:hidden">
+            {!showMoreNote && (
+              <button onClick={() => setShowMoreNote(true)} className="text-blue-600 hover:underline mt-4 inline-block">
+                Read More
+              </button>
+            )}
+          </div>
+        </section>
 
         {/* Conference Fee Details */}
         <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
           <header className="bg-blue-600 text-white p-6 text-center">
             <h1 className="text-3xl font-bold">Conference Fee Details</h1>
           </header>
-          <main className="p-6">
+
+          {/* Wrapping the table inside a scrollable div for small and medium screens */}
+          <div className="p-6 overflow-x-auto">
             <table className="w-full border-collapse">
               <thead>
                 <tr className="bg-blue-100">
@@ -65,12 +82,13 @@ const ConferenceFeesPage = () => {
                 </tr>
               </tbody>
             </table>
-            <div className="mt-6 p-4 bg-yellow-100 rounded-lg">
-              <p className="text-sm text-gray-700">
-                For transferring registration fee through NEFT/RTGS/IMPS/Bank transfer, bank account details will be shared after acceptance.
-              </p>
-            </div>
-          </main>
+          </div>
+          
+          <div className="mt-6 p-4 bg-yellow-100 rounded-lg">
+            <p className="text-sm text-gray-700">
+              For transferring registration fee through NEFT/RTGS/IMPS/Bank transfer, bank account details will be shared after acceptance.
+            </p>
+          </div>
         </div>
       </div>
       <Footer />

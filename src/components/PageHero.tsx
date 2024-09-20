@@ -9,9 +9,15 @@ interface PageHeroProps {
 const PageHero: React.FC<PageHeroProps> = ({ title, image }) => {
   return (
     <div className="relative">
-      <img src={image} alt={title} className="w-full h-96 object-cover" />
+      <img 
+        src={image} 
+        alt={title} 
+        className="w-full h-64 sm:h-80 md:h-96 object-cover" 
+      />
       <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-        <h2 className="text-white text-7xl font-extrabold">{title}</h2>
+        <h2 className="text-white text-center font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-7xl px-4 sm:px-6 md:px-8">
+          {title}
+        </h2>
       </div>
     </div>
   );
