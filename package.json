@@ -23,6 +23,7 @@
     "fa-icons": "^0.2.0",
     "font-awesome": "^4.7.0",
     "font-awesome-icons": "^1.6.0",
+    "fortawesome": "^0.0.1-security",
     "framer": "^2.4.1",
     "framer-motion": "^10.18.0",
     "lucide-react": "^0.429.0",

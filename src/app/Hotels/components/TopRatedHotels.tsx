@@ -158,7 +158,7 @@ const TopRatedHotels: React.FC = () => {
           {/* Scrollable content with Framer Motion animations */}
           <div
             ref={scrollContainerRef}
-            className="flex overflow-x-hidden space-x-4 scrollbar-hide"
+            className="flex overflow-x-hidden space-x-0 scrollbar-hide" // Set space-x-0 to avoid gaps
           >
             {hotels.map((hotel) => (
               <motion.div
