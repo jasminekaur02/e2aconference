@@ -5,6 +5,8 @@ import HeaderTop from '@/components/HeaderTop';
 import Navbar from '@/components/navbar';
 import PageHero from '@/components/PageHero';
 import React, { useState } from 'react';
+import { faInfoCircle, faUniversity } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 
 const AboutUsPage = () => {

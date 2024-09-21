@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import ZigzagTimeline from './Timeline';
+import { faInfoCircle, faUniversity } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const AboutOrg = () => {
   const [showMoreNit, setShowMoreNit] = useState(false);
