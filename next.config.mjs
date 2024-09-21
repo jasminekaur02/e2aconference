@@ -12,11 +12,15 @@ const nextConfig = {
   },
 
   // Image domain configuration
-  domains: [
-    'i1.rgstatic.net', 
-    'omega.uniwersytetradom.pl', // Add this line
-    'media.licdn.com' // Add this if you're using LinkedIn images
-  ],
+  // next.config.js
+
+  images: {
+    domains: ['v1.nitj.ac.in', 'i1.rgstatic.net', 'omega.uniwersytetradom.pl','media.licdn.com'], // Add any other domains you're using
+  },
+
+
+     // Add this if you're using LinkedIn images
+  
 };
 
 export default nextConfig;
