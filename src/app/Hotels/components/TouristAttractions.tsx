@@ -163,7 +163,7 @@ const TouristAttractions: React.FC = () => {
                   </ul>
                   <a
                     href={attraction.link}
-                    className="mt-2 bg-blue-500 text-white px-3 py-1 text-sm rounded inline-block cursor-pointer hover:bg-blue-600"
+                    className="mt-2 bg-blue-500 text-white px-3 py-1 text-sm rounded inline-block cursor-pointer hover:bg-yellow-600"
                   >
                     Learn More
                   </a>

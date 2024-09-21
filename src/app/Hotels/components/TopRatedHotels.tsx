@@ -179,7 +179,7 @@ const TopRatedHotels: React.FC = () => {
                   <p className="text-blue-500 font-bold mt-1">Price: {hotel.price}</p>
                   <button
                     onClick={() => window.open(hotel.link, "_blank")}
-                    className="mt-2 bg-blue-500 text-white px-4 py-2 rounded cursor-pointer hover:bg-blue-600"
+                    className="mt-2 bg-blue-500 text-white px-4 py-2 rounded cursor-pointer hover:bg-yellow-600"
                   >
                     Book Now
                   </button>
