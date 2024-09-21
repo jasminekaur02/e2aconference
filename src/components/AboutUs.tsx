@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 export default function AboutUs() {
   const aboutText = `
@@ -7,6 +7,9 @@ export default function AboutUs() {
 
     <p>E2ACON is a hub for global innovation, where participants can present their latest research, collaborate with peers, and explore cutting-edge developments. This event is an opportunity to contribute to the ongoing transformation of the world through technology and help shape a sustainable, connected, and automated future. Join E2ACON 2025 and be a part of the journey toward a smarter, more sustainable world.</p>
   `;
+
+  // State for showing more text on small screens
+  const [showMore, setShowMore] = useState(false);
 
   // Refs for animations
   const headingRef = useRef<HTMLHeadingElement | null>(null);
@@ -32,6 +35,11 @@ export default function AboutUs() {
     };
   }, []);
 
+  // Function to toggle "Read More" state
+  const toggleShowMore = () => {
+    setShowMore(!showMore);
+  };
+
   return (
     <section className="relative py-8 sm:py-16 md:py-20 overflow-hidden" id="AboutUs">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -48,11 +56,21 @@ export default function AboutUs() {
           <div
             className="relative bg-white p-6 sm:p-8 md:p-10 rounded-lg shadow-lg z-10 opacity-100 transform translate-y-0"
           >
-            {/* Display full text with separate paragraphs */}
+            {/* Display truncated or full text based on state */}
             <div
-              className="text-base sm:text-lg text-justify text-gray-700"
+              className={`text-base sm:text-lg text-justify text-gray-700 ${!showMore ? 'line-clamp-3 sm:line-clamp-none' : ''}`}
               dangerouslySetInnerHTML={{ __html: aboutText }}
             ></div>
+
+            {/* "Read More" button for small screens */}
+            <div className="sm:hidden text-center mt-4">
+              <button
+                onClick={toggleShowMore}
+                className="text-blue-600 font-semibold hover:text-blue-800 transition"
+              >
+                {showMore ? "Read Less" : "Read More"}
+              </button>
+            </div>
           </div>
 
           {/* Blue Background Shape */}
