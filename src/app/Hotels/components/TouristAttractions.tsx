@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
@@ -78,11 +78,29 @@ const TouristAttractions: React.FC = () => {
   ];
 
   const scrollContainerRef = useRef<HTMLDivElement | null>(null);
+  const [cardWidth, setCardWidth] = useState(0);
+
+  useEffect(() => {
+    const updateCardWidth = () => {
+      const card = scrollContainerRef.current?.querySelector('div');
+      if (card) {
+        setCardWidth(card.clientWidth);
+      }
+    };
+
+    updateCardWidth();
+    window.addEventListener('resize', updateCardWidth);
+
+    return () => {
+      window.removeEventListener('resize', updateCardWidth);
+    };
+  }, []);
 
   const handleScroll = (direction: 'left' | 'right') => {
     const { current } = scrollContainerRef;
     if (current) {
-      const scrollAmount = 300;
+      const scrollAmount = cardWidth; // Scroll by exactly one card width
+
       const newPosition =
         direction === 'left'
           ? current.scrollLeft - scrollAmount
@@ -95,7 +113,6 @@ const TouristAttractions: React.FC = () => {
     }
   };
 
-  // Handle swipe events for mobile and tablet
   useEffect(() => {
     const handleTouchStart = (e: TouchEvent) => {
       const touchStartX = e.touches[0].clientX;
@@ -127,7 +144,7 @@ const TouristAttractions: React.FC = () => {
         container.removeEventListener('touchstart', handleTouchStart);
       }
     };
-  }, []);
+  }, [cardWidth]);
 
   return (
     <section className="py-6 w-full">
@@ -143,7 +160,7 @@ const TouristAttractions: React.FC = () => {
             {attractions.map((attraction) => (
               <motion.div
                 key={attraction.id}
-                className="bg-white rounded-lg shadow-lg p-4 lg:w-[25vw] w-[90vw] md:w-[40vw] flex-shrink-0"
+                className="bg-white rounded-lg shadow-lg p-4 w-full sm:w-[90vw] md:w-[40vw] lg:w-[25vw] flex-shrink-0"
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
