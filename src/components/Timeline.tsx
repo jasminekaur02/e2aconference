@@ -2,7 +2,7 @@ import React from 'react';
 
 const timelineData = [
   {
-    date: '15 September 2024',
+    date: '24 September 2024',
     title: 'Submission Start',
   },
   {
