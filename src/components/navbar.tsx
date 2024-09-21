@@ -314,7 +314,7 @@ export default function Navbar() {
 export function Logo() {
     return (
         <Link href="/" className="flex items-center text-white">
-            <img src="/e2alogo.jpg" alt="Logo" className="w-full h-[9vh]" />
+            <img src="/e2alogo.jpg" alt="Logo" className="w-9 h-9" />
         </Link>
     );
 }
