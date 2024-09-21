@@ -1,8 +1,6 @@
 'use client';
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUniversity, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 import ZigzagTimeline from './Timeline';
 
 const AboutOrg = () => {
@@ -24,16 +22,19 @@ const AboutOrg = () => {
 
               {/* "More Info" Button for NIT Jalandhar */}
               <div className="mb-4">
+
                 <Link
                   href="https://www.nitj.ac.in/"
                   className="flex items-center px-4 py-2 text-blue-400 font-semibold rounded-lg hover:bg-blue-600 hover:text-white transition"
                 >
                   <FontAwesomeIcon icon={faUniversity} className="mr-2" />
                   NIT Jalandhar
+
                 </Link>
               </div>
 
               <p className="text-lg leading-relaxed text-justify">
+
                 Dr. B. R. Ambedkar National Institute of Technology Jalandhar
                 (NIT Jalandhar), formerly Regional Engineering College
                 Jalandhar (est. in 1989), is a public engineering
@@ -55,6 +56,7 @@ const AboutOrg = () => {
                     the 2024 pass-out batch, with the highest package being 52
                     LPA and major recruiters, including Google, Amazon, Nvidia,
                     and many more.
+
                   </span>
                 )}
               </p>
@@ -74,16 +76,19 @@ const AboutOrg = () => {
 
               {/* "More Info" Button for Department of ICE */}
               <div className="mb-4">
+
                 <Link
                   href="https://departments.nitj.ac.in/dept/ice/home"
                   className="flex items-center px-4 py-2 text-blue-400 font-semibold rounded-lg hover:bg-blue-600 hover:text-white transition"
                 >
                   <FontAwesomeIcon icon={faInfoCircle} className="mr-2" />
                   ICE Department
+
                 </Link>
               </div>
 
               <p className="text-lg leading-relaxed text-justify">
+
                 The Department of Instrumentation and Control Engineering
                 (ICE) commenced its Bachelor of Technology
                 (B. Tech.) degree program in 1990 with an
@@ -103,6 +108,7 @@ const AboutOrg = () => {
                     consolidating its efforts to promote industrial research,
                     sponsored projects, and consultancy in appropriate
                     Instrumentation and Control Engineering areas.
+
                   </span>
                 )}
               </p>

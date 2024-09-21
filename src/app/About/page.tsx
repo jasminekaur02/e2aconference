@@ -6,10 +6,9 @@ import Navbar from '@/components/navbar';
 import PageHero from '@/components/PageHero';
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUniversity, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 
 const AboutUsPage = () => {
+  // State to control the visibility of additional content
   const [showMoreNit, setShowMoreNit] = useState(false);
   const [showMoreIce, setShowMoreIce] = useState(false);
 
@@ -19,14 +18,17 @@ const AboutUsPage = () => {
       <Navbar />
       <div className="min-h-screen flex flex-col overflow-x-hidden">
         {/* Hero Section */}
-        <PageHero title="About Us" image="https://v1.nitj.ac.in/ITEP/img/01.jpg" />
+        <PageHero title="About Us" image="https://v1.nitj.ac.in/ITEP/img/01.jpg" /> {/* Add proper hero image path */}
         
         {/* About Section */}
         <section className="py-16 px-4 sm:px-6 md:px-12">
           <div className="bg-white p-4 rounded-lg shadow-lg max-w-6xl mx-auto">
+
             <h2 className="text-4xl font-bold text-center mb-8">
               About&nbsp;<span className="text-blue-600">Us</span>
             </h2>
+
+         
             <p className="text-lg leading-relaxed text-justify">
               The International Conference on Electrical, Electronics, and Automation (E2ACON) serves as a global hub where the brightest minds converge to explore, collaborate, and share their ground-breaking research and innovations. In today&apos;s rapidly evolving technological landscape, the domains of electrical engineering, electronics, and automation are integral to shaping our future. E2A provides a vital platform for researchers, scientists, engineers, educators, and industry experts from diverse backgrounds and cultures to come together, fostering a rich exchange of ideas and knowledge.
             </p>
@@ -41,6 +43,7 @@ const AboutUsPage = () => {
           <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* About NIT Jalandhar */}
             <div className="bg-white p-8 rounded-lg shadow-lg">
+
               <h3 className="text-3xl font-bold mb-4">
                 About <span className="text-blue-600">NIT Jalandhar</span>
               </h3>
@@ -71,6 +74,7 @@ const AboutUsPage = () => {
                     the 2024 pass-out batch, with the highest package being 52
                     LPA and major recruiters, including Google, Amazon, Nvidia,
                     and many more.
+
                   </span>
                 )}
               </p>
@@ -84,6 +88,7 @@ const AboutUsPage = () => {
 
             {/* About Department of ICE */}
             <div className="bg-white p-8 rounded-lg shadow-lg">
+
               <h3 className="text-3xl font-bold mb-4">
                 Department of <span className="text-blue-600">ICE</span>
               </h3>
@@ -111,6 +116,7 @@ const AboutUsPage = () => {
                     consolidating its efforts to promote industrial research,
                     sponsored projects, and consultancy in appropriate
                     Instrumentation and Control Engineering areas.
+
                   </span>
                 )}
               </p>
