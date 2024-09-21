@@ -18,7 +18,7 @@ const NAVLINKS = [
         text: "CALL FOR PAPERS",
         subMenu: [
             { href: "/CallforPapers/papersubmission", text: "TRACK DETAILS" },
-            { href: "/welcome", text: "IMPORTANT DATES" },
+            { href: "/ImportantDates", text: "IMPORTANT DATES" },
             { href: "/Guidelines", text: "GUIDELINES" },
             { href: "/publications", text: "PUBLICATIONS" },
         ],
