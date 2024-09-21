@@ -204,16 +204,10 @@ const Committee2 = () => {
         {/* Render committee without images */}
         {Object.keys(committee).map((section, idx) => (
           <div key={idx} className="mb-12">
-            {/* Center text on small screens, left-align on large screens */}
-            <h3 className="text-2xl font-semibold mb-4 text-center sm:text-left mt-2 sm:mt-4">
-              {section}
-            </h3>
+            <h3 className="text-2xl font-semibold mb-4">{section}</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
               {committee[section].map((member, index) => (
-                <div
-                  key={index}
-                  className="bg-white p-6 rounded-lg shadow-lg text-center"
-                >
+                <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
                   <h4 className="text-xl font-bold">{member.name}</h4>
                   <p className="text-blue-500">{member.designation}</p>
                   <p className="text-black">{member.affiliation}</p>
@@ -227,6 +221,4 @@ const Committee2 = () => {
   };
   
   export default Committee2;
-  
- 
   
