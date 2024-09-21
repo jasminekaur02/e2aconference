@@ -14,29 +14,20 @@ interface Speaker {
 const speakers: Speaker[] = [
   {
     name: "Prof. JERZY R. SZYMANSKI",
-    image: "",
-    description: "Dr. Jane Smith is a renowned expert in artificial intelligence, with over 20 years of experience in the field. She has published numerous papers on machine learning and neural networks."
+    image: "/proffjerzy.jpg",
+    description: "Jerzy Ryszard Szymanski is working as a scientific worker and an academic lecturer at the University of Technology and Humanities in Radom, Poland on Professor position in the Faculty of Transport, Electrical and Computer Sciences in the Department of Electric Drives and Industrial Electronics. He has over 30 years of teaching and research experience in the diverse ﬁeld of Power Electronic Engineering. His areas of interest include: Power Electronics Converters in Drive Applications, Application of High Frequency Converter in PV and EV Systems, Electromagnetic Compatibility in Power Converters Systems, Hybrid power systems, Exploitation Safety of Electrical Equipment. He is actively involved in the various research projects and international activities (Bilateral and Erasmus/CEEPUS exchange). He has published over 100 research articles in the reputed national/international journals and conferences including 20 research papers in the SCI-indexed journals. He is a member of the Reviewer Board and Editorial Board of reputed Journals, such as MDPI, Springer, and Elsevier. He has also authored and co-authored books in the reputed publishing houses. "
   },
   {
-    name: "Prof. John Doe",
-    image: "/images/john-doe.jpg",
-    description: "Prof. John Doe is a leading researcher in quantum computing. He has been instrumental in developing new algorithms that push the boundaries of quantum information processing."
+    name: "DR. AJAY MATHUR",
+    image: "/ajaymathur.jpeg",
+    description: "Dr. Ajay Mathur is the Director General of the International Solar Alliance (ISA), a multilateral organization established to catalyze global solar growth. He previously served as Director General of The Energy and Resources Institute (TERI) and the Bureau of Energy Efficiency in India. He was a key figure in India's climate change negotiations and served as interim Director of the Green Climate Fund. Dr. Mathur holds degrees from the University of Roorkee and the University of Illinois and has received numerous awards for his contributions to energy and climate change."
   },
   {
-    name: "Prof. John Doe",
-    image: "/images/john-doe.jpg",
-    description: "Prof. John Doe is a leading researcher in quantum computing. He has been instrumental in developing new algorithms that push the boundaries of quantum information processing."
+    name: "MR. SUBRAMANYAM PULIPAKA",
+    image: "/subhramanyam.jpeg",
+    description: "Subrahmanyam is the youngest Chief Executive Officer of National Solar Energy Federation of India. Subrahmanyam, who is BITSAA Global 30 Under 30 Award recipient, is an alumnus of BITS Pilani in Electrical & Electronics Engineering and is one of the youngest winners of BRICS young scientist award - 2018. Well known Speaker at various Solar and RE events in India,Pulipaka represented India in various scientific and technology platforms worldwide including United States, China, Russia and Rwanda. With a research background in reliability of solar PV modules, he has published around 15 research articles in internationally acclaimed journals. He is also the founding chairman of India Africa Youth Energy Forum, a platform dedicated to nurture future energy leaders in the Indian subcontinent and African continent."
   },
-  {
-    name: "Prof. John Doe",
-    image: "/images/john-doe.jpg",
-    description: "Prof. John Doe is a leading researcher in quantum computing. He has been instrumental in developing new algorithms that push the boundaries of quantum information processing."
-  },
-  {
-    name: "Prof. John Doe",
-    image: "/images/john-doe.jpg",
-    description: "Prof. John Doe is a leading researcher in quantum computing. He has been instrumental in developing new algorithms that push the boundaries of quantum information processing."
-  },
+ 
   // Add more speakers as needed
 ];
 
@@ -49,13 +40,11 @@ const SpeakerPage: React.FC = () => {
       {/* Full-width Hero */}
       <PageHero 
         title="Keynote Speakers" 
-        image="https://v1.nitj.ac.in/ITEP/img/01.jpg"  // Ensure the image URL is correct
+        image="https://v1.nitj.ac.in/ITEP/img/01.jpg" 
       />
 
       {/* Page content */}
-      <div className="flex flex-col flex-grow items-center px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 py-8 w-full">
-     
-
+      <div className="flex flex-col flex-grow items-center px-4 sm:px-8 md:px-16 lg:px-24 py-8 w-full">
         {/* Speaker list */}
         <div className="max-w-6xl w-full">
           {speakers.map((speaker, index) => (
@@ -78,6 +67,8 @@ const SpeakerPage: React.FC = () => {
               <div className="w-full md:w-2/3 md:px-8">
                 <h2 className="text-2xl font-semibold text-blue-600 mb-2 text-center md:text-left">{speaker.name}</h2>
                 <p className="text-gray-800 text-center md:text-left">{speaker.description}</p>
+                {/* Bottom Border */}
+                <div className="border-b border-gray-400 mt-10"></div>
               </div>
             </div>
           ))}

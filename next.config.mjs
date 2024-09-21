@@ -12,9 +12,11 @@ const nextConfig = {
   },
 
   // Image domain configuration
-  images: {
-    domains: ['v1.nitj.ac.in'], // Add external domains here
-  },
+  domains: [
+    'i1.rgstatic.net', 
+    'omega.uniwersytetradom.pl', // Add this line
+    'media.licdn.com' // Add this if you're using LinkedIn images
+  ],
 };
 
 export default nextConfig;
