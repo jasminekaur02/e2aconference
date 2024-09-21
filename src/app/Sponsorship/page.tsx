@@ -129,7 +129,7 @@ const SponsorshipPage = () => {
           <div className="text-center mt-10">
             <p className="text-2xl">
               To Avail Package{' '}
-              <span className="font-bold text-blue-600">Contact Us</span>
+              {/* <span className="font-bold text-blue-600">Contact Us</span> */}
             </p>
             <Link href="/ContactUs" legacyBehavior>
               <a className="inline-block bg-white text-blue-600 px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-blue-50 transition duration-300">
