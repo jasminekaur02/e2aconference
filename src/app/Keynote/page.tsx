@@ -68,7 +68,7 @@ const SpeakerPage: React.FC = () => {
                 <h2 className="text-2xl font-semibold text-blue-600 mb-2 text-center md:text-left">{speaker.name}</h2>
                 <p className="text-gray-800 text-center md:text-left">{speaker.description}</p>
                 {/* Bottom Border */}
-                <div className="border-b border-gray-600 mt-10"></div>
+                <div className="border-b border-gray-400 mt-10"></div>
               </div>
             </div>
           ))}
