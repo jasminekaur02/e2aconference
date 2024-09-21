@@ -127,7 +127,6 @@ const teamData: TeamData = {
       image: "https://v1.nitj.ac.in/images/faculty/20010827402.jpg",
       profileLink: "https://departments.nitj.ac.in/dept/ice/Faculty/6430446e38bff038a7808a47"
     },
-   
     {
       name: "Dr. Richa Sharma",
       designation: "Assistant Professor",
@@ -153,17 +152,40 @@ const Team = () => {
         {Object.keys(teamData).map((section, idx) => {
           const members = teamData[section];
           const numItems = members.length;
-          const gridCols = numItems === 1 ? "grid-cols-1" : numItems === 2 ? "grid-cols-2" : "grid-cols-3";
+
+          // Apply 2x2 grid for specific sections
+          const isSpecialGrid =
+            section === "General Co-Chair(s)" || section === "Organising Secretary";
+          const gridCols = isSpecialGrid
+            ? "grid-cols-2"
+            : numItems === 1
+            ? "grid-cols-1"
+            : numItems === 2
+            ? "grid-cols-2"
+            : "grid-cols-3";
 
           return (
             <div key={idx} className="mb-8 md:mb-12 text-center">
               <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">{section}</h3>
-              <div className={`grid gap-6 justify-center ${gridCols} sm:grid-cols-${Math.min(2, numItems)} md:grid-cols-${Math.min(3, numItems)} lg:grid-cols-${Math.min(4, numItems)} xl:grid-cols-${Math.min(5, numItems)}`}>
+              <div
+                className={`grid gap-6 justify-center ${gridCols} sm:grid-cols-${
+                  numItems >= 2 ? 2 : 1
+                } md:grid-cols-${isSpecialGrid ? 2 : Math.min(3, numItems)} lg:grid-cols-${
+                  isSpecialGrid ? 2 : Math.min(4, numItems)
+                }`}
+              >
                 {members.map((member: TeamMember, index) => (
-                  <div key={index} className="bg-white p-4 sm:p-6 rounded-lg shadow-lg text-center">
+                  <div
+                    key={index}
+                    className="bg-white p-4 sm:p-6 rounded-lg shadow-lg text-center"
+                  >
                     {member.image && (
                       <a href={member.profileLink || "#"} target="_blank" rel="noopener noreferrer">
-                        <img src={member.image} alt={member.name} className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 mx-auto mb-4 rounded-full object-cover" />
+                        <img
+                          src={member.image}
+                          alt={member.name}
+                          className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 mx-auto mb-4 rounded-full object-cover"
+                        />
                       </a>
                     )}
                     <h4 className="text-lg sm:text-xl md:text-2xl font-bold">{member.name}</h4>
