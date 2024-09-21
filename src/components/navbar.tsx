@@ -34,7 +34,7 @@ const NAVLINKS = [
     },
     {
         href: "",
-        text: "NEW RELEASE",
+        text: "NEWS RELEASE",
         subMenu: [
             { href: "/NewsRelease", text: "ANNOUNCEMENTS" },
         ],
@@ -106,14 +106,24 @@ export default function Navbar() {
             description: "Discover opportunities to partner with us and promote your brand at the E2A Conference.",
         },
         6: {
+            title: "Register for the Conference!",
+            description: "Ensure your participation by registering for the E2A Conference today.",
+        },
+        7: {
             title: "Meet Our Committee!",
             description: "Our committee members are dedicated to making this conference a success.",
         },
-        7: {
+        8: {
             title: "Plan Your Stay!",
             description: "Discover the best hotels and travel options for a comfortable and convenient experience.",
         },
+        9: {
+            title: "Get in Touch with Us!",
+            description: "Have questions? Reach out to us, and we will assist you with any inquiries.",
+        },
     };
+    
+    
 
     useEffect(() => {
         const content = hoveredMenu !== null ? contentTexts[hoveredMenu.toString()] : contentTexts.default;
