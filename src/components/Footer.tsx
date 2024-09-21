@@ -41,7 +41,7 @@ const Footer = () => {
             <nav className="text-center lg:text-left">
               <ul className="flex flex-col space-y-2">
                 <li>
-                  <Link href="/#about" className="hover:text-blue-400">
+                  <Link href="/About" className="hover:text-blue-400">
                     About
                   </Link>
                 </li>
@@ -51,7 +51,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/Events/Pages/schedule" className="hover:text-blue-400">
+                  <Link href="/Workshop" className="hover:text-blue-400">
                     Events
                   </Link>
                 </li>

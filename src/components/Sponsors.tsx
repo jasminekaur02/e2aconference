@@ -41,6 +41,24 @@ const Sponsors = () => {
                   <span className="inline-block mx-4 text-xl font-semibold text-gray-100">
                     To Be Announced
                   </span>
+                  <span className="inline-block mx-4 text-xl font-semibold text-gray-100">
+                    To Be Announced
+                  </span>
+                  <span className="inline-block mx-4 text-xl font-semibold text-gray-400">
+                    To Be Announced
+                  </span>
+                  <span className="inline-block mx-4 text-xl font-semibold text-gray-100">
+                    To Be Announced
+                  </span>
+                  <span className="inline-block mx-4 text-xl font-semibold text-gray-100">
+                    To Be Announced
+                  </span>
+                  <span className="inline-block mx-4 text-xl font-semibold text-gray-400">
+                    To Be Announced
+                  </span>
+                  <span className="inline-block mx-4 text-xl font-semibold text-gray-100">
+                    To Be Announced
+                  </span>
                 </>
               )}
             </div>
