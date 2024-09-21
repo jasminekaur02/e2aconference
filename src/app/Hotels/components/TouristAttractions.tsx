@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
@@ -82,7 +82,7 @@ const TouristAttractions: React.FC = () => {
   const handleScroll = (direction: 'left' | 'right') => {
     const { current } = scrollContainerRef;
     if (current) {
-      const scrollAmount = 400;
+      const scrollAmount = 300;
       const newPosition =
         direction === 'left'
           ? current.scrollLeft - scrollAmount
@@ -94,6 +94,40 @@ const TouristAttractions: React.FC = () => {
       });
     }
   };
+
+  // Handle swipe events for mobile and tablet
+  useEffect(() => {
+    const handleTouchStart = (e: TouchEvent) => {
+      const touchStartX = e.touches[0].clientX;
+
+      const handleTouchMove = (e: TouchEvent) => {
+        const touchEndX = e.touches[0].clientX;
+        const touchDiff = touchStartX - touchEndX;
+
+        if (Math.abs(touchDiff) > 50) {
+          if (touchDiff > 0) {
+            handleScroll('right');
+          } else {
+            handleScroll('left');
+          }
+          document.removeEventListener('touchmove', handleTouchMove);
+        }
+      };
+
+      document.addEventListener('touchmove', handleTouchMove);
+    };
+
+    const container = scrollContainerRef.current;
+    if (container) {
+      container.addEventListener('touchstart', handleTouchStart);
+    }
+
+    return () => {
+      if (container) {
+        container.removeEventListener('touchstart', handleTouchStart);
+      }
+    };
+  }, []);
 
   return (
     <section className="py-6 w-full">
@@ -138,7 +172,8 @@ const TouristAttractions: React.FC = () => {
             ))}
           </div>
         </div>
-        <div className="flex justify-center mt-4">
+        {/* Scroll Arrows for Laptop View */}
+        <div className="flex justify-center mt-4 hidden md:flex">
           <button
             onClick={() => handleScroll('left')}
             className="p-2 bg-gray-300 rounded-full mr-2"
