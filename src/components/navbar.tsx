@@ -211,7 +211,7 @@ export default function Navbar() {
                           <div key={href} className="mb-6">
                             <Link
                               href={href}
-                              className="block text-white lg:text-[1.2rem] md:text-[1rem] text-[1rem] font-bold hover:text-blue-400 p-1 w-full text-left"
+                              className="block text-white lg:text-[1.24rem] md:text-[1rem] text-[1rem] font-bold hover:text-blue-400 p-1 w-full text-left"
                               onMouseEnter={() => setHoveredMenu(index)}
                               onMouseLeave={() => setHoveredMenu(null)}
                               onClick={() => handleMenuClick(index)}
