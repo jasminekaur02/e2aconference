@@ -69,20 +69,22 @@ const WorkshopPage = () => {
           </div>
         </section>
 
-         {/* Contact Information - Contact Cards */}
-         <section className="mb-12">
+        {/* Contact Information - Contact Cards */}
+        <section className="mb-12">
           <h2 className="text-2xl font-semibold text-blue-600 mb-8">Contact Information</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {[
               {
                 name: 'Dr. Richa Sharma',
                 title: 'Assistant Professor, NIT Jalandhar',
-                email: 'richas@nitj.ac.in'
+                //email: 'richas@nitj.ac.in',
+                imageUrl: 'https://www.nitj.ac.in/images/faculty/23020446113.jpeg' // Replace with actual image URL
               },
               {
                 name: 'Dr. Anil Kumar Yadav',
                 title: 'Assistant Professor, NIT Jalandhar',
-                email: 'yadavak@nitj.ac.in'
+                // email: 'yadavak@nitj.ac.in',
+                imageUrl: 'https://www.nitj.ac.in/images/faculty/23012713574.jpg' // Replace with actual image URL
               }
             ].map((contact, index) => (
               <div
@@ -90,14 +92,16 @@ const WorkshopPage = () => {
                 className="flex items-center bg-white shadow-lg rounded-lg p-4 hover:shadow-2xl transition-shadow duration-300"
               >
                 <div className="flex-shrink-0 mr-4">
-                  <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-lg font-bold">
-                    {contact.name.charAt(0)}
-                  </div>
+                  <img
+                    src={contact.imageUrl}
+                    alt={contact.name}
+                    className="w-12 h-12 rounded-full object-cover"
+                  />
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-800">{contact.name}</h3>
                   <p className="text-gray-600">{contact.title}</p>
-                  <a href={`mailto:${contact.email}`} className="text-blue-600">{contact.email}</a>
+                  {/* <a href={`mailto:${contact.email}`} className="text-blue-600">{contact.email}</a> */}
                 </div>
               </div>
             ))}
