@@ -62,7 +62,7 @@ const Timeline: React.FC<TimelineProps> = ({ days = [] }) => (
 // Days data
 const daysData: DayEvents[] = [
   {
-    date: '2024-09-15',
+    date: '2024-09-24',
     events: [
       {
         date: '2024-09-24',

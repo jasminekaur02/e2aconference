@@ -61,11 +61,12 @@ const Hero = () => {
 
 
   // Live status (set to true or false based on your logic)
-  const isLive = true; // Change this based on your live status logic
+  const [isLive, setIsLive] = useState(false); // Initially set to false or true as needed
+  const liveLink = "https://www.youtube.com/@NITJOfficial"; // Your YouTube link
 
-  const liveLink = "https://www.youtube.com/@NITJOfficial"; // Replace with your actual live link
-
-
+  const toggleLiveStatus = () => {
+    setIsLive((prev) => !prev); // Toggles the live status
+  };
   return (
     <section className="relative min-h-screen">
       {/* Background image carousel */}
@@ -85,13 +86,14 @@ const Hero = () => {
         href={liveLink}
         target="_blank"
         rel="noopener noreferrer"
-        className="absolute top-2 right-4 flex items-center border border-white text-white px-5 py-2 rounded-md hover:bg-white hover:text-black transition"
+        className="absolute top-[11vh]  right-4 flex items-center border border-white text-white px-5 py-2 rounded-md hover:bg-white hover:text-black transition"
       >
-        {isLive && (
-          <span className="bg-green-500 rounded-full w-2 h-2 mr-2"></span>
-        )}
+        <span 
+          className={`rounded-full w-2 h-2 mr-2 ${isLive ? 'bg-green-500' : 'bg-red-500'}`} 
+        />
         Live
       </a>
+      
 
       {/* Content over the background image */}
       <div className="relative flex flex-col justify-center items-center text-center text-white h-full px-4 pt-32">
