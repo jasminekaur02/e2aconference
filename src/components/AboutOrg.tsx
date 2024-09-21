@@ -30,7 +30,7 @@ const AboutOrg = () => {
                   className="flex items-center px-4 py-2 text-blue-400 font-semibold rounded-lg hover:bg-blue-600 hover:text-white transition"
                 >
                   <FontAwesomeIcon icon={faUniversity} className="mr-2" />
-                  NIT Jalandhar
+                  NITJ Official Website
 
                 </Link>
               </div>
@@ -84,7 +84,7 @@ const AboutOrg = () => {
                   className="flex items-center px-4 py-2 text-blue-400 font-semibold rounded-lg hover:bg-blue-600 hover:text-white transition"
                 >
                   <FontAwesomeIcon icon={faInfoCircle} className="mr-2" />
-                  ICE Department
+                  ICE Dept. Oficial Website
 
                 </Link>
               </div>

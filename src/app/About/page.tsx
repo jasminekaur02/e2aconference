@@ -54,7 +54,7 @@ const AboutUsPage = () => {
                   className="flex items-center"
                 >
                   <FontAwesomeIcon icon={faUniversity} className="mr-2" />
-                 NIT Jalandhar 
+                 NITJ Official Website
                 </Link>
               </p>
               <p className="text-md leading-relaxed text-justify">
@@ -98,7 +98,7 @@ const AboutUsPage = () => {
                   className="flex items-center"
                 >
                   <FontAwesomeIcon icon={faInfoCircle} className="mr-2" />
-                  ICE Department
+                  ICE Dept. Official Website
                 </Link>
               </p>
               <p className="text-md leading-relaxed text-justify">
