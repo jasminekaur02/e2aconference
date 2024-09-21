@@ -193,31 +193,38 @@ const committee: CommitteeType = {
 };
 
 const Committee2 = () => {
-  return (
+    return (
       <section className="py-12">
-          <div className="text-center mb-8">
-              {/* <h2 className="text-3xl font-bold">
-                  Program <span className="text-blue-600">Committee</span>
-              </h2> */}
+        <div className="text-center mb-8">
+          {/* <h2 className="text-3xl font-bold">
+            Program <span className="text-blue-600">Committee</span>
+          </h2> */}
+        </div>
+  
+        {/* Render committee without images */}
+        {Object.keys(committee).map((section, idx) => (
+          <div key={idx} className="mb-12">
+            {/* Center text on small screens, left-align on large screens */}
+            <h3 className="text-2xl font-semibold mb-4 text-center sm:text-left mt-2 sm:mt-4">
+              {section}
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+              {committee[section].map((member, index) => (
+                <div
+                  key={index}
+                  className="bg-white p-6 rounded-lg shadow-lg text-center"
+                >
+                  <h4 className="text-xl font-bold">{member.name}</h4>
+                  <p className="text-blue-500">{member.designation}</p>
+                  <p className="text-black">{member.affiliation}</p>
+                </div>
+              ))}
+            </div>
           </div>
-
-          {/* Render committee without images */}
-          {Object.keys(committee).map((section, idx) => (
-              <div key={idx} className="mb-12">
-                  <h3 className="text-2xl font-semibold mb-4">{section}</h3>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                      {committee[section].map((member, index) => (
-                          <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
-                              <h4 className="text-xl font-bold">{member.name}</h4>
-                              <p className="text-blue-500">{member.designation}</p>
-                              <p className="text-black">{member.affiliation}</p>
-                          </div>
-                      ))}
-                  </div>
-              </div>
-          ))}
+        ))}
       </section>
-  );
-};
-
-export default Committee2;
+    );
+  };
+  
+  export default Committee2;
+  

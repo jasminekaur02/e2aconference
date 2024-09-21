@@ -27,7 +27,7 @@ const NAVLINKS = [
         href: "",
         text: "EVENTS",
         subMenu: [
-            { href: "/Events/Pages/Keynotes", text: "KEYNOTES" },
+            { href: "/Keynote", text: "KEYNOTES" },
             { href: "/Workshop", text: "WORKSHOPS" },
             { href: "/Awards", text: "AWARDS" },
         ],
@@ -313,7 +313,7 @@ export default function Navbar() {
 
 export function Logo() {
     return (
-        <Link href="/" className="flex items-center text-white">
+        <Link href="/Home" className="flex items-center text-white">
             <img src="/e2alogo.jpg" alt="Logo" className="w-9 h-9" />
         </Link>
     );
