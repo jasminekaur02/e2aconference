@@ -13,17 +13,6 @@ import Navbar from '@/components/navbar';
 import PageHero from '@/components/PageHero';
 import Image from 'next/image';
 
-// Faculty contact information array
-const facultyContacts = [
-  {
-    name: 'Dr. Afzal Sikander',
-    affiliation: 'Assistant Professor, NIT Jalandhar',
-    email: 'afzals@nitj.ac.in',
-    website: 'https://www.nitj.ac.in/faculty/richa_sharma',
-    photo: '/path/to/real-photo1.jpg',
-  },
-];
-
 // Custom SVG for the new "X" logo (Twitter replacement)
 const XLogo = () => (
   <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="24" height="24">
@@ -40,48 +29,6 @@ const ContactUsPage = () => {
       <PageHero title="Contact Us" image="https://v1.nitj.ac.in/ITEP/img/01.jpg" />
       <div className="py-12 px-4 sm:px-6 lg:px-8 ">
         <div className="max-w-7xl mx-auto">
-
-          {/* Faculty Contact Cards */}
-          <h2 className="text-2xl font-semibold mb-4">Faculty <span className='text-blue-600'>Coordinators</span></h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-            {facultyContacts.map((contact, index) => (
-              <div
-                key={index}
-                className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center"
-              >
-                <Image
-                  src={contact.photo}
-                  alt={contact.name}
-                  width={96}
-                  height={96}
-                  className="w-24 h-24 rounded-full mb-4 object-cover"
-                />
-                <h2 className="text-xl font-semibold text-gray-800 mb-2">
-                  {contact.name}
-                </h2>
-                <p className="text-gray-600 mb-2">{contact.affiliation}</p>
-                <div className="flex space-x-4 mb-2">
-                  {/* Email icon (Gmail) */}
-                  <a
-                    href={`mailto:${contact.email}`}
-                    className="text-blue-600 hover:text-red-500 transition-colors duration-300"
-                  >
-                    <FaEnvelope className="inline" />
-                  </a>
-
-                  {/* Website icon (Globe) */}
-                  <a
-                    href={contact.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-green-500 transition-colors duration-300"
-                  >
-                    <FaGlobe className="inline" />
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
 
           {/* "Reach Us" Section */}
           <div className="bg-white p-6 rounded-lg shadow-lg mb-12">
@@ -143,9 +90,7 @@ const ContactUsPage = () => {
               <p className="text-gray-700 mb-2">
                 <strong>Phone:</strong> +91-7078438786
               </p>
-              <p className="text-gray-700 mb-2">
-                <strong>Office Hours:</strong> Monday to Friday, 9:00 AM - 5:00 PM
-              </p>
+             
               <p className="text-gray-700 mb-4">
                 <strong>Email:</strong> <a href="mailto:info.e2a@nitj.ac.in" className="text-blue-600 hover:underline">info.e2a@nitj.ac.in</a>
               </p>
