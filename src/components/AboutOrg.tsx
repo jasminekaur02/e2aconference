@@ -17,7 +17,7 @@ const AboutOrg = () => {
           <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
             
             {/* About NIT Jalandhar */}
-            <div className="bg-white p-8 rounded-lg shadow-lg">
+            <div className="bg-white p-8 rounded-lg shadow-lg text-center lg:text-left">
               <h3 className="text-3xl font-bold mb-4">
                 About <span className="text-blue-600">NIT Jalandhar</span>
               </h3>
@@ -27,7 +27,7 @@ const AboutOrg = () => {
 
                 <Link
                   href="https://www.nitj.ac.in/"
-                  className="flex items-center px-4 py-2 text-blue-400 font-semibold rounded-lg hover:bg-blue-600 hover:text-white transition"
+                  className="flex items-center px-2 py-2 text-blue-400 font-semibold rounded-lg hover:bg-blue-600 hover:text-white transition"
                 >
                   <FontAwesomeIcon icon={faUniversity} className="mr-2" />
                   NITJ Official Website
@@ -35,7 +35,7 @@ const AboutOrg = () => {
                 </Link>
               </div>
 
-              <p className="text-lg leading-relaxed text-justify">
+              <p className="text-lg text-left">
 
                 Dr. B. R. Ambedkar National Institute of Technology Jalandhar
                 (NIT Jalandhar), formerly Regional Engineering College
@@ -71,7 +71,7 @@ const AboutOrg = () => {
             </div>
 
             {/* Department of ICE */}
-            <div className="bg-white p-8 rounded-lg shadow-lg">
+            <div className="bg-white p-8 rounded-lg text-center lg:text-left shadow-lg">
               <h3 className="text-3xl font-bold mb-4">
                 About Department of <span className="text-blue-600">ICE</span>
               </h3>
@@ -81,23 +81,17 @@ const AboutOrg = () => {
 
                 <Link
                   href="https://departments.nitj.ac.in/dept/ice/home"
-                  className="flex items-center px-4 py-2 text-blue-400 font-semibold rounded-lg hover:bg-blue-600 hover:text-white transition"
+                  className="flex items-center px-2 py-2 text-blue-400 font-semibold rounded-lg hover:bg-blue-600 hover:text-white transition"
                 >
-                  <FontAwesomeIcon icon={faInfoCircle} className="mr-2" />
+                  <FontAwesomeIcon icon={faInfoCircle} className="mr-0" />
                   ICE Dept. Oficial Website
 
                 </Link>
               </div>
 
-              <p className="text-lg leading-relaxed text-justify">
+              <p className="text-lg  text-left  lg:text-wrap">
 
-                The Department of Instrumentation and Control Engineering
-                (ICE) commenced its Bachelor of Technology
-                (B. Tech.) degree program in 1990 with an
-                intake of 30 students. The department started the
-                M.Tech (Full Time) and M.Tech
-                (Part-Time) Degree Programme in Control and
-                Instrumentation Engineering in 2006 and 2010.
+                The Department of Instrumentation and Control Engineering (ICE) commenced its Bachelor of Technology (B.Tech.) degree program in 1990 with an intake of 30 students. The department started the M.Tech (Full Time) and M.Tech (Part-Time) Degree Programme in Control and Instrumentation Engineering in 2006 and 2010.
                 {showMoreIce && (
                   <span>
                     &nbsp;It also started a new M.Tech Machine
