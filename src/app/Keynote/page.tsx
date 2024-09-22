@@ -22,31 +22,30 @@ const speakers: Speaker[] = [
   {
     name: "Prof. JERZY R. SZYMANSKI",
     image: "https://i1.rgstatic.net/ii/profile.image/856674961199104-1581258635324_Q128/Jerzy-Szymanski.jpg",
-    description: "Jerzy Ryszard Szymanski is working as a scientific worker and an academic lecturer at the University of Technology and Humanities in Radom, Poland on Professor position in the Faculty of Transport, Electrical and Computer Sciences in the Department of Electric Drives and Industrial Electronics. He has over 30 years of teaching and research experience in the diverse ﬁeld of Power Electronic Engineering. His areas of interest include: Power Electronics Converters in Drive Applications, Application of High Frequency Converter in PV and EV Systems, Electromagnetic Compatibility in Power Converters Systems, Hybrid power systems, Exploitation Safety of Electrical Equipment. He is actively involved in the various research projects and international activities (Bilateral and Erasmus/CEEPUS exchange). He has published over 100 research articles in the reputed national/international journals and conferences including 20 research papers in the SCI-indexed journals. He is a member of the Reviewer Board and Editorial Board of reputed Journals, such as MDPI, Springer, and Elsevier. He has also authored and co-authored books in the reputed publishing houses.",
+     description: "Jerzy Ryszard Szymanski is working as a scientific worker and an academic lecturer at the University of Technology and Humanities in Radom, Poland on Professor position in the Faculty of Transport, Electrical and Computer Sciences in the Department of Electric Drives and Industrial Electronics. He has over 30 years of teaching and research experience in the diverse ﬁeld of Power Electronic Engineering. His areas of interest include: Power Electronics Converters in Drive Applications, Application of High Frequency Converter in PV and EV Systems, Electromagnetic Compatibility in Power Converters Systems, Hybrid power systems, Exploitation Safety of Electrical Equipment. He is actively involved in the various research projects and international activities (Bilateral and Erasmus/CEEPUS exchange). He has published over 100 research articles in the reputed national/international journals and conferences including 20 research papers in the SCI-indexed journals. He is a member of the Reviewer Board and Editorial Board of reputed Journals, such as MDPI, Springer, and Elsevier. He has also authored and co-authored books in the reputed publishing houses. ",
     scholar: "https://scholar.google.co.in/citations?user=r7mZ1McAAAAJ&hl=en",
     website: "https://www.researchgate.net/profile/Jerzy-Szymanski"
   },
-  
   {
     name: "DR. AJAY MATHUR",
     image: "https://media.licdn.com/dms/image/v2/C5603AQH1lfxQsCEFHA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1660797938009?e=1732147200&v=beta&t=SU9VnxB1hQtFhE9vg7ZBYyTiHeAZsdzd7xhGeehAiu0",
     description: "Dr Mathur, a distinguished climate change expert, has held various leadership roles in energy and climate change. He was previously the Director General of TERI, a member of the Prime Minister's Council on Climate Change, and co-chair of global energy and cooling initiatives. He has also served as the head of the Indian Bureau of Energy Efficiency and a leading climate change negotiator. With a strong educational background in chemical engineering, Dr Mathur has received numerous awards, including the Nobel Peace Prize as a member of the IPCC. His contributions to energy efficiency, climate change mitigation, and international climate negotiations have been significant.",
     website: "https://isolaralliance.org/about/director-general",
   },
-
   {
     name: "MR. SUBRAMANYAM PULIPAKA",
     image: "https://media.licdn.com/dms/image/v2/D4D03AQHUIq0apsta4Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1688753063031?e=1732147200&v=beta&t=QM3jPzo8fRWXI7NEx1r7wI6fnYewx5LD9pGsfZRBPOE",
-    description: "Subrahmanyam is the youngest Chief Executive Officer of National Solar Energy Federation of India. Subrahmanyam, who is BITSAA Global 30 Under 30 Award recipient, is an alumnus of BITS Pilani in Electrical & Electronics Engineering and is one of the youngest winners of BRICS young scientist award - 2018. Well known Speaker at various Solar and RE events in India,Pulipaka represented India in various scientific and technology platforms worldwide including United States, China, Russia and Rwanda. With a research background in reliability of solar PV modules, he has published around 15 research articles in internationally acclaimed journals. He is also the founding chairman of India Africa Youth Energy Forum, a platform dedicated to nurture future energy leaders in the Indian subcontinent and African continent.",
-    linkedin: "https://www.linkedin.com/in/solarsubbu/?originalSubdomain=in",
+     description: "Subrahmanyam is the youngest Chief Executive Officer of National Solar Energy Federation of India. Subrahmanyam, who is BITSAA Global 30 Under 30 Award recipient, is an alumnus of BITS Pilani in Electrical & Electronics Engineering and is one of the youngest winners of BRICS young scientist award - 2018. Well known Speaker at various Solar and RE events in India,Pulipaka represented India in various scientific and technology platforms worldwide including United States, China, Russia and Rwanda. With a research background in reliability of solar PV modules, he has published around 15 research articles in internationally acclaimed journals. He is also the founding chairman of India Africa Youth Energy Forum, a platform dedicated to nurture future energy leaders in the Indian subcontinent and African continent.",
+     linkedin: "https://www.linkedin.com/in/solarsubbu/?originalSubdomain=in",
   },
   {
     name: "DR. PIYUSH VERMA",
     image: "https://media.licdn.com/dms/image/v2/C5603AQHcfhXe5NGL9Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1566290376505?e=1732752000&v=beta&t=DmFq2E8X7YauDI1pS2ognyflMX3iNRpvuoxYXRUdWgQ",
     description: "Piyush Verma is a Senior Advisor at the United Nations Development Programme (UNDP), leading global initiatives for a just energy transition. He has extensive experience in energy and climate policy, having worked on national policies for various countries. Verma has been recognized for his contributions to the field, serving as a Global Future Energy Leader and chairing a UNECE task force. He has published numerous articles and reports on energy and climate issues. Verma holds a PhD in Energy Technology and Policy and a Master in Public Administration. He is a frequent public speaker, presenting at high-level forums worldwide. His expertise and leadership have made him a prominent figure in the field of energy and climate policy.",
     linkedin: "https://www.linkedin.com/in/piyushnitjsr/",
-    website: "https://www.undp.org/authors/piyush-verma"
-  },
+    website: "https://www.undp.org/authors/piyush-verma",
+
+  }
   // Add other speakers here
 ];
 
@@ -78,7 +77,7 @@ const SpeakerPage: React.FC = () => {
             return (
               <div 
                 key={speaker.name} 
-                className={`bg-white p-4 lg:p-8 flex flex-col lg:flex-row items-center mb-12 ${isImageOnRight ? 'lg:flex-row-reverse lg:rounded-br-full' : 'lg:rounded-bl-full'} shadow-md transition-transform duration-300 transform hover:translate-y-[-5px] hover:shadow-lg`}
+                className={`bg-white p-4 lg:p-8 flex flex-col cursor-default lg:flex-row items-center mb-12 ${isImageOnRight ? 'lg:flex-row-reverse lg:rounded-br-full' : 'lg:rounded-bl-full'} shadow-md transition-transform duration-300 transform hover:translate-y-[-5px] hover:shadow-lg`}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
