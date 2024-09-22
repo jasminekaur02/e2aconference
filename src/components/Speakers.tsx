@@ -41,6 +41,14 @@ const speakers: Speaker[] = [
     imageUrl: "https://media.licdn.com/dms/image/v2/D4D03AQHUIq0apsta4Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1688753063031?e=1732147200&v=beta&t=QM3jPzo8fRWXI7NEx1r7wI6fnYewx5LD9pGsfZRBPOE",
     linkedInUrl: "https://www.linkedin.com/in/solarsubbu/?originalSubdomain=in",
     redirectUrl: "/Keynote" // Example redirect URL
+  },{
+    id: 4,
+    name: "DR. PIYUSH VERMA",
+    title: " United Nations Development Programme (UNDP)",
+    organization: "India",
+    imageUrl: "https://media.licdn.com/dms/image/v2/C5603AQHcfhXe5NGL9Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1566290376505?e=1732752000&v=beta&t=DmFq2E8X7YauDI1pS2ognyflMX3iNRpvuoxYXRUdWgQ",
+    linkedInUrl: "https://www.linkedin.com/in/piyushnitjsr/",
+    redirectUrl: "/Keynote" // Example redirect URL
   },
 ];
 
