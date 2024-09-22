@@ -11,20 +11,22 @@ const WelcomePage = () => {
   const [transitioning, setTransitioning] = useState(false); // For transitioning to the Home page
   const router = useRouter();
 
-  // Simulate loading
+  // This useEffect is used to simulate the WelcomePage load (replace with actual loading logic if needed)
   useEffect(() => {
+    // Simulate a loading delay (like fetching data, etc.)
     setTimeout(() => {
       setLoading(false); // Stop the loading state once the page is ready
     }, 1000); // Simulate 1 second load time
   }, []);
 
   const handleProceed = () => {
-    setSlideOut(true); // Trigger animation
+    setSlideOut(true);
     setTransitioning(true); // Start transitioning state
 
+    // Show the preloader while transitioning to Home page
     setTimeout(() => {
       router.push('/Home'); // Navigate to the Home page
-    }, 800); // Delay before navigating to Home
+    }, 800); // Delay before showing the preloader
   };
 
   // If the page is loading initially, show the preloader
@@ -36,7 +38,7 @@ const WelcomePage = () => {
     <div className="min-h-screen bg-white flex flex-col lg:flex-row items-center justify-center overflow-hidden">
       {/* Left Section - Logo (Hidden on Small and Medium Devices) */}
       <div
-        className={`flex-1 flex items-center justify-center p-8 transition-transform duration-[800ms] ${
+        className={`flex-1 items-center justify-center p-8 transition-transform duration-[800ms] ${
           slideOut ? 'lg:animate-slideOutLeft' : ''
         } hidden lg:flex`}
       >
@@ -57,7 +59,7 @@ const WelcomePage = () => {
           slideOut ? 'animate-slideUp lg:animate-slideOutRight' : ''
         }`}
       >
-        <div className="w-24 h-24 mb-4">
+        <div className="flex items-center space-x-4 mb-4">
           <Image
             src="/image.png"
             alt="NIT Jalandhar Logo"
@@ -65,13 +67,27 @@ const WelcomePage = () => {
             height={96}
             priority
           />
+          {/* Show logo gif for small and medium devices */}
+          <div className="relative lg:hidden" style={{ width: '120px', height: '100px' }}>
+            <Image
+              src="/logoe2a.gif"
+              alt="E2ACon 2025 Logo"
+              layout="fill"
+              objectFit="contain"
+              priority
+            />
+          </div>
         </div>
 
         <h2 className="text-xl font-semibold text-gray-800 mb-2">
-          <span className="block">Dr. B. R. Ambedkar National Institute of Technology Jalandhar</span>
+          <span className="block">
+            Dr. B. R. Ambedkar National Institute of Technology Jalandhar
+          </span>
         </h2>
         <h1 className="text-3xl font-bold text-blue-600 mb-4">E2ACON 2025</h1>
-        <h2 className="text-xl font-semibold text-gray-800 mb-4 mt-0">March 8-9, 2025</h2>
+        <h2 className="text-xl font-semibold text-gray-800 mb-4 mt-0">
+          March 8-9, 2025
+        </h2>
         <p className="text-lg text-gray-700 mb-6">
           Organized by <br /> Department of Instrumentation and Control Engineering (ICE)
         </p>
