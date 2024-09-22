@@ -29,10 +29,10 @@ const AboutUsPage = () => {
             <h2 className="text-4xl font-bold text-center mb-8">
               About&nbsp;<span className="text-blue-600">Us</span>
             </h2>
-            <p className="text-lg leading-relaxed text-justify">
+            <p className="text-lg leading-relaxed text-left">
               The International Conference on Electrical, Electronics, and Automation (E2ACON) serves as a global hub where the brightest minds converge to explore, collaborate, and share their ground-breaking research and innovations. In today&apos;s rapidly evolving technological landscape, the domains of electrical engineering, electronics, and automation are integral to shaping our future. E2A provides a vital platform for researchers, scientists, engineers, educators, and industry experts from diverse backgrounds and cultures to come together, fostering a rich exchange of ideas and knowledge.
             </p>
-            <p className="mt-6 text-lg leading-relaxed text-justify">
+            <p className="mt-6 text-lg leading-relaxed text-left">
               As we navigate an era of unprecedented technological advancement, E2ACON strives to accelerate progress by facilitating meaningful conversations, driving innovation, and charting the course for a future powered by cutting-edge electrical, electronics, and automation technologies. Join us at E2ACON to be a part of this transformative journey, where together, we illuminate the path toward a smarter, more connected, and automated world. Your contributions and insights are integral to shaping the future at E2A.
             </p>
           </div>
@@ -44,7 +44,7 @@ const AboutUsPage = () => {
             {/* About NIT Jalandhar */}
             <div className="bg-white p-8 rounded-lg shadow-lg">
 
-              <h3 className="text-3xl font-bold mb-4">
+              <h3 className="text-3xl text-center lg:text-left font-bold mb-4">
                 About <span className="text-blue-600">NIT Jalandhar</span>
               </h3>
               <p className="flex items-center px-2 py-2 text-blue-400 font-semibold rounded-lg cursor-pointer hover:bg-blue-600 hover:text-white transition">
@@ -57,7 +57,7 @@ const AboutUsPage = () => {
                  NITJ Official Website
                 </Link>
               </p>
-              <p className="text-md leading-relaxed text-justify">
+              <p className="text-md leading-relaxed text-left">
               Dr. B. R. Ambedkar National Institute of Technology Jalandhar (NIT Jalandhar), formerly Regional Engineering College Jalandhar (est. in 1989), is a public engineering Institute in Jalandhar, Punjab, India. It has been declared an Institute of National Importance by MHRD (now known as MoE), Govt. of India, under the Act of Parliament 2007. 
                 {showMoreNit && (
                   <span>
@@ -88,7 +88,7 @@ const AboutUsPage = () => {
             {/* About Department of ICE */}
             <div className="bg-white p-8 rounded-lg shadow-lg">
 
-              <h3 className="text-3xl font-bold mb-4">
+              <h3 className="text-3xl text-center lg:text-left font-bold mb-4">
                 Department of <span className="text-blue-600">ICE</span>
               </h3>
               <p className="flex items-center px-2 py-2 text-blue-400 font-semibold rounded-lg hover:bg-blue-600 hover:text-white transition cursor-pointer">
@@ -101,7 +101,7 @@ const AboutUsPage = () => {
                   ICE Dept. Official Website
                 </Link>
               </p>
-              <p className="text-md leading-relaxed text-justify">
+              <p className="text-md leading-relaxed text-left">
               The Department of Instrumentation and Control Engineering (ICE) commenced its Bachelor of Technology (B. Tech.) degree program in 1990 with an intake of 30 students. The department started the M.Tech (Full Time) and M Tech (Part-Time) Degree Programme in Control and Instrumentation Engineering in 2006 and 2010.
                 {showMoreIce && (
                   <span>
@@ -132,14 +132,14 @@ const AboutUsPage = () => {
         <section className="py-16 px-4 sm:px-6 md:px-12 bg-white">
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-3xl font-bold text-blue-600 mb-4">Our Vision</h3>
-              <p className="text-md leading-relaxed text-justify">
+              <h3 className="text-3xl text-center lg:text-left font-bold mb-4">Our<span className='text-blue-600'>&nbsp;Vision</span></h3>
+              <p className="text-md leading-relaxed text-left">
                 Our vision is to create a transformative platform where cutting-edge research in electrical, electronics, and automation technologies inspires innovation and drives the future of global industries.
               </p>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-3xl font-bold text-blue-600 mb-4">Our Mission</h3>
-              <p className="text-md leading-relaxed text-justify">
+              <h3 className="text-3xl text-center lg:text-left font-bold mb-4">Our<span className='text-blue-600'>&nbsp;Mission</span></h3>
+              <p className="text-md leading-relaxed text-left">
                 Our mission is to bring together a global community of experts, researchers, and engineers to share knowledge, collaborate on groundbreaking innovations, and collectively shape the future of automation and technology.
               </p>
             </div>
