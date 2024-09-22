@@ -11,22 +11,20 @@ const WelcomePage = () => {
   const [transitioning, setTransitioning] = useState(false); // For transitioning to the Home page
   const router = useRouter();
 
-  // This useEffect is used to simulate the WelcomePage load (replace with actual loading logic if needed)
+  // Simulate loading
   useEffect(() => {
-    // Simulate a loading delay (like fetching data, etc.)
     setTimeout(() => {
       setLoading(false); // Stop the loading state once the page is ready
     }, 1000); // Simulate 1 second load time
   }, []);
 
   const handleProceed = () => {
-    setSlideOut(true);
+    setSlideOut(true); // Trigger animation
     setTransitioning(true); // Start transitioning state
 
-    // Show the preloader while transitioning to Home page
     setTimeout(() => {
       router.push('/Home'); // Navigate to the Home page
-    }, 800); // Delay before showing the preloader
+    }, 800); // Delay before navigating to Home
   };
 
   // If the page is loading initially, show the preloader
@@ -70,16 +68,13 @@ const WelcomePage = () => {
         </div>
 
         <h2 className="text-xl font-semibold text-gray-800 mb-2">
-  <span className="block">Dr. B. R. Ambedkar National Institute of Technology Jalandhar</span>
-</h2>
-<h1 className="text-3xl font-bold text-blue-600 mb-4">
-  E2ACON 2025
-</h1>
-<h2 className="text-xl font-semibold text-gray-800 mb-4 mt-0">March 8-9, 2025</h2>
-<p className="text-lg text-gray-700 mb-6">
-  Organized by <br /> Department of Instrumentation and Control Engineering (ICE)
-</p>
-
+          <span className="block">Dr. B. R. Ambedkar National Institute of Technology Jalandhar</span>
+        </h2>
+        <h1 className="text-3xl font-bold text-blue-600 mb-4">E2ACON 2025</h1>
+        <h2 className="text-xl font-semibold text-gray-800 mb-4 mt-0">March 8-9, 2025</h2>
+        <p className="text-lg text-gray-700 mb-6">
+          Organized by <br /> Department of Instrumentation and Control Engineering (ICE)
+        </p>
 
         <button
           onClick={handleProceed}

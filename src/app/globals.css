@@ -64,15 +64,14 @@
   }
 }
 
-/* Animation utility classes */
 .animate-slideUp {
-  animation: slideUp 0.8s forwards;
+  animation: slideUp 0.8s ease forwards;
 }
 
 .animate-slideOutLeft {
-  animation: slideOutLeft 0.8s forwards;
+  animation: slideOutLeft 0.8s ease forwards;
 }
 
 .animate-slideOutRight {
-  animation: slideOutRight 0.8s forwards;
+  animation: slideOutRight 0.8s ease forwards;
 }
