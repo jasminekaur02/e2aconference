@@ -101,7 +101,7 @@ const teamData: TeamData = {
       name: "Dr. Marta Zurek-Mortka",
       designation: "Lukasiewicz Research Network",
       affiliation: "Institute for Sustainable Technologies, Radom, Poland",
-      image: "https://media.licdn.com/dms/image/v2/C4E03AQHb20zb-eoPYg/profile-displayphoto-shrink_400_400/0/1646823222749",
+      image: "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=fkPsLo8AAAAJ&citpid=12",
       profileLink: "https://www.researchgate.net/profile/Marta-Zurek-Mortka"
     },
     {
