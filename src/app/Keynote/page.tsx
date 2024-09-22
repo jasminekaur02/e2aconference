@@ -1,40 +1,36 @@
-"use client";
-import React, { useState } from 'react';
+import React from 'react';
 import HeaderTop from '@/components/HeaderTop';
-import Navbar from '@/components/navbar';
+import Navbar from '@/components/navbar';  
 import PageHero from '@/components/PageHero';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGoogle } from '@fortawesome/free-brands-svg-icons';
-import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 interface Speaker {
   name: string;
   image: string;
   description: string;
-  linkedin?: string;
-  scholar?: string;
-  website?: string;
 }
 
 const speakers: Speaker[] = [
   {
     name: "Prof. JERZY R. SZYMANSKI",
     image: "https://i1.rgstatic.net/ii/profile.image/856674961199104-1581258635324_Q128/Jerzy-Szymanski.jpg",
+
     description: "Jerzy Ryszard Szymanski is working as a scientific worker and an academic lecturer at the University of Technology and Humanities in Radom, Poland on Professor position in the Faculty of Transport, Electrical and Computer Sciences in the Department of Electric Drives and Industrial Electronics. He has over 30 years of teaching and research experience in the diverse ﬁeld of Power Electronic Engineering. His areas of interest include: Power Electronics Converters in Drive Applications, Application of High Frequency Converter in PV and EV Systems, Electromagnetic Compatibility in Power Converters Systems, Hybrid power systems, Exploitation Safety of Electrical Equipment. He is actively involved in the various research projects and international activities (Bilateral and Erasmus/CEEPUS exchange). He has published over 100 research articles in the reputed national/international journals and conferences including 20 research papers in the SCI-indexed journals. He is a member of the Reviewer Board and Editorial Board of reputed Journals, such as MDPI, Springer, and Elsevier. He has also authored and co-authored books in the reputed publishing houses.",
     scholar: "https://scholar.google.co.in/citations?user=r7mZ1McAAAAJ&hl=en",
     website: "https://www.researchgate.net/profile/Jerzy-Szymanski"
+
+   
   },
   {
     name: "DR. AJAY MATHUR",
     image: "https://media.licdn.com/dms/image/v2/C5603AQH1lfxQsCEFHA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1660797938009?e=1732147200&v=beta&t=SU9VnxB1hQtFhE9vg7ZBYyTiHeAZsdzd7xhGeehAiu0",
-    description: "Dr. Ajay Mathur is the Director General of the International Solar Alliance (ISA), a multilateral organization established to catalyze global solar growth. He previously served as Director General of The Energy and Resources Institute (TERI) and the Bureau of Energy Efficiency in India. He was a key figure in India's climate change negotiations and served as interim Director of the Green Climate Fund. Dr. Mathur holds degrees from the University of Roorkee and the University of Illinois and has received numerous awards for his contributions to energy and climate change.",
-    website: "https://isolaralliance.org/about/director-general",
+    description: "Dr. Ajay Mathur is the Director General of the International Solar Alliance (ISA), a multilateral organization established to catalyze global solar growth. He previously served as Director General of The Energy and Resources Institute (TERI) and the Bureau of Energy Efficiency in India. He was a key figure in India's climate change negotiations and served as interim Director of the Green Climate Fund. Dr. Mathur holds degrees from the University of Roorkee and the University of Illinois and has received numerous awards for his contributions to energy and climate change."
   },
   {
     name: "MR. SUBRAMANYAM PULIPAKA",
     image: "https://media.licdn.com/dms/image/v2/D4D03AQHUIq0apsta4Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1688753063031?e=1732147200&v=beta&t=QM3jPzo8fRWXI7NEx1r7wI6fnYewx5LD9pGsfZRBPOE",
+
     description: "Subrahmanyam is the youngest Chief Executive Officer of National Solar Energy Federation of India. Subrahmanyam, who is BITSAA Global 30 Under 30 Award recipient, is an alumnus of BITS Pilani in Electrical & Electronics Engineering and is one of the youngest winners of BRICS young scientist award - 2018. Well known Speaker at various Solar and RE events in India,Pulipaka represented India in various scientific and technology platforms worldwide including United States, China, Russia and Rwanda. With a research background in reliability of solar PV modules, he has published around 15 research articles in internationally acclaimed journals. He is also the founding chairman of India Africa Youth Energy Forum, a platform dedicated to nurture future energy leaders in the Indian subcontinent and African continent.",
     linkedin: "https://www.linkedin.com/in/solarsubbu/?originalSubdomain=in",
   },{
@@ -43,33 +39,44 @@ const speakers: Speaker[] = [
     description: "Piyush Verma is a Senior Advisor at the United Nations Development Programme (UNDP), leading global initiatives for a just energy transition. He has extensive experience in energy and climate policy, having worked on national policies for various countries. Verma has been recognized for his contributions to the field, serving as a Global Future Energy Leader and chairing a UNECE task force. He has published numerous articles and reports on energy and climate issues. Verma holds a PhD in Energy Technology and Policy and a Master in Public Administration. He is a frequent public speaker, presenting at high-level forums worldwide. His expertise and leadership have made him a prominent figure in the field of energy and climate policy.",
     linkedin: "https://www.linkedin.com/in/piyushnitjsr/",
     website: "https://www.undp.org/authors/piyush-verma"
+
   },
+ 
+  // Add more speakers as needed
 ];
 
 const SpeakerPage: React.FC = () => {
-  const [expandedSpeakers, setExpandedSpeakers] = useState<{ [key: number]: boolean }>({});
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-
-  const toggleExpand = (index: number) => {
-    setExpandedSpeakers((prev) => ({
-      ...prev,
-      [index]: !prev[index],
-    }));
-  };
-
   return (
-    <div className="min-h-screen flex flex-col justify-between bg-white">
+    <div className="min-h-screen flex flex-col justify-between bg-indigo-50">
       <HeaderTop isHomePage={false} />
       <Navbar />
+
+      {/* Full-width Hero */}
       <PageHero 
         title="Keynote Speakers" 
         image="https://v1.nitj.ac.in/ITEP/img/01.jpg" 
       />
+
+      {/* Page content */}
       <div className="flex flex-col flex-grow items-center px-4 sm:px-8 md:px-16 lg:px-24 py-8 w-full">
+        {/* Speaker list */}
         <div className="max-w-6xl w-full">
-          {speakers.map((speaker, index) => {
-            const isImageOnRight = index % 2 === 0;
-            const isExpanded = expandedSpeakers[index];
+          {speakers.map((speaker, index) => (
+            <div 
+              key={speaker.name} 
+              className={`flex flex-col md:flex-row items-center mb-12 ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}
+            >
+              {/* Speaker image */}
+              <div className="w-full md:w-1/3 mb-4 md:mb-0 flex justify-center">
+                <Image
+                  src={speaker.image}
+                  alt={speaker.name || "Speaker Image"}
+                  width={300}
+                  height={300}
+                  className="rounded-full shadow-lg object-cover"
+                />
+              </div>
+
 
             return (
               <div 
@@ -126,12 +133,15 @@ const SpeakerPage: React.FC = () => {
                     </button>
                   </div>
                 </div>
+
               </div>
-            );
-          })}
+            </div>
+          ))}
         </div>
       </div>
+
       <Footer />
+
       <style jsx>{`
         .line-clamp-3 {
           display: -webkit-box;
@@ -144,6 +154,7 @@ const SpeakerPage: React.FC = () => {
           overflow: visible;
         }
       `}</style>
+
     </div>
   );
 };
