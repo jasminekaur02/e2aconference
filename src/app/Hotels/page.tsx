@@ -24,8 +24,8 @@ export default function HotelsPage() {
       <main className="w-full">
         
         {/* Accommodation Important Note */}
-        <section className="bg-yellow-100 p-6 my-6 mx-auto max-w-7xl rounded-lg shadow-md">
-          <h2 className="text-2xl font-semibold text-red-600 mb-4">Important Note: Accommodation</h2>
+        <section className="bg-indigo-50 p-6 my-6 mx-auto max-w-7xl rounded-lg shadow-md">
+          <h2 className="text-2xl font-semibold text-blue-600 mb-4">Important Note: Accommodation</h2>
           <p className="text-gray-700 mb-4">
             The accommodation for the participants can be arranged in institute guest houses and institute hostels subject to the availability of the same on request and on payment basis. The requirement for the preferred accommodation along with the tariff range and single/double occupancy should be sent to <a href="mailto:info.e2a@nitj.ac.in" className="text-blue-600 hover:underline">info.e2a@nitj.ac.in</a> well in advance.
           </p>
