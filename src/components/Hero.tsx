@@ -111,16 +111,16 @@ const Hero = () => {
     Notes in Electrical Engineering” (Approval in process)
 </p>
         {/* Hybrid Mode and Date in a single line */}
-        <div className="mt-4 flex items-center justify-center space-x-10">
-          <div className="flex items-center">
-            <FaLaptop className="text-white mr-2" />
-            <p className="text-lg md:text-xl">Hybrid Mode</p>
-          </div>
-          <div className="flex items-center">
-            <FaCalendarAlt className="text-white mr-2" />
-            <span className="text-lg md:text-xl">8-9 March, 2025</span>
-          </div>
-        </div>
+        <div className="mt-4 flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-10">
+  <div className="flex items-center">
+    <FaLaptop className="text-white mr-2" />
+    <p className="text-lg md:text-xl">Hybrid Mode</p>
+  </div>
+  <div className="flex items-center">
+    <FaCalendarAlt className="text-white mr-2" />
+    <span className="text-lg md:text-xl">8-9 March, 2025</span>
+  </div>
+</div>
 
         {/* Countdown Timer */}
         <div className="mt-8 flex space-x-2 justify-center">

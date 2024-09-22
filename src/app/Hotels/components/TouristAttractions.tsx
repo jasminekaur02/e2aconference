@@ -1,3 +1,4 @@
+"use client";
 import React, { useRef, useEffect, useState } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { motion } from 'framer-motion';
@@ -190,7 +191,7 @@ const TouristAttractions: React.FC = () => {
           </div>
         </div>
         {/* Scroll Arrows for Laptop View */}
-        <div className="flex justify-center mt-4 hidden md:flex">
+        <div className="flex justify-center mt-4  md:flex">
           <button
             onClick={() => handleScroll('left')}
             className="p-2 bg-gray-300 rounded-full mr-2"

@@ -139,7 +139,7 @@ const TopRatedHotels: React.FC = () => {
             Top Rated <span className="text-blue-500">Hotels</span>
           </h2>
           {/* Scroll arrows for larger screens */}
-          <div className="hidden md:flex space-x-2">
+          <div className=" md:flex space-x-2">
             <button
               onClick={() => handleScroll('left')}
               className="p-2 bg-gray-300 rounded-full"

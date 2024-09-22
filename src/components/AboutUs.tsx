@@ -58,7 +58,7 @@ export default function AboutUs() {
           >
             {/* Display truncated or full text based on state */}
             <div
-              className={`text-base sm:text-lg text-justify text-gray-700 ${!showMore ? 'line-clamp-3 sm:line-clamp-none' : ''}`}
+              className={`text-base sm:text-lg text-justify text-gray-700 ${!showMore ? 'line-clamp-6 sm:line-clamp-none' : ''}`}
               dangerouslySetInnerHTML={{ __html: aboutText }}
             ></div>
 
