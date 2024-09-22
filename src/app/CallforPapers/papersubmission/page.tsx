@@ -19,7 +19,7 @@ interface Track {
 const tracks = [
   {
     id: 1,
-    name: "Advances in Electrical Engineering",
+    name: "Track 1: Advances in Electrical Engineering",
     subTracks: [
       { name: "Electrical Materials and Process" },
       { name: "Power Generation, Transmission & Distribution Systems" },
@@ -38,7 +38,7 @@ const tracks = [
   },
   {
     id: 2,
-    name: "Smart Electronics and Communications",
+    name: "Track 2: Smart Electronics and Communications",
     subTracks: [
       { name: "Devices Circuits and Systems" },
       { name: "VLSI Design and Technology" },
@@ -60,7 +60,7 @@ const tracks = [
   },
   {
     id: 3,
-    name: "Instrumentation and Automation",
+    name: "Track 3: Instrumentation and Automation",
     subTracks: [
       { name: "Advanced and Intelligent Control Algorithms" },
       { name: "System Dynamics and Control applications" },
@@ -78,7 +78,7 @@ const tracks = [
   },
   {
     id: 4,
-    name: "Medical and Digital Healthcare",
+    name: "Track 4: Medical and Digital Healthcare",
     subTracks: [
       { name: "Wearable Medical Devices & IoT Gadgets" },
       { name: "Sensors and Sensing Systems for Diagnosis" },
@@ -92,7 +92,7 @@ const tracks = [
   },
   {
     id: 5,
-    name: "Industry 5.0, Manufacturing and Automation",
+    name: "Track 5: Industry 5.0, Manufacturing and Automation",
     subTracks: [
       { name: "Cognitive Systems in Manufacturing" },
       { name: "IoT in Managing Robots for Efficient Task Execution" },
@@ -106,7 +106,7 @@ const tracks = [
   },
   {
     id: 6,
-    name: "Environment and Infrastructure Monitoring",
+    name: "Track 6: Environment and Infrastructure Monitoring",
     subTracks: [
       { name: "Environmental Monitoring: Air, Water, Soil, and Biodiversity" },
       { name: "Sensors and Systems for Climate Change Mitigation" },
@@ -122,7 +122,7 @@ const tracks = [
   },
   {
     id: 7,
-    name: "Smart Cities and Villages",
+    name: "Track 7: Smart Cities and Villages",
     subTracks: [
       { name: "Optimum Utilisation of Natural Resources and Energy" },
       { name: "Transport Planning and Mobility" },
@@ -138,7 +138,7 @@ const tracks = [
   },
   {
     id: 8,
-    name: "Sensors Interfaces and Sensors Analytics",
+    name: "Track 8: Sensors Interfaces and Sensors Analytics",
     subTracks: [
       { name: "MEMS and NEMS Sensors & Actuators" },
       { name: "Micro- and Nanosystems Integration" },
@@ -155,7 +155,7 @@ const tracks = [
   },
   {
     id: 9,
-    name: "Energy Managements, Electricity Market and Policy/ Regulatory Aspects",
+    name: "Track 9: Energy Managements, Electricity Market and Policy/ Regulatory Aspects",
     subTracks: [
       { name: "Electricity Market and Power System Economics" },
       { name: "Regulatory frameworks and policies" },
@@ -174,7 +174,7 @@ const tracks = [
   },
   {
     id: 10,
-    name: "Emerging Technologies",
+    name: "Track 10: Emerging Technologies",
     subTracks: [
       { name: "Internet of Things (IoT)" },
       { name: "AI and Data Science" },
