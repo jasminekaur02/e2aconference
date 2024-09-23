@@ -91,7 +91,7 @@ const daysData: DayEvents[] = [
     events: [
       {
         date: '2025-02-10',
-        title: 'Review Process Ends',
+        title: 'Review Process Ends/ Acceptance Notification',
         description: 'After reviewing papers, accepted papers will be notified.',
         time: '',
         location: '',
@@ -103,7 +103,7 @@ const daysData: DayEvents[] = [
     events: [
       {
         date: '2025-02-25',
-        title: 'Camera Ready Paper/ Registration',
+        title: 'Camera Ready Submission/ Registration Begins',
         description: 'Accepted students need to register themselves for the Conference.',
         time: '',
         location: 'E2ACON 2025 Website',

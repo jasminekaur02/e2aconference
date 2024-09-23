@@ -12,4 +12,4 @@ const DynamicFetch = async(file: string) => {
     }
 }
 
-export default DynamicFetch
+export default DynamicFetch 
