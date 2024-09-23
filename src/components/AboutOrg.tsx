@@ -83,7 +83,7 @@ const AboutOrg = () => {
                   href="https://departments.nitj.ac.in/dept/ice/home"
                   className="flex items-center px-2 py-2 text-blue-400 font-semibold rounded-lg hover:bg-blue-600 hover:text-white transition"
                 >
-                  <FontAwesomeIcon icon={faInfoCircle} className="mr-0" />
+                  <FontAwesomeIcon icon={faInfoCircle} className="mr-2" />
                   ICE Dept. Oficial Website
 
                 </Link>
