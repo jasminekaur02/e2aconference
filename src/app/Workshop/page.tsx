@@ -72,18 +72,18 @@ const WorkshopPage = () => {
         {/* Contact Information - Contact Cards */}
         <section className="mb-12">
           <h2 className="text-2xl font-semibold text-blue-600 mb-8">Contact Information</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {[
               {
                 name: 'Dr. Richa Sharma',
                 title: 'Assistant Professor, NIT Jalandhar',
-                //email: 'richas@nitj.ac.in',
+                email: 'richas@nitj.ac.in',
                 imageUrl: 'https://www.nitj.ac.in/images/faculty/23020446113.jpeg' // Replace with actual image URL
               },
               {
                 name: 'Dr. Anil Kumar Yadav',
                 title: 'Assistant Professor, NIT Jalandhar',
-                // email: 'yadavak@nitj.ac.in',
+                email: 'yadavak@nitj.ac.in',
                 imageUrl: 'https://www.nitj.ac.in/images/faculty/23012713574.jpg' // Replace with actual image URL
               }
             ].map((contact, index) => (
@@ -101,11 +101,14 @@ const WorkshopPage = () => {
                 <div>
                   <h3 className="text-lg font-semibold text-gray-800">{contact.name}</h3>
                   <p className="text-gray-600">{contact.title}</p>
-                  {/* <a href={`mailto:${contact.email}`} className="text-blue-600">{contact.email}</a> */}
+                  <a href={`mailto:${contact.email}`} className="text-blue-600">{contact.email}</a>
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
+          <p className="text-gray-700 mb-4">
+                <strong>Email:</strong> <a href="mailto:info.e2a@nitj.ac.in" className="text-blue-600 hover:underline">info.e2a@nitj.ac.in</a>
+              </p>
         </section>
       </div>
       <Footer/>
