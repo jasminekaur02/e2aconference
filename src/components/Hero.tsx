@@ -86,7 +86,7 @@ const Hero = () => {
         href={liveLink}
         target="_blank"
         rel="noopener noreferrer"
-        className="absolute top-[11vh]  right-4 flex items-center border border-white text-white px-5 py-2 rounded-md hover:bg-white hover:text-black transition"
+        className="absolute top-[11vh]  lg:right-10 right-4 flex items-center border border-white text-white px-5 py-2 rounded-md hover:bg-white hover:text-black transition"
       >
         <span 
           className={`rounded-full w-2 h-2 mr-2 ${isLive ? 'bg-green-500' : 'bg-red-500'}`} 
