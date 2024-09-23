@@ -313,11 +313,17 @@ export default function Navbar() {
 
 export function Logo() {
   return (
-      <Link href="/Home" className="flex items-center space-x-4 text-white">
-          <img src="/e2awhite[1].png" alt="Logo 1" className="w-15 h-[8vh]" />
-          <img src="/logo.png" alt="Logo 2" className="w-15 h-[8vh]" />
-          <img src="https://nus.edu.sg/images/default-source/base/logo.png" alt="Logo 3" className="w-15 h-[8vh]" />
-      </Link>
+      <div className="flex items-center space-x-2 lg:space-x-4 text-white">
+          <Link  href="/Home">
+          <img src="/e2awhite[1].png" alt="e2alogo" className="w-15 h-[8vh]" />
+          </Link>
+          <Link  href="https://www.nitj.ac.in/" target="_blank">
+          <img src="/logo.png" alt="nitjlogo" className="w-15 h-[8vh]" />
+          </Link>
+          <Link  href="https://nus.edu.sg/" target="_blank">
+          <img src="https://nus.edu.sg/images/default-source/base/logo.png" alt="nus logo" className="w-15 h-[8vh]" />
+          </Link>
+      </div>
   );
 }
 
