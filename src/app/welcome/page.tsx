@@ -105,7 +105,7 @@ const WelcomePage = () => {
           Organized by <br /> Department of Instrumentation and Control Engineering (ICE)
         </p>
         <p className="text-lg text-gray-700 mb-6">
-          Co-hosted by the School of Electrical and Electronic Engineering, <br />
+          This Conference is co-hosted by the School of Electrical and Electronic Engineering, <br />
           Newcastle University in Singapore
         </p>
 
