@@ -60,18 +60,31 @@ const WelcomePage = () => {
         }`}
       >
         <div className="flex items-center space-x-4 mb-4">
+          {/* NITJ Logo */}
           <Image
             src="/image.png"
             alt="NIT Jalandhar Logo"
-            width={96}
-            height={96}
+            width={48}
+            height={48}   
             priority
           />
+
           {/* Show logo gif for small and medium devices */}
           <div className="relative lg:hidden" style={{ width: '120px', height: '100px' }}>
             <Image
               src="/logoe2a.gif"
               alt="E2ACon 2025 Logo"
+              layout="fill"
+              objectFit="contain"
+              priority
+            />
+          </div>
+
+          {/* Newcastle University Logo */}
+          <div className="relative" style={{ width: '96px', height: '96px' }}>
+            <Image
+              src="/ncuslogo.jpg" // Replace with the actual path to the Newcastle University logo
+              alt="Newcastle University Logo"
               layout="fill"
               objectFit="contain"
               priority
@@ -88,8 +101,12 @@ const WelcomePage = () => {
         <h2 className="text-xl font-semibold text-gray-800 mb-4 mt-0">
           March 8-9, 2025
         </h2>
-        <p className="text-lg text-gray-700 mb-6">
+        <p className="text-lg text-gray-700 mb-2">
           Organized by <br /> Department of Instrumentation and Control Engineering (ICE)
+        </p>
+        <p className="text-lg text-gray-700 mb-6">
+          Co-hosted by the School of Electrical and Electronic Engineering, <br />
+          Newcastle University in Singapore
         </p>
 
         <button
