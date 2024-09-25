@@ -3,23 +3,23 @@ import React from 'react';
 const timelineData = [
   {
     date: '24 September 2024',
-    title: 'Submission Start',
+    title: 'Paper Submission Starts',
   },
   {
     date: '16 December 2024',
-    title: 'Last date of Paper submission',
+    title: 'Last date of Paper Submission',
   },
   {
     date: '10 February 2025',
-    title: 'Review Process End/Acceptance',
+    title: 'Review Process Ends/ Acceptance Notification',
   },
   {
     date: '25 February 2025',
-    title: 'Camera Ready paper/Registration',
+    title: 'Camera Ready Submission/ Registration Begins',
   },
   {
     date: '8-9 March 2025',
-    title: 'Conference Date',
+    title: 'Conference Days 1 & 2',
   }
 ];
 

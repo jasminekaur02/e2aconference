@@ -172,17 +172,17 @@ export default function Navbar() {
                   <div className="flex items-center space-x-6">
                     {/* Menu button */}
                     <Disclosure.Button
-  className={`inline-flex items-center px-4 py-2 bg-black text-white text-xl font-bold hover:bg-gray-800 focus:outline-none ${open ? "fixed top-4 right-4 z-50" : ""}`}
+  className={`inline-flex items-center px-4 py-2 bg-black text-white rounded-lg text-xl font-bold hover:bg-gray-800 focus:outline-none ${open ? "fixed top-4 right-4 z-50" : ""}`}
 >
   {open ? (
     <>
-      <X className="block h-8 w-8" aria-hidden="true" />
-      <span className="ml-2">CLOSE</span>
+      <X className="block h-8 w-8 " aria-hidden="true" />
+      <span className="ml-2 hidden">CLOSE</span>
     </>
   ) : (
     <>
-      <Menu className="block h-8 w-8" aria-hidden="true" />
-      <span className="ml-2">MENU</span>
+      <Menu className="block h-8 w-8 " aria-hidden="true" />
+      <span className="ml-2  hidden">MENU</span>
     </>
   )}
 </Disclosure.Button>
@@ -312,9 +312,18 @@ export default function Navbar() {
 }
 
 export function Logo() {
-    return (
-        <Link href="/Home" className="flex items-center text-white">
-            <img src="/e2awhite[1].png" alt="Logo" className="w-15 h-[8vh]" />
-        </Link>
-    );
+  return (
+      <div className="flex items-center space-x-2 lg:space-x-4 text-white">
+          <Link  href="/Home">
+          <img src="/e2awhite[1].png" alt="e2alogo" className="w-15 h-[8vh]" />
+          </Link>
+          <Link  href="https://www.nitj.ac.in/" target="_blank">
+          <img src="/logo.png" alt="nitjlogo" className="w-15 h-[8vh]" />
+          </Link>
+          <Link  href="https://www.ncl.ac.uk/" target="_blank">
+          <img src="/ncuslogo.jpg" alt="ncus logo" className="w-15 h-[8vh]" />
+          </Link>
+      </div>
+  );
 }
+
