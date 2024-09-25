@@ -7,7 +7,7 @@ const timelineData = [
   },
   {
     date: '16 December 2024',
-    title: 'Last date of Paper submission',
+    title: 'Last date of Paper Submission',
   },
   {
     date: '10 February 2025',
@@ -19,7 +19,7 @@ const timelineData = [
   },
   {
     date: '8-9 March 2025',
-    title: 'Conference Day 1 & 2',
+    title: 'Conference Days 1 & 2',
   }
 ];
 
