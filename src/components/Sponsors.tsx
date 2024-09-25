@@ -10,7 +10,7 @@ const Sponsors = () => {
     <section className="bg-white pt-10 pb-10 animate-slide-in">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">
-          <span className='text-blue-600'>Our</span> Sponsors
+          <span className='text-blue-600'>Our</span> Partners & Sponsors
         </h2>
         
         <div className="bg-gray-100 rounded-3xl p-8 shadow-lg">
