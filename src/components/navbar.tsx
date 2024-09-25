@@ -320,8 +320,8 @@ export function Logo() {
           <Link  href="https://www.nitj.ac.in/" target="_blank">
           <img src="/logo.png" alt="nitjlogo" className="w-15 h-[8vh]" />
           </Link>
-          <Link  href="https://nus.edu.sg/" target="_blank">
-          <img src="https://nus.edu.sg/images/default-source/base/logo.png" alt="nus logo" className="w-15 h-[8vh]" />
+          <Link  href="https://www.ncl.ac.uk/" target="_blank">
+          <img src="/ncuslogo.jpg" alt="ncus logo" className="w-15 h-[8vh]" />
           </Link>
       </div>
   );
