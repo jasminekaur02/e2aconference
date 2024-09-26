@@ -27,13 +27,13 @@ const speakers: Speaker[] = [
   },
   {
     id: 2,
-    name: "DR. AJAY MATHUR",
-    title: "Director General, International Solar",
+    name: "DR. KHALID ABIDI",
+    title: "Director of Education and Associate Professor at Newcastle University",
     organization: "Alliance",
     imageUrl:
-      "https://media.licdn.com/dms/image/v2/C5603AQH1lfxQsCEFHA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1660797938009?e=1732147200&v=beta&t=SU9VnxB1hQtFhE9vg7ZBYyTiHeAZsdzd7xhGeehAiu0",
+      "https://media.licdn.com/dms/image/v2/C5603AQH24WqWcxHVmQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1516510955992?e=1732752000&v=beta&t=bT14KftKgnh_vhInvF7Xr6zz0WLE2YpO-qp_5ijlE6A",
     linkedInUrl:
-      "https://www.linkedin.com/in/international-solar-alliance/?originalSubdomain=in",
+      "https://www.linkedin.com/in/khalid-abidi-41277232/?originalSubdomain=sg",
   },
   {
     id: 3,

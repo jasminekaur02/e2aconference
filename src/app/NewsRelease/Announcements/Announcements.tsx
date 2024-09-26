@@ -8,18 +8,18 @@ const Announcements = () => {
       content: "Join us for the International Conference on Electrical, Electronics, and Automation. Register now!",
       image: "https://nitj.ac.in/files/1710597637693-WhatsApp%20Image%202024-03-16%20at%204.43.42%20PM%20(1).jpeg",
     },
-    {
-      title: "Event 2: Workshops Begins",
-      date: "March 08, 2025",
-      content: "A workshops begins and its applications will be held. Don't miss out!",
-      image: "https://nitj.ac.in/files/1710597637693-WhatsApp%20Image%202024-03-16%20at%204.43.42%20PM%20(1).jpeg",
-    },
-    {
-      title: "Event 3: Keynote Speaker Revealed",
-      date: "February 20, 2025",
-      content: "We are excited to announce our keynote speaker for the conference!",
-      image: "https://nitj.ac.in/files/1710597637693-WhatsApp%20Image%202024-03-16%20at%204.43.42%20PM%20(1).jpeg",
-    },
+    // {
+    //   title: "Event 2: Workshops Begins",
+    //   date: "March 08, 2025",
+    //   content: "A workshops begins and its applications will be held. Don't miss out!",
+    //   image: "",
+    // },
+    // {
+    //   title: "Event 3: Keynote Speakers",
+    //   date: "February 20, 2025",
+    //   content: "We are excited to announce our keynote speaker for the conference!",
+    //   image: "https://nitj.ac.in/files/1710597637693-WhatsApp%20Image%202024-03-16%20at%204.43.42%20PM%20(1).jpeg",
+    // },
     
   ];
 
@@ -105,6 +105,7 @@ const Announcements = () => {
               </p>
             </div> */}
           </aside>
+         
         </div>
       </div>
     </>
