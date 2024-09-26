@@ -27,10 +27,10 @@ const speakers: Speaker[] = [
     website: "https://www.researchgate.net/profile/Jerzy-Szymanski"
   },
   {
-    name: "DR. AJAY MATHUR",
-    image: "https://media.licdn.com/dms/image/v2/C5603AQH1lfxQsCEFHA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1660797938009?e=1732147200&v=beta&t=SU9VnxB1hQtFhE9vg7ZBYyTiHeAZsdzd7xhGeehAiu0",
-    description: "Dr Mathur, a distinguished climate change expert, has held various leadership roles in energy and climate change. He was previously the Director General of TERI, a member of the Prime Minister's Council on Climate Change, and co-chair of global energy and cooling initiatives. He has also served as the head of the Indian Bureau of Energy Efficiency and a leading climate change negotiator. With a strong educational background in chemical engineering, Dr Mathur has received numerous awards, including the Nobel Peace Prize as a member of the IPCC. His contributions to energy efficiency, climate change mitigation, and international climate negotiations have been significant.",
-    website: "https://isolaralliance.org/about/director-general",
+    name: "DR. KHALID ABIDI",
+    image: "https://media.licdn.com/dms/image/v2/C5603AQH24WqWcxHVmQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1516510955992?e=1732752000&v=beta&t=bT14KftKgnh_vhInvF7Xr6zz0WLE2YpO-qp_5ijlE6A",
+    description: "Khalid Abidi (Member, IEEE) received the Ph.D. degree in electrical and computer engineering with a specialization in control engineering from the National University of Singapore, Singapore, in 2009.,He was an Assistant Professor of Mechatronics Engineering with Bahcesehir University, Istanbul, Turkey, from 2009 to 2014. He is currently a Lecturer of Electrical Power Engineering with Newcastle University, Singapore. He has authored over 30 papers in systems and control theory.",
+    linkedin: "https://www.linkedin.com/in/khalid-abidi-41277232/?originalSubdomain=sg",
   },
   {
     name: "MR. SUBRAMANYAM PULIPAKA",

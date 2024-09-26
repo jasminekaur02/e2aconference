@@ -27,7 +27,7 @@ const NAVLINKS = [
         href: "",
         text: "EVENTS",
         subMenu: [
-            { href: "/Keynote", text: "KEYNOTES" },
+            { href: "/Keynote", text: "KEYNOTE SPEAKERS" },
             { href: "/Workshop", text: "WORKSHOPS" },
             { href: "/Awards", text: "AWARDS" },
         ],
@@ -52,7 +52,7 @@ const NAVLINKS = [
         text: "COMMITTEE",
         subMenu: [
             { href: "/Team", text: "ORGANIZING COMMITTEE" },
-            { href: "/Committee2", text: "PROGRAM COMMITTEE" },
+            { href: "/Committee2", text: "PROGRAMME COMMITTEE" },
             { href: "/AdvCommittee", text: "ADVISORY COMMITTEE" },
             { href: "/student", text: "STUDENT MEMBERS" },
         ],
