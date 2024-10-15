@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from 'react';
-import { FaCalendarAlt, FaLaptop } from 'react-icons/fa'; // Import calendar and laptop icons
+import { FaCalendarAlt, FaLandmark, FaLaptop, FaSearchLocation } from 'react-icons/fa'; // Import calendar and laptop icons
 
 const Hero = () => {
   // Array of image URLs for the carousel
@@ -121,6 +121,11 @@ const Hero = () => {
             <span className="text-lg md:text-xl">8-9 March, 2025</span>
           </div>
         </div>
+        {/* Venue */}
+        <div className="flex items-center">
+            <FaLandmark className="text-white mr-2" />
+            <span className="text-lg md:text-xl">NIT Jalandhar</span>
+          </div>
 
         {/* Countdown Timer */}
         <div className="mt-8 flex space-x-2 justify-center">
@@ -137,12 +142,12 @@ const Hero = () => {
         {/* Action Buttons */}
         <div className="mt-8 space-x-4">
           <a href="/Registration" rel="noopener noreferrer">
-            <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">
+            <button className="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">
               Register
             </button>
           </a>
           <a href="/Guidelines" rel="noopener noreferrer">
-            <button className="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">
+            <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">
               Submit Paper
             </button>
           </a>

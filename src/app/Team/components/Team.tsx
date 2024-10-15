@@ -105,11 +105,11 @@ const teamData: TeamData = {
       profileLink: "https://www.researchgate.net/profile/Marta-Zurek-Mortka"
     },
     {
-      name: "Dr. Khalid Abidi",
-      designation: "Degree Program Director",
+      name: "Dr. Sze Sing Lee",
+      designation: "Assistant Professor",
       affiliation: "Newcastle University, Singapore",
-      image: "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=_mPjJwEAAAAJ&citpid=2",
-      profileLink: "https://www.ncl.ac.uk/singapore/staff/profile/khalidabidi.html"
+      image: "https://includes.ncl.ac.uk/cmswebservices/myimpact/2020ws/picture/picture.php?wk=newcastleuniversity&pk=szesing.lee",
+      profileLink: "https://www.ncl.ac.uk/singapore/staff/profile/szesinglee.html"
     }
   ],
   "Organising Secretary": [
@@ -135,12 +135,14 @@ const teamData: TeamData = {
       profileLink: "https://departments.nitj.ac.in/dept/ice/Faculty/6430447538bff038a7808faa"
     },
     {
-      name: "Dr. Sze Sing Lee",
+      name: "Dr. Muhammad Ramadan Saifuddin",
       designation: "Assistant Professor",
-      affiliation: "Newcastle University, Singapore",
-      image: "https://includes.ncl.ac.uk/cmswebservices/myimpact/2020ws/picture/picture.php?wk=newcastleuniversity&pk=szesing.lee",
-      profileLink: "https://www.ncl.ac.uk/singapore/staff/profile/szesinglee.html"
-    }
+      affiliation: "Newcastle University, Singapore",
+      image: "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=Pva428cAAAAJ&citpid=1",
+      profileLink: "https://scholar.google.com/citations?user=Pva428cAAAAJ&hl=en"
+    },
+
+    
   ]
 };
 

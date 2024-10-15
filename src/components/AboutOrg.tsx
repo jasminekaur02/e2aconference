@@ -1,8 +1,9 @@
 'use client';
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Aboutice from '@/components/Aboutice'
 import ZigzagTimeline from './Timeline';
-import { faInfoCircle, faUniversity } from '@fortawesome/free-solid-svg-icons';
+import { faInfoCircle, faLandmark, faUniversity } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const AboutOrg = () => {
@@ -70,40 +71,32 @@ const AboutOrg = () => {
               </button>
             </div>
 
-            {/* Department of ICE */}
+            {/* Department of NUIS */}
             <div className="bg-white p-8 rounded-lg text-center lg:text-left shadow-lg">
               <h3 className="text-3xl font-bold mb-4">
-                About Department of <span className="text-blue-600">ICE</span>
+                About <span className="text-blue-600"> NUiS Singapore</span>
               </h3>
 
               {/* "More Info" Button for Department of ICE */}
               <div className="mb-4">
 
                 <Link
-                  href="https://departments.nitj.ac.in/dept/ice/home"
+                  href="https://www.ncl.ac.uk/singapore/ "
                   className="flex items-center px-2 py-2 text-blue-400 font-semibold rounded-lg hover:bg-blue-600 hover:text-white transition"
                 >
-                  <FontAwesomeIcon icon={faInfoCircle} className="mr-2" />
-                  ICE Dept. Oficial Website
+                  <FontAwesomeIcon icon={faLandmark} className="mr-2" />
+                  NUiS Oficial Website
 
                 </Link>
               </div>
 
               <p className="text-lg  text-left  lg:text-wrap">
 
-                The Department of Instrumentation and Control Engineering (ICE) commenced its Bachelor of Technology (B.Tech.) degree program in 1990 with an intake of 30 students. The department started the M.Tech (Full Time) and M.Tech (Part-Time) Degree Programme in Control and Instrumentation Engineering in 2006 and 2010.
+              Newcastle University in Singapore (NUiS) is a branch of Newcastle University, UK, offering a wide range of undergraduate and postgraduate programs with a strong emphasis on engineering, computing, and sustainability.
                 {showMoreIce && (
                   <span>
-                    &nbsp;It also started a new M.Tech Machine
-                    Intelligence and Automation program in 2024. The Department
-                    began its Ph.D. Program in 2005 in
-                    Instrumentation and Control Engineering, Biomedical
-                    Engineering, Robotics, A.I., Control,
-                    M.L., and Cryogenics. Currently, it has an
-                    overall student strength of about 500. The Department is
-                    consolidating its efforts to promote industrial research,
-                    sponsored projects, and consultancy in appropriate
-                    Instrumentation and Control Engineering areas.
+                    &nbsp;Established to provide high-quality education and research in Southeast Asia, NUiS is known for its collaborative efforts with industries and academic institutions to address regional and global challenges. The campus fosters innovation, particularly in areas such as advanced engineering, smart cities, and renewable energy, aligning with Singapore's goals of becoming a global hub for research and development.
+
 
                   </span>
                 )}
@@ -119,6 +112,7 @@ const AboutOrg = () => {
 
           {/* Our Mission & Vision Section */}
           <div className="pt-24">
+            <Aboutice/>
             <ZigzagTimeline />
           </div>
         </section>
