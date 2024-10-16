@@ -77,18 +77,18 @@ const GuidelinesPage = () => {
 </section>
 
             {/* Submission Section */}
-            <section className="bg-white p-6 sm:p-8 rounded-lg shadow-md">
+<section className="bg-white p-6 sm:p-8 rounded-lg shadow-md">
   <h3 className="text-2xl font-bold text-blue-600 mb-4 flex items-center">
     <ExternalLink className="mr-2" />
     Submission
   </h3>
-  <div className="flex items-center mb-4">
+  <div className="flex flex-col items-left mb-4"> {/* Keep the flex direction column */}
     <img
       src="/Untitled (1).png" // Replace with your QR code image path
       alt="QR Code for Submission"
-      className="w-32 h-32 mr-4" // Adjust size as needed
+      className="w-32 h-32 mb-2" // Add margin-bottom for spacing
     />
-    <p className="text-md leading-relaxed text-justify">
+    <p className="text-md leading-relaxed text-left"> {/* Center text below the image */}
       <a href='https://cmt3.research.microsoft.com/E2ACON2025'>
         https://cmt3.research.microsoft.com/E2ACON2025
       </a>
