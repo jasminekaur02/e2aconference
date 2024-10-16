@@ -35,17 +35,25 @@ const WelcomePage = () => {
   }
 
   return (
-    <div className="min-h-screen bg-white flex flex-col lg:flex-row items-center justify-center overflow-hidden">
-      {/* Left Section - Logo (Hidden on Small and Medium Devices) */}
-      <div
-        className={`flex-1 items-center justify-center p-8 transition-transform duration-[800ms] ${
-          slideOut ? 'lg:animate-slideOutLeft' : ''
-        } hidden lg:flex`}
-      >
-        <div className="relative" style={{ width: '45vw', height: '100vh' }}>
+    <div className="min-h-screen bg-white flex flex-col items-center justify-center overflow-hidden">
+      {/* Logos at the top */}
+      <div className="flex items-center justify-center space-x-8 mb-8">
+        {/* NIT Jalandhar Logo */}
+        <div className="relative" style={{ width: '80px', height: '80px' }}>
           <Image
-            src="/logoe2a.gif"
-            alt="E2ACon 2025 Logo"
+            src="/image.png"
+            alt="NIT Jalandhar Logo"
+            layout="fill"
+            objectFit="contain"
+            priority
+          />
+        </div>
+
+        {/* Newcastle University Logo */}
+        <div className="relative" style={{ width: '96px', height: '96px' }}>
+          <Image
+            src="/ncuslogo.jpg"
+            alt="Newcastle University Logo"
             layout="fill"
             objectFit="contain"
             priority
@@ -53,62 +61,41 @@ const WelcomePage = () => {
         </div>
       </div>
 
-      {/* Right Section - Info */}
-      <div
-        className={`flex-1 flex flex-col items-center justify-center p-8 text-center transition-transform duration-[800ms] ${
-          slideOut ? 'animate-slideUp lg:animate-slideOutRight' : ''
-        }`}
-      >
-        <div className="flex items-center space-x-4 mb-4">
-          {/* NITJ Logo */}
-          <Image
-            src="/image.png"
-            alt="NIT Jalandhar Logo"
-            width={48}
-            height={48}   
-            priority
-          />
-
-          {/* Show logo gif for small and medium devices */}
-          <div className="relative lg:hidden" style={{ width: '120px', height: '100px' }}>
-            <Image
-              src="/logoe2a.gif"
-              alt="E2ACon 2025 Logo"
-              layout="fill"
-              objectFit="contain"
-              priority
-            />
-          </div>
-
-          {/* Newcastle University Logo */}
-          <div className="relative" style={{ width: '96px', height: '96px' }}>
-            <Image
-              src="/ncuslogo.jpg" // Replace with the actual path to the Newcastle University logo
-              alt="Newcastle University Logo"
-              layout="fill"
-              objectFit="contain"
-              priority
-            />
-          </div>
+      {/* Information side by side with separator */}
+      <div className="grid grid-cols-2 items-center justify-center w-full text-center gap-8">
+        {/* NIT Jalandhar Info */}
+        <div className="flex flex-col items-center">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+            Organized by
+          </h2>
+          <h2 className="text-xl font-semibold text-gray-800 mb-2">
+            Dr. B. R. Ambedkar National Institute of Technology Jalandhar
+          </h2>
+          <p className="text-lg text-gray-700 mb-4">
+            Department of Instrumentation and Control Engineering (ICE)
+          </p>
+          <h2 className="text-xl font-semibold text-gray-800 mb-4">
+            March 8-9, 2025
+          </h2>
         </div>
 
-        <h2 className="text-xl font-semibold text-gray-800 mb-2">
-          <span className="block">
-            Dr. B. R. Ambedkar National Institute of Technology Jalandhar
-          </span>
-        </h2>
-        <h1 className="text-3xl font-bold text-blue-600 mb-4">E2ACON 2025</h1>
-        <h2 className="text-xl font-semibold text-gray-800 mb-4 mt-0">
-          March 8-9, 2025
-        </h2>
-        <p className="text-lg text-gray-700 mb-2">
-          Organized by <br /> Department of Instrumentation and Control Engineering (ICE)
-        </p>
-        <p className="text-lg text-gray-700 mb-6">
-          This Conference is co-hosted by the School of Electrical and Electronic Engineering, <br />
-          Newcastle University in Singapore
-        </p>
+        {/* Newcastle University Info */}
+        <div className="flex flex-col items-center">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+            Co-Hosted by
+          </h2>
+          <h2 className="text-xl font-semibold text-gray-800 mb-2">
+            Newcastle University, Singapore
+          </h2>
+          <p className="text-lg text-gray-700 mb-4">
+            This Conference is co-hosted by the School of Electrical and Electronic Engineering, <br />
+            Newcastle University in Singapore
+          </p>
+        </div>
+      </div>
 
+      {/* Get Started Button */}
+      <div className="mt-8">
         <button
           onClick={handleProceed}
           className="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-blue-50 transition duration-300"
