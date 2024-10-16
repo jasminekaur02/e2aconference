@@ -18,7 +18,7 @@ const speakers: Speaker[] = [
   {
     id: 1,
     name: "Prof. JERZY R. SZYMANSKI",
-    title: "Kazimierz Pulaski University of Technology and Humanities, Poland.",
+    title: "Casimir Pulaski University of Radom, Poland.",
     organization: "",
     imageUrl:
       "https://i1.rgstatic.net/ii/profile.image/856674961199104-1581258635324_Q128/Jerzy-Szymanski.jpg",
@@ -28,8 +28,8 @@ const speakers: Speaker[] = [
   {
     id: 2,
     name: "DR. KHALID ABIDI",
-    title: "Director of Education and Associate Professor at Newcastle University",
-    organization: "Alliance",
+    title: "Director of Education and Associate Professor, Newcastle University",
+    organization: "Singapore",
     imageUrl:
       "https://media.licdn.com/dms/image/v2/C5603AQH24WqWcxHVmQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1516510955992?e=1732752000&v=beta&t=bT14KftKgnh_vhInvF7Xr6zz0WLE2YpO-qp_5ijlE6A",
     linkedInUrl:
@@ -47,8 +47,8 @@ const speakers: Speaker[] = [
   {
     id: 4,
     name: "DR. PIYUSH VERMA",
-    title: "United Nations Development Programme (UNDP)",
-    organization: "India",
+    title: "Senior Governance Expert-Energy ",
+    organization: "United Nations Development Programme (UNDP) , India",
     imageUrl:
       "https://media.licdn.com/dms/image/v2/C5603AQHcfhXe5NGL9Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1566290376505?e=1732752000&v=beta&t=DmFq2E8X7YauDI1pS2ognyflMX3iNRpvuoxYXRUdWgQ",
     linkedInUrl: "https://www.linkedin.com/in/piyushnitjsr/",

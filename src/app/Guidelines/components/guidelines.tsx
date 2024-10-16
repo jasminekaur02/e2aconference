@@ -49,9 +49,8 @@ const GuidelinesPage = () => {
                 <li>Copyright/Author&apos;s Agreement/Consent Form: <a href="#" className="text-blue-600 hover:underline">Copyright Form</a></li>
               </ul>
               <p className="text-md leading-relaxed text-justify mt-4">
-                For detailed guidelines, authors can refer to the link:
                 <br /><a href="https://www.springer.com/series/7818" className="text-blue-600 hover:underline ml-1">
-                  https://www.springer.com/series/7818
+                  
                 </a>
               </p>
             </section>
@@ -62,8 +61,7 @@ const GuidelinesPage = () => {
                 <ExternalLink className="mr-2" />
                 Submission
               </h3>
-              <p className="text-md leading-relaxed text-justify">
-                The submission link will be shared soon. Please check back later for updates.
+              <p className="text-md leading-relaxed text-justify"><a href=' https://cmt3.research.microsoft.com/E2ACON2025'> https://cmt3.research.microsoft.com/E2ACON2025</a>
               </p>
             </section>
           </div>
