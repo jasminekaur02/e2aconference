@@ -54,6 +54,14 @@ const speakers: Speaker[] = [
     website: "https://eee.buet.ac.bd/people/faculty/dcs",
 
   },
+  {
+    name: "Mr. ANDREI COVATARIU",
+    image: "https://media.licdn.com/dms/image/D4D03AQGFgBl_5pCxcA/profile-displayphoto-shrink_400_400/0/1708880080460?e=2147483647&v=beta&t=MqVsB9rjXbNGuOs25tz5ufKIGOeAC3CId9lbw2wz-cM",
+    description: "Andrei Covatariu is an international energy and climate change expert. His activity focuses on climate and energy policies, concentrating on the energy transition process and its geopolitical, economic, and social challenges. Andrei views and policy analyses are constantly published and cited in international media.Andrei is currently the Co-Chair of the Task Force on “Digitalization in Energy” and a Vice-Chair of the Group of Experts on Energy Efficiency, at the United Nations Economic Commission for Europe (UNECE). He is also a consultant for the Public Power Corporation (PPC) utility company, in Greece, acting as a Climate Policy Advisor for the CEO & Chairman. ",
+    linkedin: "https://www.linkedin.com/in/andreicovatariu?originalSubdomain=be",
+    website: "https://scholar.google.com/citations?hl=en&user=RhbttjcAAAAJ",
+
+  },
 ];
 
 const SpeakerPage: React.FC = () => {

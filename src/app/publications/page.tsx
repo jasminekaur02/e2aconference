@@ -20,22 +20,13 @@ const Page = () => {
             Publication
           </h3>
           <p className="text-md leading-relaxed text-justify mb-4">
-            All peer-reviewed, accepted and presented papers in the conference will be considered to be published as proceedings in the prestigious SCOPUS-indexed &quot;Lecture Notes in Electrical Engineering&quot; by Springer series (Approval in Process)  
-            (<a href="https://www.springer.com/series/7818" className="text-blue-600 hover:underline">https://www.springer.com/series/7818 </a>).
+            
+            {/* (<a href="https://www.springer.com/series/7818" className="text-blue-600 hover:underline"> </a>). */}
           </p>
           <p className="text-md leading-relaxed text-justify mb-4">
-            LNEE is also abstracted and indexed in:
+           TO BE ANNOUNCED 
           </p>
-          <ul className="list-disc list-inside text-md text-gray-700 grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-            <li>DBLP</li>
-            <li>EI Compendex</li>
-            <li>INSPEC</li>
-            <li>Japanese Science and Technology Agency (JST)</li>
-            <li>SCImago</li>
-            <li>SCOPUS</li>
-            <li>WTI Frankfurt eG</li>
-            <li>zbMATH</li>
-          </ul>
+          
         </section>
       </div>
       <Footer />

@@ -96,15 +96,15 @@ const Hero = () => {
 
         {/* Conference proceedings info */}
         <p className="mt-6 hidden md:visible text-[1rem] md:text-[1rem] font-bold text-gray-300">
-          Conference proceedings will be published with{" "}
-          <span className="text-white">Springer SCOPUS Indexed</span><br />
-          “Lecture Notes in Electrical Engineering” (Approval in process)
+         
+          <span className="text-white"></span><br />
+          
         </p>
 
         {/* New line for proceedings with LNEE */}
         <p className="mt-2 text-lg md:text-xl text-white font-bold">
-          Proceedings will be published in LNEE, Springer (SCOPUS Indexed)
-          <span className="text-blue-600">*</span>
+         
+          <span className="text-blue-600"></span>
         </p>
 
         {/* Hybrid Mode and Date in a single line for small screens, vertical stack for medium+ screens */}
