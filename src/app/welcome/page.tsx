@@ -69,10 +69,10 @@ const WelcomePage = () => {
             Organized by
           </h2>
           <h2 className="text-xl font-semibold text-gray-800 mb-2">
-            Dr. B. R. Ambedkar National Institute of Technology Jalandhar
+            Department of Instrumentation and Control Engineering (ICE)
           </h2>
           <p className="text-lg text-gray-700 mb-4">
-            Department of Instrumentation and Control Engineering (ICE)
+            Dr. B.R. Ambedkar National Institute of Technology Jalandhar 
           </p>
           <h2 className="text-xl font-semibold text-gray-800 mb-4">
             March 8-9, 2025
@@ -85,11 +85,10 @@ const WelcomePage = () => {
             Co-Hosted by
           </h2>
           <h2 className="text-xl font-semibold text-gray-800 mb-2">
-            Newcastle University, Singapore
+            School of Electrical and Electronic Engineering
           </h2>
           <p className="text-lg text-gray-700 mb-4">
-            This Conference is co-hosted by the School of Electrical and Electronic Engineering, <br />
-            Newcastle University in Singapore
+            Newcastle University, Singapore 
           </p>
         </div>
       </div>
