@@ -90,7 +90,7 @@ const teamData: TeamData = {
     },
     {
       name: "Dr. Anurag Sharma",
-      designation: "Assistant Professor",
+      designation: "Associate Professor",
       affiliation: "Newcastle University, Singapore",
       image: "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=DbW7jDoAAAAJ&citpid=3",
       profileLink: "https://www.ncl.ac.uk/singapore/staff/profile/anuragsharma.html"
