@@ -46,7 +46,6 @@ const GuidelinesPage = () => {
               <ul className="list-disc list-inside text-md text-gray-700 space-y-2">
                 <li>MS Word template: <a href="#" className="text-blue-600 hover:underline">Word Template</a></li>
                 <li>LaTex Formatting Macros: <a href="#" className="text-blue-600 hover:underline">LaTex Template</a></li>
-                <li>Copyright/Author&apos;s Agreement/Consent Form: <a href="#" className="text-blue-600 hover:underline">Copyright Form</a></li>
               </ul>
               <p className="text-md leading-relaxed text-justify mt-4">
                 <br /><a href="https://www.springer.com/series/7818" className="text-blue-600 hover:underline ml-1">
