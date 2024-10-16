@@ -34,47 +34,68 @@ const GuidelinesPage = () => {
               </p>
             </section>
 
-            {/* Manuscript Template Section */}
-            <section className="mb-12">
-              <h3 className="text-2xl font-bold text-blue-600 mb-4 flex items-center">
-                <Book className="mr-2" />
-                Manuscript Template
-              </h3>
-              <p className="text-md leading-relaxed text-justify mb-4">
-                Manuscripts must strictly adhere to the Springer template as follows:
-              </p>
-              <ul className="list-disc list-inside text-md text-gray-700 space-y-2">
-                <li>MS Word template: <a href="#" className="text-blue-600 hover:underline">Word Template</a></li>
-                <li>LaTex Formatting Macros: <a href="#" className="text-blue-600 hover:underline">LaTex Template</a></li>
-              </ul>
-              <p className="text-md leading-relaxed text-justify mt-4">
-                <br /><a href="https://www.springer.com/series/7818" className="text-blue-600 hover:underline ml-1">
-                  
-                </a>
-              </p>
-            </section>
+         {/* Manuscript Template Section */}
+<section className="mb-12">
+  <h3 className="text-2xl font-bold text-blue-600 mb-4 flex items-center">
+    <Book className="mr-2" />
+    Manuscript Template
+  </h3>
+  <p className="text-md leading-relaxed text-justify mb-4">
+    Manuscripts must strictly adhere to the Springer template as follows:
+  </p>
+  <ul className="list-disc list-inside text-md text-gray-700 space-y-2">
+    <li>
+      MS Word template: 
+      <a 
+        href="Word+Template-Final.zip" // Replace with your actual file path
+        className="text-blue-600 hover:underline"
+        download // This attribute prompts download
+      >
+        Word Template
+      </a>
+    </li>
+    <li>
+      LaTex Formatting Macros: 
+      <a 
+        href="LaTex+Package-Final.zip" // Replace with your actual file path
+        className="text-blue-600 hover:underline"
+        download // This attribute prompts download
+      >
+        LaTex Template
+      </a>
+    </li>
+  </ul>
+  <p className="text-md leading-relaxed text-justify mt-4">
+    <br />
+    <a 
+      href="https://www.springer.com/series/7818" 
+      className="text-blue-600 hover:underline ml-1"
+    >
+      Additional Resources
+    </a>
+  </p>
+</section>
 
             {/* Submission Section */}
-<section className="bg-white p-6 sm:p-8 rounded-lg shadow-md flex items-center justify-between">
-  <div className="flex-grow">
-    <h3 className="text-2xl font-bold text-blue-600 mb-4 flex items-center">
-      <ExternalLink className="mr-2" />
-      Submission
-    </h3>
+            <section className="bg-white p-6 sm:p-8 rounded-lg shadow-md">
+  <h3 className="text-2xl font-bold text-blue-600 mb-4 flex items-center">
+    <ExternalLink className="mr-2" />
+    Submission
+  </h3>
+  <div className="flex items-center mb-4">
+    <img
+      src="/Untitled (1).png" // Replace with your QR code image path
+      alt="QR Code for Submission"
+      className="w-32 h-32 mr-4" // Adjust size as needed
+    />
     <p className="text-md leading-relaxed text-justify">
       <a href='https://cmt3.research.microsoft.com/E2ACON2025'>
         https://cmt3.research.microsoft.com/E2ACON2025
       </a>
     </p>
   </div>
-  <div className="ml-4">
-    <img
-      src="/Untitled (1).png" // Replace with your QR code image path
-      alt="QR Code for Submission"
-      className="w-32 h-32" // Adjust size as needed
-    />
-  </div>
 </section>
+
 
           </div>
         </section>
