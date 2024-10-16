@@ -48,7 +48,7 @@ const speakers: Speaker[] = [
     id: 4,
     name: "DR. PIYUSH VERMA",
     title: "Senior Governance Expert-Energy ",
-    organization: "United Nations Development Programme (UNDP) , India",
+    organization: "United Nations Development Programme (UNDP) ,New York",
     imageUrl:
       "https://media.licdn.com/dms/image/v2/C5603AQHcfhXe5NGL9Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1566290376505?e=1732752000&v=beta&t=DmFq2E8X7YauDI1pS2ognyflMX3iNRpvuoxYXRUdWgQ",
     linkedInUrl: "https://www.linkedin.com/in/piyushnitjsr/",

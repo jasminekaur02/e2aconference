@@ -56,14 +56,27 @@ const GuidelinesPage = () => {
             </section>
 
             {/* Submission Section */}
-            <section className="bg-white p-6 sm:p-8 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold text-blue-600 mb-4 flex items-center">
-                <ExternalLink className="mr-2" />
-                Submission
-              </h3>
-              <p className="text-md leading-relaxed text-justify"><a href=' https://cmt3.research.microsoft.com/E2ACON2025'> https://cmt3.research.microsoft.com/E2ACON2025</a>
-              </p>
-            </section>
+<section className="bg-white p-6 sm:p-8 rounded-lg shadow-md flex items-center justify-between">
+  <div className="flex-grow">
+    <h3 className="text-2xl font-bold text-blue-600 mb-4 flex items-center">
+      <ExternalLink className="mr-2" />
+      Submission
+    </h3>
+    <p className="text-md leading-relaxed text-justify">
+      <a href='https://cmt3.research.microsoft.com/E2ACON2025'>
+        https://cmt3.research.microsoft.com/E2ACON2025
+      </a>
+    </p>
+  </div>
+  <div className="ml-4">
+    <img
+      src="/Untitled (1).png" // Replace with your QR code image path
+      alt="QR Code for Submission"
+      className="w-32 h-32" // Adjust size as needed
+    />
+  </div>
+</section>
+
           </div>
         </section>
       </div>

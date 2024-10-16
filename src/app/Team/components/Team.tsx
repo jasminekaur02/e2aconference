@@ -61,7 +61,7 @@ const teamData: TeamData = {
     },
     {
       name: "Prof. Jerzy R. Szymański",
-      affiliation: "Kazimierz Pulaski University, Poland",
+      affiliation: "Casimir Pulaski University of Radom, Poland",
       image: "https://i1.rgstatic.net/ii/profile.image/856674961199104-1581258635324_Q128/Jerzy-Szymanski.jpg",
       profileLink: "https://www.researchgate.net/profile/Jerzy-Szymanski"
     },
@@ -137,7 +137,7 @@ const teamData: TeamData = {
     {
       name: "Dr. Muhammad Ramadan Saifuddin",
       designation: "Assistant Professor",
-      affiliation: "Newcastle University, Singapore",
+      affiliation: "Newcastle University,Singapore",
       image: "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=Pva428cAAAAJ&citpid=1",
       profileLink: "https://scholar.google.com/citations?user=Pva428cAAAAJ&hl=en"
     },
