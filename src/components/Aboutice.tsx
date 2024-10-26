@@ -3,9 +3,9 @@ import React, { useEffect, useRef, useState } from "react";
 
 export default function AboutUs() {
   const aboutText = `
-    <p>The Department of Instrumentation and Control Engineering (ICE) commenced its Bachelor of Technology (B.Tech.) degree program in 1990 with an intake of 30 students. The department started the M.Tech (Full Time) and M.Tech (Part-Time) Degree Programme in Control and Instrumentation Engineering in 2006 and 2010.</p>
+    <p>The Department of Instrumentation and Control Engineering (ICE) at NIT Jalandhar commenced its Bachelor of Technology (B.Tech.) degree program in 1990 with an intake of 30 students. The department started the M.Tech (Full Time) and M.Tech (Part-Time) Degree Programme in Control and Instrumentation Engineering in 2006 and 2010.</p>
 
-    <p>It also started a new M.Tech Machine Intelligence and Automation program in 2024. The Department began its Ph.D. Program in 2005 in Instrumentation and Control Engineering, Biomedical Engineering, Robotics, A.I., Control, M.L., and Cryogenics. Currently, it has overall student strength of about 500. The Department is consolidating its efforts to promote industrial research, sponsored projects, and consultancy in appropriate Instrumentation and Control Engineering areas. </p>
+    <p>It also started a new M.Tech Machine Intelligence and Automation program in 2024. The Department began its Ph.D. Program in 2005 in Instrumentation and Control Engineering, Biomedical Engineering, Robotics, A.I., Control, M.L., and Cryogenics. Currently, it has an overall student strength of about 500. The Department is consolidating its efforts to promote industrial research, sponsored projects, and consultancy in appropriate Instrumentation and Control Engineering areas.</p>
   `;
 
   // State for showing more text on small screens

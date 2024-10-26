@@ -28,10 +28,10 @@ const GuidelinesPage = () => {
                 Submission Declaration and Verification
               </h3>
               <p className="text-md leading-relaxed text-justify">
-                Submission of an article implies that the work described has not been published previously (except in the form of an abstract, a published lecture, or academic thesis), that it is not under consideration for publication elsewhere, that its publication is approved by all authors and tacitly or explicitly by the responsible authorities where the work was carried out, and that, if accepted, it will not be published elsewhere in the same form, in English or in any other language, including electronically without the written consent of the copyright-holder.
+              Submission of an article implies that the work described has not been published previously (except in the form of an abstract, a published lecture, or academic thesis), that it is not under consideration for publication elsewhere, that its publication is approved by all authors and tacitly or explicitly by the responsible authorities where the work was carried out, and that, if accepted, it will not be published elsewhere in the same form, in English or any other language, including electronically without the written consent of the copyright holder.
               </p>
               <p className="mt-6 text-md leading-relaxed text-justify">
-                To verify compliance, your article may be checked by originality or duplicate checking software.
+              To verify compliance, your article may be checked by originality or duplicate checking software.
               </p>
             </section>
 

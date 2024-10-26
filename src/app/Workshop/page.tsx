@@ -16,7 +16,7 @@ const WorkshopPage = () => {
         {/* Introduction */}
         <section className="mb-12">
           <p className="text-lg text-gray-700 mb-8">
-            In addition to existing technical presentations, industry forums, and exhibitions, E2ACon2025 will feature a series of half and full-day workshops. The purpose of a workshop is to provide an opportunity for participants from academia, industry, government, and other related parties to present and discuss novel ideas on current and emerging topics relevant to the areas of Electrical, Electronics, and Automation.
+          In addition to existing technical presentations, industry forums, and exhibitions, E2ACON 2025 will feature a series of half and full-day workshops. A workshop aims to provide an opportunity for participants from academia, industry, government, and other related parties to present and discuss novel ideas on current and emerging topics relevant to Electrical, Electronics, and Automation.
           </p>
         </section>
 
