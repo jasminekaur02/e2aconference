@@ -18,8 +18,7 @@ const GuidelinesPage = () => {
              <span className="text-blue-600"></span>
             </h3>
             <p className="text-md leading-relaxed text-justify mb-8">
-              E2ACON 2025 invites researchers, practitioners, and students worldwide to submit previously unpublished original papers for consideration to be presented at the conference in the English language. All submissions will be peer-reviewed. All manuscripts submitted to E2ACON 2025 will go through a plagiarism check. Manuscripts with a similarity score of 30% or above will not be forwarded for the reviewing process and will be rejected.
-              The purpose of a conference template is to provide a consistent format for papers appearing in the conference proceedings. Authors must use the conference manuscript templates provided below. The conference templates contain guidance text for composing and formatting conference papers. Please ensure that all guidance text is removed from your conference paper prior to submission to the conference.
+            E2ACON 2025 invites researchers, practitioners, and students worldwide to submit previously unpublished original papers for consideration for presentation at the conference in English. All submissions will be peer-reviewed. All manuscripts submitted to E2ACON 2025 will go through a plagiarism check. Manuscripts with a similarity score of 30% or above will not be forwarded for the reviewing process and will be rejected. The purpose of a conference template is to provide a consistent format for papers appearing in the conference proceedings. Authors must use the conference manuscript templates provided below. The conference templates contain guidance text for composing and formatting conference papers. Please ensure that all guidance text is removed from your conference paper before submission to the conference.
             </p>
             
             {/* Submission Declaration and Verification Section */}

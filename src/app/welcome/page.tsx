@@ -40,7 +40,7 @@ const WelcomePage = () => {
       <div className="flex justify-between items-stretch w-full max-w-7xl text-center gap-4 mb-8">
         {/* E2A Logo (hidden for md and larger devices) */}
         <div className="hidden lg:flex flex-col items-center w-1/3  border-r-2 border-gray-300">
-          <div className="relative mb-2" style={{ width: '500px', height: '450px' }}>
+          <div className="relative mb-2 " style={{ width: '500px', height: '450px' }}>
             <Image
               src="/e2alogo.jpg" // Replace with the actual path to your E2A logo
               alt="E2A Logo"

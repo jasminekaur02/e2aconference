@@ -221,8 +221,7 @@ const CallForPapers: React.FC = () => {
             Sustainable Development - The Foundation of a Viksit Bharat
           </p>
           <p className="bg-indigo-100 text-blue-600 p-4 rounded-lg text-sm sm:text-base">
-            Selected themes for the E2ACON 2025 proceedings are mainly comprising of the topics focusing on the new trends in the field of Electronics, Electrical, Automation, and Emerging Technologies. 
-            The organizing committee also welcomes the proposals for special sessions. Following are the topics included in the call for paper:
+          Selected themes for the E2ACON 2025 proceedings mainly consist of topics focusing on the new trends in Electronics, Electrical, Automation, and Emerging Technologies. The organizing committee also welcomes proposals for special sessions. The following are the topics included in the call for papers:
           </p>
 
           {/* Filter Section */}
