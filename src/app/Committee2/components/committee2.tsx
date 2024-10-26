@@ -192,38 +192,53 @@ const committee: CommitteeType = {
 };
 
 const Committee2 = () => {
-    return (
-      <section className="py-12">
-        <div className="text-center mb-8">
-          {/* <h2 className="text-3xl font-bold">
-            Program <span className="text-blue-600">Committee</span>
-          </h2> */}
-        </div>
-  
-        {/* Render committee without images */}
-        {Object.keys(committee).map((section, idx) => (
-          <div key={idx} className="mb-12">
-            {/* Center text on small screens, left-align on large screens */}
-            <h3 className="text-2xl font-semibold mb-4 text-center sm:text-left mt-2 sm:mt-4">
-              {section}
-            </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-              {committee[section].map((member, index) => (
-                <div
-                  key={index}
-                  className="bg-white p-6 rounded-lg shadow-lg text-center"
-                >
-                  <h4 className="text-xl font-bold">{member.name}</h4>
-                  <p className="text-blue-500">{member.designation}</p>
-                  <p className="text-black">{member.affiliation}</p>
-                </div>
-              ))}
-            </div>
+  return (
+    <section className="py-12">
+      <div className="text-center mb-8">
+        {/* <h2 className="text-3xl font-bold">
+          Program <span className="text-blue-600">Committee</span>
+        </h2> */}
+      </div>
+
+      {/* Render committee without images */}
+      {Object.keys(committee).map((section, idx) => (
+        <div key={idx} className="mb-12">
+          {/* Center text on small screens, left-align on large screens */}
+          <h3 className="text-2xl font-semibold mb-4 text-center sm:text-left mt-2 sm:mt-4">
+            {section}
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {committee[section].map((member, index) => (
+              <div
+                key={index}
+                className="bg-white p-6 rounded-lg shadow-lg text-center"
+              >
+                <h4 className="text-xl font-bold">{member.name}</h4>
+                <p className="text-blue-500">{member.designation}</p>
+                <p className="text-black">{member.affiliation}</p>
+              </div>
+            ))}
           </div>
-        ))}
-      </section>
-    );
-  };
-  
-  export default Committee2;
-  
+        </div>
+      ))}
+
+      {/* Additional notes */}
+      <div className="mt-8 px-4 sm:px-6 lg:px-8 text-center sm:text-left">
+  <ul className="list-disc list-inside text-gray-600 text-sm sm:text-base lg:text-md">
+    <li className="mb-2">
+      All names displayed here are as honorary Volunteer/Invited members.
+    </li>
+    <li>
+      For inclusion/exclusion of any name, contact: 
+      <a href="mailto:info.e2a@nitj.ac.in" className="text-blue-600 hover:underline ml-1">
+        info.e2a@nitj.ac.in
+      </a>
+    </li>
+  </ul>
+</div>
+
+    </section>
+  );
+};
+
+export default Committee2;
