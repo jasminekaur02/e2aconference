@@ -19,16 +19,16 @@ const ConferenceFeesPage = () => {
         <section className="bg-indigo-50 p-6 my-6 mx-auto max-w-7xl rounded-lg shadow-md">
           <h2 className="text-2xl font-semibold text-blue-600 mb-4">Important Note: Registration</h2>
           <p className="text-gray-700 mb-4">
-            NOTE: In order to participate in the conference of E2ACON 2025, at least one author must register and pay as per the fee mentioned below. The registration fee includes Conference Kit, attendance to all technical sessions, workshops, plenary talks, and special sessions, Tea and Snacks on both days.
+          <b>NOTE:</b> To participate in the conference of E2ACON 2025, at least one author must register and pay as per the fee mentioned below. The registration fee includes a conference kit, attendance at all technical sessions, workshops, plenary talks, special sessions, and tea and snacks on both days
           </p>
 
           {/* Full text visible on lg screens */}
           <div className="hidden lg:block">
             <p className="text-gray-700 mb-4">
-              Only accepted and presented papers will be published in the conference proceedings/Journals. The page limit for each paper is 10, and up to two additional pages will be permitted for an additional charge of ₹1000/$15 per page for Indians and foreigners, respectively.
+            Only accepted and presented papers will be published in the conference proceedings/Journals. The page limit for each paper is 10, and up to two additional pages will be permitted for an additional charge of ₹1000/$15 per page for Indians and foreigners, respectively.
             </p>
             <p className="text-gray-700">
-              Students/Research Scholars have to submit a scanned copy of their Institute ID card along with the Registration form. However, they must produce the original copy of the Institute ID card at the time of presentation.
+            Students/Research Scholars must submit a scanned copy of their Institute ID card and the Registration form. However, they must produce the original copy of the Institute ID card at the time of presentation.
             </p>
           </div>
 
