@@ -149,6 +149,19 @@ const Committee3 = () => {
                     ))}
                 </div>
             </div>
+            <div className="mt-8 px-4 sm:px-6 lg:px-8 text-center sm:text-left">
+  <ul className="list-disc list-inside text-gray-600 text-sm sm:text-base lg:text-md">
+    <li className="mb-2">
+      All names displayed here are as honorary Volunteer/Invited members.
+    </li>
+    <li>
+      For inclusion/exclusion of any name, contact: 
+      <a href="mailto:info.e2a@nitj.ac.in" className="text-blue-600 hover:underline ml-1">
+        info.e2a@nitj.ac.in
+      </a>
+    </li>
+  </ul>
+</div>
         </section>
     );
 };
