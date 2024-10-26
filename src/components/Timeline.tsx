@@ -26,7 +26,7 @@ const timelineData = [
 const TimelineComponent = () => {
   return (
     <div className="container mx-auto p-4">
-      <h2 className="text-3xl font-bold mb-6 text-center">Important Dates</h2>
+      <h2 className="text-3xl font-bold mb-6 text-center">Important<span className='text-blue-600'> Dates</span></h2>
       <div className="relative">
         {/* Timeline line */}
         <div className="absolute top-8 left-4 md:left-2 h-full w-0.5 bg-gray-300 lg:hidden "></div>
