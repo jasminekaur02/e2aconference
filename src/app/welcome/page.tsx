@@ -35,69 +35,56 @@ const WelcomePage = () => {
   }
 
   return (
-    <div className="min-h-screen bg-white flex flex-col items-center justify-center overflow-hidden">
-      {/* Logos at the top */}
-      <div className="flex items-center justify-center space-x-8 mb-8">
-        {/* NIT Jalandhar Logo */}
-        <div className="relative" style={{ width: '80px', height: '80px' }}>
-          <Image
-            src="/image.png"
-            alt="NIT Jalandhar Logo"
-            layout="fill"
-            objectFit="contain"
-            priority
-          />
-        </div>
-
-        {/* Newcastle University Logo */}
-        <div className="relative" style={{ width: '96px', height: '96px' }}>
-          <Image
-            src="/ncuslogo.jpg"
-            alt="Newcastle University Logo"
-            layout="fill"
-            objectFit="contain"
-            priority
-          />
-        </div>
-      </div>
-
-      {/* Information side by side with separator */}
-      <div className="grid grid-cols-2 items-center justify-center w-full text-center gap-8">
+    <div className="min-h-screen bg-white flex flex-col items-center justify-center overflow-hidden p-4">
+      {/* Information side by side */}
+      <div className="flex justify-between items-start w-full max-w-6xl text-center gap-16 mb-8">
         {/* NIT Jalandhar Info */}
-        <div className="flex flex-col items-center">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-2">
-            Organized by
-          </h2>
-          <h2 className="text-xl font-semibold text-gray-800 mb-2">
+        <div className="flex flex-col items-center w-1/2">
+          {/* NIT Jalandhar Logo */}
+          <div className="relative mb-2" style={{ width: '80px', height: '80px' }}>
+            <Image
+              src="/image.png"
+              alt="NIT Jalandhar Logo"
+              layout="fill"
+              objectFit="contain"
+              priority
+            />
+          </div>
+          <h2 className="text-xl md:text-2xl font-semibold text-gray-800 mb-1">Organized by</h2>
+          <h2 className="text-lg md:text-xl font-semibold text-gray-800 mb-1">
             Department of Instrumentation and Control Engineering (ICE)
           </h2>
-          <p className="text-lg text-gray-700 mb-4">
-            Dr. B.R. Ambedkar National Institute of Technology Jalandhar 
+          <p className="text-base md:text-lg text-gray-700 mb-4">
+            Dr. B.R. Ambedkar National Institute of Technology Jalandhar
           </p>
-          <h2 className="text-xl font-semibold text-gray-800 mb-4">
-            March 8-9, 2025
-          </h2>
         </div>
 
         {/* Newcastle University Info */}
-        <div className="flex flex-col items-center">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-2">
-            Co-Hosted by
-          </h2>
-          <h2 className="text-xl font-semibold text-gray-800 mb-2">
+        <div className="flex flex-col items-center w-1/2">
+          {/* Newcastle University Logo */}
+          <div className="relative mb-2" style={{ width: '96px', height: '96px' }}>
+            <Image
+              src="/ncuslogo.jpg"
+              alt="Newcastle University Logo"
+              layout="fill"
+              objectFit="contain"
+              priority
+            />
+          </div>
+          <h2 className="text-xl md:text-2xl font-semibold text-gray-800 mb-1">Co-Hosted by</h2>
+          <h2 className="text-lg md:text-xl font-semibold text-gray-800 mb-1">
             School of Electrical and Electronic Engineering
           </h2>
-          <p className="text-lg text-gray-700 mb-4">
-            Newcastle University, Singapore 
-          </p>
+          <p className="text-base md:text-lg text-gray-700 mb-4">Newcastle University, Singapore</p>
         </div>
       </div>
 
-      {/* Get Started Button */}
-      <div className="mt-8">
+      {/* Date and Get Started Button */}
+      <div className="text-center mt-8">
+        <h2 className="text-lg md:text-xl font-semibold text-gray-800 mb-4">March 8-9, 2025</h2>
         <button
           onClick={handleProceed}
-          className="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-blue-50 transition duration-300"
+          className="bg-white text-blue-600 px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold shadow-lg hover:bg-blue-50 transition duration-300"
         >
           Get Started
         </button>
