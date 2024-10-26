@@ -99,7 +99,7 @@ const Footer = () => {
         {/* Footer Bottom Section */}
         <div className="border-t border-gray-700 pt-4 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-gray-400 text-center md:text-left mb-2 md:mb-0">
-            Copyright © 2024 • E2ACon2025 NITJ Inc.
+            Copyright © 2024 • E2ACON2025 NITJ Inc.
           </p>
         </div>
       </div>

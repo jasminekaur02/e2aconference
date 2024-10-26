@@ -1,6 +1,8 @@
 import PageHero from '@/components/PageHero';
 import React from 'react';
 import { Book, FileText, ExternalLink } from 'lucide-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const GuidelinesPage = () => {
   return (
@@ -47,7 +49,7 @@ const GuidelinesPage = () => {
     <li>
       MS Word template: 
       <a 
-        href="Word+Template-Final.zip" // Replace with your actual file path
+        href="https://drive.usercontent.google.com/download?id=1gjIg-ljNAff6btztsT2AvG2cmGadPLJx&export=download&authuser=0&confirm=t&uuid=bfe6537a-6137-411d-b82c-02420e14b881&at=AN_67v3o1FEsTqlbSsUm-CZbqVVf:1729924731017" // Replace with your actual file path
         className="text-blue-600 hover:underline"
         download // This attribute prompts download
       >
@@ -57,7 +59,7 @@ const GuidelinesPage = () => {
     <li>
       LaTex Formatting Macros: 
       <a 
-        href="LaTex+Package-Final.zip" // Replace with your actual file path
+        href="https://drive.usercontent.google.com/download?id=1XrMElqpNvj-cwYOPwxZPOqz3Pf7wZNZi&export=download&authuser=0&confirm=t&uuid=8975d716-c4d8-4e85-a97c-20128de584ca&at=AN_67v137WVFvR2JmJ4QaPAbATmr:1729924665337" // Replace with your actual file path
         className="text-blue-600 hover:underline"
         download // This attribute prompts download
       >
@@ -65,34 +67,39 @@ const GuidelinesPage = () => {
       </a>
     </li>
   </ul>
-  <p className="text-md leading-relaxed text-justify mt-4">
-    <br />
-    <a 
-      href="https://www.springer.com/series/7818" 
-      className="text-blue-600 hover:underline ml-1"
-    >
-      Additional Resources
-    </a>
-  </p>
+ 
 </section>
 
             {/* Submission Section */}
-<section className="bg-white p-6 sm:p-8 rounded-lg shadow-md">
+<section className="bg-white  pb-2 rounded-lg shadow-md">
   <h3 className="text-2xl font-bold text-blue-600 mb-4 flex items-center">
     <ExternalLink className="mr-2" />
     Submission
   </h3>
   <div className="flex flex-col items-left mb-4"> {/* Keep the flex direction column */}
     <img
-      src="/Untitled (1).png" // Replace with your QR code image path
+      src="/submission_qr.png" // Replace with your QR code image path
       alt="QR Code for Submission"
       className="w-32 h-32 mb-2" // Add margin-bottom for spacing
     />
-    <p className="text-md leading-relaxed text-left"> {/* Center text below the image */}
-      <a href='https://cmt3.research.microsoft.com/E2ACON2025'>
-        https://cmt3.research.microsoft.com/E2ACON2025
-      </a>
-    </p>
+    <p className="text-md text-blue-600 leading-relaxed mt-2">
+    <a 
+  href="https://cmt3.research.microsoft.com/E2ACON2025" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  className="inline-flex items-center hover:underline hover:text-blue-700 transition"
+>
+  {/* Link Text */}
+    
+  
+  {/* Right Icon */}
+  <ExternalLink className="mr-2" />
+    Submission Link
+</a>
+
+</p>
+
+
   </div>
 </section>
 
