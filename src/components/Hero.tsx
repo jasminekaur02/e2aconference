@@ -71,7 +71,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black opacity-70 backdrop-blur-lg"></div>
 
       {/* Live link button */}
-      <a
+      {/* <a
         href={liveLink}
         target="_blank"
         rel="noopener noreferrer"
@@ -81,7 +81,7 @@ const Hero = () => {
           className={`rounded-full w-2 h-2 mr-2 ${isLive ? 'bg-green-500' : 'bg-red-500'}`}
         />
         Live
-      </a>
+      </a> */}
 
       {/* Content over the background image */}
       <div className="relative flex flex-col justify-center items-center text-center text-white h-full px-4 pt-32">
