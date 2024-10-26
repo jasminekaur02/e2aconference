@@ -37,7 +37,7 @@ const WelcomePage = () => {
   return (
     <div className="min-h-screen bg-white flex flex-col items-center justify-center overflow-hidden p-4">
       {/* Information side by side */}
-      <div className="flex justify-between items-start w-full max-w-6xl text-center gap-16 mb-8">
+      <div className="flex justify-between items-start w-full max-w-7xl text-center gap-16 mb-8">
         {/* NIT Jalandhar Info */}
         <div className="flex flex-col items-center w-1/2">
           {/* NIT Jalandhar Logo */}
@@ -62,7 +62,7 @@ const WelcomePage = () => {
         {/* Newcastle University Info */}
         <div className="flex flex-col items-center w-1/2">
           {/* Newcastle University Logo */}
-          <div className="relative mb-2" style={{ width: '96px', height: '96px' }}>
+          <div className="relative mb-2" style={{ width: '96px', height: '80px' }}>
             <Image
               src="/ncuslogo.jpg"
               alt="Newcastle University Logo"
