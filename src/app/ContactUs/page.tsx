@@ -88,7 +88,7 @@ const ContactUsPage = () => {
                 <strong>Address:</strong> Dr. B.R. Ambedkar National Institute of Technology, Jalandhar - 144008, Punjab, India
               </p>
               <p className="text-gray-700 mb-2">
-                <strong>Phone:</strong> +91-7078438786
+                <strong>Phone:</strong> +91-7078438786 , +91-7017252858 
               </p>
              
               <p className="text-gray-700 mb-4">

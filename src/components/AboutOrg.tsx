@@ -93,7 +93,7 @@ const AboutOrg = () => {
 
               <p className="text-lg  text-left  lg:text-wrap">
 
-              Newcastle University in Singapore (NUiS) is a branch of Newcastle University, UK, offering a wide range of undergraduate and postgraduate programs with a strong emphasis on engineering, computing, and sustainability.
+              Newcastle University in Singapore (NUiS) is a branch of Newcastle University, UK, offering a wide range of undergraduate and postgraduate programs with a strong emphasis on engineering, computing, and sustainability.The conference is co-hosted by the School of Electrical and Electronic Engineering, Newcastle University in Singapore (NUiS), Singapore.
                 {showMoreIce && (
                   <span>
                     &nbsp;Established to provide high-quality education and research in Southeast Asia, NUiS is known for its collaborative efforts with industries and academic institutions to address regional and global challenges. The campus fosters innovation, particularly in areas such as advanced engineering, smart cities, and renewable energy, aligning with Singapore's goals of becoming a global hub for research and development.

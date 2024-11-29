@@ -19,22 +19,58 @@ const Footer = () => {
             </h3>
 
             {/* Contact Information for Dr. Afzal Sikander */}
-            <div className="text-center md:text-center lg:text-left">
-              <div className="flex flex-col md:flex-row lg:flex-row items-center md:items-start lg:items-center lg:space-x-4 mb-4">
-                <FontAwesomeIcon icon={faEnvelope} className="w-5 h-5 md:w-6 md:h-6 text-blue-400 mb-2 md:mb-0 md:mr-2 lg:mr-0 lg:mb-0" />
-                <div className="text-center md:text-left lg:text-left">
-                  <p className="text-sm md:text-base">Dr Afzal Sikander</p>
-                  <a href="mailto:info.e2a@nitj.ac.in" className="text-sm md:text-base text-blue-400 block md:inline-block">
-                    info.e2a@nitj.ac.in
-                  </a>
-                  <span className="text-sm md:text-base mx-2 hidden lg:inline">|</span>
-                  <a href="tel:+917078438756" className="text-sm md:text-base text-blue-400 block md:inline-block">
-                    +91 70784 38786
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+            {/* Contact Information for Dr. Afzal Sikander */}
+<div className="text-center md:text-center lg:text-left">
+  <div className="flex flex-col md:flex-row lg:flex-row items-center md:items-start lg:items-center lg:space-x-4 mb-4">
+    <FontAwesomeIcon
+      icon={faEnvelope}
+      className="w-5 h-5 md:w-6 md:h-6 text-blue-400 mb-2 md:mb-0 md:mr-2 lg:mr-0 lg:mb-0"
+    />
+    <div className="text-center md:text-left lg:text-left">
+      <p className="text-sm md:text-base">Dr Afzal Sikander</p>
+      <a
+        href="mailto:info.e2a@nitj.ac.in"
+        className="text-sm md:text-base text-blue-400 block md:inline-block"
+      >
+        info.e2a@nitj.ac.in
+      </a>
+      <span className="text-sm md:text-base mx-2 hidden lg:inline">|</span>
+      <a
+        href="tel:+917078438756"
+        className="text-sm md:text-base text-blue-400 block md:inline-block"
+      >
+        +91 70784 38786
+      </a>
+    </div>
+  </div>
+</div>
+
+{/* Contact Information for Mr. Sumit Kataria */}
+<div className="text-center md:text-center lg:text-left">
+  <div className="flex flex-col md:flex-row lg:flex-row items-center md:items-start lg:items-center lg:space-x-4 mb-4">
+    <FontAwesomeIcon
+      icon={faEnvelope}
+      className="w-5 h-5 md:w-6 md:h-6 text-blue-400 mb-2 md:mb-0 md:mr-2 lg:mr-0 lg:mb-0"
+    />
+    <div className="text-center md:text-left lg:text-left">
+      <p className="text-sm md:text-base">Mr Sumit Kataria</p>
+      <a
+        href="mailto:info.e2a@nitj.ac.in"
+        className="text-sm md:text-base text-blue-400 block md:inline-block"
+      >
+        info.e2a@nitj.ac.in
+      </a>
+      <span className="text-sm md:text-base mx-2 hidden lg:inline">|</span>
+      <a
+        href="tel:+917017252858"
+        className="text-sm md:text-base text-blue-400 block md:inline-block"
+      >
+        +91-7017252858
+      </a>
+    </div>
+  </div>
+</div>
+</div>
 
           {/* Quick Links */}
           <div className="flex justify-center lg:justify-start">
