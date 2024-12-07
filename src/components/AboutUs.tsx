@@ -5,9 +5,9 @@ export default function AboutUs() {
   const aboutText = `
     <p>The <strong>International Conference on Electrical, Electronics, and Automation (E2ACON)</strong> is a global platform that brings together leading researchers, engineers, educators, and industry professionals to exchange ideas and share innovations in these critical fields. With the theme <em>“Sustainable Development: The Foundation of a Viksit Bharat,”</em> E2ACON 2025 emphasizes the role of advanced technologies in achieving sustainable growth and supporting India's vision of becoming a developed nation. The conference will focus on a wide range of topics, including renewable energy systems, smart grids, IoT, automation, and advanced control systems, all aimed at creating energy-efficient, resource-conscious solutions for the future.</p>
 
-    <p>E2ACON is a hub for global innovation where participants can present their latest research, collaborate with peers, and explore cutting-edge developments. This event is an opportunity to contribute to the world's ongoing transformation through technology and help shape a sustainable, connected, automated future. Join E2ACON 2025 and participate in the journey toward a brighter, more sustainable world.</p>
+    <p>E2ACON is a hub for global innovation where participants can present their latest research, collaborate with peers, and explore cutting-edge developments. This event is an opportunity to contribute to the world's ongoing transformation through technology and help shape a sustainable, connected, automated future. The Conference is co-hosted by the School of Electrical and Electronic Engineering, Newcastle University in Singapore (NUiS), Singapore. Join E2ACON 2025 and participate in the journey toward a brighter, more sustainable world. </p>
 
-    <p>The Conference is co-hosted by the School of Electrical and Electronic Engineering, Newcastle University in Singapore (NUiS), Singapore.</p>
+    
   `;
 
   // State for showing more text on small screens
