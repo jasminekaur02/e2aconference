@@ -45,8 +45,8 @@ const Page = () => {
               <li>zbMATH</li>
             </ul>
           </div>
-          <p className="text-md text-justify">
-            NOTE: Few selected best papers will be forwarded to SCOPUS/SCI indexed journals. However, publication is subject to further review and acceptance by the journals’ Editorial teams. Any publication fees required by the journals will be borne by the authors separately and directly to the journal, if required.
+          <p className="text-md bg-indigo-100 text-blue-600 p-4 rounded-lg text-sm sm:text-base">
+            NOTE: Few selected best papers will be forwarded to SCOPUS/SCI indexed journals. However, publication is subject to further review and acceptance by the journal's Editorial teams. Any publication fees required by the journals will be borne by the authors separately and directly to the journal, if required.
           </p>
         </section>
       </div>
