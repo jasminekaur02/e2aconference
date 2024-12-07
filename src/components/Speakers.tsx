@@ -21,7 +21,7 @@ const speakers: Speaker[] = [
     title: "Casimir Pulaski University of Radom, Poland.",
     organization: "",
     imageUrl:
-      "https://i1.rgstatic.net/ii/profile.image/856674961199104-1581258635324_Q128/Jerzy-Szymanski.jpg",
+      "/jerzy_speaker.png",
     linkedInUrl:
       "https://www.linkedin.com/in/jerzy-ryszard-szymanski-b13726a7/?originalSubdomain=pl",
   },
@@ -31,7 +31,7 @@ const speakers: Speaker[] = [
     title: "Director of Education and Associate Professor, Newcastle University",
     organization: "Singapore",
     imageUrl:
-      "https://media.licdn.com/dms/image/v2/C5603AQH24WqWcxHVmQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1516510955992?e=1732752000&v=beta&t=bT14KftKgnh_vhInvF7Xr6zz0WLE2YpO-qp_5ijlE6A",
+      "/khalid_speaker.jpg",
     linkedInUrl:
       "https://www.linkedin.com/in/khalid-abidi-41277232/?originalSubdomain=sg",
   },
@@ -41,7 +41,7 @@ const speakers: Speaker[] = [
     title: "CEO, National Solar Energy Federation of",
     organization: "India",
     imageUrl:
-      "https://media.licdn.com/dms/image/v2/D4D03AQHUIq0apsta4Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1688753063031?e=1732147200&v=beta&t=QM3jPzo8fRWXI7NEx1r7wI6fnYewx5LD9pGsfZRBPOE",
+      "/subbu_speaker.jpg",
     linkedInUrl: "https://www.linkedin.com/in/solarsubbu/?originalSubdomain=in",
   },
   {
@@ -50,7 +50,7 @@ const speakers: Speaker[] = [
     title: "Senior Governance Expert-Energy ",
     organization: "United Nations Development Programme (UNDP) ,New York",
     imageUrl:
-      "https://media.licdn.com/dms/image/v2/C5603AQHcfhXe5NGL9Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1566290376505?e=1732752000&v=beta&t=DmFq2E8X7YauDI1pS2ognyflMX3iNRpvuoxYXRUdWgQ",
+      "/piyush_speaker.jpg",
     linkedInUrl: "https://www.linkedin.com/in/piyushnitjsr/",
   },
   
@@ -60,7 +60,7 @@ const speakers: Speaker[] = [
     title: "United Nations Economic Commission for Europe",
     organization: "Geneva,Switzerland",
     imageUrl:
-      "https://media.licdn.com/dms/image/D4D03AQGFgBl_5pCxcA/profile-displayphoto-shrink_400_400/0/1708880080460?e=2147483647&v=beta&t=MqVsB9rjXbNGuOs25tz5ufKIGOeAC3CId9lbw2wz-cM",
+      "/andrei_speaker.jpg",
     linkedInUrl: "https://www.linkedin.com/in/andreicovatariu?originalSubdomain=be",
   },
 ];

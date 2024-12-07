@@ -14,7 +14,7 @@ const studentCommittee = [
                 name: "Ayush Kumar",
                 designation: "Dept of ICE",
                 affiliation: "NIT Jalandhar",
-                image: "https://media.licdn.com/dms/image/v2/D4D03AQH6pk0HN9vjaA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1691694682903?e=1731542400&v=beta&t=Pv9XMty_Ny2eoULB96m_rVbyfL09kK0IcNsyQmmWHyo",
+                image: "https://avatars.githubusercontent.com/u/114203535?v=4",
                 github: "https://github.com/akdest",
                 linkedin: "https://www.linkedin.com/in/ayush-kumar-850044219/"
             },
