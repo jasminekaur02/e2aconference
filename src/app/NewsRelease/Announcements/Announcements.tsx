@@ -51,12 +51,13 @@ const Announcements = () => {
           <aside className="w-full md:w-1/3 space-y-6">
             <div className="bg-white shadow-md rounded-lg p-4">
               <h4 className="text-xl font-bold mb-4">Top News</h4>
-              <ul className="space-y-2">
-                <li>
-                  <a href="#" className="hover:underline text-blue-600">
-                    Paper Submission starts on 24 September 2024.
-                  </a>
-                </li>
+              <ul className="list-disc pl-6 space-y-4 cursor-default text-blue-600">
+    <li className="">
+        <p>Paper Submission starts on 24 September 2024.</p>
+    </li>
+    <li className="">
+        <p>Paper Submission Date Extended till 30 December 2024.</p>
+    </li>
                 {/* <li>
                   <a href="#" className="hover:underline text-blue-600">
                     AI-Driven Healthcare: Improving Diagnosis Accuracy Through Machine Learning
