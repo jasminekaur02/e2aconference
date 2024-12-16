@@ -75,7 +75,7 @@ const daysData: DayEvents[] = [
     ],
   },
   {
-    date: '2024-12-16',
+    date: '2024-12-30',
     events: [
       {
         date: '2024-12-30',
