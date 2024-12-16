@@ -2,11 +2,25 @@ import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa'; // Import Font Awesome icons
 
 const studentCommittee = [
-    { name: "Mr. Sumit Kataria", affiliation: "NIT Jalandhar" },
-    { name: "Ms. Karchana Kumari", affiliation: "NIT Jalandhar" },
-    { name: "Karan Anand", affiliation: "NIT Jalandhar" },
-
-    // Corrected structure for web developers
+    {
+        name: "Mr. Sumit Kataria",
+        affiliation: "NIT Jalandhar",
+        image: "/sumit_kataria.jpg",
+        linkedin: "https://www.linkedin.com/in/sumit-kataria-1041161a6/"
+    },
+    {
+        name: "Ms. Karchana Kumari",
+        affiliation: "NIT Jalandhar",
+        image: "/karchana.jpg",
+        linkedin: "https://www.linkedin.com/in/karchana-bhushan-468785200/"
+    },
+    {
+        name: "Karan Anand",
+        affiliation: "NIT Jalandhar",
+        image: "https://avatars.githubusercontent.com/u/68910143?v=4",
+        github: "https://github.com/thekarananand",
+        linkedin: "https://www.linkedin.com/in/thekarananand/"
+    },
     {
         role: "Web Developers",
         members: [
@@ -63,12 +77,16 @@ const StudentCommittee = () => {
                                         <h4 className="text-xl font-bold">{member.name}</h4>
                                         <p className="text-blue-500">{member.affiliation}</p>
                                         <div className="flex justify-center space-x-4 mt-4">
-                                            <a href={member.github} target="_blank" rel="noopener noreferrer">
-                                                <FaGithub className="text-gray-600 text-2xl" />
-                                            </a>
-                                            <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
-                                                <FaLinkedin className="text-gray-600 text-2xl" />
-                                            </a>
+                                            {member.github && (
+                                                <a href={member.github} target="_blank" rel="noopener noreferrer">
+                                                    <FaGithub className="text-gray-600 text-2xl" />
+                                                </a>
+                                            )}
+                                            {member.linkedin && (
+                                                <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
+                                                    <FaLinkedin className="text-gray-600 text-2xl" />
+                                                </a>
+                                            )}
                                         </div>
                                     </div>
                                 ))}
@@ -76,8 +94,25 @@ const StudentCommittee = () => {
                         </div>
                     ) : (
                         <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
+                            <img
+                                src={group.image || "https://via.placeholder.com/150"} // Placeholder if no image is provided
+                                alt={group.name}
+                                className="w-24 h-24 mx-auto rounded-full mb-4"
+                            />
                             <h4 className="text-xl font-bold">{group.name}</h4>
                             <p className="text-blue-500">{group.affiliation}</p>
+                            <div className="flex justify-center space-x-4 mt-4">
+                                {group.github && (
+                                    <a href={group.github} target="_blank" rel="noopener noreferrer">
+                                        <FaGithub className="text-gray-600 text-2xl" />
+                                    </a>
+                                )}
+                                {group.linkedin && (
+                                    <a href={group.linkedin} target="_blank" rel="noopener noreferrer">
+                                        <FaLinkedin className="text-gray-600 text-2xl" />
+                                    </a>
+                                )}
+                            </div>
                         </div>
                     )
                 ))}
