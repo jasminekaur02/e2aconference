@@ -7,6 +7,7 @@ const Sponsors = () => {
     { image: "/devstarterlogo.png", url: "https://devstarter.com" },
     { image: "/nsefilogo.png", url: "https://nsefi.in" },
     { image: "/international_conf_alerts.png", url: " https://internationalconferencealerts.com" },
+    { image: "/voltrron.jpg", url: "https://www.qmansys.com/emobility.php" },
   ];
 
   const marqueeRef = useRef<HTMLDivElement>(null);
