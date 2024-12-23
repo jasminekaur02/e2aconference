@@ -8,6 +8,7 @@ const Sponsors = () => {
     { image: "/nsefilogo.png", url: "https://nsefi.in" },
     { image: "/international_conf_alerts.png", url: "https://internationalconferencealerts.com" },
     { image: "/voltrron.jpg", url: "https://www.qmansys.com/emobility.php" },
+    { image: "/allconfalert.jpg", url: "https://allconferencealert.net/" },
   ];
 
   return (
@@ -17,7 +18,7 @@ const Sponsors = () => {
           <span className="text-blue-600">Our</span> Partners & Sponsors
         </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8 bg-white rounded-3xl p-8 shadow-lg">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 bg-white rounded-3xl p-8 shadow-lg">
           {sponsors.map((sponsor, index) => (
             <a
               key={index}
