@@ -65,6 +65,7 @@ const nationalAdvisoryCommittee = [
     { name: "Prof. Hitesh R. Jariwala", affiliation: "SVNIT, Surat" },
     { name: "Ms. Aarti Kalra", affiliation: "RKGIT Ghaziabad" },
     { name: "Mr. Nitish Vashistha", affiliation: "NIT Kurukshetra" },
+    { name: "Ishrar Ahmed", affiliation: "RKGIT Ghaziabad" },
 ];
 
 const internationalAdvisoryCommittee = [
