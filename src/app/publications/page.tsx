@@ -65,7 +65,7 @@ const Page = () => {
           </div>
           <div className="bg-indigo-100 p-4 sm:p-6 rounded-lg shadow-md">
             <p className="lg:text-lg text-blue-600 font-medium">
-              <span className="font-semibold">NOTE:</span> Few selected best papers will be forwarded to SCOPUS/SCI indexed journals. However, publication is subject to further review and acceptance by the journal's Editorial teams. Any publication fees required by the journals will be borne by the authors separately and directly to the journal, if required.
+              <span className="font-semibold">NOTE:</span> Few selected best papers will be forwarded to SCOPUS/SCI indexed journals. However, publication is subject to further review and acceptance by the journal&apos;s Editorial teams. Any publication fees required by the journals will be borne by the authors separately and directly to the journal, if required.
             </p>
           </div>
         </section>
