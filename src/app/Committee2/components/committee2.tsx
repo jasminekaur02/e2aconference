@@ -74,7 +74,8 @@ const committee: CommitteeType = {
         { name: "Dr. Arun Balodi", affiliation: "Atria Institute of Technology, Bengaluru" },
         { name: "Dr. Nitin Uniyal", affiliation: "UPES, Dehradun" },
         { name: "Dr. P. Thakur", affiliation: "GEU, Dehradun" },
-        { name: "Dr. Irfan-Ul-Hasan", affiliation: "GEU, Dehradun" }
+        { name: "Dr. Irfan-Ul-Hasan", affiliation: "GEU, Dehradun" },
+        { name: "Ishrar Ahmed", affiliation: "RKGIT Ghaziabad" },
     ],
     "Workshop Chair(s)": [
         { name: "Dr Anil Kumar Yadav", designation: "", affiliation: "NIT Jalandhar" },
@@ -82,7 +83,8 @@ const committee: CommitteeType = {
     ],
     "Workshop Co-Chair(s)": [
         { name: "Mr Deepak Kumar", designation: "", affiliation: "RKGIT Ghaziabad" },
-        { name: "Mr Ram Kumar", designation: "", affiliation: "GEC, Khagaria, Bihar" }
+        { name: "Mr Ram Kumar", designation: "", affiliation: "GEC, Khagaria, Bihar" },
+        { name: "Ishrar Ahmed", affiliation: "RKGIT Ghaziabad" },
     ],
     "Programme Committee": [
         { name: "Er Narinder Singh Bhangal", designation: "", affiliation: "NIT Jalandhar" },
@@ -123,6 +125,8 @@ const committee: CommitteeType = {
         { name: "Mr. Sadat Ali Khan", designation: "",affiliation: "The Maldives National University" },
         { name: "Mr. Neeraj Kumar", designation: "", affiliation: "RKGIT, Ghaziabad" },
         { name: "Mr. Vivek Ahlawat",designation: "", affiliation: "NITTTR, Chandigarh" },
+        { name: "Ms. Aarti Kalra", affiliation: "RKGIT Ghaziabad" },
+    { name: "Mr. Nitish Vashistha", affiliation: "NIT Kurukshetra" },
     ],
     "Industrial and Entrepreneur Chair(s)": [
         { name: "Sh. Subrahmanyam Pulipaka", designation: "", affiliation: "National Solar Energy Federation of India" },
