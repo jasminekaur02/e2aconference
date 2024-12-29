@@ -27,7 +27,8 @@ const Page = () => {
               rel="noopener noreferrer" 
               className="text-blue-600 hover:text-blue-800 hover:underline transition duration-300"
             >
-              <span> “Lecture Notes in Electrical Engineering”</span>
+              <span> &quot;Lecture Notes in Electrical Engineering&quot;</span>
+             
             </a>
             series. For detailed instructions for authors and editors of conference proceedings, kindly visit the following link: 
             <a 
