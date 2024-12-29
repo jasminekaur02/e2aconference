@@ -19,7 +19,7 @@ const Page = () => {
             <Copy className="text-blue-600" />
             <span>Publication</span>
           </h3>
-          <p className="text-base lg:text-lg leading-relaxed text-gray-700 mb-6 sm:mb-8">
+          <p className="text-base lg:text-lg leading-relaxed text-red-500 mb-6 sm:mb-8">
             It is planned to publish the peer-reviewed and selected papers of the conference as proceedings with Springer in their prestigious
             <a 
               href="https://www.springer.com/series/7818" 
