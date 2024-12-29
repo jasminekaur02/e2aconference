@@ -56,7 +56,7 @@ const Announcements = () => {
         <p>Paper Submission starts on 24 September 2024.</p>
     </li>
     <li className="">
-        <p>Paper Submission Date Extended till 30 December 2024.</p>
+        <p>Paper Submission Date Extended till 10 January 2025.</p>
     </li>
                 {/* <li>
                   <a href="#" className="hover:underline text-blue-600">

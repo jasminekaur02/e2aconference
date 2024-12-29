@@ -75,10 +75,10 @@ const daysData: DayEvents[] = [
     ],
   },
   {
-    date: '2024-12-30',
+    date: '2025-01-10',
     events: [
       {
-        date: '2024-12-30',
+        date: '2025-01-10',
         title: 'Last Date of Paper Submission',
         description: 'The paper submisisons for the conference ends on this date.',
         time: '',

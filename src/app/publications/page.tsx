@@ -13,41 +13,61 @@ const Page = () => {
       <PageHero title="Publications" image="https://v1.nitj.ac.in/ITEP/img/01.jpg" />
 
       {/* Publication Section */}
-      <div className="min-h-screen flex flex-col p-8 bg-gray-100">
-        <section className="mb-12 bg-white shadow-md rounded-lg p-6">
-          <h3 className="text-2xl font-bold text-blue-600 mb-4 flex items-center">
-            <Copy className="mr-2" />
-            Publication
+      <div className="min-h-screen flex flex-col p-6 sm:p-8 bg-gradient-to-b from-gray-100 to-white">
+        <section className="mb-12 bg-white shadow-lg rounded-xl p-6 sm:p-8">
+          <h3 className="text-2xl sm:text-3xl font-semibold text-blue-700 mb-6 flex items-center space-x-3">
+            <Copy className="text-blue-600" />
+            <span>Publication</span>
           </h3>
-          <p className="text-md leading-relaxed text-justify mb-6">
-            All peer-reviewed, accepted, and presented papers of the conference will be published as proceedings in the prestigious  SCOPUS indexed by Springer series   
+          <p className="text-base lg:text-lg leading-relaxed text-gray-700 mb-6 sm:mb-8">
+            It is planned to publish the peer-reviewed and selected papers of the conference as proceedings with Springer in their prestigious
             <a 
               href="https://www.springer.com/series/7818" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="text-blue-600 hover:underline"
+              className="text-blue-600 hover:text-blue-800 hover:underline transition duration-300"
             >
-               <span> “Lecture Notes in Electrical Engineering”</span>
-            </a> 
-            <span> or any other Book Series. (Approval Pending)*.</span>
+              <span> &quot;Lecture Notes in Electrical Engineering&quot;</span>
+             
+            </a>
+            series. For detailed instructions for authors and editors of conference proceedings, kindly visit the following link: 
+            <a 
+              href="https://www.springer.com/us/authors-editors/conference-proceedings" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-blue-600 hover:text-blue-800 hover:underline transition duration-300"
+            >
+              <span> Conference Proceedings Instructions</span>
+            </a>.
+            <br />
+            <br />
+            Selected papers from the conference will be published by Springer as a proceedings book volume. Springer will conduct quality checks on the accepted papers, and only papers that pass these checks will be published. Springer Nature does not charge any money for publication of Non-Open Access content. Abstracts/extended abstracts and short papers (less than 4 pages) are not considered for publication.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-            <ul className="list-disc pl-5">
-              <li>DBLP</li>
-              <li>EI Compendex</li>
-              <li>INSPEC</li>
-              <li>Japanese Science and Technology Agency (JST)</li>
-            </ul>
-            <ul className="list-disc pl-5">
-              <li>SCImago</li>
-              <li>SCOPUS</li>
-              <li>WTI Frankfurt eG</li>
-              <li>zbMATH</li>
-            </ul>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 mb-6 sm:mb-8">
+            <div className="space-y-3">
+              <h4 className="text-base sm:text-lg font-semibold text-blue-700">Indexed in:</h4>
+              <ul className="list-disc pl-5 space-y-1 text-gray-600">
+                <li>DBLP</li>
+                <li>EI Compendex</li>
+                <li>INSPEC</li>
+                <li>Japanese Science and Technology Agency (JST)</li>
+              </ul>
+            </div>
+            <div className="space-y-3">
+              <h4 className="text-base sm:text-lg font-semibold text-blue-700">Other Databases:</h4>
+              <ul className="list-disc pl-5 space-y-1 text-gray-600">
+                <li>SCImago</li>
+                <li>SCOPUS</li>
+                <li>WTI Frankfurt eG</li>
+                <li>zbMATH</li>
+              </ul>
+            </div>
           </div>
-          <p className="text-md bg-indigo-100 text-blue-600 p-4 rounded-lg text-sm sm:text-base">
-            NOTE: Few selected best papers will be forwarded to SCOPUS/SCI indexed journals. However, publication is subject to further review and acceptance by the journal&apos;s Editorial teams. Any publication fees required by the journals will be borne by the authors separately and directly to the journal, if required.
-          </p>
+          <div className="bg-indigo-100 p-4 sm:p-6 rounded-lg shadow-md">
+            <p className="lg:text-lg text-blue-600 font-medium">
+              <span className="font-semibold">NOTE:</span> Few selected best papers will be forwarded to SCOPUS/SCI indexed journals. However, publication is subject to further review and acceptance by the journal&apos;s Editorial teams. Any publication fees required by the journals will be borne by the authors separately and directly to the journal, if required.
+            </p>
+          </div>
         </section>
       </div>
       <Footer />
