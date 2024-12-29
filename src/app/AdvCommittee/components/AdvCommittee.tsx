@@ -62,7 +62,9 @@ const nationalAdvisoryCommittee = [
     { name: "Dr. Ranjana Sodhi", affiliation: "IIT Ropar" },
     { name: "Prof. Vaskar Sarkar", affiliation: "IIT Hyderabad" },
     { name: "Prof. Saikat Chakrabarti", affiliation: "IIT Kanpur" },
-    { name: "Prof. Hitesh R. Jariwala", affiliation: "SVNIT, Surat" }
+    { name: "Prof. Hitesh R. Jariwala", affiliation: "SVNIT, Surat" },
+    { name: "Ms. Aarti Kalra", affiliation: "RKGIT Ghaziabad" },
+    { name: "Mr. Nitish Vashistha", affiliation: "NIT Kurukshetra" },
 ];
 
 const internationalAdvisoryCommittee = [
