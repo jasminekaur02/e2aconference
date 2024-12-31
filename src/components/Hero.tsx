@@ -104,7 +104,7 @@ const Hero = () => {
         {/* New line for proceedings with LNEE */}
         <p className="mt-2 text-lg md:text-xl text-white font-bold">
          
-          <span className="text-white">Proceedings will be published in LNEE, Springer (SCOPUS Indexed [Approved])</span>
+          <span className="text-white">Proceedings will be published in LNEE, Springer (SCOPUS Indexed) [Approved]</span>
         </p>
 
         {/* Hybrid Mode and Date in a single line for small screens, vertical stack for medium+ screens */}
