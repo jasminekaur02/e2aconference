@@ -4,11 +4,12 @@ import React from "react";
 
 const Sponsors = () => {
   const sponsors = [
-    { image: "/devstarterlogo.png", url: "https://devstarter.com" },
-    { image: "/nsefilogo.png", url: "https://nsefi.in" },
-    { image: "/international_conf_alerts.png", url: "https://internationalconferencealerts.com" },
-    { image: "/voltrron.jpg", url: "https://www.qmansys.com/emobility.php" },
-    { image: "/allconfalert.jpg", url: "https://allconferencealert.net/" },
+    { image: "/devstarterlogo.png", url: "https://devstarter.com", alt: "DevStarter Logo" },
+    { image: "/nsefilogo.png", url: "https://nsefi.in", alt: "NSEFI Logo" },
+    { image: "/international_conf_alerts.png", url: "https://internationalconferencealerts.com", alt: "International Conference Alerts" },
+    { image: "/voltrron.jpg", url: "https://www.qmansys.com/emobility.php", alt: "Voltrron" },
+    { image: "/allconfalert.jpg", url: "https://allconferencealert.net/", alt: "All Conference Alert" },
+    { image: "/springer_logo.jpg", url: "https://www.springer.com/", alt: "Springer" },
   ];
 
   return (
@@ -29,7 +30,7 @@ const Sponsors = () => {
             >
               <img
                 src={sponsor.image}
-                alt={`Sponsor ${index + 1}`}
+                alt={sponsor.alt}
                 className="h-24 w-auto object-contain"
               />
             </a>
