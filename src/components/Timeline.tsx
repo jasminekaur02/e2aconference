@@ -6,16 +6,16 @@ const timelineData = [
     title: 'Paper Submission Starts',
   },
   {
-    date: '10 January 2025',
+    date: '20 January 2025',
     title: 'Last date of Paper Submission',
   },
   {
-    date: '10 February 2025',
+    date: '20 February 2025',
     title: 'Review Process Ends/ Acceptance Notification',
   },
   {
     date: '25 February 2025',
-    title: 'Camera Ready Submission/ Registration Begins',
+    title: 'Camera Ready Submission/ Registration End',
   },
   {
     date: '8-9 March 2025',

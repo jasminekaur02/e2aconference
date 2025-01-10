@@ -75,7 +75,7 @@ const daysData: DayEvents[] = [
     ],
   },
   {
-    date: '2025-01-10',
+    date: '2025-01-20',
     events: [
       {
         date: '2025-01-10',
@@ -87,7 +87,7 @@ const daysData: DayEvents[] = [
     ],
   },
   {
-    date: '2025-02-10',
+    date: '2025-02-20',
     events: [
       {
         date: '2025-02-10',
@@ -103,7 +103,7 @@ const daysData: DayEvents[] = [
     events: [
       {
         date: '2025-02-25',
-        title: 'Camera Ready Submission/ Registration Begins',
+        title: 'Camera Ready Submission/ Registration End',
         description: 'Accepted students need to register themselves for the Conference.',
         time: '',
         location: 'E2ACON 2025 Website',
