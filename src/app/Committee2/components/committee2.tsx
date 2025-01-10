@@ -96,8 +96,16 @@ const committee: CommitteeType = {
         { name: "Dr Om Prakash Verma", designation: "", affiliation: "NIT Jalandhar" },
         { name: "Dr Anil Kumar Yadav", designation: "", affiliation: "NIT Jalandhar" },
         { name: "Dr Deblina Biswas", designation: "", affiliation: "NIT Jalandhar" },
-        { name: "Dr Mahendra Kumar", designation: "", affiliation: "NIT Jalandhar" }
-    ],
+        { name: "Dr Mahendra Kumar", designation: "", affiliation: "NIT Jalandhar" },
+        { name: "Dr. Charu Sharma", affiliation: "The Arctic University of Norway" },
+        { name: "Prof. (Dr.) Atif Iqbal", affiliation: "Qatar University, Qatar" },
+        {name: "Prof. (Dr.) Nitish Patel", affiliation: "University of Auckland, New Zealand"},
+        {name: "Prof. Jerzy R. Szymanski", affiliation: "Kazimierz Pulaski University of Technology and Humanities, Poland"},
+        {name: "Prof. Jai Govind Singh", affiliation: "Asian Institute of Technology, Thailand"},
+        {name: "Dr. Anurag Sharma", affiliation: "Newcastle University, Singapore"},
+        {name: "Dr. Sze Sing Lee", affiliation: "Newcastle University, Singapore"},
+        {name: "Dr. Muhammad Ramadan Saifuddin", affiliation: "Newcastle University, Singapore"},
+      ],
     "Scientific Committee": [
         { name: "Prof. Yogesh Vijay Hote", designation: "", affiliation: "IIT Roorkee" },
         { name: "Prof. Celia Shahnaz", designation: "",affiliation: "BUET, Bangladesh" },
