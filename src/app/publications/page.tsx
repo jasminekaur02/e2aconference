@@ -28,7 +28,6 @@ const Page = () => {
               className="text-blue-600 hover:text-blue-800 hover:underline transition duration-300"
             >
               <span> &quot;Lecture Notes in Electrical Engineering&quot;</span>
-             
             </a>
             series. For detailed instructions for authors and editors of conference proceedings, kindly visit the following link: 
             <a 
@@ -43,8 +42,10 @@ const Page = () => {
             <br />
             Selected papers from the conference will be published by Springer as a proceedings book volume. Springer will conduct quality checks on the accepted papers, and only papers that pass these checks will be published. Springer Nature does not charge any money for publication of Non-Open Access content. Abstracts/extended abstracts and short papers (less than 4 pages) are not considered for publication.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 mb-6 sm:mb-8">
-            <div className="space-y-3">
+
+          {/* Flex container for list and image */}
+          <div className="flex flex-col sm:flex-row sm:space-x-4 mb-4 sm:mb-6">
+            <div className="space-y-3 flex-1">
               <h4 className="text-base sm:text-lg font-semibold text-blue-700">Indexed in:</h4>
               <ul className="list-disc pl-5 space-y-1 text-gray-600">
                 <li>DBLP</li>
@@ -53,7 +54,7 @@ const Page = () => {
                 <li>Japanese Science and Technology Agency (JST)</li>
               </ul>
             </div>
-            <div className="space-y-3">
+            <div className="space-y-3 flex-1">
               <h4 className="text-base sm:text-lg font-semibold text-blue-700">Other Databases:</h4>
               <ul className="list-disc pl-5 space-y-1 text-gray-600">
                 <li>SCImago</li>
@@ -62,7 +63,17 @@ const Page = () => {
                 <li>zbMATH</li>
               </ul>
             </div>
+
+            {/* Image Section */}
+            <div className="flex-1 lg:justify-start lg:items-baseline md:justify-start md:items-start justify-center items-center mt-4  sm:mt-0">
+              <img
+                src="/lnee.jpg" // Replace with the appropriate image URL
+                alt="Publication Databases"
+                className="h-40 w-auto object-contain"
+              />
+            </div>
           </div>
+
           <div className="bg-indigo-100 p-4 sm:p-6 rounded-lg shadow-md">
             <p className="lg:text-lg text-blue-600 font-medium">
               <span className="font-semibold">NOTE:</span> Few selected best papers will be forwarded to SCOPUS/SCI indexed journals. However, publication is subject to further review and acceptance by the journal&apos;s Editorial teams. Any publication fees required by the journals will be borne by the authors separately and directly to the journal, if required.
