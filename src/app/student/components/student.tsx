@@ -4,18 +4,21 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa'; // Import Font Awesome ic
 const studentCommittee = [
     {
         name: "Mr. Sumit Kataria",
+        designation: "Dept of ICE",
         affiliation: "NIT Jalandhar",
         image: "/sumit_kataria.jpg",
         linkedin: "https://www.linkedin.com/in/sumit-kataria-1041161a6/"
     },
     {
         name: "Ms. Karchana Kumari",
+        designation: "Dept of ICE",
         affiliation: "NIT Jalandhar",
         image: "/karchana.jpg",
         linkedin: "https://www.linkedin.com/in/karchana-bhushan-468785200/"
     },
     {
         name: "Karan Anand",
+        designation: "Dept of ICE",
         affiliation: "NIT Jalandhar",
         image: "https://avatars.githubusercontent.com/u/68910143?v=4",
         github: "https://github.com/thekarananand",
@@ -47,6 +50,14 @@ const studentCommittee = [
                 image: "https://avatars.githubusercontent.com/u/114179213?v=4",
                 github: "https://github.com/Arushi-Gupta13",
                 linkedin: "https://www.linkedin.com/in/arushi-gupta1344/"
+            },
+            {
+                name: "Vyomika",
+                designation: "Dept of ECE",
+                affiliation: "NIT Jalandhar",
+                image: "https://avatars.githubusercontent.com/u/148205843?v=4",
+                github: "https://github.com/vyomika-byte",
+                linkedin: "https://www.linkedin.com/in/vyomika-2a2710288"                
             }
         ]
     }
@@ -75,6 +86,7 @@ const StudentCommittee = () => {
                                             className="w-24 h-24 mx-auto rounded-full mb-4"
                                         />
                                         <h4 className="text-xl font-bold">{member.name}</h4>
+                                        <h6 className="text-gray-600">{member.designation}</h6>
                                         <p className="text-blue-500">{member.affiliation}</p>
                                         <div className="flex justify-center space-x-4 mt-4">
                                             {member.github && (
@@ -100,6 +112,7 @@ const StudentCommittee = () => {
                                 className="w-24 h-24 mx-auto rounded-full mb-4"
                             />
                             <h4 className="text-xl font-bold">{group.name}</h4>
+                            <h6 className="text-gray-600">{group.designation}</h6>
                             <p className="text-blue-500">{group.affiliation}</p>
                             <div className="flex justify-center space-x-4 mt-4">
                                 {group.github && (
