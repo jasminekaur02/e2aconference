@@ -6,7 +6,7 @@ const timelineData = [
     title: 'Paper Submission Starts',
   },
   {
-    date: '20 January 2025',
+    date: '28 January 2025',
     title: 'Last date of Paper Submission',
   },
   {
