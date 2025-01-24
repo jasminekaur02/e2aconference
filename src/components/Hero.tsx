@@ -142,12 +142,12 @@ const Hero = () => {
         {/* Action Buttons */}
         <div className="mt-8 space-x-4">
         <a href="/Guidelines" rel="noopener noreferrer">
-            <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">
+            <button className="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">
               Submit Paper
             </button>
           </a>
           <a href="/Registration" rel="noopener noreferrer">
-            <button className="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">
+            <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">
               Register
             </button>
           </a>
