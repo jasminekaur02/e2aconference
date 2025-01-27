@@ -21,7 +21,7 @@ const ConferenceFeesPage = () => {
         <section className="bg-indigo-50 p-6 my-6 mx-auto max-w-7xl rounded-lg shadow-md">
           <h2 className="text-2xl font-semibold text-blue-600 mb-4">Important Note: Registration</h2>
           <p className="text-gray-700 mb-4">
-            <b>NOTE:</b> To participate in the conference of E2ACON 2025, at least one author must register and pay as per the fee mentioned below. The registration fee includes a conference kit, attendance at all technical sessions, workshops, plenary talks, special sessions, and tea and snacks on both days.
+            <b>NOTE:</b> To participate in the conference of E2ACON 2025, at least one author must register and pay as per the fee mentioned below. The registration fee includes a conference kit(for offline participants only), attendance at all technical sessions, workshops, plenary talks, special sessions, and tea and snacks on both days.However Certificates will be issued to all registered participants.
           </p>
 
           {/* Full text visible on lg screens */}

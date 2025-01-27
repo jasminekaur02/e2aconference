@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "E2A 2025 | NITJ",
-    description: "International Conference on Electrical, Electronics, and Automation (E2A) serves as a global hub where the brightest minds converge to explore, collaborate, and share their ground-breaking research and innovations. In today's rapidly evolving technological landscape, the domains of electrical engineering, electronics, and automation are integral to shaping our future. E2A provides a vital platform for researchers, scientists, engineers, educators, and industry experts from diverse backgrounds and cultures to come together, fostering a rich exchange of ideas and knowledge. As we navigate an era of unprecedented technological advancement, E2A strives to accelerate progress by facilitating meaningful conversations, driving innovation, and charting the course for a future powered by cutting-edge electrical, electronics, and automation technologies. Join us at E2A to be a part of this transformative journey, where together, we illuminate the path toward a smarter, more connected, and automated world. Your contributions and insights are integral to shaping the future at E2A.",
+    title: "E2ACON | NITJ",
+    description: "E2ACON 2025, an International Conference on Electrical, Electronics, and Automation, serves as a global platform for researchers, engineers, educators, and industry professionals to exchange ideas and innovations. With the theme “Sustainable Development: The Foundation of a Viksit Bharat,” the conference emphasizes advanced technologies' role in driving sustainable growth and supporting India's vision of becoming a developed nation. Covering topics like renewable energy, smart grids, IoT, automation, and advanced control, E2ACON fosters collaboration and showcases cutting-edge developments. Co-hosted by the School of Electrical and Electronic Engineering, Newcastle University in Singapore (NUiS), this event is a step toward a sustainable, connected, and automated future.",
     icons: {
     icon: "/favicon.ico", // Path to favicon in /public
   },
