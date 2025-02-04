@@ -100,7 +100,7 @@ const ConferenceFeesPage = () => {
 
           <div className="mt-6 p-4 bg-indigo-50 rounded-lg">
             <p className="text-sm text-gray-700">
-              For transferring registration fee through NEFT/RTGS/IMPS/Bank transfer, bank account details will be shared after acceptance.
+              {/* For transferring registration fee through NEFT/RTGS/IMPS/Bank transfer, bank account details will be shared after acceptance. */}
             </p>
           </div>
         </div>

@@ -63,6 +63,15 @@ const speakers: Speaker[] = [
       "/andrei_speaker.jpg",
     linkedInUrl: "https://www.linkedin.com/in/andreicovatariu?originalSubdomain=be",
   },
+  {
+    id: 6,
+    name: "Mr. Randolph Brazier",
+    title: "Global Head, Clean Power Systems | Sustainable Finance | Advisory Board Member",
+    organization: "London , England , United Kingdom",
+    imageUrl:
+      "/randolph_brazier.jpeg",
+    linkedInUrl: "https://www.linkedin.com/in/randolph-brazier/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+  },
 ];
 
 const SpeakerCard: React.FC<Speaker> = ({
