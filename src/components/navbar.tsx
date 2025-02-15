@@ -45,8 +45,13 @@ const NAVLINKS = [
         text: "SPONSORSHIP PACKAGES",
     },
     {
-        href: "/Registration",
+        href: "",
         text: "REGISTRATION",
+        subMenu: [
+          { href: "/Registration", text: "REGISTRATION" },
+          { href: "/CameraReadyGuide", text: "CAMERA READY SUBMISSION GUIDELINES" },
+          
+      ],
     },
     {
         href: "",

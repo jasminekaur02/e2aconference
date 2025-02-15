@@ -97,12 +97,8 @@ const GuidelinesPage = () => {
 </a>
 
 </p>
-
-
   </div>
 </section>
-
-
           </div>
         </section>
       </div>
