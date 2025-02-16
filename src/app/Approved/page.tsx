@@ -74,7 +74,7 @@ const SpeakerPage: React.FC = () => {
       <Navbar />
       <PageHero 
         title="Approved Sessions" 
-        image="/images/hero-sessions.jpg"
+        image="https://v1.nitj.ac.in/ITEP/img/01.jpg"
       />
       <div className="flex flex-col flex-grow items-center px-4 sm:px-8 md:px-16 lg:px-24 py-12 w-full">
         <div className="max-w-6xl w-full space-y-16">
