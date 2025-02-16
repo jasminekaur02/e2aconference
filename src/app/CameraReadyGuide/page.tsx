@@ -18,7 +18,11 @@ const CameraReadySubmissionPage = () => {
         {/* Main Content */}
         <section className="py-16 px-4 sm:px-6 md:px-8 lg:px-12">
           <div className="max-w-6xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4 text-blue-600">Instructions for Camera Ready Paper Submission (After Acceptance)</h3>
+          <h3 className="text-2xl font-bold mb-4 text-blue-600 flex items-center">
+
+  Instructions for Camera Ready Paper Submission (After Acceptance)
+</h3>
+
             <ul className="list-disc list-inside text-md text-gray-700 space-y-4">
               <li>Authors of all accepted papers need to submit a camera-ready (Final) version addressing all the reviewer&apos;s comments on or before <strong>20 February 2025</strong> through Microsoft CMT portal (Editable and pdf file).</li>
               <li>The authors should make sure about the plagiarism of their manuscript (below <strong>20% similarity</strong>), using standard plagiarism checking software (e.g. Turnitin), before submitting the camera-ready paper to confirm the inclusion of the paper in LNEE SPRINGER. If Plagiarism is more than 20%, then your paper will not be included in the proceedings.</li>
@@ -44,7 +48,7 @@ const CameraReadySubmissionPage = () => {
 
             {/* Contact Section */}
             <section className="mt-8">
-              <p className="text-md leading-relaxed text-justify">
+              <p className="text-md ">
                 For any clarification, kindly contact <a href="mailto:afzals@nitj.ac.in" className="text-blue-600 hover:underline">afzals@nitj.ac.in</a>.
               </p>
               {/* <p className="mt-6 font-bold">Looking forward to seeing you at the International Conference on Electrical, Electronics & Automation (E2ACON2025) at NIT Jalandhar.</p>

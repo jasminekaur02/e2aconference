@@ -41,7 +41,7 @@ const speakers: Speaker[] = [
   },
   {
     name: "Mr. Subrahmanyam Pulipaka",
-    image: "/speakers/subbu.jpg",
+    image: "/subbu_speaker.jpg",
     speakerDetails: "Subrahmanyam Pulipaka serves as the Chief Executive Officer of India's National Solar Energy Federation, making him one of the youngest leaders in this position. His academic excellence is marked by his education from BITS Pilani in Electrical & Electronics Engineering. He has received prestigious recognition including the BITSAA Global 30 Under 30 Award and the BRICS Young Scientist Award in 2018. With a strong research background in solar PV module reliability, he has contributed significantly to the field through 15 research articles in internationally acclaimed journals. As the founding chairman of the India Africa Youth Energy Forum, he works towards nurturing future energy leaders across the Indian subcontinent and African continent.",
     sessionTitle: "Solar Energy Innovation and Future Trends",
     sessionDescription: "This session will explore cutting-edge developments in solar energy technology and their implementation in modern power systems. Topics will include recent innovations in solar PV technology, grid integration challenges and solutions, and emerging trends in renewable energy policy frameworks. Mr. Pulipaka will share insights from his experience in both technical and policy aspects of solar energy deployment, covering efficiency improvements, cost reduction strategies, and future market prospects. The session will also address the role of solar energy in achieving sustainable development goals and energy security.",
@@ -74,7 +74,7 @@ const SpeakerPage: React.FC = () => {
       <Navbar />
       <PageHero 
         title="Approved Sessions" 
-        image="/images/hero-sessions.jpg"
+        image="https://v1.nitj.ac.in/ITEP/img/01.jpg"
       />
       <div className="flex flex-col flex-grow items-center px-4 sm:px-8 md:px-16 lg:px-24 py-12 w-full">
         <div className="max-w-6xl w-full space-y-16">
