@@ -40,19 +40,19 @@ const speakers: Speaker[] = [
    
   },
   {
-    name: "Mr. Subrahmanyam Pulipaka",
-    image: "/subbu_speaker.jpg",
-    speakerDetails: "Subrahmanyam Pulipaka serves as the Chief Executive Officer of India's National Solar Energy Federation, making him one of the youngest leaders in this position. His academic excellence is marked by his education from BITS Pilani in Electrical & Electronics Engineering. He has received prestigious recognition including the BITSAA Global 30 Under 30 Award and the BRICS Young Scientist Award in 2018. With a strong research background in solar PV module reliability, he has contributed significantly to the field through 15 research articles in internationally acclaimed journals. As the founding chairman of the India Africa Youth Energy Forum, he works towards nurturing future energy leaders across the Indian subcontinent and African continent.",
-    sessionTitle: "Solar Energy Innovation and Future Trends",
-    sessionDescription: "This session will explore cutting-edge developments in solar energy technology and their implementation in modern power systems. Topics will include recent innovations in solar PV technology, grid integration challenges and solutions, and emerging trends in renewable energy policy frameworks. Mr. Pulipaka will share insights from his experience in both technical and policy aspects of solar energy deployment, covering efficiency improvements, cost reduction strategies, and future market prospects. The session will also address the role of solar energy in achieving sustainable development goals and energy security.",
-    linkedin: "https://www.linkedin.com/in/solarsubbu",
-    website: "https://nsefi.in/team"
-  }
+    name: "Dr. Mala Kalra",
+    image: "/mala_kalra.jpg",
+    speakerDetails: "Dr. Mala Kalra is working as an Assistant Professor in Department of Computer Science and Engineering at National Institute of Technical Teachers Training and Research, Chandigarh. She obtained her M.E. in Computer Science and Engineering from PEC, Chandigarh and PhD degree in Computer Science and Engineering from Panjab University, Chandigarh. She has more than 20 years of teaching and research experience. Under her guidance, 45 students have completed their M.E thesis and 3 PhD thesis are in progress. She has to her credit more than 70 research publications in refereed International Journals and Conferences. She has conducted 80+ training programmes in the emerging areas of CSE. She is a Reviewer of several Journals of Wiley and IEEE. She is instrumental in organizing 4 International Conferences and is editor of two books. She carried out several sponsored projects funded by Govt. of India and other agencies. She has been granted one patent to her credit. Her research interests include Cloud Computing and Data Science. She is having professional membership of ACM, ISTE, CSI, Institution of Engineers (India), IETE and IAENG. ",
+    sessionTitle: "",
+    sessionDescription: "",
+    scholar: "https://scholar.google.com/citations?user=i5G9bN4AAAAJ&hl=en",
+   linkedin: "https://www.linkedin.com/in/dr-mala-kalra-8a570535/?originalSubdomain=in"
+  },
 ];
 
 const SpeakerPage: React.FC = () => {
   const [expandedSpeakers, setExpandedSpeakers] = useState<{ [key: number]: boolean }>({});
-  const [activeTab, setActiveTab] = useState<{ [key: number]: 'profile' | 'session' }>({});
+  const [activeTab, setActiveTab] = useState<{ [key: number]: "profile" | "session" }>({});
 
   const toggleExpand = (index: number) => {
     setExpandedSpeakers((prev) => ({
@@ -61,7 +61,7 @@ const SpeakerPage: React.FC = () => {
     }));
   };
 
-  const toggleTab = (index: number, tab: 'profile' | 'session') => {
+  const toggleTab = (index: number, tab: "profile" | "session") => {
     setActiveTab((prev) => ({
       ...prev,
       [index]: tab,
@@ -72,31 +72,29 @@ const SpeakerPage: React.FC = () => {
     <div className="min-h-screen flex flex-col justify-between bg-gray-50">
       <HeaderTop isHomePage={false} />
       <Navbar />
-      <PageHero 
-        title="Approved Sessions" 
-        image="https://v1.nitj.ac.in/ITEP/img/01.jpg"
-      />
+      <PageHero title="Approved Sessions" image="https://v1.nitj.ac.in/ITEP/img/01.jpg" />
       <div className="flex flex-col flex-grow items-center px-4 sm:px-8 md:px-16 lg:px-24 py-12 w-full">
         <div className="max-w-6xl w-full space-y-16">
           {speakers.map((speaker, index) => {
             const isImageOnRight = index % 2 === 0;
             const isExpanded = expandedSpeakers[index];
-            const currentTab = activeTab[index] || 'profile';
+            const currentTab = activeTab[index] || "profile";
+            const hasSessionDetails = speaker.sessionTitle && speaker.sessionDescription;
 
             return (
-              <div 
-                key={speaker.name} 
+              <div
+                key={speaker.name}
                 className="bg-white rounded-2xl shadow-lg transition-all duration-300 hover:shadow-xl overflow-hidden"
               >
-                <div className={`p-6 lg:p-8 flex flex-col lg:flex-row items-center`}>
-                  <div className={`w-full lg:w-1/3 mb-6 lg:mb-0 flex flex-col items-center ${isImageOnRight ? 'lg:order-2' : 'lg:order-1'}`}>
+                <div className="p-6 lg:p-8 flex flex-col lg:flex-row items-center">
+                  {/* Speaker Image Section */}
+                  <div
+                    className={`w-full lg:w-1/3 mb-6 lg:mb-0 flex flex-col items-center ${
+                      isImageOnRight ? "lg:order-2" : "lg:order-1"
+                    }`}
+                  >
                     <div className="relative w-48 h-48 rounded-full overflow-hidden shadow-lg">
-                      <Image
-                        src={speaker.image}
-                        alt={speaker.name}
-                        fill
-                        className="object-cover"
-                      />
+                      <Image src={speaker.image} alt={speaker.name} fill className="object-cover" />
                     </div>
                     <div className="mt-4 flex justify-center space-x-4">
                       {speaker.linkedin && (
@@ -116,45 +114,53 @@ const SpeakerPage: React.FC = () => {
                       )}
                     </div>
                   </div>
-                  <div className={`w-full lg:w-2/3 px-4 lg:px-8 ${isImageOnRight ? 'lg:order-1' : 'lg:order-2'}`}>
+
+                  {/* Speaker Details Section */}
+                  <div className={`w-full lg:w-2/3 px-4 lg:px-8 ${isImageOnRight ? "lg:order-1" : "lg:order-2"}`}>
                     <h2 className="text-2xl font-bold text-blue-800 mb-2">{speaker.name}</h2>
+
+                    {/* Tabs (Only show 'Session Details' if content exists) */}
                     <div className="flex space-x-4 mb-4">
                       <button
-                        onClick={() => toggleTab(index, 'profile')}
+                        onClick={() => toggleTab(index, "profile")}
                         className={`px-4 py-2 rounded-lg font-medium transition-colors ${
-                          currentTab === 'profile' 
-                            ? 'bg-blue-600 text-white' 
-                            : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                          currentTab === "profile" ? "bg-blue-600 text-white" : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                         }`}
                       >
                         Speaker Profile
                       </button>
-                      <button
-                        onClick={() => toggleTab(index, 'session')}
-                        className={`px-4 py-2 rounded-lg font-medium transition-colors ${
-                          currentTab === 'session' 
-                            ? 'bg-blue-600 text-white' 
-                            : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-                        }`}
-                      >
-                        Session Details
-                      </button>
-                    </div>
-                    <div className={`text-gray-700 ${isExpanded ? 'block' : 'line-clamp-4 lg:line-clamp-none'}`}>
-                      {currentTab === 'profile' ? (
-                        speaker.speakerDetails
-                      ) : (
-                        <>
-                          <h3 className="text-lg font-semibold text-blue-600 mb-2">{speaker.sessionTitle}</h3>
-                          {speaker.sessionDescription}
-                        </>
+                      {hasSessionDetails && (
+                        <button
+                          onClick={() => toggleTab(index, "session")}
+                          className={`px-4 py-2 rounded-lg font-medium transition-colors ${
+                            currentTab === "session" ? "bg-blue-600 text-white" : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                          }`}
+                        >
+                          Session Details
+                        </button>
                       )}
                     </div>
+
+                    {/* Tab Content */}
+                    <div className={`text-gray-700 ${isExpanded ? "block" : "line-clamp-4 lg:line-clamp-none"}`}>
+                      {currentTab === "profile" ? (
+                        speaker.speakerDetails
+                      ) : (
+                        hasSessionDetails && (
+                          <>
+                            <h3 className="text-lg font-semibold text-blue-600 mb-2">{speaker.sessionTitle}</h3>
+                            {speaker.sessionDescription}
+                          </>
+                        )
+                      )}
+                    </div>
+
+                    {/* Read More / Read Less Button */}
                     <button
                       onClick={() => toggleExpand(index)}
                       className="text-blue-600 hover:text-blue-700 mt-3 lg:hidden font-medium"
                     >
-                      {isExpanded ? 'Read Less' : 'Read More'}
+                      {isExpanded ? "Read Less" : "Read More"}
                     </button>
                   </div>
                 </div>
