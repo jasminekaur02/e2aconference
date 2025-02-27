@@ -33,10 +33,10 @@ const speakers: Speaker[] = [
     linkedin: "https://www.linkedin.com/in/khalid-abidi-41277232/?originalSubdomain=sg",
   },
   {
-    name: "MR. SUBRAMANYAM PULIPAKA",
-    image: "/subbu_speaker.jpg",
-     description: "Subrahmanyam is the youngest Chief Executive Officer of India's National Solar Energy Federation. Subrahmanyam, a BITSAA Global 30 Under 30 Award recipient, is an alumnus of BITS Pilani in Electrical & Electronics Engineering and one of the youngest winners of the BRICS Young Scientist Award - 2018. As a well-known speaker at various solar and RE events in India, Pulipaka has represented India on various scientific and technological platforms worldwide, including the United States, China, Russia, and Rwanda. With a research background in the reliability of solar PV modules, he has published around 15 research articles in internationally acclaimed journals. He is also the founding chairman of India Africa Youth Energy Forum, a platform dedicated to nurturing future energy leaders in the Indian subcontinent and the African continent.",
-     linkedin: "https://www.linkedin.com/in/solarsubbu/?originalSubdomain=in",
+    name: "Dr. MARTA ZUREK-MORTKA",
+    image: "/proff_marta.jpg",
+     description: "Dr. Zurek-Mortka is a renowned expert in electrical engineering, specializing in sustainable technologies and renewable energy. With over 30 publications and five patents, her work in electromobility, renewable energy, and AI has made her a sought-after speaker. As a member of the Polish Association of Electrical Engineers and an expert for the European Commission and National Centre for Research and Development, she’s shaping the future of sustainable technology. Her groundbreaking work on hydrogen production, waste heat conversion, and renewable energy-based electromobility is making a significant impact. Congratulations, Dr. Zurek-Mortka, on this well-deserved recognition!",
+     linkedin: "https://www.linkedin.com/in/marta-%C5%BCurek-mortka-a12480175/?locale=en_US",
   },
   {
     name: "DR. PIYUSH VERMA",
