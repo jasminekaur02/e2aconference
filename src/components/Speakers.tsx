@@ -37,12 +37,12 @@ const speakers: Speaker[] = [
   },
   {
     id: 3,
-    name: "MR. SUBRAMANYAM PULIPAKA",
-    title: "CEO, National Solar Energy Federation of",
-    organization: "India",
+    name: "Dr. Marta Zurek-Mortka",
+    title: "Head of Mechatronics and Prototyping Center",
+    organization: "Institute for Sustainable Technologies, Poland",
     imageUrl:
-      "/subbu_speaker.jpg",
-    linkedInUrl: "https://www.linkedin.com/in/solarsubbu/?originalSubdomain=in",
+      "/proff_marta.jpg",
+    linkedInUrl: "https://www.linkedin.com/in/marta-%C5%BCurek-mortka-a12480175/?locale=en_US",
   },
   {
     id: 4,
