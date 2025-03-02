@@ -78,6 +78,12 @@ const speakers: Speaker[] = [
     image: "/adi_speaker.jpg",
     linkedin: "https://www.linkedin.com/in/adityasing012194/"
   }, 
+  {
+    name: "Prof Ramesh Bansal",
+    description: "Prof. Ramesh Bansal is a distinguished academic affiliated with both the University of Sharjah and the University of Pretoria. His extensive research encompasses areas such as Microgrids, Distributed Generation, Photovoltaic Systems, Wind Power Systems, and Smart Grids. Prof. Bansal has amassed over 22,000 citations, reflecting the significant impact of his work in the field of renewable energy. His h-index of 70 and i10-index of 271 further underscore his substantial contributions to academia. Throughout his career, Prof. Bansal has collaborated with numerous scholars worldwide, advancing research in sustainable energy solutions. His dedication to integrating renewable energy into modern power systems has positioned him as a leading expert in the transition towards sustainable energy infrastructures.",
+    image: "/ramesh.jpeg",
+    linkedin: "https://www.linkedin.com/in/ramesh-bansal-34115b91/"
+  }, 
 ];
 
 const SpeakerPage: React.FC = () => {

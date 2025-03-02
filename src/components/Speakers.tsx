@@ -80,6 +80,14 @@ const speakers: Speaker[] = [
     imageUrl: "/adi_speaker.jpg",
     linkedInUrl: "https://www.linkedin.com/in/adityasing012194/"
   },  
+  {
+    id: 8,
+    name: "Prof Ramesh Bansal",
+    title: " Microgrids & DG | PV & Wind| Smart Grids",
+    organization: "University of Sharjah and the University of Pretoria",
+    imageUrl: "/ramesh.jpeg",
+    linkedInUrl: "https://www.linkedin.com/in/ramesh-bansal-34115b91/"
+  },  
 
 ];
 
