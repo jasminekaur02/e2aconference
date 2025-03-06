@@ -72,14 +72,14 @@ const speakers: Speaker[] = [
       "/randolph_brazier.jpeg",
     linkedInUrl: "https://www.linkedin.com/in/randolph-brazier/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
   },
-  {
-    id: 7,
-    name: "Mr. Aditya Kushwah",
-    title: "Technical Project Manager | Zero-Emission Fleet Transition | Techno-Economic Modeling",
-    organization: "CALSTART, United States",
-    imageUrl: "/adi_speaker.jpg",
-    linkedInUrl: "https://www.linkedin.com/in/adityasing012194/"
-  },  
+  // {
+  //   id: 7,
+  //   name: "Mr. Aditya Kushwah",
+  //   title: "Technical Project Manager | Zero-Emission Fleet Transition | Techno-Economic Modeling",
+  //   organization: "CALSTART, United States",
+  //   imageUrl: "/adi_speaker.jpg",
+  //   linkedInUrl: "https://www.linkedin.com/in/adityasing012194/"
+  // },  
   {
     id: 8,
     name: "Prof Ramesh Bansal",

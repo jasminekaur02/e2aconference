@@ -72,12 +72,12 @@ const speakers: Speaker[] = [
     website: "https://scholar.google.com/citations?hl=en&user=RhbttjcAAAAJ",
 
   },
-  {
-    name: "Mr. Aditya Kushwah",
-    description: "Mr. Aditya Kushwah is a Technical Project Manager at CALSTART. He investigates the techno-economic feasibility of transitioning to zero-emission fleets and develops business cases for fleet decarbonization. Aditya specializes in techno-economic modeling of distributed energy resources, microgrids, energy modeling, GHG inventories, and cost-benefit analyses for zero-emission fleet transitions. Prior to CALSTART, Aditya worked at the Schatz Energy Research Center and at Terra Motors (an EV manufacturing company based in India and Japan). Aditya holds an MS in Energy Technology and Policy from Cal Poly Humboldt and a BS in Mechanical and Automation Engineering.",
-    image: "/adi_speaker.jpg",
-    linkedin: "https://www.linkedin.com/in/adityasing012194/"
-  }, 
+  // {
+    // name: "Mr. Aditya Kushwah",
+    // description: "Mr. Aditya Kushwah is a Technical Project Manager at CALSTART. He investigates the techno-economic feasibility of transitioning to zero-emission fleets and develops business cases for fleet decarbonization. Aditya specializes in techno-economic modeling of distributed energy resources, microgrids, energy modeling, GHG inventories, and cost-benefit analyses for zero-emission fleet transitions. Prior to CALSTART, Aditya worked at the Schatz Energy Research Center and at Terra Motors (an EV manufacturing company based in India and Japan). Aditya holds an MS in Energy Technology and Policy from Cal Poly Humboldt and a BS in Mechanical and Automation Engineering.",
+    // image: "/adi_speaker.jpg",
+    // linkedin: "https://www.linkedin.com/in/adityasing012194/"
+  // }, 
   {
     name: "Prof Ramesh Bansal",
     description: "Prof. Ramesh Bansal is a distinguished academic affiliated with both the University of Sharjah and the University of Pretoria. His extensive research encompasses areas such as Microgrids, Distributed Generation, Photovoltaic Systems, Wind Power Systems, and Smart Grids. Prof. Bansal has amassed over 22,000 citations, reflecting the significant impact of his work in the field of renewable energy. His h-index of 70 and i10-index of 271 further underscore his substantial contributions to academia. Throughout his career, Prof. Bansal has collaborated with numerous scholars worldwide, advancing research in sustainable energy solutions. His dedication to integrating renewable energy into modern power systems has positioned him as a leading expert in the transition towards sustainable energy infrastructures.",
