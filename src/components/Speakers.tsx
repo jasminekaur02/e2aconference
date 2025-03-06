@@ -18,7 +18,7 @@ const speakers: Speaker[] = [
   {
     id: 1,
     name: "Prof. JERZY R. SZYMANSKI",
-    title: "Casimir Pulaski University of Radom, Poland.",
+    title: "Casimir Pulaski University of Radom, Poland",
     organization: "",
     imageUrl:
       "/jerzy_speaker.png",

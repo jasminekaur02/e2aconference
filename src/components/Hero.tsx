@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from 'react';
 import { FaCalendarAlt, FaLandmark, FaLaptop, FaSearchLocation } from 'react-icons/fa'; // Import calendar and laptop icons
+import ChiefGuest from './ChiefGuest';
 
 const Hero = () => {
   // Array of image URLs for the carousel
@@ -57,6 +58,7 @@ const Hero = () => {
   };
 
   return (
+    <>
     <section className="relative min-h-screen">
       {/* Background image carousel */}
       <div
@@ -155,6 +157,9 @@ const Hero = () => {
         </div>
       </div>
     </section>
+
+    <ChiefGuest/>
+    </>
   );
 };
 
