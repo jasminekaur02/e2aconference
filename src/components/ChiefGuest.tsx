@@ -17,32 +17,28 @@ const guests = [
     linkedin: "https://www.linkedin.com/in/kkdeepak/?originalSubdomain=in",
     google: "https://scholar.google.com/citations?user=cvgzaiIAAAAJ&hl=en",
     website: "https://www.kkdeepak.com/",
-    image: "/kalyanmoy_deb.png",
+    image: "/dr_deepak.jpg",
     title: "Guest of Honour"
   },
   {
-    name: "Prof. Robert Brown",
-    designation: "Harvard University, USA",
-    linkedin: "https://www.linkedin.com/in/robert-profile",
-    google: "https://scholar.google.com/citations?user=robert-profile",
-    website: "https://www.harvard.edu/robert",
-    image: "/robert_brown.png",
+    name: "Dr. Marta Zurek-Mortka",
+    designation: "Institute for Sustainable Technologies, Poland",
+    linkedin: "https://www.linkedin.com/in/marta-%C5%BCurek-mortka-a12480175/?locale=en_US",
+    image: "/proff_marta.jpg",
     title: "Guest of Honour"
   },
   {
-    name: "Prof. Emma Johnson",
-    designation: "Cambridge University, UK",
-    linkedin: "https://www.linkedin.com/in/emma-profile",
-    google: "https://scholar.google.com/citations?user=emma-profile",
-    website: "https://www.cam.ac.uk/emma",
-    image: "/emma_johnson.png",
+    name: "Prof Ramesh Bansal",
+    designation: "University of Sharjah and the University of Pretoria",
+    linkedin: "https://www.linkedin.com/in/ramesh-bansal-34115b91/",
+    image: "/ramesh.jpeg",
     title: "Guest of Honour"
   }
 ];
 
 const cardVariants = {
   hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeOut' } },
+  visible: { opacity: 1, y: 0, transition: { duration: 1, ease: 'easeOut' } },
 };
 
 const ChiefGuest = () => {
@@ -51,15 +47,13 @@ const ChiefGuest = () => {
       variants={cardVariants}
       initial="hidden"
       animate="visible"
-      className="w-full max-w-7xl mx-auto bg-white shadow-xl rounded-2xl overflow-hidden text-center p-10"
+      className="w-full max-w-7xl mx-auto bg-gradient-to-b from-blue-50 to-white shadow-2xl rounded-3xl overflow-hidden text-center p-10 hover:shadow-blue-600/50 transition-shadow duration-700"
     >
-      <h2 className="text-4xl font-bold mb-12">
-        Chief&nbsp;<span className="text-blue-600">Guest</span>
-      </h2>
+      <h2 className="text-5xl font-extrabold mb-12 tracking-wide text-black">Chief&nbsp;<span className="text-blue-600">Guest</span></h2>
       <motion.div
-        className="relative w-40 h-40 mx-auto rounded-full overflow-hidden border-4 border-blue-600 mb-6"
-        whileHover={{ scale: 1.1 }}
-        transition={{ duration: 0.3 }}
+        className="relative w-40 h-40 mx-auto rounded-full overflow-hidden border-4 border-blue-600 shadow-lg mb-6"
+        whileHover={{ scale: 1.15}}
+        transition={{ duration: 0.5 }}
       >
         <Image
           src={guests[0].image}
@@ -68,39 +62,37 @@ const ChiefGuest = () => {
           objectFit="cover"
         />
       </motion.div>
-      <h3 className="text-2xl font-bold mb-2 text-blue-900">{guests[0].name}</h3>
-      <p className="text-sm text-spotlight-red mb-4">{guests[0].designation}</p>
-      <div className="flex justify-center gap-4 mb-12">
+      <h3 className="text-3xl font-bold mb-2 text-blue-900">{guests[0].name}</h3>
+      <p className="text-lg text-spotlight-red italic mb-4">{guests[0].designation}</p>
+      <div className="flex justify-center gap-6 mb-12">
         {guests[0].linkedin && (
-          <motion.a href={guests[0].linkedin} target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.1 }}>
-            <FaLinkedin size={20} className="text-blue-600" />
+          <motion.a href={guests[0].linkedin} target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2}}>
+            <FaLinkedin size={30} className="text-blue-600 hover:text-blue-900 transition duration-300" />
           </motion.a>
         )}
         {guests[0].google && (
-          <motion.a href={guests[0].google} target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.1 }}>
-            <FaGoogle size={20} className="text-red-600" />
+          <motion.a href={guests[0].google} target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2}}>
+            <FaGoogle size={30} className="text-red-600 hover:text-red-900 transition duration-300" />
           </motion.a>
         )}
         {guests[0].website && (
-          <motion.a href={guests[0].website} target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.1 }}>
-            <FaGlobe size={20} className="text-green-600" />
+          <motion.a href={guests[0].website} target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2 }}>
+            <FaGlobe size={30} className="text-green-600 hover:text-green-900 transition duration-300" />
           </motion.a>
         )}
       </div>
 
-      <h2 className="text-4xl font-bold mb-8">
-        Guests of&nbsp;<span className="text-blue-600">Honour</span>
-      </h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <h2 className="text-5xl font-extrabold mb-10 text-black">Guests of&nbsp;<span className="text-blue-600">Honour</span></h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {guests.slice(1).map((guest, index) => (
           <motion.div
             key={index}
-            className="text-center p-4 bg-white shadow-lg rounded-xl overflow-hidden"
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
+            className="text-center p-6 bg-white shadow-xl rounded-2xl overflow-hidden hover:shadow-blue-500/50 transition duration-700"
+            whileHover={{ scale: 1.08}}
+            transition={{ duration: 0.4 }}
           >
             <motion.div
-              className="relative w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-blue-600 mb-4"
+              className="relative w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-blue-600 mb-4 shadow-lg"
               whileHover={{ scale: 1.1 }}
               transition={{ duration: 0.3 }}
             >
@@ -111,22 +103,22 @@ const ChiefGuest = () => {
                 objectFit="cover"
               />
             </motion.div>
-            <h3 className="text-xl font-bold mb-2 text-blue-900">{guest.name}</h3>
-            <p className="text-sm text-spotlight-red mb-4">{guest.designation}</p>
-            <div className="flex justify-center gap-4">
+            <h3 className="text-2xl font-bold mb-2 text-blue-900">{guest.name}</h3>
+            <p className="text-lg text-spotlight-red italic mb-4">{guest.designation}</p>
+            <div className="flex justify-center gap-6">
               {guest.linkedin && (
-                <motion.a href={guest.linkedin} target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.1 }}>
-                  <FaLinkedin size={20} className="text-blue-600" />
+                <motion.a href={guest.linkedin} target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2}}>
+                  <FaLinkedin size={25} className="text-blue-600 hover:text-blue-900 transition duration-300" />
                 </motion.a>
               )}
               {guest.google && (
-                <motion.a href={guest.google} target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.1 }}>
-                  <FaGoogle size={20} className="text-red-600" />
+                <motion.a href={guest.google} target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2}}>
+                  <FaGoogle size={25} className="text-red-600 hover:text-red-900 transition duration-300" />
                 </motion.a>
               )}
               {guest.website && (
-                <motion.a href={guest.website} target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.1 }}>
-                  <FaGlobe size={20} className="text-green-600" />
+                <motion.a href={guest.website} target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2 }}>
+                  <FaGlobe size={25} className="text-green-600 hover:text-green-900 transition duration-300" />
                 </motion.a>
               )}
             </div>
