@@ -83,11 +83,19 @@ const speakers: Speaker[] = [
   {
     id: 8,
     name: "Prof Ramesh Bansal",
-    title: " Microgrids & DG | PV & Wind| Smart Grids",
+    title: "Microgrids & DG | PV & Wind| Smart Grids",
     organization: "University of Sharjah and the University of Pretoria",
     imageUrl: "/ramesh.jpeg",
     linkedInUrl: "https://www.linkedin.com/in/ramesh-bansal-34115b91/"
   },  
+  {
+    id: 9,
+    name: "Dr. Shahroz Anjum",
+    title: "Power Generation Engineer",
+    organization: "Alliant Energy, USA",
+    imageUrl: "/shahroz_anjum.jpg",
+    linkedInUrl: "https://www.linkedin.com/in/shahroz-anjum-ph-d-41089251/"
+  }, 
 
 ];
 
