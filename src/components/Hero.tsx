@@ -20,6 +20,15 @@ const Hero = () => {
     const now = new Date();
     const difference = eventDate.getTime() - now.getTime();
 
+    if (difference <= 0) {
+      return {
+        days: "L",
+        hours: "I",
+        minutes: "V",
+        seconds: "E",
+      };
+    }
+
     let timeLeft = {
       days: Math.floor(difference / (1000 * 60 * 60 * 24)),
       hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
@@ -72,19 +81,6 @@ const Hero = () => {
       {/* Black blur effect */}
       <div className="absolute inset-0 bg-black opacity-70 backdrop-blur-lg"></div>
 
-      {/* Live link button */}
-      {/* <a
-        href={liveLink}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="absolute top-[11vh]  lg:right-10 right-4 flex items-center border border-white text-white px-5 py-2 rounded-md hover:bg-white hover:text-black transition"
-      >
-        <span
-          className={`rounded-full w-2 h-2 mr-2 ${isLive ? 'bg-green-500' : 'bg-red-500'}`}
-        />
-        Live
-      </a> */}
-
       {/* Content over the background image */}
       <div className="relative flex flex-col justify-center items-center text-center text-white h-full px-4 pt-32">
         <h1 className="text-2xl md:text-6xl font-bold">
@@ -98,50 +94,43 @@ const Hero = () => {
 
         {/* Conference proceedings info */}
         <p className="mt-6 hidden md:visible text-[1rem] md:text-[1rem] font-bold text-gray-300">
-         
           <span className="text-white"></span><br />
-          
         </p>
 
         {/* New line for proceedings with LNEE */}
         <p className="mt-2 text-lg md:text-xl text-white font-bold">
-         
           <span className="text-white">Proceedings will be published in LNEE, Springer (SCOPUS Indexed) [Approved]</span>
         </p>
 
-        {/* Hybrid Mode and Date in a single line for small screens, vertical stack for medium+ screens */}
         <div className="mt-4 flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-10">
-          {/* Hybrid Mode */}
           <div className="flex items-center">
             <FaLaptop className="text-white mr-2" />
             <p className="text-lg md:text-xl">Hybrid Mode</p>
           </div>
-         {/* Venue */}
          <div className="flex items-center">
             <FaLandmark className="text-white mr-2" />
             <span className="text-lg md:text-xl">NIT Jalandhar</span>
           </div>
-          {/* Date */}
           <div className="flex items-center">
             <FaCalendarAlt className="text-white mr-2" />
             <span className="text-lg md:text-xl">8-9 March, 2025</span>
           </div>
         </div>
-       
 
         {/* Countdown Timer */}
         <div className="mt-8 flex space-x-2 justify-center">
-          {["Days", "Hours", "Minutes", "Seconds"].map((label, i) => (
-            <div key={label} className="bg-blue-600 p-2 md:p-4 rounded-md shadow-lg">
+          {Object.values(timeLeft).map((value, i) => (
+            <div key={i} className="bg-blue-600 p-2 md:p-4 rounded-md shadow-lg">
               <span className="text-2xl md:text-4xl font-bold">
-                {Object.values(timeLeft)[i]}
+                {value}
               </span>
-              <div className="text-sm md:text-lg">{label}</div>
+              {value !== "L" && value !== "I" && value !== "V" && value !== "E" && (
+                <div className="text-sm md:text-lg">{["Days", "Hours", "Minutes", "Seconds"][i]}</div>
+              )}
             </div>
           ))}
         </div>
 
-        {/* Action Buttons */}
         <div className="mt-8 space-x-4">
         <a href="/Guidelines" rel="noopener noreferrer">
             <button className="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700">
@@ -153,7 +142,6 @@ const Hero = () => {
               Register
             </button>
           </a>
-          
         </div>
       </div>
     </section>
