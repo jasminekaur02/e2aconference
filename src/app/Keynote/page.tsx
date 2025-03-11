@@ -87,7 +87,7 @@ const speakers: Speaker[] = [
 
   {
     name: "Dr. Shahroz Anjum",
-    description: "Dr. Shahroz Anjum is a dedicated researcher and educator with over 8 years of experience in power systems and solar energy. He holds a Ph.D. in Solar Power Optimization from IIT(ISM) Dhanbad, specializing in maximum power extraction from photovoltaic systems under partial shading conditions. Currently serving as a Power Generation Engineer at Alliant Energy, India, his expertise spans solar energy systems, electric drives, and data-driven optimization. He has been recognized with the Best Researcher Award for his contributions to renewable energy research and academic excellence.",
+    description: "Dr. Shahroz Anjum is a dedicated researcher and educator with over 8 years of experience in power systems and solar energy. He holds a Ph.D. in Solar Power Optimization from IIT(ISM) Dhanbad, specializing in maximum power extraction from photovoltaic systems under partial shading conditions. Currently serving as a Power Generation Engineer at Alliant Energy, USA, her expertise spans solar energy systems, electric drives, and data-driven optimization. He has been recognized with the Best Researcher Award for his contributions to renewable energy research and academic excellence.",
     image: "/shahroz_anjum.jpg",
     linkedin: "https://www.linkedin.com/in/shahroz-anjum-ph-d-41089251/",
     scholar: "https://scholar.google.com/citations?user=1A4tD-EAAAAJ&hl=en",
