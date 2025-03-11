@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from 'react';
-import { FaCalendarAlt, FaLandmark, FaLaptop, FaSearchLocation } from 'react-icons/fa'; // Import calendar and laptop icons
+import { FaCalendarAlt, FaLandmark, FaLaptop } from 'react-icons/fa'; // Import calendar and laptop icons
 import ChiefGuest from './ChiefGuest';
 
 const Hero = () => {
@@ -15,39 +15,39 @@ const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // State to manage the countdown timer
-  const calculateTimeLeft = () => {
-    const eventDate = new Date("2025-03-08T00:00:00"); // Set your event date here
-    const now = new Date();
-    const difference = eventDate.getTime() - now.getTime();
+  // const calculateTimeLeft = () => {
+  //   const eventDate = new Date("2025-03-08T00:00:00"); // Set your event date here
+  //   const now = new Date();
+  //   const difference = eventDate.getTime() - now.getTime();
 
-    if (difference <= 0) {
-      return {
-        days: "L",
-        hours: "I",
-        minutes: "V",
-        seconds: "E",
-      };
-    }
+  //   if (difference <= 0) {
+  //     return {
+  //       days: "L",
+  //       hours: "I",
+  //       minutes: "V",
+  //       seconds: "E",
+  //     };
+  //   }
 
-    let timeLeft = {
-      days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-      hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-      minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
-      seconds: Math.floor((difference % (1000 * 60)) / 1000),
-    };
+  //   let timeLeft = {
+  //     days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+  //     hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+  //     minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
+  //     seconds: Math.floor((difference % (1000 * 60)) / 1000),
+  //   };
 
-    return timeLeft;
-  };
+  //   return timeLeft;
+  // };
 
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  // const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
-  // Update the countdown every second
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
-    }, 1000);
-    return () => clearInterval(timer);
-  }, []);
+  // // Update the countdown every second
+  // useEffect(() => {
+  //   const timer = setInterval(() => {
+  //     setTimeLeft(calculateTimeLeft());
+  //   }, 1000);
+  //   return () => clearInterval(timer);
+  // }, []);
 
   // Change the background image at a regular interval (e.g., every 5 seconds)
   useEffect(() => {
@@ -118,7 +118,7 @@ const Hero = () => {
         </div>
 
         {/* Countdown Timer */}
-        <div className="mt-8 flex space-x-2 justify-center">
+        {/* <div className="mt-8 flex space-x-2 justify-center">
           {Object.values(timeLeft).map((value, i) => (
             <div key={i} className="bg-blue-600 p-2 md:p-4 rounded-md shadow-lg">
               <span className="text-2xl md:text-4xl font-bold">
@@ -129,7 +129,7 @@ const Hero = () => {
               )}
             </div>
           ))}
-        </div>
+        </div> */}
 
         <div className="mt-8 space-x-4">
         <a href="/Guidelines" rel="noopener noreferrer">
