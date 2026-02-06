@@ -11,6 +11,7 @@ import CallForPapers from '@/components/Tracks';
 import ExpertSpeakers from '@/components/Speakers';
 import AboutOrg from '@/components/AboutOrg';
 import Preloader from '@/components/Preloader'; // Import the Preloader
+import Gallery from '@/components/Gallery';
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -40,7 +41,8 @@ const Home = () => {
           <Navbar />
           <Hero />
           <AboutUs />
-          <AboutOrg />
+          <AboutOrg />  {/*includes timeline at bottom */}
+          {/* <Gallery/> */}
           <Sponsors />
           <CallForPapers />
           <ExpertSpeakers />

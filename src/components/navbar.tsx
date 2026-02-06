@@ -30,7 +30,7 @@ const NAVLINKS = [
             { href: "/Keynote", text: "KEYNOTE SPEAKERS" },
             { href: "/Workshop", text: "CALL FOR WORKSHOPS" },
             { href: "/Approved", text: "APPROVED SESSIONS" },
-            { href: "/Awards", text: "AWARDS" },
+            // { href: "/Awards", text: "AWARDS" },
         ],
     },
     {

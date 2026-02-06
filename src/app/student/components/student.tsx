@@ -17,6 +17,13 @@ const studentCommittee = [
         linkedin: "https://www.linkedin.com/in/karchana-bhushan-468785200/"
     },
     {
+        name: "Mr. Anoop Tiwari",
+        designation: "Dept of ICE",
+        affiliation: "NIT Jalandhar",
+        image: "/anoop_tiwari.jpg",
+        linkedin: "https://www.linkedin.com/in/anoop-tiwari-61a7571b7/"
+    },
+    {
         name: "Karan Anand",
         designation: "Dept of ICE",
         affiliation: "NIT Jalandhar",
