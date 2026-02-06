@@ -47,7 +47,7 @@ const ChiefGuest = () => {
       variants={cardVariants}
       initial="hidden"
       animate="visible"
-      className="w-full max-w-7xl mx-auto bg-gradient-to-b from-blue-50 to-white shadow-xl rounded-3xl overflow-hidden text-center p-6 sm:p-10 hover:shadow-blue-600/50 transition-shadow duration-700"
+      className="w-full max-w-7xl mx-auto  shadow-xl rounded-3xl overflow-hidden text-center p-6 sm:p-10 hover:shadow-blue-600/50 transition-shadow duration-700"
     >
       <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-8 sm:mb-12 tracking-wide text-black">
         Chief&nbsp;<span className="text-blue-600">Guest</span>

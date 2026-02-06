@@ -80,7 +80,7 @@ const teamData: TeamData = {
       profileLink: "https://departments.nitj.ac.in/dept/ece/Faculty/6430445538bff038a7805caf"
     }
   ],
-  "Convener and Organising Chair(s)": [
+  " Organising Chairman": [
     {
       name: "Dr. Afzal Sikander",
       designation: "Assistant Professor",
@@ -96,7 +96,7 @@ const teamData: TeamData = {
       profileLink: "https://www.ncl.ac.uk/singapore/staff/profile/anuragsharma.html"
     }
   ],
-  "Co-Convener(s)": [
+  " Convener(s)": [
     {
       name: "Dr. Marta Zurek-Mortka",
       designation: "Lukasiewicz Research Network",

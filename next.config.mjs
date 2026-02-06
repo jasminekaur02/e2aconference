@@ -15,7 +15,7 @@ const nextConfig = {
   // next.config.js
 
   images: {
-    domains: ['v1.nitj.ac.in', 'i1.rgstatic.net', 'omega.uniwersytetradom.pl','media.licdn.com'], // Add any other domains you're using
+    domains: ['v1.nitj.ac.in', 'i1.rgstatic.net', 'omega.uniwersytetradom.pl','media.licdn.com','avatars.githubusercontent.com'], // Add any other domains you're using
   },
 
 
