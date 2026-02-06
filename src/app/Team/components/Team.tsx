@@ -35,7 +35,7 @@ const teamData: TeamData = {
       profileLink: "https://departments.nitj.ac.in/dept/ch/Faculty/6430445038bff038a780495f"
     }
   ],
-  "General Chair(s)": [
+  "General Chairman": [
     {
       name: "Prof. Dilbag Singh",
       designation: "Professor",
@@ -51,7 +51,7 @@ const teamData: TeamData = {
       profileLink: "https://departments.nitj.ac.in/dept/ice/Faculty/6430445938bff038a78063cd"
     }
   ],
-  "General Co-Chair(s)": [
+  "General Co-Chairman": [
     {
       name: "Prof. S. K. Pahuja",
       designation: "Professor & Head (EE)",
@@ -157,7 +157,7 @@ const Team = () => {
 
           // Apply 2x2 grid for specific sections
           const isSpecialGrid =
-            section === "General Co-Chair(s)" || section === "Organising Secretary";
+            section === "General Co-Chairman" || section === "Organising Secretary";
           const gridCols = isSpecialGrid
             ? "grid-cols-2"
             : numItems === 1
